@@ -32,7 +32,7 @@ Schließlich kennen sie die zugehörigen Aspekte und die grundsätzliche Vorgehe
 
 Nr. | Datum | Inhalt der Vorlesung                                      | Bearbeitet
 ----|-------|-----------------------------------------------------------|------------------
-V1  | 19.4. | Einführung (00)/ Concepts of Spacecraft Design (01)       | :white_check_mark:
+V1  | 22.4. | Project Presentation, Introduction to robotic systems and Rover System       | :white_check_mark:
 V2  | 19.4. | Concepts of S/C Design (01) & Space Environment (02)      | :white_square_button:
 V3  | 26.4. | Space Environment (02)                                    | :white_square_button:
 V4  | 26.4. | Impact of Space Environment on Spacecraft Design (03)     | :white_square_button:
