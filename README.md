@@ -31,8 +31,8 @@ Schließlich kennen sie die zugehörigen Aspekte und die grundsätzliche Vorgehe
 Nr. | Datum | Inhalt der Vorlesung                                      | Bearbeitet
 ----|-------|-----------------------------------------------------------|------------------
 V1  | 22.4. | Project Presentation, Introduction to robotic systems and Rover System       | :white_check_mark:
-V2  | 29.4. | Environmental conditions for exploration missions         | :white_square_button:
-V3  | 06.5. | Thermal System                                            | :white_square_button:
+V2  | 29.4. | Environmental conditions for exploration missions         | :white_check_mark:
+V3  | 06.5. | Thermal System                                            | :white_check_mark:
 Reg  | 12.5. | Begin: Registration for practical course in ILIAS         | :white_square_button:
 Pres  | 20.5. | **Review: Mission definition**                                | :white_square_button:
 V4  | 27.5. | Chassis System                                            | :white_square_button:
