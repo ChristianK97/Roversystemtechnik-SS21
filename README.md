@@ -33,33 +33,20 @@ Schließlich kennen sie die zugehörigen Aspekte und die grundsätzliche Vorgehe
 Nr. | Datum | Inhalt der Vorlesung                                      | Bearbeitet
 ----|-------|-----------------------------------------------------------|------------------
 V1  | 22.4. | Project Presentation, Introduction to robotic systems and Rover System       | :white_check_mark:
-V2  | 19.4. | Concepts of S/C Design (01) & Space Environment (02)      | :white_square_button:
-V3  | 26.4. | Space Environment (02)                                    | :white_square_button:
-V4  | 26.4. | Impact of Space Environment on Spacecraft Design (03)     | :white_square_button:
-V5  | 03.5. | Orbital Mechanics (04)                                    | :white_square_button:
-V6  | 03.5. | Space Propulsion (05) [_Live Fragestunde_]                | :white_square_button:
-V7  | 10.5. | Communication Systems I (06)                              | :white_square_button:
-V8  | 10.5. | Communication Systems II (06)                             | :white_square_button:
-V9  | 17.5. | Structures and Materials (07)                             | :white_square_button:
-V10 | 17.5. | Lebenserhaltungssysteme (08)                              | :white_square_button:
-V11 | 31.5. | Electrical Power Systems (09)                             | :white_square_button:
-V12 | 31.5. | Lage- und Bahnregelung (10)                               | :white_square_button:
-V13 | 07.6. | Re-Entry I (11)                                           | :white_square_button:
-V14 | 07.6. | Re-Entry II (11) [_Live Fragestunde_]                     | :white_square_button:
-V15 | 14.6. | Thermal Control Systems (12)                              | :white_square_button:
-V16 | 14.6. | Thermal Control Systems (12) [_Live Fragestunde_]         | :white_square_button:
-V17 | 21.6. | Weltraumqualifikation I (13)                              | :white_square_button:
-V18 | 21.6. | Weltraumqualifikation II (13)                             | :white_square_button:
-V19 | 28.6  | Command and Data Handling (14)                            | :white_square_button:
-V20 | 28.6  | Onboard Software (15)                                     | :white_square_button:
-V21 | 05.7. | Payloads (16)                                             | :white_square_button:
-V22 | 05.7. | Payloads (16) [_Live Fragestunde_]                        | :white_square_button:
-V23 | 12.7. | Bodenstationen I (18)                                     | :white_square_button:
-V24 | 12.7. | Bodenstationen II (18)                                    | :white_square_button:
-V25 | 19.7. | Weltraumrecht (17)                                        | :white_square_button:
-V26 | 19.7. | Project Management + Systems Engineering (19)             | :white_square_button:
-??? | ??.?. | Fragestunde zur Prüfungsvorbereitung [_Live Fragestunde_] | :white_square_button:
-??? | ??.?. | Prüfung                                                   | :white_square_button:
+V2  | 29.4. | Environmental conditions for exploration missions         | :white_square_button:
+V3  | 06.5. | Thermal System                                            | :white_square_button:
+V4  | 12.5. | Begin: Registration for practical course in ILIAS         | :white_square_button:
+Pres  | 20.5. | **Review: Mission definition**                                | :white_square_button:
+V5  | 27.5. | Chassis System                                            | :white_square_button:
+V6  | tbd   | Communication Systems                                     | :white_square_button:
+V7  | 10.6. | Electronical Power System                                 | :white_square_button:
+V8  | 17.6. | Wheel/ Soil Interaction                                   | :white_square_button:
+Pres | 24.6. | **Status Review**                                             | :white_square_button:
+V9 | 01.7. | Avionics                                                  | :white_square_button:
+V10 | 08.7. | Autonomy                                                  | :white_square_button:
+Doc | 18.7. | **Documentation Abgabe**                                      | :white_square_button:
+Pres | 22.7. | **Final Presentation**                                        | :white_square_button:
+
 
 ## Aufbau
 
