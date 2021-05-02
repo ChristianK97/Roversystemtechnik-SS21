@@ -1,11 +1,16 @@
-# 47380 Raumfahrttechnik I
+# 72320 Roversystemtechnik SS21
 
-Dieses Repository fasst die Inhalte der Vorlesung _47380 Raumfahrttechnik I_ der Universität Stuttgart zusammen.
+Dieses Repository dient zur Erstellung der begleitenden Dokumentation zum Semesterprojekts des Roversystemtechnik Seminars 
 
 ## Allgemeines
 
-* LP: 6 ECTS
-* Modulkürzel: 060500098
+* LP: 3 ECTS
+* Modulkürzel: 060500205
+* SWS: 2h
+* Moduldauer: Einsemestrig
+* Turnus: SS
+* Sprache: Englisch
+* Folgemodule: Praktikum Roverentwicklung (3 ETCS WS)
 
 ### Beschreibung
 
@@ -59,11 +64,6 @@ V26 | 19.7. | Project Management + Systems Engineering (19)             | :white
 ## Aufbau
 
 Aufbau des Repositories.
-
-### Exercises
-
-(Vortrags)-Übungen, Tutorien und selbst gerechnete Aufgaben.
-Optional auch Abgaben.
 
 ### Notes
 
