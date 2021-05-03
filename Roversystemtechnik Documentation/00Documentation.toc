@@ -1,0 +1,47 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}The Mission}{7}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Mission Inspiration}{7}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Mission Scenario}{7}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Operation}{8}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Subsystems}{9}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Rover}{9}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Structure and Mechanics}{9}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Communications and Command and Data-Handling}{9}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Payload}{9}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Thermal Control}{10}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Electrical Power System}{10}{section.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Lander System}{11}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Storage Configuration}{11}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Depolyment Strategy}{11}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Trade-Offs}{12}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Risk and Technology Assessment}{13}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Risk Assessment}{13}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Risk Assessment Subsection}{13}{subsection.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Technology Assessment}{13}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Acceleration segment}{13}{subsection.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendix A}{14}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendix}{14}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Appendix B}{15}{appendix.B}%

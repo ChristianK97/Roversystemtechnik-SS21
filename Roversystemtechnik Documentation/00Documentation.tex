@@ -1,0 +1,222 @@
+%##########################################################################
+%                                                                     
+%                         LaTeX-Vorlage
+%                                                     
+%##########################################################################
+
+%##########################################################################
+% Formatierungsoptionen & Dokumenteneinstellungen
+
+\documentclass[12pt,a4paper,twoside]{report}
+%\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+% Standard Style-Files
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{a4}
+\usepackage{graphicx}
+\usepackage{algorithmic,algorithm}
+%\usepackage{subfigure}
+\usepackage{longtable}
+\usepackage[makeroom]{cancel}
+\usepackage[]{placeins}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{lipsum} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{lscape}
+%\usepackage[official]{eurosym}
+\usepackage[gen]{eurosym}
+\usepackage{subfig}
+\usepackage{pdfpages}
+%\usepackage{url}
+\usepackage{listings}
+\usepackage[sorting=none, backend=bibtex, maxbibnames=99, url=true]{biblatex}
+%\usepackage{url}
+%\bibliographystyle{unsrt}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\addbibresource{References}
+
+\interfootnotelinepenalty=10000
+
+
+\lstset{language=Matlab,%
+	basicstyle=\linespread{0.5}\tiny],
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=7pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style}, 
+    extendedchars=true,
+    literate={µ}{{$\mu$}}1 {η}{{$\eta$}}1 {²}{{$^{2}$}}1 {µm}{{$\mu$m}}1 {µm'}{{$\mu$m '}}1 {μ}{{$\mu$}}1 {π}{{$\pi$}}1 {±}{{$\pm$}}1 ,   
+}
+% ############################################################################
+% Inverse Suche mit xdvi und kile:
+%
+\usepackage{srcltx}
+%
+% 1) xdvi starten mit 
+%    > xdvi -editor 'kile %f --line %l' bericht.dvi
+% 2) Bei einem Klick ins angezeigte dvi-Dokument springt kile automatisch an
+%    die richtige Stelle im latex-file
+
+ 
+% Seitenstil
+\pagestyle{headings}
+
+% Abstand zwischen Abs"atzen
+\setlength{\parskip}{1.5ex}
+
+% Einr"uckung der ersten Zeile eines Absatzes unterdr"ucken
+\setlength{\parindent}{0pt}
+
+% Grosszuegigere Wortabstaende
+\sloppy
+
+% Damit Bilder m"oglichst da sind, wo man sie will
+\setcounter{topnumber}{20}
+\setcounter{bottomnumber}{20}
+\setcounter{totalnumber}{20}
+\renewcommand{\topfraction}{.9999}
+\renewcommand{\bottomfraction}{.9999}
+\renewcommand{\textfraction}{0}
+
+
+\newcommand{\chapquoteright}[3]{\begin{quotation} \textit{#1} \end{quotation} \begin{flushright} - #2, \textit{#3}\end{flushright} }
+
+\newcommand{\chapquoteleft}[3]{  \begin{quotation} \textit{#1} \end{quotation} \begin{flushleft}- #2, \textit{#3}\end{flushleft} }
+
+%##########################################################################
+% Bilder:
+% ps/eps-File mit Unterschrift:
+\newcommand{\mypicture}[4]{
+\begin{figure}[hptb]
+\begin{center}
+\includegraphics[scale=1,angle=#4]{#1}
+\caption{#2}\label{#3}
+\end{center}
+\end{figure}
+}%newcommand%
+% Aufruf mit \mypicture{file}{caption}{label}{angle}
+
+% ps/eps-File mit Unterschrift und Angabe der Breite:
+\newcommand{\myscalepicture}[5]{
+\begin{figure}[hptb]
+\begin{center}
+\includegraphics[width=#5,angle=#4]{#1}
+\caption{#2}\label{#3}
+\end{center}
+\end{figure}
+}%newcommand%
+% Aufruf mit \myscalepicture{file}{caption}{label}{angle}{width}
+
+%##########################################################################
+% Tabellen:
+% Gleitende Tabelle:
+\newcommand{\mytable}[3]{
+\begin{table}[hptb]
+ \caption{#2}
+  \centerline{#1}
+  \label{#3}
+\end{table}
+}%newcommand%
+% Aufruf mit \mytable{tabelle}{caption}{label}
+
+
+
+%##########################################################################
+% Gleichungs--Referenzen:
+
+% im Text
+\newcommand{\refeqn}[1]{(\ref{#1})}
+% Aufruf mit \refeqn{label}
+
+%##########################################################################
+% Wort-Abkuerzungen:
+
+% \def\abkuerzung/{{text}}
+% Aufruf mit \abkuerzung/
+\def\MKS/{{Mehrk"orpersystem}}
+
+
+%##########################################################################
+% Textmodus
+%##########################################################################
+% Mathematischer Modus 
+
+% Masseinheiten
+\newcommand{\meh}[1]{~\mbox{#1}}
+% Aufruf mit \meh{einheit}
+% Zahlenmengen
+\newcommand{\realR}{{\Bbb{R}}}
+\newcommand{\integerN}{{\Bbb{N}}}
+\newcommand{\complexC}{{\Bbb{C}}}
+
+\newcommand{\fett}[1]{{\mathbf{#1}}}
+% Aufruf mit \realR, \integerN und \complexC
+
+
+%##########################################################################
+% Sonderumgebungen
+\newtheorem{definition}{Definition}[chapter]
+% Aufruf mit \begin{definition}[zusatz]  text  \end{definition}
+\newtheorem{satz}{Satz}[chapter]
+% Aufruf mit \begin{satz}[zusatz]  text  \end{satz}
+
+\theoremstyle{definition}
+\newtheorem{beispiel}{Beispiel}[chapter]
+% Aufruf mit \begin{beispiel}[zusatz]  text  \end{beispiel}
+\newtheorem{algorithmus}{Algorithmus}[chapter]
+% Aufruf mit \begin{algorithmus}[zusatz]  text  \end{algorithmus}
+\floatstyle{ruled}
+\newfloat{algorithm}{thp}{alg} 
+\floatname{algorithm}{Algorithmus}
+
+%###########################################################################
+% Bearbeitung von einzelnen Kapiteln
+
+%\includeonly{02Mission}
+
+%###########################################################################
+
+\begin{document}
+
+\include{00Cover}
+% Inhalt auf der rechten Seite beginnen
+\thispagestyle{empty}\cleardoublepage
+\evensidemargin=2pt
+\oddsidemargin=2pt
+
+% Zeilenabstand strecken
+\renewcommand{\baselinestretch}{1}\normalsize
+\pagenumbering{arabic}
+\include{01Glossary}
+\include{01Index}
+\include{02Mission}
+\include{03Operation}
+\include{04Subsystems}
+\include{05Lander}
+\include{06Trade-Offs}
+\include{07Risks}
+
+% Quellenverzeichnis über Citavi Anbindung
+
+\include{08Bibilography}
+
+% Wenn benötigt
+\include{09Appendix}
+\end{document}
+
+%##########################################################################
