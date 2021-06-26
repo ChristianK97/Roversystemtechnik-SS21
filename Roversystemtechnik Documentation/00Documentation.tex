@@ -8,11 +8,15 @@
 % Formatierungsoptionen & Dokumenteneinstellungen
 
 \documentclass[12pt,a4paper,twoside]{report}
+\usepackage[a4paper,left=2.5cm,right=2.5cm, top=2.4cm, bottom=3.2cm]{geometry}
+\usepackage[hang]{caption}
+\usepackage[font={small}]{caption}
 %\usepackage{ucs}
 \usepackage[utf8]{inputenc}
 % Standard Style-Files
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{a4}
+\usepackage[table,xcdraw]{xcolor}
 \usepackage{graphicx}
 \usepackage{algorithmic,algorithm}
 %\usepackage{subfigure}
@@ -22,9 +26,8 @@
 \usepackage{adjustbox}
 \usepackage{caption}
 \usepackage{lipsum} 
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks, linktoc = all]{hyperref}
 \usepackage{multirow}
-\usepackage[table,xcdraw]{xcolor}
 \usepackage{lscape}
 %\usepackage[official]{eurosym}
 \usepackage[gen]{eurosym}
@@ -42,6 +45,24 @@
 
 \interfootnotelinepenalty=10000
 
+%Clickable dots in TOC
+\usepackage{etoolbox}
+
+\makeatletter
+\pretocmd{\contentsline}
+  {\patchcmd{\@dottedtocline}
+     {\leaders}
+     {\hyper@linkstart{link}{#4}\leaders}
+     {}
+     {}%
+   \patchcmd{\@dottedtocline}
+     {\hfill}
+     {\hfill\hyper@linkend}
+     {}
+     {}}
+  {}
+  {}
+\makeatother
 
 \lstset{language=Matlab,%
 	basicstyle=\linespread{0.5}\tiny],
@@ -201,9 +222,10 @@
 
 % Zeilenabstand strecken
 \renewcommand{\baselinestretch}{1}\normalsize
-\pagenumbering{arabic}
+\pagenumbering{roman}
 \include{01Glossary}
 \include{01Index}
+\pagenumbering{arabic}
 \include{02Mission}
 \include{03Operation}
 \include{04Subsystems}
