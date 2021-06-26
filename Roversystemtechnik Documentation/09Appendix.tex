@@ -3,24 +3,47 @@
 % Anhang
 %
 %###########################################################################
-\begin{appendix}
-\label{chap:Appendix}
-\chapter{Appendix A}
-\setcounter{chapter}{1}
-\addcontentsline{toc}{chapter}{Appendix}
+%\begin{appendix}
+%\label{chap:Appendix}
+%\chapter{Appendix A}
+%\setcounter{chapter}{1}
+%\addcontentsline{toc}{chapter}{Appendix}
 %###########################################################################
 % Anhang A
 %###########################################################################
-\label{A}
-....
+%\label{A}
+%....
 
 
-\chapter{Appendix B}
+%\chapter{Appendix B}
 %###########################################################################
 % Anhang B
 %###########################################################################
-\label{B}
+%\label{B}
 
-\pagebreak
+%\pagebreak
 %###########################################################################
-\end{appendix}
+%\end{appendix}
+
+\renewcommand\thesection{\Alph{section}}
+
+\setcounter{section}{0}
+
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendix}
+
+\label{chap:Appendix}
+
+\section{Appendix 1}
+\label{sec:Appendix1}
+
+
+...
+
+
+\section{Appendix 2}
+\label{sec:Appendix2}
+
+...
+
+\cleardoublepage
