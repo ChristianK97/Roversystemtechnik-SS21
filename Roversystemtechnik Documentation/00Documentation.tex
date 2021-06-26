@@ -45,25 +45,6 @@
 
 \interfootnotelinepenalty=10000
 
-%Clickable dots in TOC
-\usepackage{etoolbox}
-
-\makeatletter
-\pretocmd{\contentsline}
-  {\patchcmd{\@dottedtocline}
-     {\leaders}
-     {\hyper@linkstart{link}{#4}\leaders}
-     {}
-     {}%
-   \patchcmd{\@dottedtocline}
-     {\hfill}
-     {\hfill\hyper@linkend}
-     {}
-     {}}
-  {}
-  {}
-\makeatother
-
 \lstset{language=Matlab,%
 	basicstyle=\linespread{0.5}\tiny],
     %basicstyle=\color{red},
