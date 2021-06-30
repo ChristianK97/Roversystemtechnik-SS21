@@ -28,7 +28,7 @@ The EPS (Electrical Power System) is the subsystem responsible for the electrica
 \begin{figure}[htb]
 {\centering
 \includegraphics[width=0.7\textwidth]{Media/epsflowchart}
-\caption{Functional Flow Chart for the EPS Subsystem}
+\caption{Functional Flow Chart Diagram for the EPS Subsystem.}
 \label{fig:epsflowchart}
 }
 \end{figure}
@@ -36,14 +36,17 @@ The EPS (Electrical Power System) is the subsystem responsible for the electrica
 \subsection{EPS Power Control and Distribution}
 
 \subsection{Energy Source}
-For the energy generation of INSPIRE many possible sources were taken into consideration a trade-off. The outcome of this trade-off is shown in \autoref{fig:epssourcetradeoff} for the most promising energy sources. As a conclusion of this trad-off the decision was made to utilize a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE.
+For the energy generation of INSPIRE many possible sources were taken into consideration a trade-off. The outcome of this trade-off is shown in \autoref{fig:epssourcetradeoff} for the most promising energy sources. As a conclusion of this trad-off the decision was made to utilize a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE. \\
+
+As the research couldn´t find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilized, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of 3 kg was defined and the eMMRTG was scaled down using the given data.
+In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a mass of 3 kg and a BOL specific power of 3.6 w/kg as well as a electrical power of 12.08 Watts during the mission duration and a thermal power of roughly 142.1 Watts.
 
 
 
 \begin{figure}[htb]
 {\centering
 \includegraphics[width=0.7\textwidth]{Media/epssourcetradeoff}
-\caption{Functional Flow Chart for the EPS Subsystem}
+\caption{Trade-Off Conclusion for the EPS Energy Source.}
 \label{fig:epssourcetradeoff}
 }
 \end{figure}
