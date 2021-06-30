@@ -36,6 +36,41 @@ The EPS (Electrical Power System) is the subsystem responsible for the electrica
 \subsection{EPS Power Control and Distribution}
 
 \subsection{Energy Source}
+For the energy generation of INSPIRE many possible sources were taken into consideration a trade-off. The outcome of this trade-off is shown in \autoref{fig:epssourcetradeoff} for the most promising energy sources. As a conclusion of this trad-off the decision was made to utilize a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE.
+
+
+
+\begin{figure}[htb]
+{\centering
+\includegraphics[width=0.7\textwidth]{Media/epssourcetradeoff}
+\caption{Functional Flow Chart for the EPS Subsystem}
+\label{fig:epssourcetradeoff}
+}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Scaled eSMMRTG Parameter}                \\ \hline
+Isotrop                                            & Pu-238   \\ \hline
+Isotrop Half-Life {[}a{]}                          & 87.7     \\ \hline
+Flight time and Storage incl. Margins  {[}a{]}     & 7        \\ \hline
+Begin of Life Power P\_el,BOL {[}W\_el{]}          & 14       \\ \hline
+Power Loss Degradation until BOM {[}W{]}           & 0.56     \\ \hline
+Begin of Mission Power P\_el,BOM {[}W\_el{]}       & 13.44    \\ \hline
+Europa Day Duration {[}h{]}                        & 85       \\ \hline
+Mission Duration {[}d{]}                           & 106.25   \\ \hline
+End of Mission Power P\_el,EOM {[}W\_el{]}         & 13.42    \\ \hline
+Final Power for Study P\_el {[}W\_el{]}            & 12.08    \\ \hline
+Design Point BOL Heat Generation Q\_HS {[}W\_Th{]} & 142.1053 \\ \hline
+BOL Specific Power {[}w\_el /kg{]}                 & 4.0      \\ \hline
+System Mass {[}kg{]}                               & 3.5      \\ \hline
+\end{tabular}
+\caption{Parameters for the scaled eSMMRTG based on the eMMRTG}
+\label{tab:esmmrtg}
+\end{table}
+
 
 \subsection{Energy Storage} 
 
