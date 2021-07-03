@@ -27,19 +27,17 @@ The EPS (Electrical Power System) is the subsystem responsible for the electrica
 
 \begin{figure}[htb]
 {\centering
-\includegraphics[width=0.7\textwidth]{Media/epsflowchart}
+\includegraphics[width=0.5\textwidth]{Media/epsflowchart}
 \caption{Functional Flow Chart Diagram for the EPS Subsystem.}
 \label{fig:epsflowchart}
 }
 \end{figure}
 
-\subsection{EPS Power Control and Distribution}
-
 \subsection{Energy Source}
-For the energy generation of INSPIRE many possible sources were taken into consideration a trade-off. The outcome of this trade-off is shown in \autoref{fig:epssourcetradeoff} for the most promising energy sources. As a conclusion of this trad-off the decision was made to utilize a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE. \\
+For the energy generation of INSPIRE many possible sources were taken into consideration for a trade-off. The outcome of this trade-off is shown in \autoref{fig:epssourcetradeoff} for the most promising energy sources. As a conclusion of this trad-off the decision was made to utilize a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE. \\
 
-As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilized, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of 3 kg was defined and the eMMRTG was scaled down using the given data.
-In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a mass of 3 kg and a BOL specific power of 3.6 w/kg as well as a electrical power of 12.08 Watts during the mission duration and a thermal power of roughly 142.1 Watts.
+As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilized, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of $m_\text{RTG}=3 \ \text{kg}$ was defined and the eMMRTG was scaled down using the given data.
+In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a mass of $m_\text{RTG}=3 \ \text{kg}$ and a BOL specific power of $\alpha_\text{BOL}= 4.0 \ \frac{W_{el}}{kg}$ and provides an electrical power of $P_{el} = 12.08 \ W_{el}$ during the mission duration.
 
 
 
@@ -56,27 +54,33 @@ In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scale
 \begin{tabular}{|c|c|}
 \hline
 \multicolumn{2}{|c|}{Scaled eSMMRTG Parameter}                \\ \hline
-Isotrop                                            & Pu-238   \\ \hline
-Isotrop Half-Life {[}a{]}                          & 87.7     \\ \hline
-Flight time and Storage incl. Margins  {[}a{]}     & 7        \\ \hline
-Begin of Life Power P\_el,BOL {[}W\_el{]}          & 14       \\ \hline
-Power Loss Degradation until BOM {[}W{]}           & 0.56     \\ \hline
-Begin of Mission Power P\_el,BOM {[}W\_el{]}       & 13.44    \\ \hline
-Europa Day Duration {[}h{]}                        & 85       \\ \hline
-Mission Duration {[}d{]}                           & 106.25   \\ \hline
-End of Mission Power P\_el,EOM {[}W\_el{]}         & 13.42    \\ \hline
-Final Power for Study P\_el {[}W\_el{]}            & 12.08    \\ \hline
-Design Point BOL Heat Generation Q\_HS {[}W\_Th{]} & 142.1053 \\ \hline
-BOL Specific Power {[}w\_el /kg{]}                 & 4.0      \\ \hline
-System Mass {[}kg{]}                               & 3.5      \\ \hline
+System Mass $m_\text{RTG}$ [kg]                             & $3.5$     \\ \hline
+BOL Specific Power $\alpha_\text{BOL}$ $\frac{W_{el}}{kg}$  & $4.0$     \\ \hline
+BOL Power $P_{el,\text{BOL}}$ $\ W_{el}$                    & $14$       \\ \hline
+Isotrop                                                     & Pu-238   \\ \hline
+Isotrop Half-Life [a]                                       & $87.7$     \\ \hline
+Flight time and Storage (incl. Margins) [a]                 & $7$        \\ \hline
+Power Loss Degradation until BOM $\ W_{el}$                 & $0.56$     \\ \hline
+BOM Power $P_{el,\text{BOM}}$ $\ W_{el}$                    & $13.44$    \\ \hline
+Europa Day Duration [h]                                     & $85$       \\ \hline
+Mission Duration [d]                                        & $106.25$   \\ \hline
+End of Mission Power $P_{el,\text{EOM}}$ $\ W_{el}$         & $13.42$   \\ \hline
+Final Power for Study $P_{el}$ $\ W_{el}$ (incl. Margins???) & $12.08$    \\ \hline
+
 \end{tabular}
 \caption{Parameters for the scaled eSMMRTG based on the eMMRTG}
 \label{tab:esmmrtg}
 \end{table}
 
+Furthermore INSPIRE will also be equipped with some radiation hardend solar arrays as already explained in \autoref{subsec:radhard}. Since these solar cells are primarily used for technology testing, the mission must also be able to operate completely without this generated energy. For this reason, and because the expected energy generated by the solar cells is minimal, only the energy generated by the RTG is considered for the Phase 0 Study. However, it should be noted that these solar cells will also generate a certain amount of energy, which will benefit the EPS.
+
 
 \subsection{Energy Storage} 
+For the energy storage of INSPIRE many possible battery types were taken into consideration for a trade-off. The outcome of this trade-off is shown in \textbf{REFXXX}. As a conclusion of this trad-off the decision was made to utilize LiIon batteries as the secondary batteries of INSPIRE. \\
 
+
+\subsection{EPS Power Control and Distribution}
+In order to ensure the full functionality of the EPS, the last main component to be selected is a suitable PCDU. As described in \autoref{fig:epsflowchart}, the PCDU forms the heart of the EPS and is also an important interface to the OBC and COMM.
 
 
 \clearpage
