@@ -79,7 +79,7 @@ Furthermore INSPIRE will also be equipped with some radiation hardend solar arra
 For the energy storage of INSPIRE many possible battery types were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilize LiIon batteries as the secondary batteries of INSPIRE. This decision is primarly based on LiIon batteries high energy density, temperature range, robust performance and long operating and cycle life in extreme environemnts. \\
 As the RTG only generates a small constant power the main energy source during the mission will be the accumulated energy of the batteries. The rover will charge the batteries at night, so the next exploration day can start with full capacity. Furthermore the batteries have to be charged during day time to maintain operations.\\
 
-For the sizing of the batteries, the rover motion was chosen as the design driver, since this is the highest energy consuming state of the rover and additionally mission critical for INSPIRE. The rover motion consists of an interaction of the Locomotion and Perception mode as already mentioned in \autoref{chap:Operation}. Therefore it was defined that INSPIRE shall be able to drive $ 50 \ m $ (including alternating Locomotion and Perception Mode) with a fully charged Battery. The required Battery Capacity $C_\text{Batt}$ can be caculated using \autoref{eq:batreq}. The results are listed in \autoref{tab:batsize}
+For the sizing of the batteries, the rover motion was chosen as the design driver, since this is the highest energy consuming state of the rover and additionally mission critical for INSPIRE. The rover motion consists of an interaction of the Locomotion and Perception mode as already mentioned in \autoref{chap:Operation}. Therefore it was defined that INSPIRE shall be able to drive $ 50 \ m $ (including alternating Locomotion and Perception Mode) with a fully charged Battery. The required Battery Capacity $C_\text{Batt,req}$ can be caculated using \autoref{eq:batreq}. The results are listed in \autoref{tab:batsize}.
 
 
 \begin{equation}
@@ -98,11 +98,53 @@ Duration of the mode$ t_e$ [s]                          & 500,00              & 
 $DOD$ for Dimensioning [-]                              & 0,90                & 0,90                \\ \hline
 Efficiency of LiIon Cells $\eta_\text{LiIon}$ [-]       & 0,95                & 0,95                \\ \hline
 Required Battery Capacity per mode $C_\text{mode}$ [Wh] & 46,04               & 68,27               \\ \hline
-Total Required Battery Capacity $C_\text{Batt}$ [Wh]    & \multicolumn{2}{c|}{114,32}               \\ \hline
+Total Required Battery Capacity $C_\text{Batt,req}$ [Wh]    & \multicolumn{2}{c|}{114,32}               \\ \hline
 \end{tabular}%
 }
 \caption{Power consumption mode used as design case for the battery sizing.}
 \label{tab:batsize}
+\end{table}
+
+Using these values a suitable battery cell and battery design configuration were conducted. Using these parameters the battery capacity $C_\text{Batt}$ can be calcuated:
+
+\begin{equation}
+C_\text{Batt} = C_\text{cell} \cdot V_\text{cell} \cdot N \cdot M .
+\label{eq:batuse}
+\end{equation}
+
+According to the ECSS reliability restrictions 1 battery string must be substracted for dimensionsing. Furthermore a $30 \%$ margin on the energy content was applied. This leads to a final battery configuration with a capacity of $C_\text{Batt}=138,88 \ Wh$ and a mass of $m = 1980 \ g$. The final battery values are listed in \autoref{eq:batuse}.
+
+
+\begin{table}[htb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|}
+\hline
+                                                                                                                                                                   & \textbf{}                                                  & \textbf{SAFT 176065 xlr}    \\ \hline
+                                                                                                                                                                   & Battery Configuration                                      & 4s3p                        \\ \cline{2-3} 
+                                                                                                                                                                   & Cells in Sereis $s$ N [-]                                  & 4                           \\ \cline{2-3} 
+\multirow{-3}{*}{\textbf{Configuration}}                                                                                                                           & Cells in Parallel $p$ M [-]                                & 3                           \\ \hline
+                                                                                                                                                                   & Typical Cell Capacity   [Ah]                               & 6,8                         \\ \cline{2-3} 
+                                                                                                                                                                   & Nominal Cell Voltage [V]                                   & 3,65                        \\ \cline{2-3} 
+                                                                                                                                                                   & Nominal Cell Capacity [Wh]                                 & 24,8                        \\ \cline{2-3} 
+                                                                                                                                                                   & Typical Cell Mass [kg]                                     & 0,15                        \\ \cline{2-3} 
+\multirow{-5}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Cell \\ Parameters\end{tabular}}}                                                                              & Energy Density [$Wh / kg $]                                & 165,33                      \\ \hline
+                                                                                                                                                                   & Battery Voltage $V_\text{Batt}$ [V]                        & 14,6                        \\ \cline{2-3} 
+                                                                                                                                                                   & Battery Nominal Capacity $E_\text{Batt}$ [Wh]              & 297,6                       \\ \cline{2-3} 
+                                                                                                                                                                   & Battery Mass [kg]                                          & 1,8                         \\ \cline{2-3} 
+\multirow{-4}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Actual\\  Battery \\ Configuration \\ Parameters\end{tabular}}}                                                & Battery Mass (incl. 10% Margin) [kg]                       & {\color[HTML]{000000} 1,98} \\ \hline
+                                                                                                                                                                   & Battery Configuration                                      & 4s2p                        \\ \cline{2-3} 
+                                                                                                                                                                   & Cells in Sereis $s$ N [-]                                  & 4                           \\ \cline{2-3} 
+                                                                                                                                                                   & Cells in Parallel $p$ M [-]                                & 2                           \\ \cline{2-3} 
+                                                                                                                                                                   & Battery Voltage $V_\text{Batt}$ [V]                        & 14,6                        \\ \cline{2-3} 
+                                                                                                                                                                   & Battery Nominal Capacity $E_\text{Batt}$ [Wh]              & 198,4                       \\ \cline{2-3} 
+                                                                                                                                                                   & $30\%$ Margin on Energy Content                            & 0,3                         \\ \cline{2-3} 
+                                                                                                                                                                   & Battery Nominal Capacity $E_\text{Batt}$ incl. Margin [Wh] & 138,88                      \\ \cline{2-3} 
+\multirow{-8}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Configruation \\ according to \\ ECSS \\ reliability\\  restrictions \\ and margins\\  included\end{tabular}}} & Useable Energy Density [$Wh / kg$]                         & 70,14                       \\ \hline
+\end{tabular}%
+}
+\caption{INSPIRE battery parameters.}
+\label{tab:battery}
 \end{table}
 
 
