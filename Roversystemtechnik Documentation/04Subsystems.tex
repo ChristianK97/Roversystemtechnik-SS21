@@ -152,48 +152,17 @@ According to the ECSS reliability restrictions 1 battery string must be substrac
 In order to ensure the full functionality of the EPS, the last main component to be selected is a suitable PCDU. As described in \autoref{fig:epsflowchart}, the PCDU forms the heart of the EPS and is also an important interface to the OBC and COMM. Furthermore the PCDU shall be able to monitor and control the rover system if necessary through watchdogs, HPC (High Priority Commands) and direct connections to the OBC and COMM.\\
 The PCDU has the challenging task not only to process the RTG as the main energy source, but also to process solar cells as secondary energy sources. Therefore, a PCDU was sought which has the required size, dimensions and range of functions. The research resulted in the Nova PCDU from Bradford DSI. In addition, margins were added to the PCDU to ensure feasibility.
 
-
 \clearpage
 
 \section{Radiation}
 \label{sec:Radiation}
 
-Compared to the radiation environment near Earth the radiation environment near Jupiter is multiple times stronger. It has the highest radiation levels of any planet in our solar systems \cite{Platzhalter}. In order to survive these harsh environmental conditions, special emphasis must be placed on the radiation protection. In \autoref{fig:trappedprotonelectronfluxes}, the average trapped proton and electron fluxes on Europa's orbit around Jupiter are shown in comparison to the outer Van Allen radiation belt around Earth. However, in contrast to the Van Allen radiation belt, the duration within the radiation environment on Europa cannot be minimised and the rover has to be designed to withstand the entire mission duration of 30 days.
-
-\begin{figure}[htb]
-     \centering
-     \begin{subfigure}[b]{0.475\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/E_Electron_Flux}
-         \caption{Average spectra of trapped electrons around Earth.}
-         \label{fig:trappedelectronsEarth}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.475\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/E_Proton_Flux}
-         \caption{Average spectra of trapped protons around Earth}
-         \label{fig:trappedprotonsEarth}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.475\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/J_Electron_Flux}
-         \caption{Average spectra of trapped electrons around Jupiter}
-         \label{fig:trappedelectronsJupiter}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.475\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/J_Proton_Flux}
-         \caption{Average spectra of trapped protons around Jupiter}
-         \label{fig:trappedprotonsJupiter}
-     \end{subfigure}
-        \caption{Average trapped proton and electron fluxes on an orbit around earth at 25,000 km, through the outer Van Allen radiation belt, and on Europa's orbit around Jupiter.}
-        \label{fig:trappedprotonelectronfluxes}
-\end{figure}
-
+Compared to the radiation environment near Earth the radiation environment near Jupiter is multiple times stronger. It has the highest radiation levels of any planet in our solar systems \cite{Platzhalter}. In order to survive these harsh environmental conditions, special emphasis must be placed on the radiation protection. In \autoref{fig:trappedprotonelectronfluxes}, the average trapped proton and electron fluxes on Europa's orbit around Jupiter are shown in comparison to the outer Van Allen radiation belt around Earth. However, in contrast to the Van Allen radiation belt, the duration within the radiation environment on Europa cannot be minimised and the rover has to be designed to withstand the entire mission duration of 30 days. \\ \\
 In oder to design and evaluate different radiation protection approaches, different calculations have to be performed. For this purpose the ESA SPace ENVironment Information System (SPENVIS) is used \cite{Platzhalter}. All calculations and figures in \autoref{sec:Radiation} are performed with SPENVIS unless otherwise stated.
+
+\subsection{xxx}
+
+\clearpage
 
 \section{Locomotion}
 \label{sec:locomotion}
