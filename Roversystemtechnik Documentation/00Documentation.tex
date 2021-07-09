@@ -24,6 +24,8 @@
 \usepackage[makeroom]{cancel}
 \usepackage[]{placeins}
 \usepackage{adjustbox}
+%Textbox: \begin{textblock*}{29mm}(45mm,80mm)-> h:45mm v:80 von oberen linken Ecke mit 29mm Breite, Höhe durch Inhalt. %Inhalt beliebig(Bilder,Text,..) 
+\usepackage[absolute]{textpos}
 \usepackage{caption}
 \usepackage{lipsum} 
 \usepackage[hidelinks, linktoc = all]{hyperref}
@@ -198,15 +200,26 @@
 
 \include{00Cover}
 % Inhalt auf der rechten Seite beginnen
-\thispagestyle{empty}\cleardoublepage
+
+
+\strut
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+  
 \evensidemargin=2pt
 \oddsidemargin=2pt
+
+
 
 % Zeilenabstand strecken
 \renewcommand{\baselinestretch}{1}\normalsize
 \pagenumbering{roman}
+
 \include{01Glossary}
 \include{01Index}
+
+
 \pagenumbering{arabic}
 \include{02Mission}
 \include{03Operation}
