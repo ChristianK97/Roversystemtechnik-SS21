@@ -125,6 +125,8 @@ All calculations and figures in \autoref{sec:AppendixRadiation} are performed wi
 
 %TODO welche Tools verwendet und welchen Orbit zum simulieren
 %TODO letzte Schicht Si
+%TODO slap statt squere ausgewählt wegen Eis
+%TODO wieviel mm von welchem Material
 
 \begin{figure}[htb]
      \centering
@@ -188,14 +190,15 @@ All calculations and figures in \autoref{sec:AppendixRadiation} are performed wi
 		Components	&	Rated TID	&	Exposed TID	&	Location\\
 	\midrule
 	
+	Electric Motors	&	-	&	< 205 krad	&	locomotion housing\\	
 	
-		&		&		& \\	
+	Harness	&	-	&	< 98 krad	&	chassis\\	
 	
+	Stereo Vision Cams	&	40	&	< 31 krad	&	camera housing\\	
 	
-		&		&	&	\\
+	OBC	&	1000	&	< 17 krad	&	E-Bay\\
 	
-	
-	 &		&	&	\\
+	PCDU	&	20	&	< 17 krad	&	E-Bay\\
 	
 
 	\bottomrule
@@ -204,6 +207,25 @@ All calculations and figures in \autoref{sec:AppendixRadiation} are performed wi
 \end{adjustbox}
 \label{tab:RadiationList}
 \end{table}
+
+\begin{figure}[htb]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/J_Electron_Compartments}
+         \caption{TID for Electrons as Source Particles for different compartments}
+         \label{fig:TIDElectronShielding}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/J_Proton_Compartments}
+         \caption{TID for Proton as Source Particles for different compartments}
+         \label{fig:TIDProtonShielding}
+     \end{subfigure}
+     \caption{TID for different compartments}
+     \label{fig:CompartmentTID}
+\end{figure}
 
 \clearpage
 
