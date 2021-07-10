@@ -315,11 +315,24 @@ Due to the mass savings of the optimised structure it will be used where the rad
 
 %TODO Auswahl 0.5 g/cm^2
 
-Every component on the rover has a different radiation tolerance and therefore have to be placed at different compartments within the rover. The radiation tolerances are listed in \autoref{tab:RadiationList}.
+Every component on the rover has a different radiation tolerance and therefore have to be placed at different compartments within the rover. The radiation tolerances are listed in \autoref{tab:RadiationList}. None sensitive components like the electric motors and harness are only shielded by an aluminium structure where components like the metal within the wire are resistant against the radiation. However, isolators around the cables have to be selected to be resistant in order to prevent short circuits. Highly sensitive components like cameras have an additional protective layer in order to reduce the TID to under 30 krad. Components which are within the rover like the on-board computer (OBC) are placed within the radiation vault which reduces the TID to under 20 krad. For this purpose the optimised shield structure with a weight target of 0.5 \(\text{g/cm}^2\) is used. Detailed TIDs for all components are shown in \autoref{Platzhalter}.
 
 \subsection{Improvements}
 
+Even though the radiation protection is sufficient for the rover to survive at least the nominal mission of 30 days, further improvements can be performed in order to extend the secondary mission. \\ \\
+Local shielding can be applied on less resistant components in order to reduce the wall thickness of the whole radiation wall. If components with a radiation tolerance under 30 krad are individually shielded a mass saving of xx \% can be achieved. Additionally, water ice extracted from the surface of Europa can be used to improve the radiation protection. With a layer of one centimetre of water, the TID within the radiation vault can be reduced by xx \%. \\ \\
+Detailed calculations for local shielding and water improvements can be found in \autoref{Platzhalter}.
+
 \subsection{Conclusion}
+
+In order to protect the rover against the high radiation levels at the surface of Europa, the rover has different compartments. High sensible components are placed within a radiation vault which has a mass optimised structure. Components which has to be outside the radiation vault but are highly sensible are shielded individually. Low sensible Components are protected by the Aluminium structure. \autoref{fig:RadiationOverview} illustrates the different compartments within the rover and the accorded TIDs.
+
+\begin{figure}[htb]
+     \centering
+     \includegraphics[width=\textwidth]{Media/RadiationOverview}
+     \caption{Overview of TIDs within different compartments within the rover.}
+     \label{fig:RadiationOverview}
+\end{figure}
 
 \clearpage
 
