@@ -2347,10 +2347,21 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">References</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="2">Platzhalter</bcf:citekey>
-    <bcf:citekey order="3">Platzhalter</bcf:citekey>
-    <bcf:citekey order="4">Platzhalter</bcf:citekey>
-    <bcf:citekey order="5">Platzhalter</bcf:citekey>
+    <bcf:citekey order="2">R.Abelsonetal..2004</bcf:citekey>
+    <bcf:citekey order="3">S.Magdum.2019</bcf:citekey>
+    <bcf:citekey order="4">Holgate.2015</bcf:citekey>
+    <bcf:citekey order="5">eMMRTG.NASA</bcf:citekey>
+    <bcf:citekey order="6">Lakdawalla.2018</bcf:citekey>
+    <bcf:citekey order="7">FraunhoferInstituteforSolarEnergySystemsISE.2021</bcf:citekey>
+    <bcf:citekey order="8">IRSatUniversityofStuttgart.2020</bcf:citekey>
+    <bcf:citekey order="9">S.Klinkner.2021</bcf:citekey>
+    <bcf:citekey order="10">SAFTBatteries.2018</bcf:citekey>
+    <bcf:citekey order="11">BradfordSpace.2019</bcf:citekey>
+    <bcf:citekey order="12">Platzhalter</bcf:citekey>
+    <bcf:citekey order="13">Platzhalter</bcf:citekey>
+    <bcf:citekey order="14">Platzhalter</bcf:citekey>
+    <bcf:citekey order="15">Platzhalter</bcf:citekey>
+    <bcf:citekey order="16">SAFTBatteries.2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
