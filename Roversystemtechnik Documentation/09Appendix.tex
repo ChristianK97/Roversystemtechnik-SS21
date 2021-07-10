@@ -26,9 +26,10 @@
 %\end{appendix}
 
 \renewcommand\thesection{\Alph{section}}
-
-\renewcommand\thefigure{\thesection.\arabic{figure}}
+\renewcommand\thefigure{\thesection\arabic{figure}}
+\renewcommand{\thetable}{\thesection\arabic{table}}
 \setcounter{figure}{0}
+\setcounter{table}{0}
 \setcounter{section}{0}
 
 \chapter*{Appendix}
@@ -42,7 +43,6 @@
 All calculations and figures in \autoref{sec:AppendixRadiation} are performed with SPENVIS unless otherwise stated.
 
 %TODO welche Tools verwendet und welchen Orbit zum simulieren
-%TODO warum nur electronen
 %TODO letzte Schicht Si
 
 \begin{figure}[htb]
@@ -96,6 +96,33 @@ All calculations and figures in \autoref{sec:AppendixRadiation} are performed wi
      \caption{TID of aluminium, titanium, and the optimised radiation structure shown in \autoref{tab:OptimalRadiationProtection} with an weight target of 0.5 \(\text{g/cm}^2\) over 30 days of exposure on Europa}
      \label{fig:AluminiumTitanOptimised}
 \end{figure}
+
+\begin{table}[htb]
+\centering
+\caption{Material properties from Galinstan, as well as mercury and water as comparison values at 20 \textit{°C}}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}[l]{lccccc}
+
+	\toprule
+		Components	&	TID	&	Location\\
+	\midrule
+	
+	
+		&		&	 \\	
+	
+	
+		&		&	\\
+	
+	
+	 &		&	\\
+	
+
+	\bottomrule
+
+\end{tabular}
+\end{adjustbox}
+\label{tab:RadiationList}
+\end{table}
 
 \clearpage
 
