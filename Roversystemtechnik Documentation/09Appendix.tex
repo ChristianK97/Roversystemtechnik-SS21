@@ -78,6 +78,32 @@ with:
 
 \subsection{Heat conductance}
 
+\subsection{Heat switch}
+The charateristic of the switch conductance depends on the mean temperature $T_M$, defined in \cite.
+As this temperature won´t be calculated in the analysis, the corresponding component temperature $T_C$ shall be used.
+In order to describe the characteristic, it was diveded in three sections, \autoref{fig:tcs_switch03}.
+The temperature where the disk decouples is $T_{toggle}=108 K$ and not applicable for the current application.
+By reducing the heigt, the toggle temperature can be increased.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c@{\qquad}rcl@{\qquad}l}
+		\hline
+		Section & \multicolumn{3}{l}{Temperature range} & Hear conductance \\ \hline
+		1 & $T_{toggle} >$ & $ T_C  $ & & $R_t= 16.4 \cdot 10^-3 \frac{W}{m^2 K} = const.$\\[1em]
+		2 & $T_{toggle}\leq$ & $ T_C $ & $ < T_1$ & $R_t (T_C) = a_{1.1} \cdot T_C+ a_{1.2}$\\[1em]
+		3 & & 	$ T_C$ & $^ > T_1$ & $R_t (T_C) = a_{2.1} \cdot T_C+ a_{2.2}$\\\hline
+	\end{tabular}
+	\caption{Sections and range of the switch characteristic.}
+	\label{tab:tcs_section}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Media/tcs_diag_section}
+	\caption{Switch characteristic diveded in sections.}
+	\label{fig:tcs_switch03}
+\end{figure}
 
 \subsection{Values}
 \begin{table}[htb]
@@ -99,7 +125,7 @@ with:
 		Drive Gear & -40 & 100 \\ \hline
 	\end{tabular}
 	\caption{Temperatur limits of the rover components.}
-	\label{tab:tsc_limits}
+	\label{tab:tcs_limits}
 \end{table}
 
 \begin{table}[htb]
@@ -112,7 +138,7 @@ with:
 		White paint & & & & & \\
 	\end{tabular}
 	\caption{Minimum and maximum of surface emisivity and absorptivity values.}
-	\label{tab:tsc_surface}
+	\label{tab:tcs_surface}
 \end{table}
 
 
