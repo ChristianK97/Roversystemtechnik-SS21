@@ -37,6 +37,87 @@
 
 \label{chap:Appendix}
 
+%-------------------------------------------------
+\section{Thermal Controls System} \label{sec:AppendixThermal}
+%-------------------------------------------------
+\subsection{Heat energy eqilibrium}
+
+\underline{RTG:}
+\[ \dot{Q}_{} = 0  \]\\[2em]
+
+% \dot{Q}_{}
+\underline{Electric Bay:}
+\[ \dot{Q}_{B,intern}+ CON1 \cdot (T_{RTG}-T_{Bay})+ CON3 \cdot (T_{Chassis}-T_{Bay})  -\epsilon_{alloy}\cdot \sigma_b \cdot S_{Bay}\cdot T_{Bay}^4=0 \]
+with: 
+\[\dot{Q}_{B,intern} = \dot{Q}_{C\&DH} + \dot{Q}_{Tranceiver} +\dot{Q}_{Receiver} +\dot{Q}_{PCDU} \] \\[2em]
+
+\underline{Drill \& Analyser:}
+\[ \dot{Q}_{} = 0  \]\\[2em]
+
+\underline{Camera:}
+\[ \dot{Q}_{} = 0  \]\\[2em]
+
+\underline{Radiator:}
+\[ \dot{Q}_{} = 0  \]\\[2em]
+
+\underline{Chassis:}
+\[ \dot{Q}_{} = 0  \]\\[2em]
+
+\underline{Steer Enine:}
+\[ \dot{Q}_{} = 0  \]\\[2em]
+
+\underline{Distribution Node 1:}
+\[ \dot{Q}_{} = 0  \]\\[2em]
+
+\underline{Drive Engine:}
+\[ \dot{Q}_{} = 0  \]\\[2em]
+
+\underline{Distribution Node 1:}
+\[ \dot{Q}_{} = 0  \]\\[2em]
+
+
+\subsection{Heat conductance}
+
+
+\subsection{Values}
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{lcc}
+		\hline
+		 & \multicolumn{2}{l}{Temperature limits in [$^\circ C$]} \\ 
+		Component	&	min. & max. \\\hline
+		Command \& Data Handling & & \\
+		Transmitter & -10 & 50 \\
+		Receiver & -30 & 70 \\
+		PCDU & -40 & 60 \\
+		Battery & -35 & 60 \\
+		Camera & -40 & 70 \\
+		Objektive  & -40 & 71 \\
+		Steering Engine & -30 & 100 \\
+		Steering Gear & -30 & 85 \\
+		Drive Engine & -40 & 100 \\
+		Drive Gear & -40 & 100 \\ \hline
+	\end{tabular}
+	\caption{Temperatur limits of the rover components.}
+	\label{tab:tsc_limits}
+\end{table}
+
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{lccccc}
+		\hline
+		& \multicolumn{2}{l}{Emisivity [-]} & \multicolumn{2}{l}{Absorptivity [-]}& Source  \\ 
+		Surface finishing	&	min. & max. 	&	min. & max.  & \\\hline
+		Sand blasted alloy & & & & & \\
+		White paint & & & & & \\
+	\end{tabular}
+	\caption{Minimum and maximum of surface emisivity and absorptivity values.}
+	\label{tab:tsc_surface}
+\end{table}
+
+
+
+
 \section{Radiation}
 \label{sec:AppendixRadiation}
 

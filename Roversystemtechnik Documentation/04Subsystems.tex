@@ -20,26 +20,28 @@
 %-------------------------------------------------------------------------------
 \section{Thermal Control System} \label{sec:thermalcontrol}
 %-------------------------------------------------------------------------------
-
-As a result of Europas low ground temperature ($T_G=130 K$) and small solar constant ($100 \frac{W}{m^2}$) the main object of the Thermal Control System (TSC) is to avoid heat loss of the rover.
+The main object of the Thermal Control System (TSC) is to keep the eletric components within their temperature limits, listed in \autoref{tab:tsc_limits}.
+As a result of Europas low ground temperature, a small solar constant and the thin atmosphere the heat loss of the rover has to bin minimised.
 This shall be reached by a smart heat distribution as well as by an adequate insulation and surface finishing.
 \\
 The main heat source of the rover is the waste heat of the RTG (see \autoref{sec:EPS}), which will be lead by thermal straps to the thermal critical components.
-For the insulation, the material \textit{aerogel} will be applied, which has a very low heat conductivity ($\lambda_{aerogel}\approx 0.05 \frac{W}{m^2K}$) and has also been used in space applications ([]).
+The camera, exposed on a mast, will be heated by a seperat Radioisotope Heater Unit (RHU), cite{RHU}. % https://rps.nasa.gov/power-and-thermal-systems/thermal-systems/light-weight-radioisotope-heater-unit/
+For the insulation, the material \textit{aerogel} will be applied, which has a very low heat conductivity (cite aerogel) and has also been used in space applications (cite{aerogel}).
 The overheating of the rover shall be prevented by heat switches (see \autoref{fig:tsc_switch01}).
 These components change their heat conductivity beyond a certain temperatur due to the expansion of the disk (see \autoref{fig:tsc_switch02}).
 It was assumed, that the toggle temperatur can be adapted by increasing the disk height.
-The measured heat conductivity characterisitc was divided in three linear sections (\autoref{fig:tsc_switch22}), which were implemented in the thermal calculation.
+The influence of the changed disk stiffens on the contact pressure and the heat conductivity was neglected for this study.
+The measured heat conductivity characterisitc was divided in three linear sections (\autoref{fig:tsc_switch22}), to enable a simple modelling in the upcoming thermal calculation.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
-	\subfloat[Closed]{\includegraphics[height=0.2\textwidth]{Media/tsc_switch_01.png}\label{fig:tsc_switch11}}\qquad\qquad
-	\subfloat[Open]{\includegraphics[height=0.2\textwidth]{Media/tsc_switch_02.png}\label{fig:tsc_switch12}}
+	\subfloat[Closed]{\includegraphics[height=0.17\textwidth]{Media/tsc_switch_01.png}\label{fig:tsc_switch11}}\qquad\qquad
+	\subfloat[Open]{\includegraphics[height=0.17\textwidth]{Media/tsc_switch_02.png}\label{fig:tsc_switch12}}
 	\caption{Heat switch.}
 	\label{fig:tsc_switch01}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\subfloat[Original]{\includegraphics[height=0.25\textwidth]{Media/tsc_diag_orig.png}\label{fig:tsc_switch21}}\qquad
 	\subfloat[Linearised]{\includegraphics[height=0.25\textwidth]{Media/tsc_diag_lin}\label{fig:tsc_switch22}}
@@ -47,22 +49,19 @@ The measured heat conductivity characterisitc was divided in three linear sectio
 	\label{fig:tsc_switch02}
 \end{figure}
 
-In order to get the necessary 
 
-The aim of the thermal analysis was to define the necessary insulation and heat paths, the amount of the RHU and the surface finishing to keep all components within their given temperatur range.
-For that a thermal network with ten nodes was derived from the rover, shown im \autoref{fig:tsc_network}.
-Due to the early state of the rover, simplifications and asumptions were made to determine the heat resistance between the particular nodes.
+A thermal analysis, which was performed to get
+\begin{itemize}
+	\item the dimension of the isnulation and heat straps,
+	\item the necessary amount of RHUs and heat switches,
+	\item the required surface finishing.
+\end{itemize}
 
-The following assumptions and simplifications were made.
 
-%\begin{itemize}
-%	\item The whole electrical power of the components will be dissipated into heat.
-%	\item A variation of $\pm 20\%$ for the emisivity and absorpsivity values were considered if applicable (seet tab ???).
-%	\item The heat as a result of retardation radiation was neglected.
-%	\item The E-Bay emitts heat energy only in one direction to the chassis.
-%	\item No absorbtion for the steering and dirve engine were considered.
-%	\item The ice core drill and the APXS analyser were summerised as one single node.
-%\end{itemize}
+
+For that, a thermal network with ten nodes was derived from the rover, shown in \autoref{fig:tsc_network}.
+At the intersection of the steering and drive engien, two additional nodes were defined to calculate the heat flow.
+
 
 \begin{figure}[H]
 	\centering
@@ -70,6 +69,30 @@ The following assumptions and simplifications were made.
 	\caption{Thermal network of the rover.}
 	\label{fig:tsc_network}
 \end{figure}
+
+On the basis of the thermal network, the heat energy equlibrium for each node was defined (see \autoref{sec:AppendixThermal}).
+The calculation were considered as a quasi-static analysis, were the component temperatures stay constant, $\frac{\text{d}T}{\text{d}t}=0$.
+Due to the early state of the rover, simplifications and asumptions were made.
+\begin{itemize}
+	\item The convection was neglected due to the thin atmosphere.
+	\item The whole electrical power of the components will be dissipated into heat.
+	\item A variation of $\pm 20\%$ for the emisivity and absorpsivity values were considered, if applicable (seet \autoref{tab:tsc_surface}).
+	\item The heat as a result of retardation radiation inside the shielding was neglected.
+	\item The E-Bay emitts heat energy only in one direction to the chassis.
+	\item Only the chassis and the camera absorb sun radiation.
+	\item The ice core drill and the APXS analyser were summerised as one single node.
+	\item The thermal resistance between two surfaces was neglected because of the lack of necessary values. Therfore, the heat conductivity was reduced about $10\%$.
+	\item There is no heat loss of the thermal straps.
+\end{itemize}
+
+
+
+The thermal analysis was perfomred as a Excel calculation, which can be found in the corresponding folder of Team 3.
+There were different load cases defined not only to cover the most important hot and cold cases but also some relevant operating cases.
+
+
+
+
 
 %\begin{table}[H]
 %	\centering
@@ -90,14 +113,6 @@ The following assumptions and simplifications were made.
 %	\caption{Description of thermal nodes.}
 %	\label{tab:tsc_nodes}
 %\end{table}
-
-The modeling of each single heat resistance is shown in apendix ???.
-
-The calculation were considered as a quasi-static analysis, were the component temperatures stay constant: $\frac{\text{d}T}{\text{d}t}=0$.
-
-The thermal analysis was perfomred as a Excel calculation, which can be found in the corresponding folder of Team 3.
-
-There were different load cases defined not only to cover the most important hot and cold cases but also some relevant operating cases.
 
 The results of the temperatures for each node at each load case are listed in autoref{tab:}.
 The temperature margins for uncertainties, acceptance tests and qulification tests were considered with $5 K$ each, $\pm 15K$ in total.
