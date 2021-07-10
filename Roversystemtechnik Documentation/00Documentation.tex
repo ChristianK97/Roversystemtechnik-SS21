@@ -100,15 +100,16 @@
 \patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{\vspace*{-1.5cm}}{}{}% Removes space above \chapter* head
 \makeatother
 
-\makeatletter
-\def\@figcaption{%
-  \refstepcounter{figure}%
-  \@dblarg{\@caption{figure}}}
-\newcommand{\figcaption}[1]{
-  \vspace{-0.6cm}
-  \@figcaption[#1]{#1 \vspace{-0.6cm}}
-}
-\makeatother
+%% Nur benötig, falls man in einer longtable figures mit caption integrieren will
+%\makeatletter
+%\def\@figcaption{%
+%  \refstepcounter{figure}%
+%  \@dblarg{\@caption{figure}}}
+%\newcommand{\figcaption}[1]{
+%  \vspace{-0.6cm}
+%  \@figcaption[#1]{#1 \vspace{-0.6cm}}
+%}
+%\makeatother
 
 %Inhaltsverzeichnis, Abbildungsverzeichnis, Tabellenverzeichnis hoch
 \usepackage{tocloft}
