@@ -126,33 +126,56 @@ In a furher step, a more detailed analysis has to be carried out with the Finite
 
 \section{Electrical Power System}
 \label{sec:EPS}
-The EPS (Electrical Power System) is the subsystem responsible for the electrical power supply of INSPIRE. It consists of four funadmental parts, which are the energy source, the PCDU unit (Power Control and Distribution)and the Energy Storage as well as the rover subsystems as the consumers.
-
-\subsection{EPS Budget and Overview}
+The EPS (Electrical Power System) is the subsystem responsible for the electrical power supply of INSPIRE. It consists of four funadmental parts, which are the energy source, the PCDU unit (Power Control and Distribution)and the Energy Storage as well as the rover subsystems as the consumers. The EPS is visualized in \autoref{fig:epsflowchart}.
 
 \begin{figure}[htb]
 {\centering
-\includegraphics[width=0.5\textwidth]{Media/epsflowchart}
+\includegraphics[width=0.7\textwidth]{Media/epsflowchart}
 \caption{Functional Flow Chart Diagram for the EPS Subsystem.}
 \label{fig:epsflowchart}
 }
 \end{figure}
 
+\subsection{EPS Budget and Overview}
+\autoref{tab:powbud} summarizes the power budget of INSPIRE based on the rover system modes defined in \autoref{chap:rovsubmod}. The complete power budget can be found in \autoref{tab:powerbudgetcomplete}.
+As can be seen, the Locomotion mode has the highest demands on the EPS. Communication mode also has a high consumption. However, since this is primarily used at night and the rover can be charged again afterwards without any problems, it does not place any major restrictions on the power budget. Idle/Perception mode has a low consumption, but is usually used for a long time at a stretch and therefore also places high demands on the EPS. In Charging mode, the EPS is able to charge $7.04 \ W_{el} $.
+
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Rover System Mode} & \textbf{\begin{tabular}[c]{@{}c@{}}Total Rover \\ Power Demand \\ including battery charge $P_\text{mode}$ [$W_{el}$]\end{tabular}} \\ \hline
+Idle/Perception            & $15.25$                                                                                                                             \\ \hline
+Safe/Hibernation           & $-5.84$                                                                                                                             \\ \hline
+Communication              & $36.92$                                                                                                                             \\ \hline
+Charging                   & $-7.04$                                                                                                                             \\ \hline
+Locomotion                 & $232.36$                                                                                                                            \\ \hline
+Payload: Observation       & $15.41$                                                                                                                             \\ \hline
+Payload: Ice Core Mode     & $9.77$                                                                                                                              \\ \hline
+\end{tabular}
+\caption{Overview of the Power Budget of INSPIRE.}
+\label{tab:powbud}
+\end{table}
+
+
 \subsection{Energy Source}
-For the energy generation of INSPIRE many possible sources were taken into consideration for a trade-off. The outcome of this trade-off is shown in \autoref{fig:epssourcetradeoff} for the most promising energy sources. As a conclusion of this trad-off the decision was made to utilize a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE. \\
-
-As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilized, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of $m_\text{RTG}=3 \ \text{kg}$ was defined and the eMMRTG was scaled down using the given data.
-In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a mass of $m_\text{RTG}=3 \ \text{kg}$ and a BOL specific power of $\alpha_\text{BOL}= 4.0 \ \frac{W_{el}}{kg}$ and provides an electrical power of $P_{el} = 12.08 \ W_{el}$ during the mission duration.
-
+For the energy generation of INSPIRE many possible sources were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilize a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE.\\
+As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilized, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of $m_\text{RTG}=3 \ \text{kg}$ was defined and the eMMRTG was scaled down using the given data.\\
+In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a BOL specific power of $\alpha_\text{BOL}= 4.0 \ \frac{W_{el}}{kg}$ and provides an electrical power of $P_{el} = 12.08 \ W_{el}$ during the mission duration\cite{R.Abelsonetal..2004}\cite{S.Magdum.2019}\cite{Holgate.2015}\cite{eMMRTG.NASA}\cite{Lakdawalla.2018}.
 
 
-\begin{figure}[htb]
-{\centering
-\includegraphics[width=0.7\textwidth]{Media/epssourcetradeoff}
-\caption{Trade-Off Conclusion for the EPS Energy Source.}
-\label{fig:epssourcetradeoff}
-}
-\end{figure}
+
+%The outcome of this trade-off is shown in \autoref{fig:epssourcetradeoff} for the most promising energy sources. 
+
+%
+%\begin{figure}[htb]
+%{\centering
+%\includegraphics[width=0.7\textwidth]{Media/epssourcetradeoff}
+%\caption{Trade-Off Conclusion for the EPS Energy Source.}
+%\label{fig:epssourcetradeoff}
+%}
+%\end{figure}
 
 \begin{table}[H]
 \centering
@@ -177,91 +200,51 @@ End of Mission Power $P_{el,\text{EOM}}$ [$\ W_{el}$]         & $13.42$   \\ \hl
 \label{tab:esmmrtg}
 \end{table}
 
-Furthermore INSPIRE will also be equipped with some radiation hardend solar arrays as already explained in \autoref{subsec:radhard}. Since these solar cells are primarily used for technology testing, the mission must also be able to operate completely without this generated energy. For this reason, and because the expected energy generated by the solar cells is minimal, only the energy generated by the RTG is considered for the Phase 0 Study. However, it should be noted that these solar cells will also generate a certain amount of energy, which will benefit the EPS.
+Furthermore INSPIRE will also be equipped with some radiation hardend solar arrays as already explained in \autoref{subsec:radhard}\cite{FraunhoferInstituteforSolarEnergySystemsISE.2021}. Since these solar cells are primarily used for technology testing, the mission must also be able to operate completely without this generated energy. For this reason, and because the expected energy generated by the solar cells is minimal, only the energy generated by the RTG is considered for the Phase 0 Study. However, it should be noted that these solar cells will also generate a certain amount of energy, which will benefitial for the EPS.
 
 
 \subsection{Energy Storage} 
-For the energy storage of INSPIRE many possible battery types were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilize LiIon batteries as the secondary batteries of INSPIRE. This decision is primarly based on LiIon batteries high energy density, temperature range, robust performance and long operating and cycle life in extreme environemnts. \\
+For the energy storage of INSPIRE many possible battery types were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilize LiIon batteries as the secondary batteries of INSPIRE. This decision is primarly based on LiIon batteries high energy density, temperature range, robust performance and long operating and cycle life in extreme environments\cite{IRSatUniversityofStuttgart.2020}. \\
 As the RTG only generates a small constant power the main energy source during the mission will be the accumulated energy of the batteries. The rover will charge the batteries at night, so the next exploration day can start with full capacity. Furthermore the batteries have to be charged during day time to maintain operations.\\
-
-For the sizing of the batteries, the rover motion was chosen as the design driver, since this is the highest energy consuming state of the rover and additionally mission critical for INSPIRE. The rover motion consists of an interaction of the Locomotion and Perception mode as already mentioned in \autoref{chap:Operation}. Therefore it was defined that INSPIRE shall be able to drive $ 50 \ m $ (including alternating Locomotion and Perception Mode) with a fully charged Battery. The required Battery Capacity $C_\text{Batt,req}$ can be caculated using \autoref{eq:batreq}. The results are listed in \autoref{tab:batsize}.
+For the sizing of the batteries, the rover motion was chosen as the design driver, since this is the highest energy consuming state of the rover and additionally mission critical for INSPIRE. The rover motion consists of an interaction of the Locomotion and Perception mode as already mentioned in \autoref{chap:Operation}. Therefore it was defined that INSPIRE shall be able to drive $ 50 \ m $ (including alternating Locomotion and Perception Mode) with a fully charged Battery. The required battery capacity $C_\text{Batt,req}$ can be caculated using \autoref{eq:batreq}. The results are listed in \autoref{tab:batsize} \cite{S.Klinkner.2021}.
 
 
 \begin{equation}
-C_\text{Batt} = \frac{P_\text{el,req} \cdot t_e }{DoD \cdot \eta_\text{LiIon}}
+C_\text{Batt,req} = \frac{P_\text{el,req} \cdot t_e }{DoD \cdot \eta_\text{LiIon}}
 \label{eq:batreq}
 \end{equation}
 
 \begin{table}[htb]
 \centering
-\resizebox{\textwidth}{!}{%
+
 \begin{tabular}{|l|c|c|}
 \hline
 \textbf{Power Consumption Mode:}                        & \textbf{Locomotion} & \textbf{Perception} \\ \hline
 Required Electrical Power $P_\text{el,req}$ [$W_{el}$]         & 283.43              & 14.01               \\ \hline
-Duration of the mode$ t_e$ [$s$]                          & 500              & 15000            \\ \hline
+Duration of the mode $t_e$ [$s$]                          & 500              & 15000            \\ \hline
 $DOD$ for Dimensioning [-]                              & 0.90                & 0.90                \\ \hline
 Efficiency of LiIon Cells $\eta_\text{LiIon}$ [-]       & 0.95                & 0.95                \\ \hline
 Required Battery Capacity per mode $C_\text{mode}$ [$Wh$] & 46.04               & 68.27               \\ \hline
 \textbf{Total Required Battery Capacity} $C_\text{Batt,req}$ [$Wh$]    & \multicolumn{2}{c|}{\textbf{114.32}}               \\ \hline
-\end{tabular}%
-}
+\end{tabular}
+
 \caption{Power consumption mode used as design case for the battery sizing.}
 \label{tab:batsize}
 \end{table}
 
-Using these values a suitable battery cell and battery design configuration were conducted. Using these parameters the battery capacity $C_\text{Batt}$ can be calcuated:
+Using these values a suitable battery cell and battery design configuration were conducted. Under consideration of these parameters the battery capacity $C_\text{Batt}$ can be calcuated:
 
 \begin{equation}
 C_\text{Batt} = C_\text{cell} \cdot V_\text{cell} \cdot N \cdot M .
 \label{eq:batuse}
 \end{equation}
 
-According to the ECSS reliability restrictions 1 battery string must be substracted for dimensionsing. Furthermore a $30 \%$ margin on the energy content was applied. This leads to a final battery configuration with a capacity of $C_\text{Batt}=138,88 \ Wh$ and a mass of $m = 1980 \ g$. The final battery values are listed in \autoref{eq:batuse}.
-
-
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-\begin{table}[htb]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|}
-\hline
-\multicolumn{2}{|c|}{\textbf{SAFT 176065 xlr}}                                                                \\ \hline
-\multicolumn{2}{|c|}{\textbf{Configuration:}}                                                                 \\ \hline
-Battery Configuration                                                           & $4s3p$                        \\ \hline
-Cells in Sereis $s$ N [-]                                                       & $4$                           \\ \hline
-Cells in Parallel $p$ M [-]                                                     & $3$                           \\ \hline
-\multicolumn{2}{|c|}{\textbf{Cell Parameters:}}                                                               \\ \hline
-Typical Cell Capacity   [$Ah$]                                                    & $6.8$                         \\ \hline
-Nominal Cell Voltage [$V$]                                                        & $3.65$                        \\ \hline
-Nominal Cell Capacity [$Wh$]                                                      & $24.8$                        \\ \hline
-Typical Cell Mass [$kg$]                                                          & $0.15$                        \\ \hline
-Energy Density [$Wh/kg$]                                                     & $165.33$                      \\ \hline
-\multicolumn{2}{|c|}{\textbf{Actual Battery Configuration Parameters:}}                                       \\ \hline
-Battery Voltage $V_\text{Batt}$ [V]                                             & $14.6$                        \\ \hline
-Battery Nominal Capacity $E_\text{Batt}$ [$Wh$]                                   & $297.6$                       \\ \hline
-Battery Mass [$kg$]                                                               & $1.8$                         \\ \hline
-\textbf{Battery Mass} (incl. $10\%$ Margin) [$kg$]                                         & \textbf{1.98}                        \\ \hline
-\multicolumn{2}{|c|}{\textbf{Configruation according to ECSS reliability restrictions and margins included:}} \\ \hline
-Battery Configuration                                                           & $4s2p$                        \\ \hline
-Cells in Sereis $s$ N [-]                                                       & $4$                           \\ \hline
-Cells in Parallel $p$ M [-]                                                     & $2$                           \\ \hline
-Battery Voltage $V_\text{Batt}$ [$V$]                                             & $14.6 $                       \\ \hline
-Battery Nominal Capacity $E_\text{Batt}$ [$Wh$]                                   & $198.4$                       \\ \hline
-$30\%$ Margin on Energy Content                                                 & $0.3$                         \\ \hline
-\textbf{Battery Nominal Capacity} $E_\text{Batt}$ incl. Margin [$Wh$]                      & \textbf{138.88}                      \\ \hline
-Useable Energy Density [$Wh/kg$]                                              & $70.14$                       \\ \hline
-\end{tabular}%
-}
-\caption{INSPIRE battery parameters.}
-\label{tab:battery}
-\end{table}
+According to the ECSS reliability restrictions 1 battery string must be substracted for dimensionsing. Furthermore a $30 \%$ margin on the energy content was applied. This leads to a final battery configuration with a capacity of $C_\text{Batt}=138,88 \ Wh$ and a mass of $m_\text{Batt} = 1980 \ g$. The final battery values are listed in \autoref{tab:battery} \cite{SAFTBatteries.2018}.
 
 
 \subsection{EPS Power Control and Distribution}
-In order to ensure the full functionality of the EPS, the last main component to be selected is a suitable PCDU. As described in \autoref{fig:epsflowchart}, the PCDU forms the heart of the EPS and is also an important interface to the OBC and COMM. Furthermore the PCDU shall be able to monitor and control the rover system if necessary through watchdogs, HPC (High Priority Commands) and direct connections to the OBC and COMM.\\
-The PCDU has the challenging task not only to process the RTG as the main energy source, but also to process solar cells as secondary energy sources. Therefore, a PCDU was sought which has the required size, dimensions and range of functions. The research resulted in the Nova PCDU from Bradford DSI. In addition, margins were added to the PCDU to ensure feasibility.
+In order to ensure the full functionality of the EPS, the last main component to be selected is a suitable PCDU. As described in \autoref{fig:epsflowchart}, the PCDU forms the heart of the EPS and is an important interface to the OBC and COMM. Furthermore the PCDU shall be able to monitor and control the rover system if necessary through watchdogs, HPC (High Priority Commands) and direct connections to the OBC and COMM.\\
+The PCDU has the challenging task not only to process the RTG as the main energy source, but also to process solar cells as secondary energy sources. Therefore, a PCDU was sought which has the required size, dimensions and range of functions. The research resulted in the Nova PCDU from Bradford DSI. In addition, margins were added to the PCDU to ensure feasibility\cite{BradfordSpace.2019}.
 
 \clearpage
 
@@ -319,7 +302,7 @@ Every component on the rover has a different radiation tolerance and therefore h
 
 Even though the radiation protection is sufficient for the rover to survive at least the nominal mission of 30 days, further improvements can be performed in order to extend the secondary mission. \\ \\
 Local shielding can be applied on less resistant components in order to reduce the wall thickness of the whole radiation wall. If components with a radiation tolerance under 30 krad are individually shielded a mass saving of xx \% can be achieved. Additionally, water ice extracted from the surface of Europa can be used to improve the radiation protection. With a layer of one centimetre of water, the TID within the radiation vault can be reduced by xx \%. \\ \\
-Detailed calculations for local shielding and water improvements can be found in \autoref{Platzhalter}.
+Detailed calculations for local shielding and water improvements can be found in \autoref{Platzhalter} and may be analysed further in Phase B.
 
 \subsection{Conclusion}
 
