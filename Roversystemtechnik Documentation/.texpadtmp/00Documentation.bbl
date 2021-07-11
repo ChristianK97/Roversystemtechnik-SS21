@@ -1,0 +1,285 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{FraunhoferInstituteforSolarEnergySystemsISE.2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={{Fraunhofer Institute for Solar Energy Systems ISE}},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{RadHard Project Website}}
+    \verb{url}
+    \verb \url{https://radhard.org/}
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{R.Abelsonetal..2004}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{R. Abelson et al.}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=N}{%
+         family={{NASA JPL}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{JPL Pub 04-10}
+    \field{title}{{Enabling Exploration with Small Radioisotope Power Systems}}
+    \field{year}{2004}
+  \endentry
+
+  \entry{S.Magdum.2019}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{S. Magdum}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=W}{%
+         family={{Western Michigan University}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Model Based Development of The Enhanced Multi-Mission
+  Radioisotope Thermoelectric Generator and Effect of Thermoelectric Element
+  Length on eMMRTG}}
+    \verb{url}
+    \verb \url{http://homepages.wmich.edu/~leehs/ME539/Final%20Presentation%20o
+    \verb n%20eMMRTG.pdf}
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{Holgate.2015}{article}{}
+    \name{author}{6}{}{%
+      {{hash=HTC}{%
+         family={Holgate},
+         familyi={H\bibinitperiod},
+         given={Tim\bibnamedelima C.},
+         giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bennett},
+         familyi={B\bibinitperiod},
+         given={Russell},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hammel},
+         familyi={H\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Caillat},
+         familyi={C\bibinitperiod},
+         given={Thierry},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Keyser},
+         familyi={K\bibinitperiod},
+         given={Steve},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sievers},
+         familyi={S\bibinitperiod},
+         given={Bob},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HTCBRHTCTKSSB1}
+    \strng{fullhash}{HTCBRHTCTKSSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb \url{10.1007/s11664-014-3564-9}
+    \endverb
+    \field{issn}{0361-5235}
+    \field{number}{6}
+    \field{pages}{1814\bibrangedash 1821}
+    \field{pagination}{page}
+    \field{title}{{Increasing the Efficiency of the Multi-mission Radioisotope
+  Thermoelectric Generator}}
+    \field{volume}{44}
+    \field{journaltitle}{{Journal of Electronic Materials}}
+    \field{year}{2015}
+  \endentry
+
+  \entry{eMMRTG.NASA}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{JPL NASA}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=N}{%
+         family={{NASA JPL}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Enhanced Multi-Mission Radioisotope Thermoelectric Generator
+  (eMMRTG) Concept}}
+    \verb{url}
+    \verb \url{https://rps.nasa.gov/resources/56/enhanced-multi-mission-radiois
+    \verb otope-thermoelectric-generator-emmrtg-concept/}
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{Lakdawalla.2018}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LE}{%
+         family={Lakdawalla},
+         familyi={L\bibinitperiod},
+         given={Emily},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer International Publishing}}%
+    }
+    \strng{namehash}{LE1}
+    \strng{fullhash}{LE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb \url{10.1007/978-3-319-68146-7}
+    \endverb
+    \field{isbn}{978-3-319-68144-3}
+    \field{title}{{The Design and Engineering of Curiosity}}
+    \list{location}{1}{%
+      {Cham}%
+    }
+    \field{year}{2018}
+  \endentry
+
+  \entry{IRSatUniversityofStuttgart.2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{S. Fasoulas et al.}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Lecture Series: Energy Systems for Space Application SS
+  2020}}
+    \list{institution}{1}{%
+      {{IRS at University of Stuttgart}}%
+    }
+    \field{year}{2020}
+  \endentry
+
+  \entry{S.Klinkner.2021}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=S}{%
+         family={{S. Klinkner}},
+         familyi={S\bibinitperiod},
+      }}%
+      {{hash=P}{%
+         family={{P. Winterhalder}},
+         familyi={P\bibinitperiod},
+      }}%
+      {{hash=M}{%
+         family={{M.Nitz et al.}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPM1}
+    \strng{fullhash}{SPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Lecture Series - Rover System Technology SS2021}}
+    \list{institution}{1}{%
+      {{IRS at University of Stuttgart}}%
+    }
+    \field{year}{2021}
+  \endentry
+
+  \entry{SAFTBatteries.2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{SAFT Batteries}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S3}
+    \strng{fullhash}{S3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Datasheet - SAFT MP 176065 xlr}}
+    \verb{url}
+    \verb \url{https://www.saftbatteries.com/products-solutions/products/mp-sma
+    \verb ll-vl}
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{BradfordSpace.2019}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bradford Space}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=B}{%
+         family={{BRADFORD ENGINEERING BV}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Datasheet - Nova PCDU}}
+    \verb{url}
+    \verb \url{https://satsearch.co/products/bradford-nova-pcdu}
+    \endverb
+    \field{year}{2019}
+  \endentry
+\enddatalist
+\endinput
