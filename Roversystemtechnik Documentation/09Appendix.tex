@@ -82,49 +82,66 @@ Useable Energy Density [$Wh/kg$]                                              & 
 }
 \end{figure}
 
-
+\clearpage
 %-------------------------------------------------
 \section{Thermal Controls System} \label{sec:AppendixThermal}
 %-------------------------------------------------
 \subsection{Heat energy eqilibrium}
+The follwing equiations describe each node of the thermal network.
+The input values were tanken from EPS or from \autoref{sec:app_therm_2}, \autoref{sec:app_therm_3}, \autoref{sec:app_therm_4}.\\
 
 \underline{RTG:}
-\[ \dot{Q}_{} = 0  \]\\[2em]
+\[\dot{Q}_{RTG} +CON_1 \cdot (T_{Bay}-T_{RTG})+CON_2 \cdot (T_{Chassis}-T_{RTG})+CON_5 \cdot (T_{Drill}-T_{RTG})-\]
+\[ - \epsilon_{RTG}\cdot \sigma_b \cdot S_{RTG}\cdot T_{RTG}^4= 0 \]\\
 
+
+% CON \cdot (T_{}-T_{Node_2})
+% CON \cdot (T_{}-T_{})
 % \dot{Q}_{}
+% \epsilon_{}\cdot \sigma_b \cdot S_{}\cdot T_{}^4
+
 \underline{Electric Bay:}
-\[ \dot{Q}_{B,intern}+ CON1 \cdot (T_{RTG}-T_{Bay})+ CON3 \cdot (T_{Chassis}-T_{Bay})  -\epsilon_{alloy}\cdot \sigma_b \cdot S_{Bay}\cdot T_{Bay}^4=0 \]
+\[ \dot{Q}_{Bay}+ CON_1 \cdot (T_{RTG}-T_{Bay})+ CON_3 \cdot (T_{Chas}-T_{Bay})  -\epsilon_{Bay}\cdot \sigma_b \cdot S_{Bay}\cdot T_{Bay}^4=0 \]
 with: 
-\[\dot{Q}_{B,intern} = \dot{Q}_{C\&DH} + \dot{Q}_{Tranceiver} +\dot{Q}_{Receiver} +\dot{Q}_{PCDU} \] \\[2em]
+\[\dot{Q}_{B,intern} = \dot{Q}_{C\&DH} + \dot{Q}_{Tranceiver} +\dot{Q}_{Receiver} +\dot{Q}_{PCDU} \] \\
 
 \underline{Drill \& Analyser:}
-\[ \dot{Q}_{} = 0  \]\\[2em]
+\[ \dot{Q}_{Drill} +CON_4 \cdot (T_{Chas}-T_{Drill})+CON_5 \cdot (T_{RTG}-T_{Drill}) = 0  \]\\
 
 \underline{Camera:}
-\[ \dot{Q}_{} = 0  \]\\[2em]
+\[ \dot{Q}_{Cam} + \dot{Q}_{RHU} +CON_6 \cdot (T_{Chas}-T_{Cam})+(CON_{14} +n_{S1}\cdot CON_{S1}) \cdot (T_{Rad}-T_{Cam}) -\]
+\[ - \epsilon_{Cam}\cdot \sigma_b \cdot S_{Cam}\cdot T_{Cam}^4= 0  \]\\
 
 \underline{Radiator:}
-\[ \dot{Q}_{} = 0  \]\\[2em]
+\[  (CON_{14} +n_{S1}\cdot CON_{S1}) \cdot (T_{Cam}-T_{Rad}) - \epsilon_{Rad}\cdot \sigma_b \cdot S_{Rad}\cdot T_{Rad}^4= 0  \]\\
 
 \underline{Chassis:}
-\[ \dot{Q}_{} = 0  \]\\[2em]
+\[ \dot{Q}_{Radar}+\dot{Q}_{Hazcam}  +CON_2 \cdot (T_{RTG}-T_{Chas})+CON_3 \cdot (T_{Bay}-T_{Chas})+\]
+
+\[+CON_4 \cdot (T_{Drill}-T_{Chas})+ CON_6 \cdot (T_{Cam}-T_{Chas})+CON_7 \cdot (T_{Node_1}-T_{Chas}) +\]
+
+\[ + \alpha_{Chas}\cdot [ q_{Sun} \cdot (1+\rho_E) \cdot (S_{Chas1} \cdot \varphi_1  +S_{Chas2} \cdot \varphi_2 ) +   \epsilon_{E} \cdot \sigma_b \cdot S_{Chas3}\cdot T_{Surface}^4 ]-\]
+
+\[-\epsilon_{Chas}\cdot \sigma_b \cdot S_{Chas}\cdot T_{Chas}^4=0 \] \\[1em]
+
 
 \underline{Steer Enine:}
-\[ \dot{Q}_{} = 0  \]\\[2em]
+\[ 4\cdot [\dot{Q}_{E,S} +(CON_8 +n_{S2}\cdot CON_{S2}) \cdot (T_{Node1}-T_{E,S})+CON_9 \cdot (T_{RTG}-T_{E,S}) -\epsilon_{E,S}\cdot \sigma_b \cdot S_{E,S}\cdot T_{E,S}^4]=0 \] \\
+
 
 \underline{Distribution Node 1:}
-\[ \dot{Q}_{} = 0  \]\\[2em]
+\[ 4\cdot [CON_7 \cdot (T_{Chas}-T_{Node_1})+CON_8 \cdot (T_{E,S}-T_{Node_1})+CON_10 \cdot (T_{Node_2}-T_{Node_1})] = 0  \]\\
 
 \underline{Drive Engine:}
-\[ \dot{Q}_{} = 0  \]\\[2em]
+\[ 4 \cdot [\dot{Q}_{E,D}+ (CON_{11}+n_{S3}\cdot CON_{S3}) \cdot (T_{Node_2}-T_{E,D})+ CON_{12} \cdot (T_{RTG}-T_{E,D})-\epsilon_{E,D}\cdot \sigma_b \cdot S_{E,D}\cdot T_{E,D}^4 ] = 0  \]\\
 
-\underline{Distribution Node 1:}
-\[ \dot{Q}_{} = 0  \]\\[2em]
+\underline{Distribution Node 2:}
+\[ 4 \cdot [CON_{10} \cdot (T_{Node_1}-T_{Node_2})+CON_{11} \cdot (T_{E,D}-T_{Node_2})+CON_{13} \cdot (T_{Ground}-T_{Node_2})  ] = 0  \]\\
 
 
-\subsection{Heat conductance}
+\subsection{Heat conductance} \label{sec:app_therm_2}
 
-\subsection{Heat switch}
+\subsection{Heat switch} \label{sec:app_therm_3}
 The charateristic of the switch conductance depends on the mean temperature $T_M$, defined in \cite.
 As this temperature won´t be calculated in the analysis, the corresponding component temperature $T_C$ shall be used.
 In order to describe the characteristic, it was diveded in three sections, \autoref{fig:tcs_switch03}.
@@ -151,7 +168,17 @@ By reducing the heigt, the toggle temperature can be increased.
 	\label{fig:tcs_switch03}
 \end{figure}
 
-\subsection{Values}
+\subsection{Rover absorptivity} \label{sec:app_therm_4}
+The amount of solar radiation onto the rover depends on the sun altitude, see autoref(fig:tcsabsop).
+
+
+
+
+View Factor 1, Inclination: \quad $ \varphi_1=\cos (\lambda) \cdot \cos (\delta)  $ \\
+View Factor 2, Declination: \quad $ \varphi_2=\cos (90^{\circ}-\lambda) \cdot \cos (\delta)  $
+
+
+\subsection{Values} \label{sec:app_therm_5}
 \begin{table}[htb]
 	\centering
 	\begin{tabular}{lcc}
@@ -173,6 +200,14 @@ By reducing the heigt, the toggle temperature can be increased.
 	\caption{Temperatur limits of the rover components.}
 	\label{tab:tcs_limits}
 \end{table}
+
+The Europas ground temperature varies at the  equator between $T_{e,min}=80K$ and $T_{e,max}=130 K$, depending on the sun inclination.
+The temperature at the pole is $T_{Pole}=50K$, cite(europa).
+It was assumed, that the ground temperature depends on the sun altitude.
+A trigonometrical interpolation was defined as follows.
+\[ T_{Ground}(\lambda, \delta) = T_{Pole} + \cos (\delta) \cdot [(T_{e,min}+\cos (\lambda)\cdot (T_{e,max}-T_{e,min}))-T_{Pole}] \]
+For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.
+
 
 \begin{table}[htb]
 	\centering

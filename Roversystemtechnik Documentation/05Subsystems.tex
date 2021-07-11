@@ -79,8 +79,9 @@ Due to the early state of the rover, simplifications and asumptions were made.
 	\item A variation of $\pm 20\%$ for the emisivity and absorpsivity values were considered, if applicable (seet \autoref{tab:tcs_surface}).
 	\item The heat as a result of retardation radiation inside the shielding was neglected.
 	\item The E-Bay emitts heat energy only in one direction to the chassis.
-	\item Only the chassis and the camera absorb sun radiation.
+	\item Only the chassis and the camera absorb sun radiation, detailed description see \autoref{sec:app_therm_4}.
 	\item The ice core drill and the APXS analyser were summerised as one single node.
+	\item There aren't dicrete nodes for the radar, hazcams and deployment engines. Their heat will be lead into the chassis.
 	\item The thermal resistance between two surfaces was neglected because of the lack of necessary values. Therfore, the heat conductivity was reduced about $10\%$.
 	\item There is no heat loss of the thermal straps.
 \end{itemize}
@@ -123,8 +124,9 @@ All temperature lay betwenn their limits.
 In a furher step, a more detailed analysis has to be carried out with the Finite-Element-Method to identify the correct heat and temperature distribution.\\
 
 \clearpage
-
+%-------------------------------------------------------------------------------
 \section{Electrical Power System}
+%-------------------------------------------------------------------------------
 \label{sec:EPS}
 The EPS (Electrical Power System) is the subsystem responsible for the electrical power supply of INSPIRE. It consists of four funadmental parts, which are the energy source, the PCDU unit (Power Control and Distribution)and the Energy Storage as well as the rover subsystems as the consumers. The EPS is visualized in \autoref{fig:epsflowchart}.
 
@@ -135,6 +137,7 @@ The EPS (Electrical Power System) is the subsystem responsible for the electrica
 \label{fig:epsflowchart}
 }
 \end{figure}
+
 
 \subsection{EPS Budget and Overview}
 \autoref{tab:powbud} summarizes the power budget of INSPIRE based on the rover system modes defined in \autoref{chap:rovsubmod}. The complete power budget can be found in \autoref{tab:powerbudgetcomplete}.
@@ -247,9 +250,9 @@ In order to ensure the full functionality of the EPS, the last main component to
 The PCDU has the challenging task not only to process the RTG as the main energy source, but also to process solar cells as secondary energy sources. Therefore, a PCDU was sought which has the required size, dimensions and range of functions. The research resulted in the Nova PCDU from Bradford DSI. In addition, margins were added to the PCDU to ensure feasibility\cite{BradfordSpace.2019}.
 
 \clearpage
-
-\section{Radiation}
-\label{sec:Radiation}
+%-------------------------------------------------------------------------------
+\section{Radiation} \label{sec:Radiation}
+%-------------------------------------------------------------------------------
 
 Compared to the radiation environment near Earth the radiation environment near Jupiter is multiple times stronger. It has the highest radiation levels of any planet in our solar systems \cite{Platzhalter}. In order to survive these harsh environmental conditions, special emphasis must be placed on the radiation protection. In \autoref{fig:trappedprotonelectronfluxes}, the average trapped proton and electron fluxes on Europa's orbit around Jupiter are shown in comparison to the outer Van Allen radiation belt around Earth. However, in contrast to the Van Allen radiation belt, the duration within the radiation environment on Europa cannot be minimised and the rover has to be designed to withstand the entire mission duration of 30 days. \\ \\
 In oder to design and evaluate different radiation protection approaches, different calculations have to be performed. For this purpose the ESA SPace ENVironment Information System (SPENVIS) is used \cite{Platzhalter}. All calculations and figures in \autoref{sec:Radiation} are performed with SPENVIS unless otherwise stated.
@@ -317,12 +320,14 @@ In order to protect the rover against the high radiation levels at the surface o
 
 \clearpage
 
-\section{Locomotion}
-\label{sec:locomotion}
+%-------------------------------------------------------------------------------
+\section{Locomotion} \label{sec:locomotion}
+%-------------------------------------------------------------------------------
 
+\subsection{Deployment mechanism}
 
-
-\section{Control and Autonomy}
-\label{sec:ControlandAutonomy}
+%-------------------------------------------------------------------------------
+\section{Control and Autonomy} \label{sec:ControlandAutonomy}
+%-------------------------------------------------------------------------------
 
 \cleardoublepage

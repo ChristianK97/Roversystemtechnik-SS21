@@ -17,6 +17,24 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{FraunhoferInstituteforSolarEnergySystemsISE.2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={{Fraunhofer Institute for Solar Energy Systems ISE}},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{RadHard Project Website}}
+    \verb{url}
+    \verb \url{https://radhard.org/}
+    \endverb
+    \field{year}{2021}
+  \endentry
+
   \entry{R.Abelsonetal..2004}{misc}{}
     \name{author}{1}{}{%
       {{hash=R}{%
@@ -174,24 +192,6 @@
       {Cham}%
     }
     \field{year}{2018}
-  \endentry
-
-  \entry{FraunhoferInstituteforSolarEnergySystemsISE.2021}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=F}{%
-         family={{Fraunhofer Institute for Solar Energy Systems ISE}},
-         familyi={F\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{F1}
-    \strng{fullhash}{F1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{RadHard Project Website}}
-    \verb{url}
-    \verb \url{https://radhard.org/}
-    \endverb
-    \field{year}{2021}
   \endentry
 
   \entry{IRSatUniversityofStuttgart.2020}{misc}{}
