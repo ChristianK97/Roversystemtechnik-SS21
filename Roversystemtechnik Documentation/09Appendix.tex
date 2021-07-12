@@ -142,20 +142,26 @@ with:
 \subsection{Heat conductance} \label{sec:app_therm_2}
 
 \subsection{Heat switch} \label{sec:app_therm_3}
-The charateristic of the switch conductance depends on the mean temperature $T_M$, defined in \cite.
+The charateristic of the switch conductance depends on the mean temperature $T_M$, shown by measurements in cite .
 As this temperature won´t be calculated in the analysis, the corresponding component temperature $T_C$ shall be used.
 In order to describe the characteristic, it was diveded in three sections, \autoref{fig:tcs_switch03}.
 The temperature where the disk decouples is $T_{toggle}=108 K$ and not applicable for the current application.
-By reducing the heigt, the toggle temperature can be increased.
+By reducing the heigt, the toggle temperature can be increased and the characteristic can be shifted to higher termperatures ("'to the right"').
+It was assumed, that the gradients of section 2 and 3 as well as the temperature range of section 2 keep constant.
+The axis interseption is a function the toggle temperature ($a_2=f(\Delta T_{toggle}),\ \Delta T_{Toggle}=T_{new}-T_{old}|_{toggle}$).
 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{c@{\qquad}rcl@{\qquad}l}
 		\hline
-		Section & \multicolumn{3}{l}{Temperature range} & Hear conductance \\ \hline
-		1 & $T_{toggle} >$ & $ T_C  $ & & $R_t= 16.4 \cdot 10^-3 \frac{W}{m^2 K} = const.$\\[1em]
-		2 & $T_{toggle}\leq$ & $ T_C $ & $ < T_1$ & $R_t (T_C) = a_{1.1} \cdot T_C+ a_{1.2}$\\[1em]
-		3 & & 	$ T_C$ & $^ > T_1$ & $R_t (T_C) = a_{2.1} \cdot T_C+ a_{2.2}$\\\hline
+		Section & \multicolumn{3}{l}{Temperature range} & Hear conductance $C_t= \frac{1}{R_t}$ \\ \hline
+		1 & $T_{toggle} >$ & $ T_C  $ & & $C_{t,1}= 16.4 \cdot 10^{-3} \frac{W}{m^2 K} = const.$\\[1em]
+		2 & $T_{toggle}\leq$ & $ T_C $ & $ < T_1$ & $C_{t,2} (T_C) = a_{1.1} \cdot T_C+ a_{1.2}$\\[1em]
+		  & & & & $a_{1.1}= +1.272\cdot 10^{-3} \frac{W}{m^2 K^2}$ \\[1em]
+		  & & & & $  a_{1.2}= -1.272\cdot 10^{-3} \frac{W}{m^2 K^2}\cdot \Delta T_{Toggle}-0.117 \frac{W}{m^2 K}$  \\[2em]
+		3 & & 	$ T_C$ & $^ > T_1$ & $C_{t,3}(T_C) = a_{2.1} \cdot T_C+ a_{2.2}$\\[1em]
+		& & & & $a_{2.1}=+ 333\cdot 10^{-6} \frac{W}{m^2 K^2}$ \\[1em]
+		& & & & $  a_{2.2}= -333\cdot 10^{-6} \frac{W}{m^2 K^2}\cdot \Delta T_{Toggle}-28.3 \cdot 10^{-3} \frac{W}{m^2 K}$  \\[1em]\hline
 	\end{tabular}
 	\caption{Sections and range of the switch characteristic.}
 	\label{tab:tcs_section}
@@ -171,11 +177,15 @@ By reducing the heigt, the toggle temperature can be increased.
 \subsection{Rover absorptivity} \label{sec:app_therm_4}
 The amount of solar radiation onto the rover depends on the sun altitude, see autoref(fig:tcsabsop).
 
+\begin{table}[H]
+	\begin{tabular}{l@{\qquad}l}
+		View Factor 1, Inclination:& $ \varphi_1=\cos (\lambda) \cdot \cos (\delta)  $ \\
+		View Factor 2, Declination:&$ \varphi_2=\cos (90^{\circ}-\lambda) \cdot \cos (\delta)  $\\
+	\end{tabular}
+\end{table}
 
 
 
-View Factor 1, Inclination: \quad $ \varphi_1=\cos (\lambda) \cdot \cos (\delta)  $ \\
-View Factor 2, Declination: \quad $ \varphi_2=\cos (90^{\circ}-\lambda) \cdot \cos (\delta)  $
 
 
 \subsection{Values} \label{sec:app_therm_5}
@@ -221,6 +231,54 @@ For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.
 	\caption{Minimum and maximum of surface emisivity and absorptivity values.}
 	\label{tab:tcs_surface}
 \end{table}
+
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{lccc}
+		\hline
+		Material & Nominal & Used & Source \\ \hline
+		Aerogel & 0.002 - 0.05 & 0.05 & \\
+		Aluminium & 236 & 236 & \\
+		Copper$^{2)}$ &  400 & 360 & \\
+		Steel$^{2)}$ & 21 - 50 & 21 & \\ \hline
+		& & & \\
+		\multicolumn{4}{l}{\small{$^{1)}$\ a reduction of 10\% was considered}}\\
+		\multicolumn{4}{l}{\small{$^{2)}$\ depends on the alloying component, a conservative value was choosen }}\\
+	\end{tabular}
+	\caption{Heat conductivity in $\frac{W}{mK}$}
+	\label{tab:tcs_conduct2}
+\end{table}
+
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{lcc}
+		\hline
+		Part & Description & Value $m^2$  \\ \hline
+		
+	\end{tabular}
+	\caption{Surface of components}
+	\label{tab:tcs_surf}
+\end{table}
+
+%\begin{table}[H]
+%	\centering
+%	\begin{tabular}{llll}
+%		\hline
+%		Node & Description &  Connection & Suface  \\ \hline
+%		RTG & & &   \\ 
+%		Electric bay & & &   \\ 
+%		Drill \& Analyser & & &   \\ 
+%		Camera & & &   \\ 
+%		Radiator & & &   \\ 
+%		Chassis & & &   \\ 
+%		Distributio Node 1 & & &   \\ 
+%		Steering Engine & & &   \\ 
+%		Distributio Node 2 & & &   \\
+%		Drive Engine & & &   \\  
+%	\end{tabular}
+%	\caption{Description of thermal nodes.}
+%	\label{tab:tcs_nodes}
+%\end{table}
 
 \clearpage
 

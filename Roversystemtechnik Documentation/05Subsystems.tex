@@ -83,7 +83,7 @@ Due to the early state of the rover, simplifications and asumptions were made.
 	\item The ice core drill and the APXS analyser were summerised as one single node.
 	\item There aren't dicrete nodes for the radar, hazcams and deployment engines. Their heat will be lead into the chassis.
 	\item The thermal resistance between two surfaces was neglected because of the lack of necessary values. Therfore, the heat conductivity was reduced about $10\%$.
-	\item There is no heat loss of the thermal straps.
+	\item There is no heat loss of the thermal straps. This can be compensated by increasing the cross section.
 \end{itemize}
 
 
@@ -95,31 +95,30 @@ There were different load cases defined not only to cover the most important hot
 
 The thermal analysis was perfomred as a Excel calculation, which can be found in the corresponding folder of Team 3.
 
-%\begin{table}[H]
-%	\centering
-%	\begin{tabular}{llll}
-%		\hline
-%		Node & Description &  Connection & Suface  \\ \hline
-%		RTG & & &   \\ 
-%		Electric bay & & &   \\ 
-%		Drill \& Analyser & & &   \\ 
-%		Camera & & &   \\ 
-%		Radiator & & &   \\ 
-%		Chassis & & &   \\ 
-%		Distributio Node 1 & & &   \\ 
-%		Steering Engine & & &   \\ 
-%		Distributio Node 2 & & &   \\
-%		Drive Engine & & &   \\  
-%	\end{tabular}
-%	\caption{Description of thermal nodes.}
-%	\label{tab:tcs_nodes}
-%\end{table}
 
-The results of the temperatures for each node at each load case are listed in autoref{tab:}.
+
+The results of the temperatures for each node at each for the hot and cold cases  are listed in autoref{tab:}.
 The temperature margins for uncertainties, acceptance tests and qulification tests were considered with $5 K$ each, $\pm 15K$ in total.
 The corresponding temperatures are listed in autoref{tab:}.
 All temperature lay betwenn their limits.
 
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{l@{\qquad\qquad}cc@{\qquad}|@{\qquad}cc}
+		\hline
+		Components & \multicolumn{4}{c}{Load Case}   \\ \hline
+		 & \multicolumn{2}{l}{Hot case} & \multicolumn{2}{l}{Cold case} \\
+		  & $0K$ & $+15 K$ & $0K$ & $-15 K$ \\ \hline
+		RTG  & 380 & 395 & 350 & 335   \\
+		Electric Bay & 310 & 325 & 261 & 246  \\
+		Drill \& Analyser & & & &  \\
+		Camera & & & &  \\
+		Steering Engine & & & &  \\
+		Drive Engine & & & &  \\   \hline
+	\end{tabular}
+	\caption{Temperature results in $K$ of thermal analysis.}
+	\label{tab:tcs_temp}
+\end{table}
 
 In a furher step, a more detailed analysis has to be carried out with the Finite-Element-Method to identify the correct heat and temperature distribution.\\
 
