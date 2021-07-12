@@ -30,7 +30,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: 00Documentation-blx.bib
 Database file #2: References.bib
 Warning--I didn't find a database entry for "Platzhalter"
-Warning--I didn't find a database entry for "."
 Biblatex version: 3.13
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -75,4 +74,4 @@ warning$ -- 0
 while$ -- 719
 width$ -- 0
 write$ -- 270
-(There were 2 warnings)
+(There was 1 warning)
