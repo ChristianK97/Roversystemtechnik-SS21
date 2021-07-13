@@ -15,16 +15,16 @@
 The Communications and C\&DH subsystem is responsible for the execution of Telecommand and Telemetry as well as payload data storing and transmission. Therefore the system consists of a pair of redundant Transmitter and Receiver as well as a redundant Single Board Computer OBC. The subsystem is located within the Electronic Bay.
 
 \subsection{Communication System}
-Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 24 dB high gain antenna [Missing Reference] and a low gain antenna which is not further specified in literature.\\
+Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a $25 dB$ high gain antenna [Missing Reference] and a low gain antenna which is not further specified in literature.\\
 
-The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations reveal that a transmission the LGA of the Europa Lander still produces a link margin of $17.14 dB$. This leaves a Bit Error Rate of less than $10^{-6}$.\\
+The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations reveal that a transmission to the LGA of the Europa Lander produces a link margin of $17.14 dB$, resulting in a Bit Error Rate of less than $10^{-6}$.\\
 
 Using the Landers LGA greatly increases robustness due to the elimination of pointing errors and higher margin for rover positioning error. Additionally, the INSPIRE rover’s communication link would not interfere with the Landers communication to the relay carrier by blocking the HGA. The link budget has been performed under the conservative considerations listed in Table [Missing Reference]. The complete link budget can be found in Appendix [Missing Reference]. 
 
 \subsubsection{Component Selection}
 
-Due to the considerably high link margin the focus is on low mass and low power components with flight heritage such as flown on CubeSat missions. Criteria with relatively small impact on the link budget such as component noise or even FEC have not been taken into account. Ideally the rover communication uses X-Band for increased compatibility with the lander and has a total system mass of less than 1 kg. \\
-Since radiation hardness was not included in most dataheets a total dose of $<20 krad$ was assumed in accordance with values for LEO [Missing Reference]. Please refer to the trade off [Missing Reference].
+Due to the considerably high link margin the focus is on low mass and low power components with flight heritage such as flown on CubeSat missions. Criteria with relatively small impact on the link budget such as component noise or even FEC have not been taken into account. Ideally the rover communication uses X-Band for increased compatibility with the lander and has a total system mass of less than $1 kg$. \\
+Since radiation hardness was not included in most dataheets a total dose of $<20 krad$ was assumed in accordance with values for LEO [Missing Reference].
 
 \subsubsection{Transmitter}
 
