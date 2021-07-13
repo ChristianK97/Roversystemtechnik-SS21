@@ -143,9 +143,15 @@
 }
 \addto\extrasenglish{%
 \def\subsectionautorefname{Subsection}%
-}  
+}
+% Auf Appendix im Text referenzieren: statt "\autoref" -> "\appref" verwenden (ansonsten wird im Text z.B. "Section A" statt "Appendix A" angezeigt  
 \newcommand{\appref}[1]{%
 {\def\sectionautorefname{Appendix}\autoref{#1}}%
+%
+}
+% Auf Sub-Appendix im Text referenzieren: statt "\autoref" -> "\apprefsub" verwenden (ansonsten wird im Text z.B. "Section A3" statt "Appendix A3" angezeigt
+\newcommand{\apprefsub}[1]{%
+{\def\subsectionautorefname{Appendix}\autoref{#1}}%
 }
 
 \begin{document}
