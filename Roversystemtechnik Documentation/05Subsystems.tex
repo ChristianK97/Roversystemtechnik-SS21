@@ -12,7 +12,14 @@
 ...
 \section{Communications and Command and Data-Handling}
 \label{sec:comm}
-...
+The C&DH subsystem is responsible for the execution of Telecommand and Telemetry as well as payload data storing and transmission. Therefore the system consists of a pair of redundant Transmitter and Receiver as well as a redundant Single Board Computer OBC. The subsystem is located within the Electronic Bay.
+
+\subsection{Communication System}
+Requiring too many resources a direct link to earth has been deemed unpractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 24 dB high gain antenna [Missing Reference] and a low gain antenna which is not further specified in literature.\\
+
+The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations reveal that a transmission the LGA of the Europa Lander still produces a link margin of $17.14 dB$. This leaves a Bit Error Rate of less than $10^{-6}$.
+
+
 \section{Payload}
 \label{sec:payload}
 ...
