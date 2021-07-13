@@ -1,9 +1,77 @@
-[0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is '/Users/danielbolke/Documents/GitHub/Roversystemtechnik-SS21/Roversystemtechnik Documentation/.texpadtmp/00Documentation.blg'
-[125] biber-darwin:340> INFO - === Sat Jul 10, 2021, 14:38:19
-[149] Biber.pm:415> INFO - Reading '/Users/danielbolke/Documents/GitHub/Roversystemtechnik-SS21/Roversystemtechnik Documentation/.texpadtmp/00Documentation.bcf'
-[384] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
-[421] Biber.pm:4340> INFO - Processing section 0
-[443] Biber.pm:4531> INFO - Looking for bibtex format file 'References' for section 0
-[714] Utils.pm:411> ERROR - Cannot find 'References'!
-[714] Biber.pm:132> INFO - ERRORS: 1
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: /Users/danielbolke/Documents/GitHub/Roversystemtechnik-SS21/Roversystemtechnik Documentation/.texpadtmp/00Documentation.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: 00Cover.aux
+A level-1 auxiliary file: 01Glossary.aux
+A level-1 auxiliary file: 01Index.aux
+A level-1 auxiliary file: 02Mission.aux
+A level-1 auxiliary file: 03Payload.aux
+A level-1 auxiliary file: 04Operation.aux
+A level-1 auxiliary file: 05Subsystems.aux
+A level-1 auxiliary file: 06Outlook.aux
+A level-1 auxiliary file: 08Bibilography.aux
+A level-1 auxiliary file: 09Appendix.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ../00Documentation-blx.bib
+Database file #2: ../References.bib
+Warning--I didn't find a database entry for "Platzhalter"
+Biblatex version: 3.16
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 11 entries,
+            6393 wiz_defined-function locations,
+            1281 strings with 11356 characters,
+and the built_in function-call counts, 63139 in all, are:
+= -- 3480
+> -- 3557
+< -- 362
++ -- 3330
+- -- 2663
+* -- 3406
+:= -- 7503
+add.period$ -- 0
+call.type$ -- 11
+change.case$ -- 171
+chr.to.int$ -- 166
+cite$ -- 20
+duplicate$ -- 5489
+empty$ -- 5170
+format.name$ -- 607
+if$ -- 11494
+int.to.chr$ -- 0
+int.to.str$ -- 32
+missing$ -- 0
+newline$ -- 280
+num.names$ -- 509
+pop$ -- 3564
+preamble$ -- 1
+purify$ -- 226
+quote$ -- 0
+skip$ -- 2041
+stack$ -- 0
+substring$ -- 6059
+swap$ -- 1348
+text.length$ -- 298
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 362
+warning$ -- 0
+while$ -- 719
+width$ -- 0
+write$ -- 270
+(There was 1 warning)
