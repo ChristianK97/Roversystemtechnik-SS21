@@ -393,16 +393,16 @@ In order to protect the rover against the high radiation levels at the surface o
 \section{Locomotion} \label{sec:locomotion}
 %-------------------------------------------------------------------------------
 
-The locomotion subsystem deals with the aspect of how the rover moves and the technical design, including the selection of components such as motors or gearboxes. Before the components can be determined, however, it is necessary to consider certain parameters. These parameters will be introduced in the following, and the decisions or estimations concerning the rover will be presented.
+The locomotion subsystem deals with the aspect of how the rover moves and the technical design, including the selection of components such as motors or gearboxes. Before the components can be determined, however, it is necessary to consider certain parameters and design drivers. These will be introduced in the following, and the decisions or estimations concerning the rover will be presented.
 
-\subsubsection*{Design drivers}
-Regarding techniques of rover movement, it is crucial to consider the local conditions in which the rover will be operating. The surface of Europa can be assumed to be mainly covered by ice. However, since there are also geysers that transport water to the surface, surface areas may be covered by snow. Though Europa's surface temperature does not exceed 130 K, rather icy, hard-packed snow can be assumed. For this study, a conservative design of the rover is considered, whereby material parameters of snow in Sweden were selected, see \autoref{fig:SoilParameters}.
-Furthermore, a 4-wheeled rover is chosen, as evidenced by a trade-off in \autoref{fig:TradeOffLoco}. However, the most significant design drivers are briefly summarized in \autoref{tab:Design Drivers Rover Movement}.
+\subsection{Design drivers for Rover Classification}
+\label{sec:DesignDriversLoco}
 
+The first consideration in designing a rover is the environmental and operational conditions expected for the mission operation. The ice moon can be assumed to have a solid surface; thus, a wheeled rover is chosen. Further design drivers that led to the locomotion mobility systems are based on a tradeoff presented a tradeoff in \autoref{fig:TradeOffLoco}. However, the main design drivers are briefly summarised in \autoref{tab:Design Drivers Rover Movement}.
 
 \begin{table}[htb]
 \centering
-\caption{Design Drivers for the rover movement technique regarding the environmental conditions on Europa and operating conditions}
+\caption{Design Drivers for the rover movement technique regarding the environmental conditions on Europa and operating conditions.}
 \label{tab:Design Drivers Rover Movement}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|l|}
@@ -417,6 +417,80 @@ Furthermore, a 4-wheeled rover is chosen, as evidenced by a trade-off in \autore
 \end{tabular}%
 }
 \end{table}
+
+With the configured rover, the resulting wheel formula is 4 x 4 x 4.
+
+
+\subsection{System Parameters}
+\label{sec:SystemParametersLoco}
+
+Regarding techniques of rover movement, it is crucial to consider the local conditions in which the rover will be operating. The surface of Europa can be assumed to be mainly covered by ice. However, since there are also geysers that transport water to the surface, surface areas may be covered by snow. Though Europa's surface temperature does not exceed 130 K, rather icy, hard-packed snow can be assumed. For this study, a conservative design of the rover is considered, whereby material parameters of snow in Sweden were selected, shown in \autoref{fig:SoilParameters}. Furthermore, the parameters depend on the width and diameter of the wheels of the rover. Therefore, several sizes dependent on the respective weight were selected and a limit per wheel was set to 200 g, illustrated in \autoref{fig:DimensionsLoco}. 
+
+This constraint results in 6 configurations considered for the Rover system design, listed in \autoref{tab:Configurations}.
+
+\begin{table}[htb]
+\centering
+\caption{Configurations for Rover Classification respective to the wheel width \(b\text{w}\), wheel diameter \(d_\text{w}\) and weight per wheel \(m_\text{w}\)}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}[l]{lccc}
+
+	\toprule
+		\multicolumn{1}{l}{Configuration} & \multicolumn{1}{c}{\(b\text{w}\) /m} & \multicolumn{1}{c}{Diameter \(d_\text{w}\) /m} & \multicolumn{1}{c}{Weight \(m_\text{w}\) /kg}   \\
+
+	\midrule
+		
+		1	&	0.05	&	0.1		&	0.127		\\	
+		2	&	0.06	&	0.1		&	0.153		\\
+		3	&	0.07	&	0.1		&	0.178		\\
+		4	&	0.05	&	0.125	&	0.154		\\
+		5	&	0.05	&	0.125	&	0.185		\\
+		6	&	0.05	&	0.15	&	0.185		\\
+
+	\bottomrule
+
+\end{tabular}
+\end{adjustbox}
+\label{tab:Configurations}
+\end{table}
+
+\subsubsection*{Drawbar Pull}
+\label{sec:DP}
+
+
+
+\begin{figure}[htb] 
+  \centering
+     \includegraphics[width=1\textwidth]{Media/Sinkage for each config.pdf}
+  \caption{}
+  \label{fig:}
+\end{figure}
+
+\begin{figure}[htb] 
+  \centering
+     \includegraphics[width=1\textwidth]{Media/Drawbarpull for each Config.pdf}
+  \caption{}
+  \label{fig:}
+\end{figure}
+
+
+\subsubsection*{Mean Maximum Pressure}
+\label{sec:MMP}
+
+
+\begin{figure}[htb] 
+  \centering
+     \includegraphics[width=1\textwidth]{Media/MMP for each Config.pdf}
+  \caption{}
+  \label{fig:}
+\end{figure}
+
+
+
+
+
+
+
+
 
 
 
