@@ -449,32 +449,35 @@ With inserted values this results in a mass saving of \(\Delta m\) = 736.2 g.
 
 \subsection{Link Budget}
 
-Link budget considerations have been performed under the conservative assumptions listed in table 
-
+Link budget considerations have been performed under the conservative assumptions listed in \autoref{tab:lb-param}.
 
 \begin{table}[]
+\centering
 \begin{tabular}{llllll}
 \hline
-Parameter              & Var          & Vlaue & Unit       & source &  \\ \hline
-Rover Antenna Gain     & \{G\}\_\{r\} &       & {[}dB{]}   &        &  \\
-Rover Output Power     & \{P\}\_\{r\} &       & {[}W{]}    &        &  \\
-Rover Line Loss        &              &       & {[}dB{]}   &        &  \\
-                       &              &       &            &        &  \\ \hline
-R2L polarization loss  &              &       & {[}dB{]}   &        &  \\ 
-Path loss              &              &       & {[}dB{]}   &        &  \\
-Atmospheric loss       &              &       & {[}dB{]}   &        &  \\ \hline
-                       &              &       &            &        &  \\
-Lander Antenna Gain    & \{G\}\_\{L\} &       & {[}dB{]}   &        &  \\
-Lander Pointing Loss   &              &       & {[}dB{]}   &        &  \\
-Lander Line Loss       &              &       & {[}dB{]}   &        &  \\
-eff. noise temperature &              &       & {[}K{]}    &        &  \\
-                       &              &       &            &        &  \\
-data rate              &              &       & {[}kbps{]} &        &  \\
-FEC coding             &              &       & {[}-{]}    &        &  \\
-technical degradation  &              &       & {[}dB{]}   &        &  \\ 
-implementation loss    &              &       & {[}dB{]}   &        &  \\
-                       &              &       &            &        & 
+Parameter                        & Value  & Unit	       & Symbol        & Source                       &  \\ \hline
+Rover                            &        &            &               &                              &  \\ \hline\hline
+Rover Antenna Gain               & 2      & {[}dB{]}   & \{G\}\_\{r\}  & omnidirectional LGA          &  \\
+Rover Output Power               & 1      & {[}W{]}    & \{P\}         &                              &  \\
+Rover Line Loss                  & 0,6    & {[}dB{]}   & \{L\}\_\{l1\} & FLP                          &  \\ \hline
+Path                             &        &            &               &                              &  \\ \hline\hline
+R2L polarization loss            & 0,3    & {[}dB{]}   & \{L\}\_\{p\}  & FLP                          &  \\
+Free space loss                  & 117,55 & {[}dB{]}   & \{L\}\_\{s\}  &                              &  \\
+Atmospheric loss                 & 0      & {[}dB{]}   & \{L\}\_\{a\}  & negligible atmosphere        &  \\ \hline
+Lander                           &        &            &               &                              &  \\ \hline\hline
+Lander Antenna Gain              & 1      & {[}dB{]}   & \{G\}\_\{L\}  & conservative estimation      &  \\
+Lander Pointing Loss             & 0      & {[}dB{]}   &               & omnidirectional LGA          &  \\
+Lander Line Loss                 & 0,6    & {[}dB{]}   & \{L\}\_\{l2\} & FLP                          &  \\
+eff. noise temperature           & 300    & {[}K{]}    & \{T\}\_\{s\}  & worst case E-bay temperature &  \\ \hline
+Demodulation \& uncertain Losses &        &            &               &                              &  \\ \hline\hline
+eff. data rate                   & 5000   & {[}kbps{]} & \{R\}         &                              &  \\
+FEC coding                       & none   & {[}-{]}    & n/a           &                              &  \\
+technical degradation            & 1      & {[}dB{]}   & n/a           & FLP                          &  \\
+implementation loss              & 1      & {[}dB{]}   & n/a           & FLP                          &  \\
+                                 &        &            &               &                              & 
 \end{tabular}
+\caption{Rover to Lander (R2L) transmission parameters}
+\label{tab:lb-param}
 \end{table}
 
 
