@@ -418,8 +418,14 @@ The first consideration in designing a rover is the environmental and operationa
 }
 \end{table}
 
-With the configured rover, the resulting wheel formula is 4 x 4 x 4.
+With the configured rover, the resulting wheel formula is 4 x 4 x 4. The normal force on Europa can be calculated to:
 
+\begin{equation}
+	W \:  = \:	m_\text{total} \cdot g_\text{Europa} \:  = \: 39.45 \, \text{N} \, 	.
+	\label{eq:}
+\end{equation}
+
+Since each wheel is individually driven and controllable, the parameters in the following are designed for one wheel; the normal force per wheel is correspondingly \(W_\text{wheel} = 9.8625 ~\)N
 
 \subsection{System Parameters}
 \label{sec:SystemParametersLoco}
@@ -453,6 +459,22 @@ This constraint results in 6 configurations considered for the Rover system desi
 \label{tab:Configurations}
 \end{table}
 
+
+
+
+\subsubsection*{Mean Maximum Pressure}
+\label{sec:MMP}
+
+
+
+
+\begin{figure}[htb] 
+  \centering
+     \includegraphics[width=1\textwidth]{Media/MMP for each Config.pdf}
+  \caption{}
+  \label{fig:}
+\end{figure}
+
 \subsubsection*{Drawbar Pull}
 \label{sec:DP}
 
@@ -473,19 +495,16 @@ This constraint results in 6 configurations considered for the Rover system desi
 \end{figure}
 
 
-\subsubsection*{Mean Maximum Pressure}
-\label{sec:MMP}
-
-
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/MMP for each Config.pdf}
-  \caption{}
-  \label{fig:}
-\end{figure}
 
 
 
+\subsubsection*{Steering}
+\label{sec:Steering}
+
+
+
+\subsubsection*{Hardware Selection}
+\label{sec:HardwareLoco}
 
 
 
