@@ -457,7 +457,7 @@ Link budget considerations have been performed under the conservative assumption
 \hline
 Parameter                        & Value  & Unit	       & Symbol        & Source                       &  \\ \hline
 Rover                            &        &            &               &                              &  \\ \hline\hline
-antenna Gain           		     & 2      & {[}dB{]}   & \{G\}\_\{r\}  & omnidirectional LGA          &  \\
+antenna Gain           		     & 2      & {[}dB{]}   & \{G\}\_\{R\}  & omnidirectional LGA          &  \\
 output power        	         & 1      & {[}W{]}    & \{P\}         &                              &  \\
 line loss               	     & 0,6    & {[}dB{]}   & \{L\}\_\{l1\} & FLP                          &  \\ \hline
 Path                             &        &            &               &                              &  \\ \hline\hline
@@ -480,11 +480,12 @@ implementation loss              & 1      & {[}dB{]}   & n/a           & FLP    
 \label{tab:lb-param}
 \end{table}
 
-The calculation of the Link Budget is based on \autoref{eqn:EbzuN0}.
+The calculation of the Link Budget is based on \autoref{eqn:EbzuN0}. 
 \begin{equation}
-\frac{{E}_{b}}{{N}_{0}} = {G}_{t} + {P}_{t} + {G}_{r} + {k}_{boltzmann} + {L}_{line} + {L}_{atmosph.} + {L}_{polarisation} + {L}_{pointing}
+\frac{{E}_{b}}{{N}_{0}} = {P} - {L}_{l} + {G}_{R} + {L}_{s} + {L}_{a} + {G}_{L} + {10\cdot \log{k}} - {10\cdot \log{{T}_{s}}} - {10\cdot \log{{R}}} 
 \label{eqn:EbzuN0}
 \end{equation}
+
 \clearpage
 
 
