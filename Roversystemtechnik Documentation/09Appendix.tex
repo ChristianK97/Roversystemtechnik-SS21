@@ -451,7 +451,7 @@ With inserted values this results in a mass saving of \(\Delta m\) = 736.2 g.
 
 Link budget considerations are performed under the conservative assumptions listed in \autoref{tab:lb-param}. \\
 
-\begin{table}[]
+\begin{table}[h]
 \centering
 \begin{tabular}{llclll}
 \hline
@@ -477,20 +477,20 @@ technical degradation            & 1      & {[}dB{]}   & ${L}_{i1}$    & FLP    
 implementation loss              & 1      & {[}dB{]}   & ${L}_{i1}$	   & FLP                          &  \\
                                  &        &            &               &                              & 
 \end{tabular}
-\caption{Rover to Lander (R2L) transmission parameters}
+\caption{transmission link parameters}
 \label{tab:lb-param}
 \end{table}
 
 The free space loss ${L}_{s}$ [$m^3$] in \autoref{tab:lb-param} is calculated using the following correlation. 
 
 \begin{equation}
-\centering
-	{L}_{s} = {\frac{(4 \pi s)^2 \cdot c}{f}}
-\label{eqn:Ls}
+	\centering
+		{L}_{s} = {\frac{(4 \pi s)^2 \cdot c}{f}}
+	\label{eqn:Ls}
 \end{equation}
 
 The signal travel distance {s} is assumed to be $s = 2\ km$ which is in excess of the mission goal. In accordance with X-Band communication the frequency {f} is set to a value of $f = 8,2\ GHz$. The parameter c represents the speed of light in vacuum. For simplification purposes $c = 3 \cdot 10^9\ \frac{m}{s}$ is assumed. \\ \\   
-Combining the parameters from \label{tab:lb-param} the link budget is calculated using \autoref{eqn:EbzuN0}. For the simplification of \autoref{eqn:EbzuN0} the line losses for the rover ${L}_{l1}$ and lander ${L}_{l2}$ are expressed as the sum ${L}_{l}$. Technical degradation and implementation losses are combined to ${L}_{i}$ in the same manner.  
+Combining the parameters from \label{tab:lb-param} the link budget is calculated using \autoref{eqn:EbzuN0}. For the simplification of \autoref{eqn:EbzuN0} the line losses for the rover ${L}_{l1}$ and lander ${L}_{l2}$ are expressed as the sum ${L}_{l}$. Technical degradation and implementation losses are combined to ${L}_{i}$ in the same manner. Parameter ${k}$ describes the Boltzmann constant.   
 
 \begin{equation}
 	\centering
@@ -498,7 +498,9 @@ Combining the parameters from \label{tab:lb-param} the link budget is calculated
 	\label{eqn:EbzuN0}
 \end{equation}
 
-As can be seen in \label{tab:lb-param} the parameters 
+Atmospheric losses ${L}_{a}$ and pointing errors in \autoref{eqn:EbzuN0} are neglected due to a lack of atmosphere and the utilisation of omnidirectional low gain antennas.\\
+
+
 \clearpage
 
 
