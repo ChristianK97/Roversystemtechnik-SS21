@@ -494,17 +494,26 @@ Combining the parameters from \label{tab:lb-param} the link budget is calculated
 
 \begin{equation}
 	\centering
-		\frac{{E}_{b}}{{N}_{0}}} = {P} - {L}_{l} + {G}_{R} - {10\cdot \log{{L}_{s}} - {L}_{a} + {G}_{L} + {10\cdot \log{k}} - {10\cdot \log{{T}_{s}}} - {10\cdot \log{{R}}} - {L}_{i}
+		{\frac{{E}_{b}}{{N}_{0}}} = {P} - {L}_{l} + {G}_{R} - {10\cdot \log{{L}_{s}} - {L}_{a} + {G}_{L} + {10\cdot \log{k}} - {10\cdot \log{{T}_{s}}} - {10\cdot \log{{R}}} - {L}_{i}
 	\label{eqn:EbzuN0}
 \end{equation}
 
 Atmospheric losses ${L}_{a}$ and pointing errors in \autoref{eqn:EbzuN0} are neglected due to a lack of atmosphere and the utilisation of omnidirectional low gain antennas.\\
 
+\autoref{eqn:EbzuN0} and the conservative assumptions from \autoref{tab:lb-param} results in an Energy per bit over Noise $\frac{{E}_{b}}{{N}_{0}} = 10,59\ dB$. Referencing \autoref{fig:BitErrorRate} a Bit Error Rate of $10^{-4}$ can be achieved which is considered sufficient for a first assessment. Optionally a FEC code can be implemented in later design phases.  
+
 \begin{figure}[hbt]
 	\centering
-  		\includegraphics{Media/LB-RovertoLander.png}
-  \caption{Rover to Lander complete link budget}
+  		\includegraphics[width=1\textwidth]{Media/LB-RovertoLander.png}
+  \caption{Rover to Lander complete link budget.}
   \label{fig:LB-R2L}
+\end{figure}
+
+\begin{figure}[hbt]
+	\centering
+  		\includegraphics{Media/Bit_Error_Rate.png}
+  \caption{Bit Error Rate for different FEC codes}
+  \label{fig:BitErrorRate}
 \end{figure}
 
 
