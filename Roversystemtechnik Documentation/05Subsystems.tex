@@ -54,138 +54,7 @@ Additionally a custom housekeeping board will be tasked with providing engine co
 \section{Payload}
 \label{sec:payload}
 ...
-\clearpage
-%-------------------------------------------------------------------------------
-\section{Thermal Control System} \label{sec:thermalcontrol}
-%-------------------------------------------------------------------------------
-The main object of the Thermal Control System (TSC) is to keep the eletric components within their temperature limits, listed in \autoref{tab:tcs_limits}.
-As a result of Europas low ground temperature, a small solar constant and the thin atmosphere the heat loss of the rover has to bin minimised.
-This shall be reached by a smart heat distribution as well as by an adequate insulation and surface finishing.
 
-\subsection{Thermal concepts}
-The main heat source of the rover is the waste heat of the RTG (see \autoref{sec:EPS}), which will be lead by thermal straps to the thermal critical components.
-The first attempt to use straps made out of copper was rejected du to the high resulting mass.
-Therefore, carbon-based straps (Thermal LyNX) with a high thermal conductivity to density ratio will be used, cite.
-However, the thermal conductivity is highly depend on the materials temperature, see \autoref{fig:tcs_strap}.
-The curve was aproximated by an qubic interpolation, autoref appendix.
-To consider heat loss as a result of contact and radiation, the thermal conductivity was reduced about $20\%$.
-
-
-\begin{figure}[h]
-	\centering
-	\subfloat[Temperature dependent thermal conductivity/density of \textit{LyNX}\textsuperscript{\tiny\textregistered} (yellow curve), copper, and aluminum, cite.]{\includegraphics[height=0.25\textwidth]{Media/tcs_strap_01.JPG}\label{fig:tcs_strap11}}\qquad\qquad
-	\subfloat[Example of a thermal strap.]{\includegraphics[height=0.2\textwidth]{Media/tcs_strap_02.png}\label{fig:tcs_strap12}}
-	\caption{Carbon-based thermal strap \textit{LyNX}\textsuperscript{\tiny\textregistered}.}
-	\label{fig:tcs_strap01}
-\end{figure}
-
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=0.4\textwidth]{Media/tcs_strap_01.JPG}
-%	\caption{Temperature dependent thermal conductivity/density of Thermal LyNX, copper, and aluminum, cite}
-%	\label{fig:tcs_strap}
-%\end{figure}
-
-The camera, exposed on a mast, will be heated by a seperate, light weight Radioisotope Heater Unit (RHU), cite{RHU}, which has  been used during several NASA missions. % https://rps.nasa.gov/power-and-thermal-systems/thermal-systems/light-weight-radioisotope-heater-unit/
-For the insulation, the material \textit{aerogel} will be applied, which has a very low heat conductivity (cite aerogel) as well as a low density and has also been used in space applications (cite{aerogel}).
-
-A surface finishing with an low emisivity is necessary.
-For the most componets, a cost-efficient surface polishing is applicable.
-The camera will get a special white paint with a high absorptivity to gather the  sun light.
-
-But ther is also a risk of overheating, because of the lack of heat convection.
-This circumstance concern the engines and also the camera.
-To get rid of the extensive heat and prevent the damage of the components special heat switches will be  placed (see \autoref{fig:tcs_switch01}).
-These switches change their heat conductivity beyond a certain temperatur due to the expansion of the disk (see \autoref{fig:tcs_switch02}).
-It was assumed, that the toggle temperatur can be adapted by increasing the disk height.
-The influence of the changed disk stiffens on the contact pressure and the heat conductivity was neglected for this study.
-The measured heat conductivity characterisitc was divided in three linear sections (\autoref{fig:tcs_switch22}), to enable a simple modelling in the upcoming thermal calculation.
-
-\begin{figure}[h]
-	\centering
-	\subfloat[Closed]{\includegraphics[height=0.18\textwidth]{Media/tcs_switch_01.png}\label{fig:tcs_switch11}}\qquad\qquad
-	\subfloat[Open]{\includegraphics[height=0.18\textwidth]{Media/tcs_switch_02.png}\label{fig:tcs_switch12}}
-	\caption{Heat switch.}
-	\label{fig:tcs_switch01}
-\end{figure}
-
-\begin{figure}[h]
-	\centering
-	\subfloat[Original]{\includegraphics[height=0.22\textwidth]{Media/tcs_diag_orig.png}\label{fig:tcs_switch21}}\qquad
-	\subfloat[Linearised]{\includegraphics[height=0.22\textwidth]{Media/tcs_diag_lin}\label{fig:tcs_switch22}}
-	\caption{Change of the heat switch conductivity $R_t$ over the mean temperature $T_M$.}
-	\label{fig:tcs_switch02}
-\end{figure}
-
-\subsection{Thermal Network}
-A thermal analysis was performed in order to get
-\begin{itemize}
-	\item the dimension of the isnulation and heat straps,
-	\item the necessary amount of RHUs and heat switches,
-	\item the required surface finishing.
-\end{itemize}
-
-For that, a thermal network with ten nodes was derived from the rover, shown in \autoref{fig:tcs_network}.
-At the intersection of the steering and drive engien, two additional nodes were defined to calculate the heat flow.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.85\textwidth]{Media/tcs_network}
-	\caption{Thermal network of the rover.}
-	\label{fig:tcs_network}
-\end{figure}
-
-On the basis of the thermal network, the heat energy equlibrium for each node was defined (see \autoref{sec:AppendixThermal}).
-The calculation were considered as a quasi-static analysis, were the component temperatures stay constant, $\frac{\text{d}T}{\text{d}t}=0$.
-Due to the early state of the rover, simplifications and asumptions were made.
-\begin{itemize}
-	\item The convection was neglected due to the thin atmosphere.
-	\item The whole electrical power of the components will be dissipated into heat.
-	\item A variation of $\pm 20\%$ for the emisivity and absorpsivity values was considered, if applicable (seet \autoref{tab:tcs_surface}).
-	\item The heat as a result of retardation radiation inside the shielding was neglected.
-	\item The E-Bay emitts heat energy only in one direction to the chassis.
-	\item Only the chassis and the camera absorb sun radiation, detailed description see \autoref{sec:app_therm_4}.
-	\item The ice core drill and the APXS analyser were summerised as one single node.
-	\item No dicrete nodes for the radar, hazcams and deployment engines were considered. Their heat will be lead into the chassis.
-	\item The thermal resistance between two surfaces and ther radiation of the thermal strap was neglected. To compensate this assumption, the heat conductivity was reduced about $20\%$.
-\end{itemize}
-
-
-\subsection{Thermal analysis}
-The thermal analysis was perfomred as a Excel calculation, which can be found in the corresponding folder of Team 3.
-The calculation sheet offers the possibility to adapt and customise input values and dimension.
-%There were different load cases defined to cover the most important hot and cold cases , wh but also some relevant operating cases.
-
-\subsection{Results}
-
-The results of the temperatures for each node at each for the hot and cold cases  are listed in autoref{tab:}.
-The temperature margins for uncertainties, acceptance tests and qulification tests were considered with $5 K$ each, $\pm 15K$ in total.
-The corresponding temperatures are listed in autoref{tab:}.
-All temperature lay betwenn their limits without using a heater.
-Nevertheless, heaters were considered for the power calculation, see \autoref{sec:EPS}.
-
-\begin{table}[htb]
-	\centering
-	\begin{tabular}{l@{\qquad}cc@{\qquad}|@{\qquad}cc}
-		\hline
-		Components & \multicolumn{4}{c}{Load Case}   \\ \hline
-		 & \multicolumn{2}{l}{Hot case} & \multicolumn{2}{l}{Cold case} \\
-		 & $0K$ & $+15 K$ & $0K$ & $-15 K$ \\ \hline
-		RTG  & 380 & 395 & 350 & 335   \\
-		Electric Bay & 310 & 325 & 261 & 246  \\
-		Drill \& Analyser & & & &  \\
-		Camera & & & &  \\
-		Steering Engine & & & &  \\
-		Drive Engine & & & &  \\   \hline
-	\end{tabular}
-	\caption{Temperature results in $K$ of thermal analysis, including a margin of $\pm15K$.}
-	\label{tab:tcs_temp}
-\end{table}
-
-In a furher step, a more detailed analysis has to be carried out with the Finite-Element-Method to identify the correct heat and temperature distribution.
-The FE results could be used to verify and adjust the analytical analysis to get a helpful tool for fast thermal calculation to evaluate different materials or desings in the further development phases.
-
-\clearpage
 %-------------------------------------------------------------------------------
 \section{Electrical Power System}
 %-------------------------------------------------------------------------------
@@ -509,18 +378,138 @@ This constraint results in 6 configurations considered for the Rover system desi
 
 
 
-
-
-
-
-
-
-
-
 \subsection{Deployment mechanism}
 
 %-------------------------------------------------------------------------------
 \section{Control and Autonomy} \label{sec:ControlandAutonomy}
 %-------------------------------------------------------------------------------
+
+
+
+\clearpage
+%-------------------------------------------------------------------------------
+\section{Thermal Control System} \label{sec:thermalcontrol}
+%-------------------------------------------------------------------------------
+The main object of the Thermal Control System (TSC) is to keep the eletric components within their temperature limits, listed in \autoref{tab:tcs_limits}.
+As a result of Europas low ground temperature, a small solar constant and the thin atmosphere the heat loss of the rover has to be minimised.
+This shall be reached by a smart heat distribution as well as by an adequate insulation and surface finishing.
+
+\subsection{Concepts}
+The main heat source of the rover is the waste heat of the RTG (see \autoref{sec:EPS}), which will be lead by thermal straps to the thermal critical components.
+The first attempt to use straps made out of copper was rejected du to the high resulting mass.
+Therefore, carbon-based straps \textit{LyNX}\textsuperscript{\tiny\textregistered} with a high thermal conductivity to density ratio will be used, \cite{ref_tcs_01}.
+However, the thermal conductivity is highly depend on the materials temperature, see \autoref{fig:tcs_strap01}.
+The curve was aproximated by an qubic interpolation, autoref appendix.
+To consider heat loss as a result of surface contact and radiation, the thermal conductivity was reduced about $20\%$.
+
+
+\begin{figure}[h]
+	\centering
+	\subfloat[Temperature dependent thermal conductivity/density of \textit{LyNX}\textsuperscript{\tiny\textregistered} (yellow curve), copper, and aluminum, \cite{ref_tcs_01}.]{\includegraphics[height=0.25\textwidth]{Media/tcs_strap_01.JPG}\label{fig:tcs_strap11}}\qquad\qquad
+	\subfloat[Example of a thermal strap, \cite{ref_tcs_01}.]{\includegraphics[height=0.2\textwidth]{Media/tcs_strap_02.png}\label{fig:tcs_strap12}}
+	\caption{Carbon-based thermal strap \textit{LyNX}\textsuperscript{\tiny\textregistered}.}
+	\label{fig:tcs_strap01}
+\end{figure}
+
+
+The camera, exposed on a mast, will be heated by a seperate, light weight Radioisotope Heater Unit (RHU), which has  been used during several NASA missions, \cite{ref_tcs_02}.
+For the insulation, the material \textit{aerogel} will be applied, which has a very low heat conductivity ($ 0.016 - 0.03 \frac{W}{mK} $) as well as a low density ($5 - 200 \frac{kg}{m^3}$) and has also been used in space applications \cite{ref_tcs_03}.
+
+A surface finishing with an low emisivity is necessary.
+For the most componets, a cost-efficient surface polishing is applicable.
+The camera will get a special white paint with a high absorptivity to gather the  sun light.
+
+But there is also a risk of overheating, because of the lack of heat convection.
+This circumstance concern the engines and also the camera.
+To get rid of the extensive heat and to prevent the damage of the components special bi-metallic heat switches will be  placed (see \autoref{fig:tcs_switch01}).
+These switches change their heat conductivity beyond a certain temperatur due to the expansion of the disk (see \autoref{fig:tcs_switch02}).
+It was assumed, that the toggle temperatur can be adapted by increasing the disk height.
+The influence of the changed disk stiffens on the contact pressure and the heat conductivity was neglected for this study.
+The measured heat conductivity characterisitc was divided in three linear sections (\autoref{fig:tcs_switch22}), to enable a simple modelling in the upcoming thermal calculation.
+
+\begin{figure}[h]
+	\centering
+	\subfloat[Closed switch, high heat conduction.]{\includegraphics[height=0.18\textwidth]{Media/tcs_switch_01.png}\label{fig:tcs_switch11}}\qquad\qquad
+	\subfloat[Open switch, reduced heat conduction. ]{\includegraphics[height=0.18\textwidth]{Media/tcs_switch_02.png}\label{fig:tcs_switch12}}
+	\caption{Bi-metallic heat switch, \cite{ref_tcs_04}.}
+	\label{fig:tcs_switch01}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\subfloat[Comparison between data and theory (experimental results), \cite{ref_tcs_04} ]{\includegraphics[height=0.22\textwidth]{Media/tcs_diag_orig.png}\label{fig:tcs_switch21}}\qquad
+	\subfloat[Linearised characteristic of bi-metallic heat switch. ]{\includegraphics[height=0.22\textwidth]{Media/tcs_diag_lin}\label{fig:tcs_switch22}}
+	\caption{Change of the heat switch conductivity $R_t$ over the mean temperature $T_M$.}
+	\label{fig:tcs_switch02}
+\end{figure}
+
+\subsection{Thermal Network}
+A thermal analysis was performed in order to get
+\begin{itemize}
+	\item the dimension of the isnulation and heat straps,
+	\item the necessary amount of RHUs and heat switches,
+	\item the required surface finishing and
+	\item the suitable choice of material.\\
+\end{itemize}
+
+For that, a thermal network with ten nodes was derived from the rover, shown in \autoref{fig:tcs_network}.
+At the intersection of the steering and drive engien, two additional nodes were defined to calculate the heat flow.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{Media/tcs_network}
+	\caption{Thermal network of the rover.}
+	\label{fig:tcs_network}
+\end{figure}
+
+On the basis of the thermal network, the heat energy equlibrium for each node was defined (see \appref{sec:app_tcs_01}).
+The calculation were considered as a quasi-static analysis, were the component temperatures stay constant, $\frac{\text{d}T}{\text{d}t}=0$.
+Due to the early state of the rover, simplifications and asumptions for the analysis were made.
+\begin{itemize}
+	\item The convection was neglected due to the thin atmosphere.
+	\item The whole electrical power of the components will be dissipated into heat.
+	\item A variation of $\pm 20\%$ for the emisivity and absorpsivity values was considered, if applicable (seet \autoref{tab:tcs_surface}).
+	\item The heat as a result of retardation radiation inside the shielding was neglected.
+	\item No dicrete nodes for the radar, hazcams and deployment engines were considered. Their heat will be lead into the chassis.
+	\item The thermal resistance between two surfaces and ther radiation of the thermal strap was neglected. To compensate this assumption, the heat conductivity was reduced about $20\%$.
+\end{itemize}
+
+
+\subsection{Analysis}
+The thermal analysis was perfomred as a Excel calculation, which can be found in the corresponding folder of Team 3.
+The calculation sheet offers the possibility to adapt and customise input values and dimension.
+%There were different load cases defined to cover the most important hot and cold cases , wh but also some relevant operating cases.
+
+\subsection{Results}
+
+The results of the temperatures for each node for the hot and cold cases  are listed in \autoref{tab:tcs_temp}.
+The temperature margins for uncertainties, acceptance tests and qulification tests were considered with $5 K$ each, $\pm 15K$ in total.
+The corresponding temperatures are listed in autoref{tab:}.
+All temperature lay betwenn their limits without using a heater.
+Nevertheless, heaters were considered for the power calculation, see \autoref{sec:EPS}.
+
+\begin{table}[htb]
+	\centering
+	\caption{Temperature results in $K$ of thermal analysis, including a margin of $\pm15K$.}
+	\begin{tabular}{l@{\qquad\qquad}cc@{\qquad}|@{\qquad}cc}
+		\hline
+		Components & \multicolumn{4}{c}{Load Case}   \\ \hline
+		& \multicolumn{2}{l}{Hot case} & \multicolumn{2}{l}{Cold case} \\
+		& $0K$ & $+15 K$ & $0K$ & $-15 K$ \\ \hline
+		RTG  & 380 & 395 & 350 & 335   \\
+		Electric Bay & 310 & 325 & 261 & 246  \\
+		Drill \& Analyser & & & &  \\
+		Camera & & & &  \\
+		Steering Engine & & & &  \\
+		Drive Engine & & & &  \\   \hline
+	\end{tabular}
+	\label{tab:tcs_temp}
+\end{table}
+
+In a furher step, a more detailed analysis should to be carried out with the Finite-Element-Method to identify the correct heat and temperature distribution.
+The FE results could be used to verify and adjust the analytical analysis to get a helpful tool for fast thermal calculation to evaluate different materials or desings in the further development phases.
+A transient analysis could also help to optimise the insulation design.
+The current thermal configuration for the engine is defined for a continuous operation
+
 
 \cleardoublepage
