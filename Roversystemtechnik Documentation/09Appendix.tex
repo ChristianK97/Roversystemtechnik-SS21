@@ -449,7 +449,35 @@ With inserted values this results in a mass saving of \(\Delta m\) = 736.2 g.
 
 \subsection{Link Budget}
 
-Ling buget considerations have been performed under the conservative parameters in table 
+Link budget considerations have been performed under the conservative assumptions listed in table 
+
+
+\begin{table}[]
+\begin{tabular}{llllll}
+\hline
+Parameter              & Var          & Vlaue & Unit       & source &  \\ \hline
+Rover Antenna Gain     & \{G\}\_\{r\} &       & {[}dB{]}   &        &  \\
+Rover Output Power     & \{P\}\_\{r\} &       & {[}W{]}    &        &  \\
+Rover Line Loss        &              &       & {[}dB{]}   &        &  \\
+                       &              &       &            &        &  \\ \hline
+R2L polarization loss  &              &       & {[}dB{]}   &        &  \\ 
+Path loss              &              &       & {[}dB{]}   &        &  \\
+Atmospheric loss       &              &       & {[}dB{]}   &        &  \\ \hline
+                       &              &       &            &        &  \\
+Lander Antenna Gain    & \{G\}\_\{L\} &       & {[}dB{]}   &        &  \\
+Lander Pointing Loss   &              &       & {[}dB{]}   &        &  \\
+Lander Line Loss       &              &       & {[}dB{]}   &        &  \\
+eff. noise temperature &              &       & {[}K{]}    &        &  \\
+                       &              &       &            &        &  \\
+data rate              &              &       & {[}kbps{]} &        &  \\
+FEC coding             &              &       & {[}-{]}    &        &  \\
+technical degradation  &              &       & {[}dB{]}   &        &  \\ 
+implementation loss    &              &       & {[}dB{]}   &        &  \\
+                       &              &       &            &        & 
+\end{tabular}
+\end{table}
+
+
 \begin{equation}
 \frac{{E}_{b}}{{N}_{0}} = {G}_{t} + {P}_{t} + {G}_{r} + {k}_{boltzmann} + {L}_{line} + {L}_{atmosph.} + {L}_{polarisation} + {L}_{pointing}
 \end{equation}
