@@ -449,42 +449,55 @@ With inserted values this results in a mass saving of \(\Delta m\) = 736.2 g.
 
 \subsection{Link Budget}
 
-Link budget considerations have been performed under the conservative assumptions listed in \autoref{tab:lb-param}.
+Link budget considerations are performed under the conservative assumptions listed in \autoref{tab:lb-param}. \\
 
 \begin{table}[]
 \centering
-\begin{tabular}{llllll}
+\begin{tabular}{llclll}
 \hline
 Parameter                        & Value  & Unit	       & Symbol        & Source                       &  \\ \hline
 Rover                            &        &            &               &                              &  \\ \hline\hline
-antenna Gain           		     & 2      & {[}dB{]}   & \{G\}\_\{R\}  & omnidirectional LGA          &  \\
-output power        	         & 1      & {[}W{]}    & \{P\}         &                              &  \\
-line loss               	     & 0,6    & {[}dB{]}   & \{L\}\_\{l1\} & FLP                          &  \\ \hline
+antenna Gain           		     & 2      & {[}dB{]}   & ${G}_{R}$  	   & omnidirectional LGA          &  \\
+output power        	         & 1      & {[}W{]}    & ${P}_{R}$  	   &                              &  \\
+line loss               	     & 0,6    & {[}dB{]}   & ${L}_{l1}$ 	   & FLP                          &  \\ \hline
 Path                             &        &            &               &                              &  \\ \hline\hline
-R2L polarisation loss            & 0,3    & {[}dB{]}   & \{L\}\_\{p\}  & FLP                          &  \\
-free space loss                  & 117,55 & {[}dB{]}   & \{L\}\_\{s\}  &                              &  \\
-atmospheric loss                 & 0      & {[}dB{]}   & \{L\}\_\{a\}  & negligible atmosphere        &  \\ \hline
+R2L polarisation loss            & 0,3    & {[}dB{]}   & ${L}_{p}$ 	   & FLP                          &  \\
+free space loss                  & 117,55 & {[}$m^3${]}& ${L}_{s}$  	   &                              &  \\
+atmospheric loss                 & 0      & {[}dB{]}   & ${L}_{a}$	   & negligible atmosphere        &  \\ \hline
 Lander                           &        &            &               &                              &  \\ \hline\hline
-antenna Gain             		 & 1      & {[}dB{]}   & \{G\}\_\{L\}  & conservative estimation      &  \\
-pointing Loss  		             & 0      & {[}dB{]}   &               & omnidirectional LGA          &  \\
-line Loss  		                 & 0,6    & {[}dB{]}   & \{L\}\_\{l2\} & FLP                          &  \\
-eff. noise temperature           & 300    & {[}K{]}    & \{T\}\_\{s\}  & worst case E-bay temperature &  \\ \hline
+antenna Gain             		 & 1      & {[}dB{]}   & ${G}_{L}$	   & conservative estimation      &  \\
+output power        	         & 5      & {[}W{]}    & ${P}_{L}$  	   & conservative estimation      &  \\
+pointing Loss  		             & 0      & {[}dB{]}   & ${n/a}$       & omnidirectional LGA          &  \\
+line Loss  		                 & 0,6    & {[}dB{]}   & ${L}_{l2}$	   & FLP                          &  \\
+eff. noise temperature           & 300    & {[}K{]}    & ${T}_{s}$	   & worst case E-bay temperature &  \\ \hline
 Demodulation \& Uncertain Losses &        &            &               &                              &  \\ \hline\hline
-eff. data rate                   & 5000   & {[}kbps{]} & \{R\}         &                              &  \\
-FEC coding                       & none   & {[}-{]}    & n/a           &                              &  \\
-technical degradation            & 1      & {[}dB{]}   & n/a           & FLP                          &  \\
-implementation loss              & 1      & {[}dB{]}   & n/a           & FLP                          &  \\
+eff. data rate                   & 5000   & {[}kbps{]} & ${R}$         &                              &  \\
+FEC coding                       & none   & {[}-{]}    & ${n/a}$       &                              &  \\
+technical degradation            & 1      & {[}dB{]}   & ${L}_{i1}$    & FLP                          &  \\
+implementation loss              & 1      & {[}dB{]}   & ${L}_{i1}$	   & FLP                          &  \\
                                  &        &            &               &                              & 
 \end{tabular}
 \caption{Rover to Lander (R2L) transmission parameters}
 \label{tab:lb-param}
 \end{table}
 
-The calculation of the Link Budget is based on \autoref{eqn:EbzuN0}. 
+The free space loss ${L}_{s}$ [$m^3$] in \autoref{tab:lb-param} is calculated using the following correlation. 
+
 \begin{equation}
-\frac{{E}_{b}}{{N}_{0}} = {P} - {L}_{l} + {G}_{R} + {L}_{s} + {L}_{a} + {G}_{L} + {10\cdot \log{k}} - {10\cdot \log{{T}_{s}}} - {10\cdot \log{{R}}} 
-\label{eqn:EbzuN0}
+\centering
+	{L}_{s} = {\frac{(4 \pi s)^2 \cdot c}{f}}
+\label{eqn:Ls}
 \end{equation}
+
+The signal travel distance {s} is assumed to be $s = 2\ km$ which is in excess of the mission goal. In accordance with X-Band communication the frequency {f} is set to a value of $f = 8,2\ GHz$. The parameter c represents the speed of light in vacuum. For simplification purposes $c = 3 \cdot 10^9\ \frac{m}{s}$ is assumed. \\ \\   
+Combining the parameters from \label{tab:lb-param} the link budget is calculated using \autoref{eqn:EbzuN0}. For the simplification of \autoref{eqn:EbzuN0} the line losses for the rover ${L}_{l1}$ and lander ${L}_{l2}$ are expressed as the sum ${L}_{l}$. Technical degradation and implementation losses are combined to ${L}_{i}$ in the same manner.  
+
+\begin{equation}
+	\centering
+		\frac{{E}_{b}}{{N}_{0}} = {P} - {L}_{l} + {G}_{R} - {10\cdot \log{{L}_{s}} - {L}_{a} + {G}_{L} + {10\cdot \log{k}} - {10\cdot \log{{T}_{s}}} - {10\cdot \log{{R}}} - {L}_{i}
+	\label{eqn:EbzuN0}
+\end{equation}
+
 
 \clearpage
 
@@ -520,7 +533,6 @@ The calculation of the Link Budget is based on \autoref{eqn:EbzuN0}.
   \caption{Various wheel dimensions respective to the weight. Rows highlighted in red are not considered further for system design due to the limit of 200 g weight per wheel.}
   \label{fig:DimensionsLoco}
 \end{figure}
-
 
 \subsection{Formulas for Locomotion Parameters}
 \label{app:FormulasLoco}
