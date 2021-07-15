@@ -369,6 +369,20 @@
     \field{year}{2019}
   \endentry
 
+  \entry{Europa}{article}{}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.heliyon.2019.e01908
+    \endverb
+    \field{issn}{2405-8440}
+    \field{number}{6}
+    \field{pages}{e01908}
+    \field{title}{The surface temperature of Europa}
+    \field{volume}{5}
+    \field{journaltitle}{Heliyon}
+    \field{year}{2019}
+  \endentry
+
   \entry{ref_tcs_01}{misc}{}
     \name{author}{1}{}{%
       {{hash=T}{%
@@ -452,6 +466,154 @@
     \field{volume}{46}
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{year}{2003}
+  \endentry
+
+  \entry{ref_tcs_05}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=StTiId}{%
+         family={{S. Klinkner}},
+         familyi={S\bibinitperiod},
+         suffix={date =\bibnamedelima {2020}},
+         suffixi={d\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
+  \bibinitperiod},
+         given={title = {{Thermal Control System for Rover Systems}}
+  institution =\bibnamedelima {{IRS at University of Stuttgart}}},
+         giveni={t\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
+  T\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim
+  \bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SdtTiI1}
+    \strng{fullhash}{SdtTiI1}
+    \field{labelnamesource}{author}
+  \endentry
+
+  \entry{ref_tcs_10}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Aluminium Giesserei Hannover GmbH}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Produktdatenblatt AA5083}}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/5083_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_11}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Aluminium Giesserei Hannover GmbH}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Produktdatenblatt AA6082}}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/6082_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_12}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Aluminium Giesserei Hannover GmbH}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Produktdatenblatt AA7075}}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/7075_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_08}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutsche Edelstahlwerke}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{1.4418X4 - CrNiMo16-5-1}}
+    \verb{url}
+    \verb \url{https://www.dew-stahl.com/fileadmin/files/dew-stahl.com/document
+    \verb s/Publikationen/Werkstoffdatenblaetter/Luft_Raumfahrt/1.4418_de.pdf}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_09}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutsche Edelstahlwerke}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Firmodur 7225}}
+    \verb{url}
+    \verb \url{https://www.dew-stahl.com/fileadmin/files/dew-stahl.com/document
+    \verb s/Publikationen/Werkstoffdatenblaetter/Baustahl/1.7225_1.7227_de.pdf}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_06}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=t}{%
+         family={{thyssenkrupp Material Schweiz}},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{t1}
+    \strng{fullhash}{t1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Titan 6Al4V “ELI”}}
+    \verb{url}
+    \verb \url{https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppBAM
+    \verb XSchweiz/de/downloads/werkstoffdatenblaetter-titan/link-titan_grade_5
+    \verb _eli.pdf}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_07}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=t}{%
+         family={{thyssenkrupp Material Schweiz}},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{t1}
+    \strng{fullhash}{t1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Titan Grade 5}}
+    \verb{url}
+    \verb \url{https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppBAM
+    \verb XSchweiz/de/downloads/werkstoffdatenblaetter-titan/link-titan_grade_5
+    \verb .pdf}
+    \endverb
   \endentry
 \enddatalist
 \endinput

@@ -59,7 +59,7 @@ Additionally a custom housekeeping board will be tasked with providing engine co
 \section{Electrical Power System}
 %-------------------------------------------------------------------------------
 \label{sec:EPS}
-The EPS (Electrical Power System) is the subsystem responsible for the electrical power supply of INSPIRE. It consists of four funadmental parts, which are the energy source, the PCDU unit (Power Control and Distribution)and the Energy Storage as well as the rover subsystems as the consumers. The EPS is visualized in \autoref{fig:epsflowchart}.
+The EPS (Electrical Power System) is the subsystem responsible for the electrical power supply of INSPIRE. It consists of four funadmental parts, which are the energy source, the PCDU unit (Power Control and Distribution) and the Energy Storage as well as the rover subsystems as the consumers. The EPS is visualized in \autoref{fig:epsflowchart}.
 
 \begin{figure}[htb]
 {\centering
@@ -390,46 +390,46 @@ This constraint results in 6 configurations considered for the Rover system desi
 \section{Thermal Control System} \label{sec:thermalcontrol}
 %-------------------------------------------------------------------------------
 The main object of the Thermal Control System (TCS) is to keep the eletric components within their temperature limits, listed in \autoref{tab:tcs_limits}.
-As a result of Europas low ground temperature, a small solar constant and the thin atmosphere the heat loss of the rover has to be minimised.
+As a result of Europas low surface temperature, a small solar constant and the thin atmosphere the heat loss of the rover has to be minimised  \cite{Europa}.
 This shall be reached by a smart heat distribution as well as by an adequate insulation and surface finishing.
 
 \subsection{Concepts}
-The main heat source of the rover is the waste heat of the RTG (see \autoref{sec:EPS}), which will be lead by thermal straps to the thermal critical components.
+The main heat source of the rover is the waste heat of the RTG (see \autoref{sec:EPS}), which will be lead by thermal straps to the thermperature sensetive components.
 The first attempt to use straps made out of copper was rejected du to the high resulting mass.
 Therefore, carbon-based straps \textit{LyNX}\textsuperscript{\tiny\textregistered} with a high thermal conductivity to density ratio will be used, \cite{ref_tcs_01}.
 However, the thermal conductivity is highly depend on the materials temperature, see \autoref{fig:tcs_strap01}.
-The curve was aproximated by an qubic interpolation, autoref appendix.
-To consider heat loss as a result of surface contact and radiation, the thermal conductivity was reduced about 20\%.
+The curve was aproximated by an qubic interpolation, .
+To consider heat loss as a result of surface contact and radiation, the thermal conductivity was reduced about 20\% ($f_{r}=0.8$).
 
 
 \begin{figure}[h]
 	\centering
-	\subfloat[Temperature dependent thermal conductivity/density of \textit{LyNX}\textsuperscript{\tiny\textregistered} (yellow curve), copper, and aluminum, \cite{ref_tcs_01}.]{\includegraphics[height=0.25\textwidth]{Media/tcs_strap_01.JPG}\label{fig:tcs_strap11}}\qquad\qquad
+	\subfloat[Temperature dependent thermal conductivity/density of \textit{LyNX}\textsuperscript{\tiny\textregistered} (yellow curve), copper, and aluminum, \cite{ref_tcs_01}.]{\includegraphics[height=0.3\textwidth]{Media/tcs_strap_01.JPG}\label{fig:tcs_strap11}}\qquad\qquad
 	\subfloat[Example of a thermal strap, \cite{ref_tcs_01}.]{\includegraphics[height=0.2\textwidth]{Media/tcs_strap_02.png}\label{fig:tcs_strap12}}
 	\caption{Carbon-based thermal strap \textit{LyNX}\textsuperscript{\tiny\textregistered}.}
 	\label{fig:tcs_strap01}
 \end{figure}
 
 
-The camera, exposed on a mast, will be heated by a seperate, light weight Radioisotope Heater Unit (RHU), which has  been used during several NASA missions, \cite{ref_tcs_02}.
-For the insulation, the material \textit{aerogel} will be applied, which has a very low heat conductivity (0.016 - 0.03\ $\frac{\W}{\m \K} $) as well as a low density (5 - 200\ $\frac{\kg}{\m^3}$) and has also been used in space applications \cite{ref_tcs_03}.
+The camera, exposed on a mast, will be heated by a seperate, light weight Radioisotope Heater Unit (RHU), which has  been used during several NASA missions \cite{ref_tcs_02}.
+For the insulation, the material \textit{Aerogel} will be applied, which has a very low heat conductivity (0.016 - 0.03\ $\frac{\W}{\m \K} $) as well as a low density (5 - 200\ $\frac{\kg}{\m^3}$) and has also been used in space applications \cite{ref_tcs_03}.
 
-A surface finishing with an low emisivity is necessary.
+A surface finishing with an low emisivity for low heat emisivity is necessary.
 For the most componets, a cost-efficient surface polishing is applicable.
 The camera will get a special white paint with a high absorptivity to gather the  sun light.
 
 But there is also a risk of overheating, because of the lack of heat convection.
 This circumstance concern the engines and also the camera.
-To get rid of the extensive heat and to prevent the damage of the components special bi-metallic heat switches will be  placed (see \autoref{fig:tcs_switch01}).
-These switches change their heat conductivity beyond a certain temperatur due to the expansion of the disk (see \autoref{fig:tcs_switch02}).
+To get rid of the extensive heat and to prevent damage of the components special bi-metallic heat switches (see \autoref{fig:tcs_switch01}) will be  placed between the application and the connection interface.
+These switches change their heat conductivity beyond a certain temperatur due to the expansion of the disk (see \autoref{fig:tcs_switch21}).
 It was assumed, that the toggle temperatur can be adapted by increasing the disk height.
-The influence of the changed disk stiffens on the contact pressure and the heat conductivity was neglected for this study.
+The influence of the changed disk stiffens on the contact pressure and therefore the heat conductivity was neglected for this study.
 The measured heat conductivity characterisitc was divided in three linear sections (\autoref{fig:tcs_switch22}), to enable a simple modelling in the upcoming thermal calculation.
 
 \begin{figure}[h]
 	\centering
 	\subfloat[Closed switch, high heat conduction.]{\includegraphics[height=0.18\textwidth]{Media/tcs_switch_01.png}\label{fig:tcs_switch11}}\qquad\qquad
-	\subfloat[Open switch, reduced heat conduction. ]{\includegraphics[height=0.18\textwidth]{Media/tcs_switch_02.png}\label{fig:tcs_switch12}}
+	\subfloat[Open switch, reduced heat conduction.]{\includegraphics[height=0.18\textwidth]{Media/tcs_switch_02.png}\label{fig:tcs_switch12}}
 	\caption{Bi-metallic heat switch, \cite{ref_tcs_04}.}
 	\label{fig:tcs_switch01}
 \end{figure}
@@ -445,7 +445,7 @@ The measured heat conductivity characterisitc was divided in three linear sectio
 \subsection{Thermal Network}
 A thermal analysis was performed in order to get
 \begin{itemize}
-	\item the dimension of the isnulation and heat straps,
+	\item the dimension of the insulation and heat straps,
 	\item the necessary amount of RHUs and heat switches,
 	\item the required surface finishing and
 	\item the suitable choice of material.\\
@@ -470,19 +470,21 @@ Due to the early state of the rover, simplifications and asumptions for the anal
 	\item A variation of $\pm 20\%$ for the emisivity and absorpsivity values was considered, if applicable (seet \autoref{tab:tcs_surface}).
 	\item The heat as a result of retardation radiation inside the shielding was neglected.
 	\item No dicrete nodes for the radar, hazcams and deployment engines were considered. Their heat will be lead into the chassis.
-	\item The thermal resistance between two surfaces and ther radiation of the thermal strap was neglected. To compensate this assumption, the heat conductivity was reduced about $20\%$.
 \end{itemize}
 
 
 \subsection{Analysis}
-The thermal analysis was perfomred as a Excel calculation, which can be found in the corresponding folder of Team 3.
+The thermal analysis was perfomred as an Excel calculation, which can be found in the corresponding folder of Team 3.
 The calculation sheet offers the possibility to adapt and customise input values and dimension.
-%There were different load cases defined to cover the most important hot and cold cases , wh but also some relevant operating cases.
+The major driving load cases are the  hot and the cold cases, where the maximum and minimum temperatures of the rover components will be reached.
+For that, the most powerful components were set to operating mode at once or only the minium requred components were turned on, respectively.
+The emisivity and absorptivity were adjusted to fulfil the cases.
+There were further load cases defined in order to cover important mission cases.
 
 \subsection{Results}
-The results of the temperatures for each node for the hot and cold cases  are listed in \autoref{tab:tcs_temp}.
+The resulting temperatures for each node for the hot and cold cases  are listed in \autoref{tab:tcs_temp}.
 The temperature margins for uncertainties, acceptance tests and qulification tests were considered with 5 K each, $\pm$15 K in total.
-The corresponding temperatures are listed in autoref{tab:}.
+The corresponding temperatures are listed in \autoref{tab:tcs_temp}.
 All temperature lay betwenn their limits without using a heater.
 Nevertheless, heaters were considered for the power calculation, see \autoref{sec:EPS}.
 
@@ -506,8 +508,7 @@ Nevertheless, heaters were considered for the power calculation, see \autoref{se
 
 In a furher step, a more detailed analysis should to be carried out with the Finite-Element-Method to identify the correct heat and temperature distribution.
 The FE results could be used to verify and adjust the analytical analysis to get a helpful tool for fast thermal calculation to evaluate different materials or desings in the further development phases.
-A transient analysis could also help to optimise the insulation design.
-The current thermal configuration for the engine is defined for a continuous operation
+%A transient analysis could also help to optimise the insulation design.
 
 
 \cleardoublepage
