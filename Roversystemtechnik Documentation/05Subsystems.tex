@@ -33,6 +33,18 @@ Using the Landers LGA greatly increases robustness due to the elimination of poi
 Due to the considerably high link margin the focus is on low mass and low power components with flight heritage such as flown on CubeSat missions. Criteria with relatively small impact on the link budget such as component noise or even FEC have not been taken into account. Ideally the rover communication uses X-Band for increased compatibility with the lander and has a total system mass of less than $1\ kg$. \\
 Since radiation hardness was not included in most datasheets a total dose of $<20\ krad$ was assumed in accordance with values for LEO [Missing Reference].
 
+\begin{table}[h]
+\centering
+\begin{tabular}{lll|ll|ll}
+Component   & Supplier  & Part Description     & 1. Criteria   & Value    & 2. Criteria & Value          \\ \hline\hline
+transmitter & Sputnix   & SXC-XTX-01           & mass          & 0,195 kg & data rate   & 10 Mbit/s \\
+receiver    & Endurosat & S-Band receiver      & power         & max. 2 W & mass        & 0,220 kg       \\
+antenna     & Endurosat & patch antenna & mass          & 2,2 g    & frequency   & X-Band         \\ \hline
+\end{tabular}
+\caption{Comparison of key criteria of selected communication components }
+\label{tab:ComCompComp}
+\end{table}
+
 \subsubsection{Transmitter}
 
 Since the transmission duty cycle is short, mass has become the design driving criteria followed by power. Output power is found sufficient in the $dBm$ regime. 
