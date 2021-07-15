@@ -337,7 +337,6 @@ This constraint results in 6 configurations considered for the Rover system desi
 
 
 
-
 \begin{figure}[htb] 
   \centering
      \includegraphics[width=1\textwidth]{Media/MMP for each Config.pdf}
@@ -390,7 +389,7 @@ This constraint results in 6 configurations considered for the Rover system desi
 %-------------------------------------------------------------------------------
 \section{Thermal Control System} \label{sec:thermalcontrol}
 %-------------------------------------------------------------------------------
-The main object of the Thermal Control System (TSC) is to keep the eletric components within their temperature limits, listed in \autoref{tab:tcs_limits}.
+The main object of the Thermal Control System (TCS) is to keep the eletric components within their temperature limits, listed in \autoref{tab:tcs_limits}.
 As a result of Europas low ground temperature, a small solar constant and the thin atmosphere the heat loss of the rover has to be minimised.
 This shall be reached by a smart heat distribution as well as by an adequate insulation and surface finishing.
 
@@ -400,7 +399,7 @@ The first attempt to use straps made out of copper was rejected du to the high r
 Therefore, carbon-based straps \textit{LyNX}\textsuperscript{\tiny\textregistered} with a high thermal conductivity to density ratio will be used, \cite{ref_tcs_01}.
 However, the thermal conductivity is highly depend on the materials temperature, see \autoref{fig:tcs_strap01}.
 The curve was aproximated by an qubic interpolation, autoref appendix.
-To consider heat loss as a result of surface contact and radiation, the thermal conductivity was reduced about $20\%$.
+To consider heat loss as a result of surface contact and radiation, the thermal conductivity was reduced about 20\%.
 
 
 \begin{figure}[h]
@@ -413,7 +412,7 @@ To consider heat loss as a result of surface contact and radiation, the thermal 
 
 
 The camera, exposed on a mast, will be heated by a seperate, light weight Radioisotope Heater Unit (RHU), which has  been used during several NASA missions, \cite{ref_tcs_02}.
-For the insulation, the material \textit{aerogel} will be applied, which has a very low heat conductivity ($ 0.016 - 0.03 \frac{W}{mK} $) as well as a low density ($5 - 200 \frac{kg}{m^3}$) and has also been used in space applications \cite{ref_tcs_03}.
+For the insulation, the material \textit{aerogel} will be applied, which has a very low heat conductivity (0.016 - 0.03\ $\frac{\W}{\m \K} $) as well as a low density (5 - 200\ $\frac{\kg}{\m^3}$) and has also been used in space applications \cite{ref_tcs_03}.
 
 A surface finishing with an low emisivity is necessary.
 For the most componets, a cost-efficient surface polishing is applicable.
@@ -463,7 +462,7 @@ At the intersection of the steering and drive engien, two additional nodes were 
 \end{figure}
 
 On the basis of the thermal network, the heat energy equlibrium for each node was defined (see \appref{sec:app_tcs_01}).
-The calculation were considered as a quasi-static analysis, were the component temperatures stay constant, $\frac{\text{d}T}{\text{d}t}=0$.
+The calculation were considered as a quasi-static analysis, were the component temperatures stay constant, $\frac{\dd T}{\dd t}=0$.
 Due to the early state of the rover, simplifications and asumptions for the analysis were made.
 \begin{itemize}
 	\item The convection was neglected due to the thin atmosphere.
@@ -481,21 +480,20 @@ The calculation sheet offers the possibility to adapt and customise input values
 %There were different load cases defined to cover the most important hot and cold cases , wh but also some relevant operating cases.
 
 \subsection{Results}
-
 The results of the temperatures for each node for the hot and cold cases  are listed in \autoref{tab:tcs_temp}.
-The temperature margins for uncertainties, acceptance tests and qulification tests were considered with $5 K$ each, $\pm 15K$ in total.
+The temperature margins for uncertainties, acceptance tests and qulification tests were considered with 5 K each, $\pm$15 K in total.
 The corresponding temperatures are listed in autoref{tab:}.
 All temperature lay betwenn their limits without using a heater.
 Nevertheless, heaters were considered for the power calculation, see \autoref{sec:EPS}.
 
 \begin{table}[htb]
 	\centering
-	\caption{Temperature results in $K$ of thermal analysis, including a margin of $\pm15K$.}
+	\caption{Temperature results in K of thermal analysis, including a margin of $\pm15\ \K$.}
 	\begin{tabular}{l@{\qquad\qquad}cc@{\qquad}|@{\qquad}cc}
 		\hline
 		Components & \multicolumn{4}{c}{Load Case}   \\ \hline
 		& \multicolumn{2}{l}{Hot case} & \multicolumn{2}{l}{Cold case} \\
-		& $0K$ & $+15 K$ & $0K$ & $-15 K$ \\ \hline
+		& $0$\ K & $+15$\ K & $0$\ K & $-15$\ K \\ \hline
 		RTG  & 380 & 395 & 350 & 335   \\
 		Electric Bay & 310 & 325 & 261 & 246  \\
 		Drill \& Analyser & & & &  \\
