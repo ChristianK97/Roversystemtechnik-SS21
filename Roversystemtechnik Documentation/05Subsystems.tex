@@ -10,10 +10,15 @@
 \section{Structure and Mechanics}
 \label{sec:mechanics}
 ...
-\section{Communications and Command and Data-Handling}
+\section{Communications and Command \& Data-Handling}
 \label{sec:comm}
 The Communications and C\&DH subsystem is responsible for the execution of Telecommand and Telemetry as well as payload data storing and transmission. Therefore the system consists of a pair of redundant Transmitter and Receiver as well as a redundant Single Board Computer OBC. The subsystem is located within the Electronic Bay.
+\subsection{Operation Concept}
 
+Due to power and time constraints, the rover will only transmit telemetry during the locomotion and payload phases. Payload data will be compressed and stored instead and forwarded to the Lander at before the hibernation phase at the end of a mission tal. \\ 
+ 
+The transmission time per tal to achieve the scientific output from \autoref{chap:sc-output} is calculated in \autoref{app:MissionDataOutput} (\autoref{tab:Tx-tptal}) and adds up to 38,23 minutes. 
+	
 \subsection{Communication System}
 Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a $25\ dB$ high gain antenna [Missing Reference] and a low gain antenna which is not further specified in literature.\\
 
