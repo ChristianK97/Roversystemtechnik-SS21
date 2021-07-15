@@ -17,6 +17,93 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{Mission_01}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{Jet Propusion Laboratory}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Galileo Mission to Jupiter}}
+    \verb{url}
+    \verb \url{https://www.jpl.nasa.gov/missions/galileo}
+    \endverb
+  \endentry
+
+  \entry{Mission_02}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA Science}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N3}
+    \strng{fullhash}{N3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Europa Ocean Moon}}
+    \verb{url}
+    \verb \url{https://solarsystem.nasa.gov/moons/jupiter-moons/europa/in-depth
+    \verb /}
+    \endverb
+  \endentry
+
+  \entry{Mission_03}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={{Institut für Planetenforschung, DLR}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Die Mission JUICE zum Jupitersystem}}
+    \verb{url}
+    \verb \url{https://www.dlr.de/pf/desktopdefault.aspx/tabid-10617/18438_read
+    \verb -43016/}
+    \endverb
+  \endentry
+
+  \entry{Mission_04}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Europa Lander}}
+    \verb{url}
+    \verb \url{https://europa.nasa.gov/}
+    \endverb
+  \endentry
+
+  \entry{Mission_05}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA / JPL}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N2}
+    \strng{fullhash}{N2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Europa}}
+    \verb{url}
+    \verb \url{https://www.jpl.nasa.gov/missions/europa-lander}
+    \endverb
+  \endentry
+
   \entry{FraunhoferInstituteforSolarEnergySystemsISE.2021}{misc}{}
     \name{author}{1}{}{%
       {{hash=F}{%
@@ -154,8 +241,8 @@
          familyi={N\bibinitperiod},
       }}%
     }
-    \strng{namehash}{J1}
-    \strng{fullhash}{J1}
+    \strng{namehash}{J2}
+    \strng{fullhash}{J2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{{Enhanced Multi-Mission Radioisotope Thermoelectric Generator
@@ -280,6 +367,91 @@
     \verb \url{https://satsearch.co/products/bradford-nova-pcdu}
     \endverb
     \field{year}{2019}
+  \endentry
+
+  \entry{ref_tcs_01}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Thermal Space and Thermal Straps }},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Graphene Thermal LyNX® Technology}}
+    \verb{url}
+    \verb \url{https://thermal-space.com/thermal-lynx/}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_02}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Light-Weight Radioisotope Heater Unit}}
+    \verb{url}
+    \verb \url{https://rps.nasa.gov/power-and-thermal-systems/thermal-systems/l
+    \verb ight-weight-radioisotope-heater-unit/}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_03}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA / JPL}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N2}
+    \strng{fullhash}{N2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Aerogel}}
+    \verb{url}
+    \verb \url{https://solarsystem.nasa.gov/stardust/aerogel_factsheet.pdf}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_04}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MFH}{%
+         family={Milanze},
+         familyi={M\bibinitperiod},
+         given={Fernando\bibnamedelima H.},
+         giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=MMB}{%
+         family={Mantelli},
+         familyi={M\bibinitperiod},
+         given={Marcia\bibnamedelima B.H.},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MFHMMB1}
+    \strng{fullhash}{MFHMMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0017-9310(03)00294-1
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{24}
+    \field{pages}{4573\bibrangedash 4586}
+    \field{pagination}{page}
+    \field{title}{{Theoretical and experimental studies of a bi-metallic heat
+  switch for space applications }}
+    \field{volume}{46}
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{year}{2003}
   \endentry
 \enddatalist
 \endinput

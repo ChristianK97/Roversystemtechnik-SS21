@@ -33,45 +33,45 @@ Warning--I didn't find a database entry for "Platzhalter"
 Biblatex version: 3.13
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 11 entries,
+You've used 20 entries,
             6365 wiz_defined-function locations,
-            1273 strings with 11072 characters,
-and the built_in function-call counts, 63256 in all, are:
-= -- 3480
-> -- 3557
-< -- 362
-+ -- 3330
-- -- 2663
-* -- 3406
-:= -- 7503
+            1318 strings with 12282 characters,
+and the built_in function-call counts, 95579 in all, are:
+= -- 5335
+> -- 4279
+< -- 510
++ -- 3753
+- -- 2903
+* -- 5446
+:= -- 10252
 add.period$ -- 0
-call.type$ -- 11
-change.case$ -- 171
+call.type$ -- 20
+change.case$ -- 226
 chr.to.int$ -- 166
-cite$ -- 20
-duplicate$ -- 5489
-empty$ -- 5170
-format.name$ -- 607
-if$ -- 11611
+cite$ -- 38
+duplicate$ -- 8769
+empty$ -- 8664
+format.name$ -- 1044
+if$ -- 18819
 int.to.chr$ -- 0
-int.to.str$ -- 32
+int.to.str$ -- 60
 missing$ -- 0
-newline$ -- 280
-num.names$ -- 509
-pop$ -- 3564
+newline$ -- 451
+num.names$ -- 881
+pop$ -- 6533
 preamble$ -- 1
-purify$ -- 226
+purify$ -- 311
 quote$ -- 0
-skip$ -- 2041
+skip$ -- 3417
 stack$ -- 0
-substring$ -- 6059
-swap$ -- 1348
-text.length$ -- 298
+substring$ -- 8955
+swap$ -- 2155
+text.length$ -- 456
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 362
+type$ -- 668
 warning$ -- 0
-while$ -- 719
+while$ -- 1034
 width$ -- 0
-write$ -- 270
+write$ -- 432
 (There was 1 warning)
