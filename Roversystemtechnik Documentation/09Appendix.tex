@@ -296,13 +296,22 @@ Combining the parameters from \autoref{tab:lb-param} the link budget is calculat
 Atmospheric losses ${L}_{a}$ and pointing errors in \autoref{eqn:EbzuN0} are neglected due to a lack of atmosphere and the utilisation of omnidirectional low gain antennas.\\
 
 \autoref{eqn:EbzuN0} and the conservative assumptions from \autoref{tab:lb-param} results in an Energy per bit over Noise $\frac{{E}_{b}}{{N}_{0}} = 10,59\ dB$. The complete link budget can be found in \autoref{fig:LB-R2L}. \\
-Referencing \autoref{fig:BitErrorRate} a Bit Error Rate of $10^{-4}$ can be achieved which is considered sufficient for a first assessment. Optionally a FEC code can be implemented in later design phases.
+Referencing \autoref{fig:BitErrorRate} a Bit Error Rate of $10^{-4}$ can be achieved in the downlink path, which is considered sufficient for a first assessment. Optionally a FEC code can be implemented in later design phases.\\
+
+Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}_{b}}{{N}_{0}} = 50,56\ dB$ corresponding to a Bit Error Rate of potentially less than $10^{-6}$. Therefore the downlink does not contribute to the design decisions. The complete link budget for the uplink path can be found in \autoref{fig:LB-L2R}.
 
 \begin{figure}[hbt]
 	\centering
   		\includegraphics[width=0.9\textwidth]{Media/LB-RovertoLander.png}
-  \caption{Rover to Lander complete link budget.}
+  \caption{Rover to Lander complete downlink budget.}
   \label{fig:LB-R2L}
+\end{figure}
+
+\begin{figure}[hbt]
+	\centering
+  		\includegraphics[width=0.9\textwidth]{Media/LB-LandertoRover.png}
+  \caption{Lander to Rover complete uplink budget.}
+  \label{fig:LB-L2R}
 \end{figure}
 
 \begin{figure}[htb]
@@ -311,6 +320,10 @@ Referencing \autoref{fig:BitErrorRate} a Bit Error Rate of $10^{-4}$ can be achi
   \caption{Bit Error Rate for different FEC codes}
   \label{fig:BitErrorRate}
 \end{figure}
+
+\subsection{Mission Data Output}
+
+The analysis of the mission data concept for memory capacity and transmission times is derived from the payload camera and Hazcams as images require far more data than telemetry or other payload data.  
 
 
 \clearpage
