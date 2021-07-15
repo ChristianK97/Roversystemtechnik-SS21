@@ -321,9 +321,34 @@ Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}
 
 \subsection{Mission Data Output}
 
-The analysis of the mission data concept for memory capacity and transmission times is derived from the payload camera and Hazcams as images require far more data than telemetry or other payload data. \\
+The analysis of the mission data concept for memory capacity and transmission times is focuses on the payload camera and Hazcams as images require far more data than telemetry or other payload data. \\
 
+In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit leads to a file size of 42 Mbit per image.\\
+To calculate the message size in \autoref{tab:TimePerPic}, it is assumed that a transmission frame consists of 10264 bits including a payload frame of maximum 8840 bits.   
 
+\begin{table}[h]
+\centering
+\begin{tabular}{llllll}
+File Type & Compression    & File Size  & Message Size & Data Rate & Tx t per File \\ \hline\hline
+image     & none           & 42 Mbit    & 48,77 Mbit   & 5 Mbit    & 8,12 s        \\
+image     & HIREW          & 23,52 Mbit & 27,31 Mbit   & 5 Mbit    & 5,45 s        \\ \hline
+\end{tabular}
+\caption{Comparison of transmission times per image (message frame bits included)}
+\label{tab:TimePerPic}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lllll}
+File per tal & Compression & File Size  & Total Data & Tx time    \\ \hline\hline
+420          & none        & 42 Mbit    & 2,21 GB    & 56,9 Min.  \\
+420          & HIREW       & 23,52 Mbit & 1,22 GB    & 38,23 Min. \\ \hline
+\end{tabular}
+\caption{Transmission time and total data output per tal}
+\label{tab:Tx-tptal}
+\end{table}
+
+The HIREW compression algorithm is suggested for the mission considering a high average compression of 0,56 \% and a high compression speed of 123 Mbit/s for grayscale and 104,4 Mbit/s for RGB image files. 
 \clearpage
 
 
