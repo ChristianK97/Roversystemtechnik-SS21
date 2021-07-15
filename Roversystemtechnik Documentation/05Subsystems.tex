@@ -12,7 +12,9 @@
 ...
 \section{Communications and Command \& Data-Handling}
 \label{sec:comm}
-The Communications and C\&DH subsystem is responsible for the execution of Telecommand and Telemetry as well as payload data storing and transmission. Therefore the system consists of a pair of redundant Transmitter and Receiver as well as a redundant Single Board Computer OBC. The subsystem is located within the Electronic Bay.
+The Communications subsystem consists of redundant transmitters and receivers which are cross linked to four antennas and the OBC. Additionally hard wired connections to the PCDU enable for reboots via direct commands.\\
+C\&DH is responsible for the generation of telemetry from the housekeeping boards and the execution of telecommands, as well as the storing and compressing of payload data. 
+
 \subsection{Operation Concept}
 
 Due to power and time constraints, the rover will only transmit telemetry during the locomotion and payload phases. Payload data will be compressed and stored instead and forwarded to the Lander at before the hibernation phase at the end of a mission tal. \\ 
