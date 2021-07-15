@@ -285,7 +285,7 @@ The free space loss ${L}_{s}$ [$m^3$] in \autoref{tab:lb-param} is calculated us
 \end{equation}
 
 The signal travel distance {s} is assumed to be $s = 2000\ m$ which is in excess of the mission goal. In accordance with X-Band communication the frequency {f} is set to a value of $f = 8,2\ GHz$. The parameter c represents the speed of light in vacuum. For simplification purposes $c = 3 \cdot 10^9\ \frac{m}{s}$ is assumed. \\ \\   
-Combining the parameters from \autoref{tab:lb-param} the link budget is calculated using \autoref{eqn:EbzuN0}. For the simplification of \autoref{eqn:EbzuN0} the line losses for the rover ${L}_{l1}$ and lander ${L}_{l2}$ are expressed as the sum ${L}_{l}$. Technical degradation and implementation losses are combined to ${L}_{i}$ in the same manner. Parameter ${k}$ describes the Boltzmann constant.   
+Combining the parameters from \autoref{tab:lb-param} the link budget is calculated using \autoref{eqn:EbzuN0}. For the simplification of \autoref{eqn:EbzuN0} the line losses for the rover ${L}_{l1}$ and lander ${L}_{l2}$ are expressed as the sum ${L}_{l}$. In the same manner technical degradation and implementation losses are combined to ${L}_{i}$. Atmospheric losses ${L}_{a}$ and pointing errors in \autoref{eqn:EbzuN0} are neglected due to a lack of atmosphere and the utilisation of omnidirectional low gain antennas. Parameter ${k}$ describes the Boltzmann constant.   
 
 \begin{equation}
 	\centering
@@ -293,9 +293,7 @@ Combining the parameters from \autoref{tab:lb-param} the link budget is calculat
 	\label{eqn:EbzuN0}
 \end{equation}
 
-Atmospheric losses ${L}_{a}$ and pointing errors in \autoref{eqn:EbzuN0} are neglected due to a lack of atmosphere and the utilisation of omnidirectional low gain antennas.\\
-
-\autoref{eqn:EbzuN0} and the conservative assumptions from \autoref{tab:lb-param} results in an Energy per bit over Noise $\frac{{E}_{b}}{{N}_{0}} = 10,59\ dB$. The complete link budget can be found in \autoref{fig:LB-R2L}. \\
+\autoref{eqn:EbzuN0} and the conservative assumptions from \autoref{tab:lb-param} results in an energy per bit over noise $\frac{{E}_{b}}{{N}_{0}} = 10,59\ dB$. The complete link budget can be found in \autoref{fig:LB-R2L}. \\
 Referencing \autoref{fig:BitErrorRate} a Bit Error Rate of $10^{-4}$ can be achieved in the downlink path, which is considered sufficient for a first assessment. Optionally a FEC code can be implemented in later design phases.\\
 
 Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}_{b}}{{N}_{0}} = 50,56\ dB$ corresponding to a Bit Error Rate of potentially less than $10^{-6}$. Therefore the downlink does not contribute to the design decisions. The complete link budget for the uplink path can be found in \autoref{fig:LB-L2R}.
@@ -323,7 +321,7 @@ Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}
 
 \subsection{Mission Data Output}
 
-The analysis of the mission data concept for memory capacity and transmission times is derived from the payload camera and Hazcams as images require far more data than telemetry or other payload data.  
+The analysis of the mission data concept for memory capacity and transmission times is derived from the payload camera and Hazcams as images require far more data than telemetry or other payload data. \\
 
 
 \clearpage
