@@ -39,6 +39,49 @@
 \label{chap:Appendix}
 
 %-------------------------------------------------
+\section{Structure and Mechanism} \label{sec:AppendixStructureandMechanism}
+%-------------------------------------------------
+
+\clearpage
+
+%-------------------------------------------------
+\section{Locomotion} 
+\label{app:Loco}
+%-------------------------------------------------
+
+\subsection{Locomotion Design Drivers}
+\label{app:DesignDrivers}
+
+\begin{figure}[htb] 
+  \centering
+     \includegraphics[width=1\textwidth]{Media/LocomotionTradeOff.png}
+  \caption{Trade-off of the locomotion movement system. The criteria with the respective weighting factors are shown on the left. On the right side are the respective systems.}
+  \label{fig:TradeOffLoco}
+\end{figure}
+
+
+\begin{figure}[htb] 
+  \centering
+     \includegraphics[width=1\textwidth]{Media/SoilParameters.png}
+  \caption{Soil Parameters}
+  \label{fig:SoilParameters}
+\end{figure}
+
+
+\begin{figure}[htb] 
+  \centering
+     \includegraphics[width=1\textwidth]{Media/Dimensions-WeightLimits.png}
+  \caption{Various wheel dimensions respective to the weight. Rows highlighted in red are not considered further for system design due to the limit of 200 g weight per wheel.}
+  \label{fig:DimensionsLoco}
+\end{figure}
+
+\subsection{Formulas for Locomotion Parameters}
+\label{app:FormulasLoco}
+
+
+\clearpage
+
+%-------------------------------------------------
 \section{Electrical Power System} \label{sec:AppendixEPS}
 %-------------------------------------------------
 \begin{table}[htb]
@@ -81,157 +124,6 @@ Useable Energy Density [$Wh/kg$]                                              & 
 \caption{POWER BUDGET DUMMY!}
 \label{tab:powerbudgetcomplete}
 }
-\end{figure}
-
-\section{Radiation}
-
-\label{sec:AppendixRadiation}
-
-In this chapter, detailed calculations are performed on which \autoref{sec:Radiation} is based on. All calculations and figures in \autoref{sec:AppendixRadiation} are performed with SPENVIS unless otherwise stated. In order to simulate the radiation on Europa an orbit around Jupiter is simulated with the orbit parameters of Europa with a total mission duration of 30 days. The chosen parameters were an perijove altitude of 664,862 km, an apojove altitude of 676,938 km, and an inclination of 0.47°.
-
-\subsection{Jupiters Radiation Environment}
-
-\label{subsec:AppendixRadiationEnvironment}
-
-In order to compare the radiation environment around Jupiter and the radiation environment around Earth the following trapped radiation models were used: for Jupiter the D\&G83+Salammbo proton model and D\&G83+GIRE+SalammboE electron model was used; for Earth the AP-8 proton model and the AE-8 electron model was used.
-
-\begin{figure}[htb]
-     \centering
-     \begin{subfigure}[b]{0.49\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/E_Electron_Flux}
-         \caption{Average spectra of trapped electrons around Earth}
-         \label{fig:trappedelectronsEarth}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.49\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/E_Proton_Flux}
-         \caption{Average spectra of trapped protons around Earth}
-         \label{fig:trappedprotonsEarth}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.49\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/J_Electron_Flux}
-         \caption{Average spectra of trapped electrons around Jupiter}
-         \label{fig:trappedelectronsJupiter}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.49\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/J_Proton_Flux}
-         \caption{Average spectra of trapped protons around Jupiter}
-         \label{fig:trappedprotonsJupiter}
-     \end{subfigure}
-     \caption{Average trapped proton and electron fluxes on an orbit around earth at 25,000 km, through the outer Van Allen radiation belt, and on Europa's orbit around Jupiter.}
-     \label{fig:trappedprotonelectronfluxes}
-\end{figure}
-
-\clearpage
-
-\subsection{Radiation Exposures}
-
-\label{subsec:AppendixRadiationExposures}
-
-In order to simulate the TID for different radiation protections the Geant4 tool Multi-Layered Shielding Simulation (MULASSIS) is used. As target material silicon is selected with a thickness of 1 \(\mu \text{m}\). As shape a planar slap is selected because of the ice ground on one side of the rover.
-
-\begin{figure}[htb]
-     \centering
-     \begin{subfigure}[b]{0.49\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/J_Electron_Shielding}
-         \caption{TID for Electrons as Source Particles}
-         \label{fig:TIDElectronShielding}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.49\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/J_Proton_Shielding}
-         \caption{TID for Protons as Source Particles}
-         \label{fig:TIDProtonShielding}
-     \end{subfigure}
-     \caption{TID of aluminium, titanium, and the optimised radiation structure shown in \autoref{tab:OptimalRadiationProtection} with a weight target of all three structures of 0.5 \(\text{g/cm}^2\) over 30 days of exposure on Europa.}
-     \label{fig:AluminiumTitanOptimised}
-\end{figure}
-
-\begin{table}[htb]
-\centering
-\caption{Used components and the respective radiation tolerance and location}
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}[l]{lccccc}
-
-	\toprule
-		Components	&	Rated TID	&	Exposed TID	&	Location\\
-	\midrule
-	
-	Electric Motors	&	-	&	< 205 krad	&	locomotion housing\\	
-	
-	Harness	&	-	&	< 98 krad	&	chassis\\	
-	
-	Stereo Vision Cams	&	40	&	< 31 krad	&	camera housing\\	
-	
-	OBC	&	1000	&	< 17 krad	&	E-Bay\\
-	
-	PCDU	&	20	&	< 17 krad	&	E-Bay\\
-	
-
-	\bottomrule
-
-\end{tabular}
-\end{adjustbox}
-\label{tab:RadiationList}
-\end{table}
-
-\begin{figure}[htb]
-     \centering
-     \begin{subfigure}[b]{0.49\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/J_Electron_Compartments}
-         \caption{TID for Electrons as Source Particles}
-         \label{fig:TIDElectronShielding}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.49\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{Media/J_Proton_Compartments}
-         \caption{TID for Proton as Source Particles}
-         \label{fig:TIDProtonShielding}
-     \end{subfigure}
-     \caption{TID for different compartments as seen in \autoref{fig:RadiationOverview}. The E-Bay is shielded by 4 mm aluminium, 0.415 mm lead, and 0.033 mm iron; the camera compartment by 2 mm aluminium, 0.415 mm lead, and 0.033 mm iron; the chassis by 2 mm aluminium; the electric motors by 1 mm aluminium.}
-     \label{fig:CompartmentTID}
-\end{figure}
-
-\newpage
-
-\subsection{Improvements}
-
-\label{app:AppendixRadiationImprovements}
-
-All simulations of the improvements introduced in \autoref{subsec:RadiationImprovements} are performed in the same way as in \autoref{subsec:AppendixRadiationExposures}. \\ \\
-In \autoref{fig:Radiation_Improvements_Individual}, the TID over 30 days within the E-Bay is shown. If all components with an radiation resistance under 43.27 krad are shielded individually, the additional shielding structure around the E-Bay can be removed and the aluminium structure would be sufficient.
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Media/J_Improvements_Individual}
-	\caption{TID with 4 mm Al shielding over a mission duration of 30 days}
-	\label{fig:Radiation_Improvements_Individual}
-\end{figure}
-
-The resulting mass savings can be calculated with \autoref{eq:RadiationImprovementsIndividual} with \(m^*\) as the specific weight of the radiation protection and \(N\) as the amount of components within the E-Bay with a radiation resistance under 43.27 krad as of \autoref{tab:RadiationList}.
-
-\begin{equation}
-	\Delta m = SA_\text{E-Bay} \cdot m^*_\text{Shielding} - \sum\nolimits_{n=0}^N SA_\text{Component, n} \cdot m^*_\text{Shielding}
-	\label{eq:RadiationImprovementsIndividual}
-\end{equation}
-
-With inserted values this results in a mass saving of \(\Delta m\) = 736.2 g.
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Media/J_Improvements_Ice}
-	\caption{TID with 4 mm Al shielding and 1 cm of Water over a mission duration of 30 days}
-	\label{fig:Radiation_Improvements_Ice}
 \end{figure}
 
 \clearpage
@@ -355,43 +247,6 @@ The HIREW compression algorithm is suggested for the mission considering a high 
 \clearpage
 
 
-
-%-------------------------------------------------
-\section{Locomotion} 
-\label{app:Loco}
-%-------------------------------------------------
-
-\subsection{Locomotion Design Drivers}
-\label{app:DesignDrivers}
-
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/LocomotionTradeOff.png}
-  \caption{Trade-off of the locomotion movement system. The criteria with the respective weighting factors are shown on the left. On the right side are the respective systems.}
-  \label{fig:TradeOffLoco}
-\end{figure}
-
-
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/SoilParameters.png}
-  \caption{Soil Parameters}
-  \label{fig:SoilParameters}
-\end{figure}
-
-
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/Dimensions-WeightLimits.png}
-  \caption{Various wheel dimensions respective to the weight. Rows highlighted in red are not considered further for system design due to the limit of 200 g weight per wheel.}
-  \label{fig:DimensionsLoco}
-\end{figure}
-
-\subsection{Formulas for Locomotion Parameters}
-\label{app:FormulasLoco}
-
-
-\clearpage
 %-------------------------------------------------
 \section{Thermal Controls System} \label{sec:AppendixThermal}
 %-------------------------------------------------
@@ -765,6 +620,163 @@ For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.\\
 	\end{tabular}
 	\label{tab:tcs_surf}
 \end{table}
-s
-\cleardoublepage
 
+\clearpage
+
+\section{Radiation}
+
+\label{sec:AppendixRadiation}
+
+In this chapter, detailed calculations are performed on which \autoref{sec:Radiation} is based on. All calculations and figures in \autoref{sec:AppendixRadiation} are performed with SPENVIS unless otherwise stated. In order to simulate the radiation on Europa an orbit around Jupiter is simulated with the orbit parameters of Europa with a total mission duration of 30 days. The chosen parameters were an perijove altitude of 664,862 km, an apojove altitude of 676,938 km, and an inclination of 0.47°.
+
+\subsection{Jupiters Radiation Environment}
+
+\label{subsec:AppendixRadiationEnvironment}
+
+In order to compare the radiation environment around Jupiter and the radiation environment around Earth the following trapped radiation models were used: for Jupiter the D\&G83+Salammbo proton model and D\&G83+GIRE+SalammboE electron model was used; for Earth the AP-8 proton model and the AE-8 electron model was used.
+
+\begin{figure}[htb]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/E_Electron_Flux}
+         \caption{Average spectra of trapped electrons around Earth}
+         \label{fig:trappedelectronsEarth}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/E_Proton_Flux}
+         \caption{Average spectra of trapped protons around Earth}
+         \label{fig:trappedprotonsEarth}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/J_Electron_Flux}
+         \caption{Average spectra of trapped electrons around Jupiter}
+         \label{fig:trappedelectronsJupiter}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/J_Proton_Flux}
+         \caption{Average spectra of trapped protons around Jupiter}
+         \label{fig:trappedprotonsJupiter}
+     \end{subfigure}
+     \caption{Average trapped proton and electron fluxes on an orbit around earth at 25,000 km, through the outer Van Allen radiation belt, and on Europa's orbit around Jupiter.}
+     \label{fig:trappedprotonelectronfluxes}
+\end{figure}
+
+\clearpage
+
+\subsection{Radiation Exposures}
+
+\label{subsec:AppendixRadiationExposures}
+
+In order to simulate the TID for different radiation protections the Geant4 tool Multi-Layered Shielding Simulation (MULASSIS) is used. As target material silicon is selected with a thickness of 1 \(\mu \text{m}\). As shape a planar slap is selected because of the ice ground on one side of the rover.
+
+\begin{figure}[htb]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/J_Electron_Shielding}
+         \caption{TID for Electrons as Source Particles}
+         \label{fig:TIDElectronShielding}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/J_Proton_Shielding}
+         \caption{TID for Protons as Source Particles}
+         \label{fig:TIDProtonShielding}
+     \end{subfigure}
+     \caption{TID of aluminium, titanium, and the optimised radiation structure shown in \autoref{tab:OptimalRadiationProtection} with a weight target of all three structures of 0.5 \(\text{g/cm}^2\) over 30 days of exposure on Europa.}
+     \label{fig:AluminiumTitanOptimised}
+\end{figure}
+
+\begin{table}[htb]
+\centering
+\caption{Used components and the respective radiation tolerance and location}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}[l]{lccccc}
+
+	\toprule
+		Components	&	Rated TID	&	Exposed TID	&	Location\\
+	\midrule
+	
+	Electric Motors	&	-	&	< 205 krad	&	locomotion housing\\	
+	
+	Harness	&	-	&	< 98 krad	&	chassis\\	
+	
+	Stereo Vision Cams	&	40	&	< 31 krad	&	camera housing\\	
+	
+	OBC	&	1000	&	< 17 krad	&	E-Bay\\
+	
+	PCDU	&	20	&	< 17 krad	&	E-Bay\\
+	
+
+	\bottomrule
+
+\end{tabular}
+\end{adjustbox}
+\label{tab:RadiationList}
+\end{table}
+
+\begin{figure}[htb]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/J_Electron_Compartments}
+         \caption{TID for Electrons as Source Particles}
+         \label{fig:TIDElectronShielding}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/J_Proton_Compartments}
+         \caption{TID for Proton as Source Particles}
+         \label{fig:TIDProtonShielding}
+     \end{subfigure}
+     \caption{TID for different compartments as seen in \autoref{fig:RadiationOverview}. The E-Bay is shielded by 4 mm aluminium, 0.415 mm lead, and 0.033 mm iron; the camera compartment by 2 mm aluminium, 0.415 mm lead, and 0.033 mm iron; the chassis by 2 mm aluminium; the electric motors by 1 mm aluminium.}
+     \label{fig:CompartmentTID}
+\end{figure}
+
+\newpage
+
+\subsection{Improvements}
+
+\label{app:AppendixRadiationImprovements}
+
+All simulations of the improvements introduced in \autoref{subsec:RadiationImprovements} are performed in the same way as in \autoref{subsec:AppendixRadiationExposures}. \\ \\
+In \autoref{fig:Radiation_Improvements_Individual}, the TID over 30 days within the E-Bay is shown. If all components with an radiation resistance under 43.27 krad are shielded individually, the additional shielding structure around the E-Bay can be removed and the aluminium structure would be sufficient.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Media/J_Improvements_Individual}
+	\caption{TID with 4 mm Al shielding over a mission duration of 30 days}
+	\label{fig:Radiation_Improvements_Individual}
+\end{figure}
+
+The resulting mass savings can be calculated with \autoref{eq:RadiationImprovementsIndividual} with \(m^*\) as the specific weight of the radiation protection and \(N\) as the amount of components within the E-Bay with a radiation resistance under 43.27 krad as of \autoref{tab:RadiationList}.
+
+\begin{equation}
+	\Delta m = SA_\text{E-Bay} \cdot m^*_\text{Shielding} - \sum\nolimits_{n=0}^N SA_\text{Component, n} \cdot m^*_\text{Shielding}
+	\label{eq:RadiationImprovementsIndividual}
+\end{equation}
+
+With inserted values this results in a mass saving of \(\Delta m\) = 736.2 g.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Media/J_Improvements_Ice}
+	\caption{TID with 4 mm Al shielding and 1 cm of Water over a mission duration of 30 days}
+	\label{fig:Radiation_Improvements_Ice}
+\end{figure}
+
+\clearpage
+
+\section{Digital Appendix}
+\label{app:DigitalAppendix}
+
+\cleardoublepage
