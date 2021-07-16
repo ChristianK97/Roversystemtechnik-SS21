@@ -2,11 +2,6 @@
 \label{chap:subsystems}
 .....
 
-   
-
-\section{Rover}
-\label{sec:rover}
-...
 \section{Structure and Mechanisms}
 \label{sec:mechanics}
 ...
@@ -20,8 +15,7 @@ A possible concept of the rover deployment is shown in the following figure.
 \subsection{Exploration Configuration}
 When the deploment is sucessfuly done, INSPIRE has to switch from storage - to exploration configuration.
 This will be possible with a cogwheel mechanism which will be operated by two Motors (QUELLENVERWEIS). In case there are problems with these, there are another two cold redundant motors integrated to be sure that
-\subsection{Locomotion System}
-...
+
 \subsection{Static Analysis}
 ...
 \subsection{Mass Budget}
@@ -299,14 +293,14 @@ In order to protect the rover against the high radiation levels at the surface o
 
 The locomotion subsystem deals with the aspect of how the rover moves and the technical design, including the selection of components such as motors or gearboxes. Before the components can be determined, however, it is necessary to consider certain parameters and design drivers. These will be introduced in the following, and the decisions or estimations concerning the rover will be presented.
 
-\subsection{Design drivers for Rover Classification}
+\subsection{Design Drivers for Rover Classification}
 \label{sec:DesignDriversLoco}
 
-The first consideration in designing a rover is the environmental and operational conditions expected for the mission operation. The ice moon can be assumed to have a solid surface; thus, a wheeled rover is chosen. Further design drivers that led to the locomotion mobility systems are based on a tradeoff presented a tradeoff in \autoref{fig:TradeOffLoco}. However, the main design drivers are briefly summarised in \autoref{tab:Design Drivers Rover Movement}.
+Initial considerations in the design of a rover's locomotion system are the environmental and operational conditions expected for mission operations, as well as design factors. The basic design is based on a tradeoff, which can be seen in \autoref{fig:TradeOffLoco}. A more detailed design and the main criteria related to this are summarised in \autoref{tab:Design Drivers Rover Movement}.
 
 \begin{table}[htb]
 \centering
-\caption{Design Drivers for the rover movement technique regarding the environmental conditions on Europa and operating conditions.}
+\caption{Design drivers for the rover movement technique regarding the environmental conditions on Europa and operating conditions.}
 \label{tab:Design Drivers Rover Movement}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|l|}
@@ -322,7 +316,7 @@ The first consideration in designing a rover is the environmental and operationa
 }
 \end{table}
 
-With the configured rover, the resulting wheel formula is 4 x 4 x 4. The normal force on Europa can be calculated to:
+With the configured rover, the resulting wheel formula is 4 x 4 x 4. Furthermore, the normal force on Europa can be calculated to:
 
 \begin{equation}
 	W \:  = \:	m_\text{total} \cdot g_\text{Europa} \:  = \: 39.45 \, \text{N} \, 	.
@@ -334,9 +328,9 @@ Since each wheel is individually driven and controllable, the parameters in the 
 \subsection{System Parameters}
 \label{sec:SystemParametersLoco}
 
-Regarding techniques of rover movement, it is crucial to consider the local conditions in which the rover will be operating. The surface of Europa can be assumed to be mainly covered by ice. However, since there are also geysers that transport water to the surface, surface areas may be covered by snow. Though Europa's surface temperature does not exceed 130 K, rather icy, hard-packed snow can be assumed. For this study, a conservative design of the rover is considered, whereby material parameters of snow in Sweden were selected, shown in \autoref{fig:SoilParameters}. Furthermore, the parameters depend on the width and diameter of the wheels of the rover. Therefore, several sizes dependent on the respective weight were selected and a limit per wheel was set to 200 g, illustrated in \autoref{fig:DimensionsLoco}. 
+Regarding techniques of rover movement, it is crucial to consider the local conditions in which the rover will be operating. The surface of Europa can be assumed to be mainly covered by ice. However, since there are also geysers that transport water to the surface, surface areas may be covered by snow. Though Europa's surface temperature does not exceed 130 K, rather icy, hard-packed snow can be assumed. For this study, a conservative design of the rover is considered, with material parameters of snow in Sweden as well as heavy clay as a substitute for a hard ice surface; both soil parameters are shown in \autoref{fig:SoilParameters}. 
 
-This constraint results in 6 configurations considered for the Rover system design, listed in \autoref{tab:Configurations}.
+Furthermore, the parameters depend on the width and diameter of the wheels of the rover. Therefore, several sizes dependent on the respective weight were selected and a limit per wheel was set to 200 g, illustrated in \autoref{fig:DimensionsLoco}. This constraint results in 6 configurations considered for the Rover system design, listed in \autoref{tab:Configurations}.
 
 \begin{table}[htb]
 \centering
@@ -365,39 +359,82 @@ This constraint results in 6 configurations considered for the Rover system desi
 
 
 
+\subsubsection*{Trafficability Configuration}
+\label{sec:DP}
+
+The ability of traffic depends on the soil parameters as well as on the geometric dimensions of the wheels. The sinking depth \(z\) for each wheel of the rover can be determined to:
+
+\begin{equation}
+	z \:  = \:	\left( \frac{3 W_\text{wheel} \cdot \cos \theta}{(3-n)(k_\text{c} + b_\text{w}k_\phi) \sqrt{d_\text{w}}} \right) ^{\frac{2}{2n+1}}	.
+	\label{eq:Sinkage}
+\end{equation}
+
+
+
+
+
+\begin{figure}[htb]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Sinkage for each config in heavy clay.pdf}
+         \label{fig:TIDElectronShielding}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Sinkage for each config in snow (Sweden).pdf}
+         \label{fig:TIDProtonShielding}
+     \end{subfigure}
+     \caption{Wheel sinkage \(z\) as a function of the slope angle \(\theta\) of each configuration with different soil parameters, referred to \autoref{fig:SoilParameters}.}
+     \label{fig:Sinkage}
+\end{figure}
+
+
+
+
+
+\begin{figure}[htb]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Soil Thrust Heavy Clay.pdf}
+         \label{fig:trappedelectronsEarth}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Soil Thrust Snow.pdf}
+         \label{fig:trappedprotonsEarth}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/ResistanceHeavyClay.pdf}
+         \label{fig:trappedelectronsJupiter}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/ResistanceSnow.pdf}
+         \label{fig:trappedprotonsJupiter}
+     \end{subfigure}
+     \caption{Comparison of the rover's soil thrust versus the motion resistance to exceed, each for the soil parameters of snow in Sweden and heavy clay, referenced to \autoref{fig:SoilParameters}.}
+     \label{fig:SoilThrust_MotionResistance}
+\end{figure}
+
+
+
 
 \subsubsection*{Mean Maximum Pressure}
 \label{sec:MMP}
-
-
 
 \begin{figure}[htb] 
   \centering
      \includegraphics[width=1\textwidth]{Media/MMP for each Config.pdf}
   \caption{}
-  \label{fig:}
+  \label{fig:MMP}
 \end{figure}
-
-\subsubsection*{Drawbar Pull}
-\label{sec:DP}
-
-
-
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/Sinkage for each config.pdf}
-  \caption{}
-  \label{fig:}
-\end{figure}
-
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/Drawbarpull for each Config.pdf}
-  \caption{}
-  \label{fig:}
-\end{figure}
-
-
 
 
 
