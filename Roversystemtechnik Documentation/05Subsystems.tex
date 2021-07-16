@@ -331,39 +331,33 @@ To achieve the scientific output from \autoref{chap:sc-output} the transmission 
 \subsection{Communication System}
 Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 25 dB high gain antenna [Missing Reference] and a low gain antenna which is not further specified in literature.\\
 
-The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59\ dB$, resulting in a Bit Error Rate of less than $10^{-4}$.\\
+The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59\ dB$, resulting in a Bit Error Rate of less than $10^{-4}$. The link budget has been performed under the conservative considerations listed in\autoref{tab:lb-param}.\\
 
-Using the Landers LGA greatly increases robustness due to the elimination of pointing errors and higher margin for rover positioning error. Additionally, the INSPIRE rover’s communication link would not interfere with the Landers communication to the relay carrier by blocking the HGA. The link budget has been performed under the conservative considerations listed in\autoref{tab:lb-param}. The complete link budget can be found in \autoref{app:LinkBudget}. 
+Using the Landers LGA greatly increases robustness due to the elimination of pointing errors and higher margin for rover positioning error. Additionally, the INSPIRE rover’s communication link would not interfere with the Landers communication to the relay carrier by blocking the HGA.
 
 \subsubsection{Component Selection}
 
 Due to the considerably high link margin the focus is on low mass and low power components with flight heritage such as flown on CubeSat missions. Criteria with relatively small impact on the link budget such as component noise or even FEC have not been taken into account. Ideally the rover communication uses X-Band for increased compatibility with the lander and has a total system mass of less than $1\ kg$. \\
-Since radiation hardness was not included in most datasheets a total dose of $<20\ krad$ was assumed in accordance with values for LEO [Missing Reference].
+Since radiation hardness was not included in most datasheets a total dose of $<20\ krad$ was assumed in accordance with values for LEO [Missing Reference]. \\
+
+The selected components are listed in \autoref{tab:ComCompComp}. 
 
 \begin{table}[h]
 \centering
+\caption{Key criteria of selected communication components}
 \begin{tabular}{lll|ll|ll}
 Component   & Supplier  & Part Description     & 1. Criteria   & Value    & 2. Criteria & Value          \\ \hline\hline
-transmitter & Sputnix   & SXC-XTX-01           & mass          & 0,195 kg & data rate   & 10 Mbit/s \\
-receiver    & Endurosat & S-Band receiver      & power         & max. 2 W & mass        & 0,220 kg       \\
-antenna     & Endurosat & patch antenna & mass          & 2,2 g    & frequency   & X-Band         \\ \hline
+Transmitter & Sputnix   & SXC-XTX-01           & mass          & 0,195 kg & data rate   & 10 Mbit/s \\
+Receiver    & Endurosat & S-Band receiver      & power         & max. 2 W & mass        & 0,220 kg       \\
+Antenna     & Endurosat & patch antenna & mass          & 2,2 g    & frequency   & X-Band         \\ \hline
 \end{tabular}
-\caption{Comparison of key criteria of selected communication components }
 \label{tab:ComCompComp}
 \end{table}
 
-\subsubsection{Transmitter}
-
-Since the transmission duty cycle is short, mass has become the design driving criteria followed by power. Output power is found sufficient in the $dBm$ regime. 
-Subsequently the Transmitter Sputnix SXC-XTX-01 is selected for its low mass at $0.195\ kg$ and high data rate of up to $10\ Mbps$ [Missing Reference]. 
-
-\subsubsection{Receiver}
-
-Acting as the life line connection to mission control the receiver is required to run high duty cycles. Thus, low power consumption has become the design driving criteria followed by mass. Ultimately the Endurosat S-Band receiver is chosen due to its exceptional low power consumption of $2\ W$ and low mass of $0.220\ kg$ [Missing Reference]. However, as a S-Band receiver the device would have to be adapted which means an increase in rover design complexity.
-
-\subsubsection{Antenna}
-
-A set of four omnidirectional low gain antennas is positioned on the rover chassis to produce a half sphere coverage around the rover. Due to the high frequency, the antenna can be compact while remaining a passive component to save power. With mass being the dominating factor in the trade off the Endurosat X-Band single patch antenna with a mass of $2.2\ g$ seems fit [Missing Reference].
+Expected transmission times per mission day are less than 40 minutes (see \autoref{app:MissionDataOutput} \autoref{tab:Tx-tptal}). Therefore the transmitter mass is identified as more critical than power. \\
+Receiver duty cycles on the other hand range close to 100 \% (REFERENCE POWER BUDGET). Thus power has been identified as the most crucial criteria. \\
+A passive X-Band antenna was selected due to compact dimensions and no power consumption.  \\
+The entire trade off can be found in (APP Trade off).
 
  \subsection{Command \& Data Handling}
  
