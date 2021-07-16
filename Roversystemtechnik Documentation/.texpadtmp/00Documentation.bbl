@@ -17,6 +17,93 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{Mission_01}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{Jet Propusion Laboratory}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Galileo Mission to Jupiter}}
+    \verb{url}
+    \verb \url{https://www.jpl.nasa.gov/missions/galileo}
+    \endverb
+  \endentry
+
+  \entry{Mission_02}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA Science}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N3}
+    \strng{fullhash}{N3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Europa Ocean Moon}}
+    \verb{url}
+    \verb \url{https://solarsystem.nasa.gov/moons/jupiter-moons/europa/in-depth
+    \verb /}
+    \endverb
+  \endentry
+
+  \entry{Mission_03}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={{Institut für Planetenforschung, DLR}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Die Mission JUICE zum Jupitersystem}}
+    \verb{url}
+    \verb \url{https://www.dlr.de/pf/desktopdefault.aspx/tabid-10617/18438_read
+    \verb -43016/}
+    \endverb
+  \endentry
+
+  \entry{Mission_04}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Europa Lander}}
+    \verb{url}
+    \verb \url{https://europa.nasa.gov/}
+    \endverb
+  \endentry
+
+  \entry{Mission_05}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA / JPL}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N2}
+    \strng{fullhash}{N2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Europa}}
+    \verb{url}
+    \verb \url{https://www.jpl.nasa.gov/missions/europa-lander}
+    \endverb
+  \endentry
+
   \entry{FraunhoferInstituteforSolarEnergySystemsISE.2021}{misc}{}
     \name{author}{1}{}{%
       {{hash=F}{%
@@ -154,8 +241,8 @@
          familyi={N\bibinitperiod},
       }}%
     }
-    \strng{namehash}{J1}
-    \strng{fullhash}{J1}
+    \strng{namehash}{J2}
+    \strng{fullhash}{J2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{{Enhanced Multi-Mission Radioisotope Thermoelectric Generator
@@ -280,6 +367,253 @@
     \verb \url{https://satsearch.co/products/bradford-nova-pcdu}
     \endverb
     \field{year}{2019}
+  \endentry
+
+  \entry{Europa}{article}{}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.heliyon.2019.e01908
+    \endverb
+    \field{issn}{2405-8440}
+    \field{number}{6}
+    \field{pages}{e01908}
+    \field{title}{The surface temperature of Europa}
+    \field{volume}{5}
+    \field{journaltitle}{Heliyon}
+    \field{year}{2019}
+  \endentry
+
+  \entry{ref_tcs_01}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Thermal Space and Thermal Straps }},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Graphene Thermal LyNX® Technology}}
+    \verb{url}
+    \verb \url{https://thermal-space.com/thermal-lynx/}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_02}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Light-Weight Radioisotope Heater Unit}}
+    \verb{url}
+    \verb \url{https://rps.nasa.gov/power-and-thermal-systems/thermal-systems/l
+    \verb ight-weight-radioisotope-heater-unit/}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_03}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA / JPL}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N2}
+    \strng{fullhash}{N2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Aerogel}}
+    \verb{url}
+    \verb \url{https://solarsystem.nasa.gov/stardust/aerogel_factsheet.pdf}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_04}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MFH}{%
+         family={Milanze},
+         familyi={M\bibinitperiod},
+         given={Fernando\bibnamedelima H.},
+         giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=MMB}{%
+         family={Mantelli},
+         familyi={M\bibinitperiod},
+         given={Marcia\bibnamedelima B.H.},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MFHMMB1}
+    \strng{fullhash}{MFHMMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0017-9310(03)00294-1
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{24}
+    \field{pages}{4573\bibrangedash 4586}
+    \field{pagination}{page}
+    \field{title}{{Theoretical and experimental studies of a bi-metallic heat
+  switch for space applications }}
+    \field{volume}{46}
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{year}{2003}
+  \endentry
+
+  \entry{ref_tcs_05}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=StTiId}{%
+         family={{S. Klinkner}},
+         familyi={S\bibinitperiod},
+         suffix={date =\bibnamedelima {2020}},
+         suffixi={d\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
+  \bibinitperiod},
+         given={title = {{Thermal Control System for Rover Systems}}
+  institution =\bibnamedelima {{IRS at University of Stuttgart}}},
+         giveni={t\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
+  T\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim
+  \bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SdtTiI1}
+    \strng{fullhash}{SdtTiI1}
+    \field{labelnamesource}{author}
+  \endentry
+
+  \entry{ref_tcs_10}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Aluminium Giesserei Hannover GmbH}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Produktdatenblatt AA5083}}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/5083_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_11}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Aluminium Giesserei Hannover GmbH}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Produktdatenblatt AA6082}}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/6082_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_12}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Aluminium Giesserei Hannover GmbH}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Produktdatenblatt AA7075}}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/7075_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_08}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutsche Edelstahlwerke}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{1.4418X4 - CrNiMo16-5-1}}
+    \verb{url}
+    \verb \url{https://www.dew-stahl.com/fileadmin/files/dew-stahl.com/document
+    \verb s/Publikationen/Werkstoffdatenblaetter/Luft_Raumfahrt/1.4418_de.pdf}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_09}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutsche Edelstahlwerke}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Firmodur 7225}}
+    \verb{url}
+    \verb \url{https://www.dew-stahl.com/fileadmin/files/dew-stahl.com/document
+    \verb s/Publikationen/Werkstoffdatenblaetter/Baustahl/1.7225_1.7227_de.pdf}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_06}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=t}{%
+         family={{thyssenkrupp Material Schweiz}},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{t1}
+    \strng{fullhash}{t1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Titan 6Al4V “ELI”}}
+    \verb{url}
+    \verb \url{https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppBAM
+    \verb XSchweiz/de/downloads/werkstoffdatenblaetter-titan/link-titan_grade_5
+    \verb _eli.pdf}
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_07}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=t}{%
+         family={{thyssenkrupp Material Schweiz}},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{t1}
+    \strng{fullhash}{t1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Titan Grade 5}}
+    \verb{url}
+    \verb \url{https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppBAM
+    \verb XSchweiz/de/downloads/werkstoffdatenblaetter-titan/link-titan_grade_5
+    \verb .pdf}
+    \endverb
   \endentry
 \enddatalist
 \endinput
