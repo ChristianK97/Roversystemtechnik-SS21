@@ -1,10 +1,12 @@
 \chapter{Subsystems}
 \label{chap:subsystems}
 
+In this chapter, the individual subsystems of the rover system will be discussed in more detail.
+
 \section{Structure and Mechanisms}
 \label{sec:mechanics}
 
-In this chapter, the individual subsystems of the rover system will be discussed in more detail.
+...
 
 \subsection{Storage Configuration and Rover Deployment}
 
@@ -74,13 +76,11 @@ Since each wheel is individually driven and controllable, the parameters in the 
 \subsection{System Parameters}
 \label{sec:SystemParametersLoco}
 
-Regarding techniques of rover movement, it is crucial to consider the local conditions in which the rover will be operating. The surface of Europa can be assumed to be mainly covered by ice. However, since there are also geysers that transport water to the surface, surface areas may be covered by snow. Though Europa's surface temperature does not exceed 130 K, rather icy, hard-packed snow can be assumed. For this study, a conservative design of the rover is considered, with material parameters of snow in Sweden as well as heavy clay as a substitute for a hard ice surface; both soil parameters are shown in \autoref{fig:SoilParameters}. 
-
-Furthermore, the parameters depend on the width and diameter of the wheels of the rover. Therefore, several sizes dependent on the respective weight were selected and a limit per wheel was set to 200 g, illustrated in \autoref{fig:DimensionsLoco}. This constraint results in 6 configurations considered for the Rover system design, listed in \autoref{tab:Configurations}.
+Regarding techniques of rover movement, it is crucial to consider the local conditions in which the rover will be operating. The surface of Europa can be assumed to be mainly covered by ice. However, since there are also geysers that transport water to the surface, surface areas may be covered by snow. Though Europa's surface temperature does not exceed 130 K, rather icy, hard-packed snow can be assumed. For this study, a conservative design of the rover is considered, with soil parameters of snow in Sweden as well as heavy clay as a substitute for a hard ice surface; both are listed in \autoref{fig:SoilParameters}.Furthermore, the parameters depend on the width and diameter of the wheels of the rover. Therefore, several sizes dependent on the respective weight were selected and a limit per wheel was set to 200 g, illustrated in \autoref{fig:DimensionsLoco}. This constraint results in 6 configurations considered for the Rover system design, listed in \autoref{tab:Configurations}.
 
 \begin{table}[htb]
 \centering
-\caption{Configurations for Rover Classification respective to the wheel width \(b\text{w}\), wheel diameter \(d_\text{w}\) and weight per wheel \(m_\text{w}\)}
+\caption{Configurations for rover classification respective to the wheel width \(b\text{w}\), wheel diameter \(d_\text{w}\) and weight per wheel \(m_\text{w}\).}
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}[l]{lccc}
 
@@ -111,7 +111,7 @@ Furthermore, the parameters depend on the width and diameter of the wheels of th
 The ability of traffic depends on the soil parameters as well as on the geometric dimensions of the wheels. The sinking depth \(z\) for each wheel of the rover can be determined to:
 
 \begin{equation}
-	z \:  = \:	\left( \frac{3 W_\text{wheel} \cdot \cos \theta}{(3-n)(k_\text{c} + b_\text{w}k_\phi) \sqrt{d_\text{w}}} \right) ^{\frac{2}{2n+1}}	.
+	z \:  = \:	\left( \frac{3 W_\text{wheel} \cos \theta}{(3-n)(k_\text{c} + b_\text{w}k_\phi) \sqrt{d_\text{w}}} \right) ^{\frac{2}{2n+1}}	.
 	\label{eq:Sinkage}
 \end{equation}
 
@@ -123,14 +123,14 @@ The ability of traffic depends on the soil parameters as well as on the geometri
      \centering
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{Media/Sinkage for each config in heavy clay.pdf}
+         \includegraphics[height=4.5cm]{Media/Sinkage for each config in heavy clay.pdf}
          \caption{Heavy Clay}
          \label{fig:TIDElectronShielding}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{Media/Sinkage for each config in snow (Sweden).pdf}
+         \includegraphics[height=5cm]{Media/Sinkage for each config in snow (Sweden).pdf}
          \label{fig:TIDProtonShielding}
          \caption{Snow (Sweden)}
      \end{subfigure}
