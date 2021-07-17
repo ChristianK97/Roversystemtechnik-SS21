@@ -45,9 +45,9 @@
 % \usepackage{graphicx}
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[H]
+\begin{table}[htb]
 \centering
-\resizebox{\textwidth}{!}{%
+\resizebox{0.7\textwidth}{!}{%
 \begin{tabular}{|c|c|c|l|}
 \hline
 Number & Rover System Modes                  & Abbrevation & \multicolumn{1}{c|}{Definition}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \\ \hline
@@ -66,7 +66,7 @@ Number & Rover System Modes                  & Abbrevation & \multicolumn{1}{c|}
 10     & Payload: Ice Core Mode              & ICE         & \begin{tabular}[c]{@{}l@{}}Payload Mode for   Science Data Collection during Daytime or Nighttime\\ OBC ON\\ PCDU ON\\ COMM OFF\\ Ice Core Drill ON during Ice   Core Sample Collection\\ Afterwards Sample will be   analysed =\textgreater APXS ON\end{tabular}                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
 \end{tabular}%
 }
-\caption{Collection of Rover System Modes. [Kommt noch in Anhang]}
+\caption{Collection of Rover System Modes.}
 \label{tab:systemmod}
 \end{table}
 
