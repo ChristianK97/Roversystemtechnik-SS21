@@ -55,6 +55,14 @@
 \subsection{Locomotion Design Drivers}
 \label{app:DesignDrivers}
 
+
+%\begin{figure}[htb] 
+%  \centering
+%     \includegraphics[width=1\textwidth]{Media/Geometries.pdf}
+%  \caption{Geometry parameters of the locomotion system. }
+%  \label{fig:Geo}
+%\end{figure}
+
 \begin{figure}[htb] 
   \centering
      \includegraphics[width=1\textwidth]{Media/LocomotionTradeOff.png}
@@ -78,8 +86,53 @@
   \label{fig:DimensionsLoco}
 \end{figure}
 
-\subsection{Formulas for Locomotion Parameters}
-\label{app:FormulasLoco}
+\subsubsection*{Mean Maximum Pressure}
+\label{app:MMP}
+
+
+\begin{figure}[htb] 
+  \centering
+     \includegraphics[width=1\textwidth]{Media/MMP for each Config.pdf}
+  \caption{}
+  \label{fig:MMP}
+\end{figure}
+
+\begin{figure}[htb] 
+  \centering
+     \includegraphics[width=1\textwidth]{Media/MMP_Param.png}
+  \caption{Parameters for the mean maximum pressure for a wheeled rover.}
+  \label{fig:MMP_param}
+\end{figure}
+
+\subsubsection*{Ackerman Steering}
+\label{app:Ackerman}
+
+
+
+\begin{table}[htb]
+\centering
+\caption{}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}[l]{lccc}
+
+	\toprule
+		\multicolumn{1}{l}{Steering Angle} & \multicolumn{1}{c}{Mode 1} & \multicolumn{1}{c}{Mode 2} & \multicolumn{1}{c}{Mode 3} \\
+		
+	\midrule
+	
+	
+	\(\theta_\text{o}\)	&	&	&	\\	
+	
+	\(\theta_\text{o}\) &	&	&	\\
+
+
+	\bottomrule
+
+\end{tabular}
+\end{adjustbox}
+\label{tab:Ackerman}
+\end{table}
+
 
 \clearpage
 
@@ -96,9 +149,9 @@
 \hline
 \multicolumn{2}{|c|}{\textbf{SAFT 176065 xlr} \cite{SAFTBatteries.2018}}                                                                \\ \hline
 \multicolumn{2}{|c|}{\textbf{Configuration:}}                                                                 \\ \hline
-Battery Configuration                                                           & $4s3p$                        \\ \hline
-Cells in Sereis $s$ N [-]                                                       & $4$                           \\ \hline
-Cells in Parallel $p$ M [-]                                                     & $3$                           \\ \hline
+Battery Configuration                                                           & $3s4p$                        \\ \hline
+Cells in Sereis $s$ N [-]                                                       & $3$                           \\ \hline
+Cells in Parallel $p$ M [-]                                                     & $4$                           \\ \hline
 \multicolumn{2}{|c|}{\textbf{Cell Parameters:}}                                                               \\ \hline
 Typical Cell Capacity   [Ah]                                                    & $6.8$                         \\ \hline
 Nominal Cell Voltage [V]                                                        & $3.65$                        \\ \hline
@@ -106,28 +159,27 @@ Nominal Cell Capacity [Wh]                                                      
 Typical Cell Mass [kg]                                                          & $0.15$                        \\ \hline
 Energy Density [Wh/kg]                                                     & $165.33$                      \\ \hline
 \multicolumn{2}{|c|}{\textbf{Actual Battery Configuration Parameters:}}                                       \\ \hline
-Battery Voltage $V_\text{Batt}$ [V]                                             & $14.6$                        \\ \hline
+Battery Voltage $V_\text{Batt}$ [V]                                             & $10.95$                        \\ \hline
 Battery Nominal Capacity $E_\text{Batt}$ [Wh]                                   & $297.6$                       \\ \hline
 Battery Mass  [$kg$]                                                               & $1.8$                         \\ \hline
 \textbf{Battery Mass} $m_\text{Batt}$ (incl. $10\%$ Margin) [kg]                                         & \textbf{1.98}                        \\ \hline
 \multicolumn{2}{|c|}{\textbf{Configruation according to ECSS reliability restrictions and margins included:}} \\ \hline
-Battery Configuration                                                           & $4s2p$                        \\ \hline
-Cells in Sereis $s$ N [-]                                                       & $4$                           \\ \hline
-Cells in Parallel $p$ M [-]                                                     & $2$                           \\ \hline
-Battery Voltage $V_\text{Batt}$ [V]                                             & $14.6 $                       \\ \hline
-Battery Nominal Capacity $E_\text{Batt}$ [Wh]                                   & $198.4$                       \\ \hline
+Battery Configuration                                                           & $3s3p$                        \\ \hline
+Cells in Sereis $s$ N [-]                                                       & $3$                           \\ \hline
+Cells in Parallel $p$ M [-]                                                     & $3$                           \\ \hline
+Battery Voltage $V_\text{Batt}$ [V]                                             & $10.95$                       \\ \hline
+Battery Nominal Capacity $E_\text{Batt}$ [Wh]                                   & $231.60$                       \\ \hline
 $30\%$ Margin on Energy Content                                                 & $0.3$                         \\ \hline
-\textbf{Battery Nominal Capacity} $E_\text{Batt}$ incl. Margin [Wh]                      & \textbf{138.88}                      \\ \hline
-Useable Energy Density [Wh/kg]                                              & $70.14$                       \\ \hline
+\textbf{Battery Nominal Capacity} $E_\text{Batt}$ incl. Margin [Wh]                      & \textbf{156.24}                      \\ \hline
+Useable Energy Density [Wh/kg]                                              & $78.91$                       \\ \hline
 \end{tabular}
-
 \label{tab:battery}
 \end{table}
 
 \begin{figure}[htb]
 {\centering
-\includegraphics[width=1.0\textwidth]{Media/powerbudgetdummy}
-\caption{POWER BUDGET DUMMY!}
+\includegraphics[width=1.0\textwidth]{Media/budgeteps}
+\caption{Holistic Power Budget of INPSIRE.}
 \label{tab:powerbudgetcomplete}
 }
 \end{figure}
@@ -167,7 +219,7 @@ pointing Loss  		             & 0      & {[}dB{]}   & ${n/a}$       & omnidirect
 line Loss  		                 & 0,6    & {[}dB{]}   & ${L}_{l2}$	   & FLP                          &  \\
 eff. noise temperature           & 300    & {[}K{]}    & ${T}_{s}$	   & worst case E-bay temperature &  \\ \hline
 Demodulation \& Uncertain Losses &        &            &               &                              &  \\ \hline\hline
-eff. data rate                   & 5000   & {[}kbps{]} & ${R}$         &                              &  \\
+eff. data rate                   & 5000   & {[}kbps{]} & ${R}$         & 50 \% of max. data rate                            &  \\
 FEC coding                       & none   & {[}-{]}    & ${n/a}$       &                              &  \\
 technical degradation            & 1      & {[}dB{]}   & ${L}_{i1}$    & FLP                          &  \\
 implementation loss              & 1      & {[}dB{]}   & ${L}_{i1}$	   & FLP                          &  \\
@@ -185,7 +237,7 @@ The free space loss ${L}_{s}$ [$m^3$] in \autoref{tab:lb-param} is calculated us
 	\label{eqn:Ls}
 \end{equation}
 
-The signal travel distance {s} is assumed to be $s = 2000\ m$ which is in excess of the mission goal. In accordance with X-Band communication the frequency {f} is set to a value of $f = 8,2\ GHz$. The parameter c represents the speed of light in vacuum. For simplification purposes $c = 3 \cdot 10^9\ \frac{m}{s}$ is assumed. \\ \\   
+The signal travel distance {s} is assumed to be $s = 2000\ m$ which is in excess of the mission goal described in \autoref{chap:sc-output}. In accordance with X-Band communication the frequency {f} is set to a value of $f = 8,2\ GHz$. The parameter c represents the speed of light in vacuum. For simplification purposes $c = 3 \cdot 10^9\ \frac{m}{s}$ is assumed. \\ \\   
 Combining the parameters from \autoref{tab:lb-param} the link budget is calculated using \autoref{eqn:EbzuN0}. For the simplification of \autoref{eqn:EbzuN0} the line losses for the rover ${L}_{l1}$ and lander ${L}_{l2}$ are expressed as the sum ${L}_{l}$. In the same manner technical degradation and implementation losses are combined to ${L}_{i}$. Atmospheric losses ${L}_{a}$ and pointing errors in \autoref{eqn:EbzuN0} are neglected due to a lack of atmosphere and the utilisation of omnidirectional low gain antennas. Parameter ${k}$ describes the Boltzmann constant.   
 
 \begin{equation}
@@ -226,8 +278,8 @@ Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}
 
 The analysis of the mission data concept for memory capacity and transmission times is focuses on the payload camera and Hazcams as images require far more data than telemetry or other payload data. \\
 
-In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit leads to a file size of 42 Mbit per image.\\
-To calculate the message size in \autoref{tab:TimePerPic}, it is assumed that a transmission frame consists of 10264 bits including a payload frame of maximum 8840 bits.   
+In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit of the (CAMERA REFERENCE), a file size of 42 Mbit per image is assumed.\\
+To calculate the message size in \autoref{tab:TimePerPic}, it is assumed that a transmission frame consists of 10264 bits including a payload frame of maximum 8840 bits (FLP VORELESUNG).   
 
 \begin{table}[h]
 \centering
@@ -251,7 +303,7 @@ File per tal & Compression & File Size  & Total Data & Tx time    \\ \hline\hlin
 \label{tab:Tx-tptal}
 \end{table}
 
-The HIREW compression algorithm is suggested for the mission considering a high average compression of 0,56 \% and a high compression speed of 123 Mbit/s for grayscale and 104,4 Mbit/s for RGB image files. 
+The HIREW compression algorithm is suggested for the mission considering a high average compression of 0,56 \% and a high compression speed of 123 Mbit/s for grayscale and 104,4 Mbit/s for RGB image files (COMPRESSSION PAPER REFERENCE). 
 
 \subsection{Communications Trade Off}
 \label{app:Com_TrOff}

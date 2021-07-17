@@ -9,6 +9,10 @@ A level-1 auxiliary file: 02Mission.aux
 A level-1 auxiliary file: 03Payload.aux
 A level-1 auxiliary file: 04Operation.aux
 A level-1 auxiliary file: 05Subsystems.aux
+White space in argument---line 56 of file /Users/danielbolke/Documents/GitHub/Roversystemtechnik-SS21/Roversystemtechnik Documentation/.texpadtmp/00Documentation.aux
+ : \citation{rolling
+ :                   coefficient}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: 06Outlook.aux
 A level-1 auxiliary file: 08Bibilography.aux
 A level-1 auxiliary file: 09Appendix.aux
@@ -179,4 +183,4 @@ warning$ -- 0
 while$ -- 1304
 width$ -- 0
 write$ -- 581
-(There were 48 error messages)
+(There were 49 error messages)
