@@ -62,14 +62,7 @@ Initial considerations in the design of a rover's locomotion system are the envi
 }
 \end{table}
 
-With the configured rover, the resulting wheel formula is 4 x 4 x 4. Furthermore, the normal force on Europa can be calculated to:
-
-\begin{equation}
-	W \:  = \:	m_\text{total} \cdot g_\text{Europa} \:  = \: 39.45 \, \text{N} \, 	.
-	\label{eq:}
-\end{equation}
-
-Since each wheel is individually driven and controllable, the parameters in the following are designed for one wheel; the normal force per wheel is correspondingly \(W_\text{wheel} = 9.8625 ~\)N
+With the configured rover, the resulting wheel formula is 4 x 4 x 4. Furthermore, the normal force on Europa can be calculated to \( W \:  = \:	m_\text{total} \cdot g_\text{Europa} \:  = \: 39.45 ~ \text{N} \). Since each wheel is individually driven and controllable, the parameters in the following are designed for one wheel; the normal force per wheel is correspondingly \(W_\text{wheel} = 9.8625 ~ \text{N}\).
 
 \subsection{System Parameters}
 \label{sec:SystemParametersLoco}
@@ -80,10 +73,10 @@ Regarding techniques of rover movement, it is crucial to consider the local cond
 \centering
 \caption{Configurations for rover classification respective to the wheel width \(b\text{w}\), wheel diameter \(d_\text{w}\) and weight per wheel \(m_\text{w}\).}
 \begin{adjustbox}{max width=\textwidth}
-\begin{tabular}[l]{lccc}
+\begin{tabular}[l]{cccc}
 
 	\toprule
-		\multicolumn{1}{l}{Configuration} & \multicolumn{1}{c}{\(b\text{w}\) /m} & \multicolumn{1}{c}{Diameter \(d_\text{w}\) /m} & \multicolumn{1}{c}{Weight \(m_\text{w}\) /kg}   \\
+		\multicolumn{1}{l}{Configuration} & \multicolumn{1}{c}{\(b_\text{w}\) /m} & \multicolumn{1}{c}{Diameter \(d_\text{w}\) /m} & \multicolumn{1}{c}{Weight \(m_\text{w}\) /kg}   \\
 
 	\midrule
 		
@@ -113,78 +106,80 @@ The ability of traffic depends on the soil parameters as well as on the geometri
 	\label{eq:Sinkage}
 \end{equation}
 
-
-
-
+As shown in \autoref{fig:Sinkage}, the sinking depth \(z\) depends not only on the geometric conditions and soil parameters but also on the slope angle \(\theta\). Therefore, \(z\) can be determined for both soils with respect to \(\theta\) as plotted in \autoref{fig:Sinkage}. However, it can be assumed that for the expected soil, the following applies: \( z_{\text{HeavyClay}} \leq z_{\text{Europa}} \leq z_{\text{Snow}} \).
 
 \begin{figure}[htb]
      \centering
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
-         \includegraphics[height=4.5cm]{Media/Sinkage for each config in heavy clay.pdf}
+         \includegraphics[width=\textwidth]{Media/Sinkage for each config in heavy clay.pdf}
          \caption{Heavy Clay}
-         \label{fig:TIDElectronShielding}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
-         \includegraphics[height=5cm]{Media/Sinkage for each config in snow (Sweden).pdf}
-         \label{fig:TIDProtonShielding}
+         \includegraphics[width=\textwidth]{Media/Sinkage for each config in snow (Sweden).pdf}
          \caption{Snow (Sweden)}
      \end{subfigure}
      \caption{Wheel sinkage \(z\) as a function of the slope angle \(\theta\) of each configuration with different soil parameters, referred to \autoref{fig:SoilParameters}.}
      \label{fig:Sinkage}
 \end{figure}
 
+The required power for the rover can be calculated by the resistances that have to be exceeded. For the total resistance, the following a applies:
 
+\begin{equation}
+ 	R_{\text{total}} \:  = \: 
+ 	\underbrace{R_\text{compaction}}_{= \: \frac{z^{n+1}}{n+1} \left( k_\text{c} + b  k_\phi \right)} + 
+ 	\underbrace{R_\text{rolling}}_{R_\text{r} = \: W_\text{w}  C_\text{rr}} +  
+ 	\underbrace{R_\text{gravity}}_{R_\text{g} = \: W_\text{w}  \sin \theta} +
+ 	\underbrace{R_\text{bulldozing}}_{R_\text{b} \rightarrow 0}. 	
+ 	\label{eq:Resistance}
+ \end{equation} 
 
+Due to the hard surface of Europa, it can be assumed that \( R_\text{b} \rightarrow 0\). In contrast to the \( R_\text{g} \), \( R_\text{r}\) can be defined as constant. With a rolling resistance coefficient of \( C_\text{rr} = 0.02\), the resulting resistance is \( R_\text{r}\) = 0.1972~N \cite{rolling coefficient}. Analogous to \(z\), the lower limit of \(R_{\text{total}}\) with soil properties of heavy clay is plotted in \autoref{fig:RClay}, while the upper limit is shown in \autoref{fig:RSnow} for snow.
 
+In addition to the resistance that needs to be exceeded in order to move, an upper limit can also be determined. The ground thrust \(H\) indicates the maximum amount of traction that can be achieved before the wheels slip.  Therefore, following applies:
+\begin{equation}
+	H \:  = \: A \cdot c + W_\text{w} \cdot \tan \Phi , 
+	\label{eq:}
+\end{equation}
+ with the wheel ground contact area \(A = \frac{\pi}{4} \cdot b_\text{w} \cdot l\) and the ground contact length \(l = \frac{d_\text{w}}{2} \cdot \cos^{-1} \left( 1 - \left( \frac{2z}{d_\text{w}} \right) \right)  \). As a result, the absolute upper limit of traction is presented in \autoref{fig:HClay} for heavy clay and \autoref{fig:HSnow} for snow. 
+ 
 
 \begin{figure}[htb]
      \centering
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Media/Soil Thrust Heavy Clay.pdf}
-         \caption{Heavy Clay}
-         \label{fig:trappedelectronsEarth}
+         \caption{\(H\) for Heavy Clay}
+         \label{fig:HClay}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Media/Soil Thrust Snow.pdf}
-         \caption{Snow (Sweden)}
-         \label{fig:trappedprotonsEarth}
+         \caption{\(H\) for Snow (Sweden)}
+         \label{fig:HSnow}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Media/ResistanceHeavyClay.pdf}
-         \caption{Heavy Clay}
-         \label{fig:trappedelectronsJupiter}
+         \caption{\(R_\text{total}\) for Heavy Clay}
+         \label{fig:RClay}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Media/ResistanceSnow.pdf}
-         \caption{Snow (Sweden)}
-         \label{fig:trappedprotonsJupiter}
+         \caption{\(R_\text{total}\) for Snow (Sweden)}
+         \label{fig:RSnow}
      \end{subfigure}
      \caption{Comparison of the rover's soil thrust versus the motion resistance to exceed, each for the soil parameters of snow in Sweden and heavy clay, referenced to \autoref{fig:SoilParameters}.}
      \label{fig:SoilThrust_MotionResistance}
 \end{figure}
 
-
-
-
-\subsubsection*{Mean Maximum Pressure}
-\label{sec:MMP}
-
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/MMP for each Config.pdf}
-  \caption{}
-  \label{fig:MMP}
-\end{figure}
+In addition to the determined parameters, it should also be verified that the mean maximum pressure \(MMP\) does not increase excessively due to the selected geometric parameters. For this conservative calculation, a rigid wheel is assumed, whereby for the deflection \(\delta\) applies, that \( 0 \leq \delta \leq 0.1 d\). For terrestrial snow, 40~kPa should not be exceeded, but ideally the \(MMP\) should be less than 10~kPa. The associated verification calculation can be found in \appref{app:MMP}.
 
 
 
