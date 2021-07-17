@@ -35,6 +35,13 @@ The results of this analysis are shown in the following figures XXX and XXX.
 A really important part of each space system is the mass budget. Due to the strict mass restriction, it was quite difficult to find a suitable concept that is both light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5kg was chosen which could also be adhered to. The following table lists the masses of the individual components of the structure and mechanisms system. 
 A table with all components of the INSPIRE Rover system is stored in Appendix A under Mass Budget.
 
+<<<<<<< HEAD
+
+
+
+
+
+=======
 \begin{table}[]
 \centering
 \caption{INSPIRE Mass Budget}
@@ -92,21 +99,24 @@ Subsystem                                & component name                      &
 \end{tabular}%
 }
 \end{table}
+>>>>>>> 0d32d6da2dc6d4b1240a0313fb13ad8163e1ce87
 
 %-------------------------------------------------------------------------------
 \section{Locomotion} \label{sec:locomotion}
 %-------------------------------------------------------------------------------
 
-The locomotion subsystem deals with the aspect of how the rover moves and the technical design, including the selection of components such as motors or gearboxes. Before the components can be determined, however, it is necessary to consider certain parameters and design drivers. These will be introduced in the following, and the decisions or estimations concerning the rover will be presented.
+The locomotion subsystem deals with the aspect of how the rover moves and the technical design, including the selection of components such as motors or gears. Before the components can be determined, however, it is necessary to consider certain parameters and design drivers. These will be introduced in the following, and the decisions or estimations concerning the rover will be presented.
 
 \subsection{Design Drivers for Rover Classification}
 \label{sec:DesignDriversLoco}
 
-Initial considerations in the design of a rover's locomotion system are the environmental and operational conditions expected for mission operations, as well as design factors. The basic design is based on a tradeoff, which can be seen in \autoref{fig:TradeOffLoco}. A more detailed design and the main criteria related to this are summarised in \autoref{tab:Design Drivers Rover Movement}.
+%Initial considerations in the design of a rover's locomotion system are the environmental and operational conditions expected for mission operations, as well as design factors. 
+The fundamental rover design can be described by the wheel formula 4x4x4, based on a tradeoff, presented in \autoref{fig:TradeOffLoco}. A more detailed design and the main criteria related to this are summarised in \autoref{tab:Design Drivers Rover Movement}.
 
 \begin{table}[htb]
 \centering
-\caption{Design drivers for the rover movement technique regarding the environmental conditions on Europa and operating conditions.}
+\caption{Fundamental rover design and the respective design drivers.}
+% for the rover movement technique regarding the environmental conditions on Europa and operating conditions.
 \label{tab:Design Drivers Rover Movement}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|l|}
@@ -122,7 +132,7 @@ Initial considerations in the design of a rover's locomotion system are the envi
 }
 \end{table}
 
-With the configured rover, the resulting wheel formula is 4 x 4 x 4. Furthermore, the normal force on Europa can be calculated to \( W \:  = \:	m_\text{total} \cdot g_\text{Europa} \:  = \: 39.45 ~ \text{N} \). Since each wheel is individually driven and controllable, the parameters in the following are designed for one wheel; the normal force per wheel is correspondingly \(W_\text{wheel} = 9.8625 ~ \text{N}\).
+Furthermore, the normal force on Europa can be calculated to \( W \:  = \:	m_\text{total} \cdot g_\text{Europa} \:  = \: 39.45 ~ \text{N} \). Since each wheel is individually driven and controllable, the parameters in the following are designed for one wheel; the normal force per wheel is correspondingly \(W_\text{w} = 9.8625 ~ \text{N}\).
 
 \subsection{System Parameters}
 \label{sec:SystemParametersLoco}
@@ -239,17 +249,53 @@ In addition to the resistance that needs to be exceeded in order to move, an upp
      \label{fig:SoilThrust_MotionResistance}
 \end{figure}
 
-In addition to the determined parameters, it should also be verified that the mean maximum pressure \(MMP\) does not increase excessively due to the selected geometric parameters. For this conservative calculation, a rigid wheel is assumed, whereby for the deflection \(\delta\) applies, that \( 0 \leq \delta \leq 0.1 d\). For terrestrial snow, 40~kPa should not be exceeded, but ideally the \(MMP\) should be less than 10~kPa. The associated verification calculation can be found in \appref{app:MMP}.
-
-
+In addition to the determined parameters, it should also be verified that the mean maximum pressure \(MMP\) does not increase excessively due to the selected geometric parameters. For this conservative calculation, a rigid wheel is assumed, whereby for the deflection \(\delta\) applies, that \( 0 \leq \delta \leq 0.1 d\). For terrestrial snow, 40~kPa should not be exceeded, but ideally the \(MMP\) should be less than 10~kPa. The associated verification calculation can be found in \appref{app:MMP}. \\ 
+For the Rover, configuration 6 is chosen as it offers the lowest resistance to exceed whilst maintaining the lowest \(MMP\). 
 
 \subsubsection*{Steering}
 \label{sec:Steering}
+
+Since the rover has an all-wheel actuation, it can be operated with on-point steering and, in order to avoid greater obstacles, with Ackerman steering. Considering that with Ackerman steering, the radius of the outer wheels is at a greater distance in the circumventing circle than that of the inner wheels, the following applies:
+
+\begin{equation}
+	\cot \theta_{i} - \cot \theta_\text{o} \:  = \:	- \frac{d}{l}	.
+	\label{eq:Ackerman}
+\end{equation}
+
+With a wheel distance of d= 277 mm and l = 365 mm, this results in the table shown in \autoref{tab:Ackerman}.
+
 
 
 
 \subsubsection*{Hardware Selection}
 \label{sec:HardwareLoco}
+
+For the drive of the wheels, BLDC motors were chosen. In contrast to stepper motors, these are optimised for a uniform torque and not for precise motion control. The resulting torque of each wheel can be calculated to:
+
+\begin{equation}
+	\tau \:  = \:	R_\text{total} \cdot \left(\frac{d_{text{w}}}{2} - \delta \right).
+	\label{eq:Torque}
+\end{equation}
+
+The required power is then resulting in:
+
+\begin{equation}
+	P \:  = \:	\tau \cdot \left(\frac{2v_{\text{max}}}{d_{text{w}}} \right),
+	\label{eq:power}
+\end{equation}
+
+with the estimated maximum velocity \(v_{\text{max}}\). 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
