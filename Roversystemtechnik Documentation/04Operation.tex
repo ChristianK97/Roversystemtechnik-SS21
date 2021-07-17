@@ -1,8 +1,6 @@
 \chapter{Operation}
 \label{chap:Operation}
-.....
 
-\section{Mission Phases}
 For the INSPIRE Mission Phase 0 study five basic mission phases have been defined. Nominal mission will last 30 earth days which is equal to 8.47 European days (MISSING REFERENCE). Furthermore a sixth optional mission phase after the nominal mission lifetime has been established which will be conducted if the rover is still operational after its nominal lifetime.
 
 \begin{itemize}
@@ -25,7 +23,7 @@ For the INSPIRE Mission Phase 0 study five basic mission phases have been define
 
 Based on these missions phases some preliminary rover system modes as well as a basic mission timeline were concluded.
 
-\subsection{Scientific Output}
+\section{Scientific Output}
 \label{chap:sc-output}
 
 Optical reference systems for lath planning limit operation of the rover to an average of 41 h of sunlight (out of 85 h in a European day). \autoref{fig:timeline-day} depicts a breakdown of possible execution times in a mission day based on the power budget. Of course the given order can be changed and execution times can be adapted to fit the mission needs. \\
@@ -57,7 +55,7 @@ Solar Cells     & performance data                          & continuous      \\
 \end{table}
 
   
-\subsection{Rover System Modes}
+\section{Rover System Modes}
 \label{chap:rovsubmod}
 For this case study several rover system modes were defined. All ten modes are listed in \autoref{tab:systemmod}. 
 
@@ -72,33 +70,3 @@ Possible deployment strategies would be as follows:
 \item	\textbf{Option 2:} If INSPIRE is above ground level: Similar as Option 1 but an additional ramp and ramp deployment would be required.
 \item	\textbf{Option 3:} INSPIRE will be deployed through the landers robotic arm if it is capable of lifting its mass.
 \end{itemize}
-
-
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[H]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|l|}
-\hline
-Number & Rover System Modes                  & Abbrevation & \multicolumn{1}{c|}{Definition}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \\ \hline
-\rowcolor[HTML]{EFEFEF} 
-0      & Launch/Off Mode                     & OFF         & \begin{tabular}[c]{@{}l@{}}From Launch until EDL Phase\\ Rover System is OFF\\ Exact mode description t.b.d. and can be adapted to meet the lander demands\\ Health tests on Occasion during flight time are foreseen (PCDU could be active)\\ Batteries on Storage Capacity at launch and may be recharged on occasion (like Rosetta Mission)\\ Telemetry data shall be sent by the Lander (optional if possible)   \\ RTG on =\textgreater Electrical and Thermal Power may be used \\ (for Lander Power and Thermal Systems) or is disposed of by shunts\end{tabular}                                                          \\ \hline
-\rowcolor[HTML]{EFEFEF} 
-1      & Entry, Descent and Landing          & EDL         & \begin{tabular}[c]{@{}l@{}}From Entry until next morning after secure landing of Lander on Europa\\ See Mode OFF\\ PCDU ON after secure landing (Powered by RTG)\\ Heaters ON (powered by remaining RTG Power)\\ Battery charging if no Kill Switch is used\end{tabular}                                                                                                                                                                                                                                                                                                                                                          \\ \hline
-\rowcolor[HTML]{EFEFEF} 
-2      & Deployment and Early Operation Mode & EOP         & \begin{tabular}[c]{@{}l@{}}First Morning after EDL\\ Exact mode description t.b.d. and can be customized to lander \\ =\textgreater Dependant on final Lander Design\\ Critical Deployments (Egress System) and leaving the lander\\ Optional whether Kill Switch ejected =\textgreater Battery charging can start\\ Rover System Activation possibilities: Kill Switch, Lander Interface, HPC from Earth\\ PCDU ON\\ OBC ON\\ Heaters ON\\ After sufficient Battery Capacity is reached (50\%): Deployment of Rover Boogie \\ and checkout/health check of all Rover Systems\\ Afterward switching to Charging Mode\end{tabular} \\ \hline
-3      & Idle/ Perception                    & ID          & \begin{tabular}[c]{@{}l@{}}During Idle Operation Time\\ Rover powered by RTG or Batteries (Excess Power charges Batteries)\\ PCDU ON\\ All Components in Standby or Power Saving Mode if possible\\ Stereovision Camera ON for Orientation and Observation (Science Data)\\ Hazcams and OBC ON for Orientation and Path Analysation\\ COMM ON for larger time intervals (Listening Mode)\end{tabular}                                                                                                                                                                                                                             \\ \hline
-4      & Safe Mode/ Hibernation (SAFE)       & SAFE        & \begin{tabular}[c]{@{}l@{}}Entered in case of emergency or contingency Rover    \\ Survival Mode =\textgreater Minimum Power\\ PCDU ON  \\ COMM sends Emergency Signal then switches to\\ COMM ON for small time intervals (Listening Mode)\\ OBC OFF until Command received =\textgreater High Power Commands (HPC)\\ Heaters ON\\ Science data shall be stored without data loss\\ Applicable during Day and Nighttime\\ Exit after receiving the corresponding command\\ (Optional: Timer ON and Restart of Rover System after time period has passed)\end{tabular}                                                            \\ \hline
-6      & Communication                       & COMM        & \begin{tabular}[c]{@{}l@{}}During Transmission of major Telemetry or Science Data\\ Rover powered by RTG or Batteries (Excess Power charges Batteries)\\ PCDU ON\\ All Components in Standby or Power Saving Mode if possible\\ OBC SB\\ COMM ON (Transmission Mode)\end{tabular}                                                                                                                                                                                                                                                                                                                                                 \\ \hline
-7      & Charging                            & BAT         & \begin{tabular}[c]{@{}l@{}}For Battery charging\\ Rover batteries charged by RTG\\ PCDU ON\\ All Components in Standby or Power Saving Mode if possible\\ OBC SB\\ Quit after sufficient charge is reached\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
-8      & Locomotion                          & LOC         & \begin{tabular}[c]{@{}l@{}}For Rover Movement and Observation\\ Locomotion and Navigation ON\\ Hazcams and Traversing Path Analysis ON\\ OBC ON\\ PCDU ON\\ COMM OFF\\ Stereovision Camera ON for Orientation and Observation (Science Data)\\ Only during Daytime\end{tabular}                                                                                                                                                                                                                                                                                                                                                   \\ \hline
-9      & Payload Observation Mode            & OBS         & \begin{tabular}[c]{@{}l@{}}Payload Mode for Science Data Collection during Daytime\\ OBC ON\\ PCDU ON   \\ COMM OFF\\ Stereovision Camera ON for Orientation and Observation (Science Data)\\ RADAR ON for Ground Investigation =\textgreater Drill Location\\ Only during Daytime\end{tabular}                                                                                                                                                                                                                                                                                                                                   \\ \hline
-10     & Payload: Ice Core Mode              & ICE         & \begin{tabular}[c]{@{}l@{}}Payload Mode for   Science Data Collection during Daytime or Nighttime\\ OBC ON\\ PCDU ON\\ COMM OFF\\ Ice Core Drill ON during Ice   Core Sample Collection\\ Afterwards Sample will be   analysed =\textgreater APXS ON\end{tabular}                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
-\end{tabular}%
-}
-\caption{Collection of Rover System Modes. [Kommt noch in Anhang]}
-\label{tab:systemmod}
-\end{table}

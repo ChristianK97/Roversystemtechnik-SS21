@@ -35,71 +35,7 @@ The results of this analysis are shown in the following figures XXX and XXX.
 A really important part of each space system is the mass budget. Due to the strict mass restriction, it was quite difficult to find a suitable concept that is both light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5kg was chosen which could also be adhered to. The following table lists the masses of the individual components of the structure and mechanisms system. 
 A table with all components of the INSPIRE Rover system is stored in Appendix A under Mass Budget.
 
-<<<<<<< HEAD
-
-
-
-
-
-=======
-\begin{table}[]
-\centering
-\caption{INSPIRE Mass Budget}
-\label{tab:my-table}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{cccccc}
-\hline
-Subsystem                                & component name                      & mass per component {[}kg{]} & quantity & component margin & total {[}kg{]} \\ \hline
-\multirow{5}{*}{Structure and Mechanism} & Harness                             & 3                           & 1        & 20\%             & 3,60           \\
-                                         & Chassis                              & look up at Chassis Table     & 1        & 20\%             & 5,01           \\
-                                         & E-Bay Box                           & 1,033                       & 1        & 20\%             & 1,24           \\
-                                         & Boom                                & 0,17                        & 1        & 20\%             & 0,20           \\
-                                         & Solar Cell Plate                    & 0,121                       & 1        & 20\%             & 0,15           \\
-\multirow{7}{*}{Locomotion}              & wheels                              & 0,158                       & 4        & 20\%             & 0,76           \\
-                                         & rims                                & 0,162                       & 4        & 20\%             & 0,78           \\
-                                         & motor (wheels)                      & 0,057                       & 4        & 10\%             & 0,25           \\
-                                         & planetary gear(wheels)              & 0,118                       & 4        & 10\%             & 0,52           \\
-                                         & Motor (steering)                    & 0,07                        & 4        & 5\%              & 0,29           \\
-                                         & Motor (deployment)                  & 0,07                        & 6        & 5\%              & 0,44           \\
-                                         & IMU                                 & 0,012                       & 4        & 10\%             & 0,05           \\
-\multirow{4}{*}{EPS}                     & Battery                             & 1,98                        & 1        & 10\%             & 2,18           \\
-                                         & RTG                                 & 3,5                         & 1        & 10\%             & 3,85           \\
-                                         & SolarCells                          & 0,0012975                   & 10       & 20\%             & 0,02           \\
-                                         & PCDU                                & 0,33                        & 1        & 20\%             & 0,40           \\
-\multirow{4}{*}{COM}                     & LGAs                                & 0,002                       & 4        & 5\%              & 0,01           \\
-                                         & Transmitter                         & 0,195                       & 2        & 5\%              & 0,41           \\
-                                         & Receiver                            & 0,22                        & 2        & 10\%             & 0,48           \\
-                                         & Multiplexer                         & 0,065                       & 2        & 5\%              & 0,14           \\
-\multirow{4}{*}{C\&DH / sensors}         & Sun Sensors                         & 0,016                       & 4        & 5\%              & 0,07           \\
-                                         & OBC                                 & 0,35                        & 2        & 5\%              & 0,74           \\
-                                         & temperature Sensor                  & 0,0002                      & 20       & 20\%             & 0,00           \\
-                                         & Housekeeping                        & 0,2                         & 1        & 5\%              & 0,21           \\
-\multirow{5}{*}{TCS}                     & Heaters                             & 0,00181                     & 10       & 5\%              & 0,02           \\
-                                         & isolation                           & 0,15                        & 1        & 20\%             & 0,18           \\
-                                         & Carbon Straps                       & 0,53                        & 1        & 5\%              & 0,56           \\
-                                         & RHU                                 & 0,1                         & 1        & 5\%              & 0,11           \\
-                                         & Magnetic Switch                     & 0,06                        & 6        & 10\%             & 0,40           \\
-\multirow{10}{*}{Payload}                & Ice Core Drill Motor \& Electronics & 1,3                         & 1        & 20\%             & 1,56           \\
-                                         & Ice Core Drill Titanium bit         & 0,041                       & 1        & 20\%             & 0,05           \\
-                                         & Groundradar electronics             & 0,045                       & 1        & 5\%              & 0,05           \\
-                                         & Ground Radar antenna                & 0,00273                     & 2        & 10\%             & 0,01           \\
-                                         & APXS Analyzer                       & 0,43                        & 1        & 20\%             & 0,52           \\
-                                         & Haz Cams                            & 0,064                       & 3        & 5\%              & 0,20           \\
-                                         & Stereo Vision Cam                   & 0,064                       & 2        & 5\%              & 0,13           \\
-                                         & objective StereoCam                 & 0,08                        & 2        & 20\%             & 0,19           \\
-                                         & objective HazCam                    & 0,048                       & 3        & 20\%             & 0,17           \\
-                                         & LEDs                                & 0,003                       & 16       & 10\%             & 0,05           \\
-\multirow{2}{*}{Radiation}               & Cam shielding                       & 0,02905                     & 5        & 20\%             & 0,17           \\
-                                         & E-Bay shielding                     & 0,94                        & 1        & 20\%             & 1,13           \\
-\multicolumn{5}{c}{Mass with component margins and 2mm Aluminum Chassi}                                                                    & 27,28          \\
-\multicolumn{5}{c}{Mass with component margins and 1,5mm Aluminum Chassi}                                                                  & 26,64          \\
-\multicolumn{5}{c}{System Margin}                                                                                                          & 10\%           \\
-\multicolumn{5}{c}{Total Mass (2mm Aluminum Chassi)}                                                                                       & 30,0           \\
-\multicolumn{5}{c}{Total Mass (1,5mm Aluminum Chassi)}                                                                                     & 29,31          \\\hline
-\end{tabular}%
-}
-\end{table}
->>>>>>> 0d32d6da2dc6d4b1240a0313fb13ad8163e1ce87
+\clearpage
 
 %-------------------------------------------------------------------------------
 \section{Locomotion} \label{sec:locomotion}
@@ -273,14 +209,14 @@ With a wheel distance of d= 277 mm and l = 365 mm, this results in the table sho
 For the drive of the wheels, BLDC motors were chosen. In contrast to stepper motors, these are optimised for a uniform torque and not for precise motion control. The resulting torque of each wheel can be calculated to:
 
 \begin{equation}
-	\tau \:  = \:	R_\text{total} \cdot \left(\frac{d_{text{w}}}{2} - \delta \right).
+	\tau \:  = \:	R_\text{total} \cdot \left(\frac{d_\text{w}}{2} - \delta \right).
 	\label{eq:Torque}
 \end{equation}
 
 The required power is then resulting in:
 
 \begin{equation}
-	P \:  = \:	\tau \cdot \left(\frac{2v_{\text{max}}}{d_{text{w}}} \right),
+	P \:  = \:	\tau \cdot \left(\frac{2v_{\text{max}}}{d_\text{w}} \right),
 	\label{eq:power}
 \end{equation}
 
@@ -486,16 +422,10 @@ Criteria of less importance are CPU speed and dimensions. \\
 
 Instead of designing a new OBC board a trade-off was performed among existing single board computers. SBCs provide peripheral services such as bus interfaces, timer and memory in a flight proven configuration, which promises an effective mission development. \\
 
-BAE Systems provides a SBC with their flight proven Power PC750 Architecture which withstands a total radiation dose of up to $1\ Mrad$. The robustness comes at the cost of a $182\ MHz$ processor speed (DATASHEET REFEreNCE). \\
+BAE Systems provides a SBC with their flight proven Power PC750 Architecture which withstands a total radiation dose of up to $1~\text{Mrad}$. The robustness comes at the cost of a $182~\text{MHz}$ processor speed (DATASHEET REFEreNCE). \\
 
 Additionally a custom housekeeping board will be tasked with providing engine control peripherals and sensor read out electronics. 
  
-\clearpage
-
-%-------------------------------------------------------------------------------
-\section{Control and Autonomy} \label{sec:ControlandAutonomy}
-%-------------------------------------------------------------------------------
-
 \clearpage
 
 %-------------------------------------------------------------------------------
@@ -581,14 +511,14 @@ Due to the early state of the rover, simplifications and assumptions for the ana
 	\item The mechanism engines weren't considered.
 	\item A half of bogies radiation loss were put to the chassis and Node 1 each. 
 	\item A half of wheel forks radiation loss were put to the Node 1 and Node 2 each. 
-=======
+
 	\item No discrete nodes for the radar, hazcams and deployment engines were considered. Their heat will be lead into the chassis.
->>>>>>> 0e80ee3ac4d1d6e85138a7f2c5f85a0f1136dd2b
+
 \end{itemize}
 
 
 \subsection{Analysis}
-<<<<<<< HEAD
+
 The thermal analysis was perfomred as an Excel calculation with the  possibility to adapt input values and dimension..
 The major driving load cases are the  hot and the cold cases, where the maximum and minimum temperatures of the rover components will be reached.
 For that, the most powerful components were set to operating mode at once or only the minium requred components were turned on, respectively.
@@ -603,7 +533,7 @@ All temperature lay betwenn their limits without using a heater.
 Considering the temperature margin, the electric ebay exceeds the temperature limits of the transmitter, \autoref{tab:tcs_temp2}.
 The issue can be solved by optimising the heat paths and adding furhter insulation during the detailed ebay design process.
 Yet another results can be found in \autoref{tab:tcs_nodes1} to \autoref{tab:tcs_nodes5}, \autoref{tab:tcs_toggle} and  \autoref{tab:tcs_lynx}.
-=======
+
 The thermal analysis was performed as an Excel calculation, which can be found in the corresponding folder of Team 3.
 The calculation sheet offers the possibility to adapt and customise input values and dimension.
 The major driving load cases are the  hot and the cold cases, where the maximum and minimum temperatures of the rover components will be reached.
@@ -617,7 +547,6 @@ The temperature margins for uncertainties, acceptance tests and qualification te
 The corresponding temperatures are listed in \autoref{tab:tcs_temp}.
 All temperature lay between their limits without using a heater.
 Nevertheless, heaters were considered for the power calculation, see \autoref{sec:EPS}.
->>>>>>> 0e80ee3ac4d1d6e85138a7f2c5f85a0f1136dd2b
 
 \begin{table}[htb]
 	\centering
@@ -635,7 +564,6 @@ Nevertheless, heaters were considered for the power calculation, see \autoref{se
 	\label{tab:tcs_temp1}
 \end{table}
 
-<<<<<<< HEAD
 \begin{table}[htb]
 	\centering
 	\caption{Temperature results in K of thermal analysis, \textit{with} $\pm$15\ K margin .}
@@ -651,14 +579,13 @@ Nevertheless, heaters were considered for the power calculation, see \autoref{se
 	\end{tabular}
 	\label{tab:tcs_temp2}
 \end{table}
-=======
+
 In a further step, a more detailed analysis should to be carried out with the Finite-Element-Method to identify the correct heat and temperature distribution.
 The FE results could be used to verify and adjust the analytical analysis to get a helpful tool for fast thermal calculation to evaluate different materials or designs in the further development phases.
 %A transient analysis could also help to optimise the insulation design.
 
 
 \clearpage
->>>>>>> 0e80ee3ac4d1d6e85138a7f2c5f85a0f1136dd2b
 
 %-------------------------------------------------------------------------------
 \section{Radiation} \label{sec:Radiation}
