@@ -35,8 +35,6 @@ The results of this analysis are shown in the following figures XXX and XXX.
 A really important part of each space system is the mass budget. Due to the strict mass restriction, it was quite difficult to find a suitable concept that is both light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5kg was chosen which could also be adhered to. The following table lists the masses of the individual components of the structure and mechanisms system. 
 A table with all components of the INSPIRE Rover system is stored in Appendix A under Mass Budget.
 
-\clearpage
-
 %-------------------------------------------------------------------------------
 \section{Locomotion} \label{sec:locomotion}
 %-------------------------------------------------------------------------------
@@ -370,8 +368,6 @@ According to the ECSS reliability restrictions 1 battery string must be substrac
 In order to ensure the full functionality of the EPS, the last main component to be selected is a suitable PCDU. As described in \autoref{fig:epsflowchart}, the PCDU forms the heart of the EPS and is an important interface to the OBC and COMM. Furthermore the PCDU shall be able to monitor and control the rover system if necessary through watchdogs, HPC (High Priority Commands) and direct connections to the OBC and COMM.\\
 The PCDU has the challenging task not only to process the RTG as the main energy source, but also to process solar cells as secondary energy sources. Therefore, a PCDU was sought which has the required size, dimensions and range of functions. The research resulted in the Nova PCDU from Bradford DSI. In addition, margins were added to the PCDU to ensure feasibility\cite{BradfordSpace.2019}.
 
-\clearpage
-
 \section{Communications and Command \& Data-Handling}
 \label{sec:comm}
 The Communications subsystem consists of redundant transmitters and receivers which are cross strapped to four antennas and the OBC. Additionally hard wired connections linking the communication system to the PCDU enable for reboots via direct commands.\\
@@ -425,8 +421,6 @@ Instead of designing a new OBC board a trade-off was performed among existing si
 BAE Systems provides a SBC with their flight proven Power PC750 Architecture which withstands a total radiation dose of up to $1~\text{Mrad}$. The robustness comes at the cost of a $182~\text{MHz}$ processor speed (DATASHEET REFEreNCE). \\
 
 Additionally a custom housekeeping board will be tasked with providing engine control peripherals and sensor read out electronics. 
- 
-\clearpage
 
 %-------------------------------------------------------------------------------
 \section{Thermal Control System} \label{sec:thermalcontrol}
@@ -584,9 +578,6 @@ In a further step, a more detailed analysis should to be carried out with the Fi
 The FE results could be used to verify and adjust the analytical analysis to get a helpful tool for fast thermal calculation to evaluate different materials or designs in the further development phases.
 %A transient analysis could also help to optimise the insulation design.
 
-
-\clearpage
-
 %-------------------------------------------------------------------------------
 \section{Radiation} \label{sec:Radiation}
 %-------------------------------------------------------------------------------
@@ -663,4 +654,4 @@ In order to protect the rover against the high radiation levels at the surface o
      \label{fig:RadiationOverview}
 \end{figure}
 
-\cleardoublepage
+\clearpage
