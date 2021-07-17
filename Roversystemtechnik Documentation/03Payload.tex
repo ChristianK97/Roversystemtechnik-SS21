@@ -2,14 +2,14 @@
 \chapter{Payload}
 \label{chap:payload}
 
-\section{Sterovision Camera / Observation / Perception}
-
-The INSPIRE rover is equipped with five individual cameras. Two are used as stereo vision cameras on an hight adjustable and rotatable telescope arm on the front side of the rover. This ist used to capture a detailed 3D model of the environment with which sizes and distances can be estimated. The remaining three cameras are used as has-cameras which are necessary to obtain data regarding the nearby environment. All cameras are equipped with radiation hardened lenses to prevent browning of the lenses. The main tasks of the camera system is the provision of scientific data and navigation related data. More details regarding the navigation and autonomy are provided in \autoref{sec:ControlandAutonomy}.
-
 \section{Ground RADAR}
+The Ground Radars main task is the identification of suitable drilling sites. Additionally every radar campaign will contribute to further understanding of the ground composition on Europa.\\
 
-High frequencies lead to smaller antennas and high resolution, while lower frequencies increase penetration depth and antenna size. 
-Compact antenna dimensions are beneficial for the INSPIRE mission due to weight constraints. Based on [Paper \& Website reference] a custom antenna with the properties in \autoref{tab:GPR-A-Prp} is proposed.
+due to its small dimensions the CRUX GPR is selected . The system is tested for lunar application at 800 MHz resulting in a resolution of 15 cm and a penetration depth of 5 m [CRUX RADAR REF]. The INSPIRE mission makes use of a 1.5 GHz frequency to increase the resolution. \\
+Reduced penetration depths are acceptable since the depth of interest for the ice core sampling is 10 cm. \\
+
+Additionally high frequencies lead to compact antenna design which is beneficial to the INSPIRE mission due to weight constraints. 
+Based on [Paper \& Website reference] a custom patch antenna with the properties in \autoref{tab:GPR-A-Prp} is proposed.
 
 \begin{table}[h]
 \centering
@@ -23,6 +23,9 @@ Substrate ${\varepsilon}_{r}$ & Width & Length & Height & Mass   \\ \hline\hline
 
 \section{Ice Core Drill}
 
+\section{Sterovision Camera / Observation / Perception}
+
+The INSPIRE rover is equipped with five individual cameras. Two are used as stereo vision cameras on an hight adjustable and rotatable telescope arm on the front side of the rover. This ist used to capture a detailed 3D model of the environment with which sizes and distances can be estimated. The remaining three cameras are used as has-cameras which are necessary to obtain data regarding the nearby environment. All cameras are equipped with radiation hardened lenses to prevent browning of the lenses. The main tasks of the camera system is the provision of scientific data and navigation related data. More details regarding the navigation and autonomy are provided in \autoref{sec:ControlandAutonomy}.
 
 \section{RadHard Solar Arrays}
 \label{subsec:radhard}

@@ -29,49 +29,154 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ../00Documentation-blx.bib
 Database file #2: ../References.bib
+I was expecting a `,' or a `}'---line 177 of file ../References.bib
+ : 
+ : @misc{ref_tcs_06,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 195 of file ../References.bib
+ : 
+ : @misc{ref_tcs_09,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 201 of file ../References.bib
+ : 
+ : @misc{ref_tcs_10,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Platzhalter"
 Biblatex version: 3.16
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2707 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2707 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2707 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2715 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2715 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2715 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2721 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2721 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2721 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2725 of file biblatex.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 11 entries,
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
+while executing---line 2813 of file biblatex.bst
+You've used 29 entries,
             6393 wiz_defined-function locations,
-            1281 strings with 11356 characters,
-and the built_in function-call counts, 63139 in all, are:
-= -- 3480
-> -- 3557
-< -- 362
-+ -- 3330
-- -- 2663
-* -- 3406
-:= -- 7503
+            1359 strings with 13960 characters,
+and the built_in function-call counts, 131803 in all, are:
+= -- 7760
+> -- 4891
+< -- 646
++ -- 4103
+- -- 3113
+* -- 8007
+:= -- 13418
 add.period$ -- 0
-call.type$ -- 11
-change.case$ -- 171
+call.type$ -- 29
+change.case$ -- 276
 chr.to.int$ -- 166
-cite$ -- 20
-duplicate$ -- 5489
-empty$ -- 5170
-format.name$ -- 607
-if$ -- 11494
+cite$ -- 56
+duplicate$ -- 11819
+empty$ -- 12760
+format.name$ -- 1414
+if$ -- 26691
 int.to.chr$ -- 0
-int.to.str$ -- 32
+int.to.str$ -- 85
 missing$ -- 0
-newline$ -- 280
-num.names$ -- 509
-pop$ -- 3564
+newline$ -- 609
+num.names$ -- 1209
+pop$ -- 9480
 preamble$ -- 1
-purify$ -- 226
+purify$ -- 385
 quote$ -- 0
-skip$ -- 2041
+skip$ -- 4700
 stack$ -- 0
-substring$ -- 6059
-swap$ -- 1348
-text.length$ -- 298
+substring$ -- 13822
+swap$ -- 2903
+text.length$ -- 600
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 362
+type$ -- 974
 warning$ -- 0
-while$ -- 719
+while$ -- 1304
 width$ -- 0
-write$ -- 270
-(There was 1 warning)
+write$ -- 581
+(There were 48 error messages)
