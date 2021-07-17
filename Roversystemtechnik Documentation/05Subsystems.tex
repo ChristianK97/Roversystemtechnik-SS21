@@ -269,24 +269,23 @@ In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scale
 
 \begin{table}[H]
 \centering
+\caption{Parameters for the scaled eSMMRTG based on the eMMRTG.}
 \begin{tabular}{|c|c|}
 \hline
 \multicolumn{2}{|c|}{Scaled eSMMRTG Parameter}                \\ \hline
-\textbf{System Mass} $m_\text{RTG}$ [$kg$]                             & \textbf{3.5}     \\ \hline
-BOL Specific Power $\alpha_\text{BOL}$ $\frac{W_{el}}{kg}$  & $4.0$     \\ \hline
-BOL Power $P_{el,\text{BOL}}$ $\ W_{el}$                    & $14$       \\ \hline
+\textbf{System Mass} $m_\text{RTG}$ [kg]                             & \textbf{3.5}     \\ \hline
+BOL Specific Power $\alpha_\text{BOL}$ $\frac{W_{el}}{\text{kg}}$  & $4.0$     \\ \hline
+BOL Power $P_{el,\text{BOL}}$ $ W_{el}$                    & $14$       \\ \hline
 Isotrop                                                     & Pu-238   \\ \hline
-Isotrop Half-Life [$a$]                                       & $87.7$     \\ \hline
-Flight time and Storage (incl. Margins) [$a$]                 & $7$        \\ \hline
+Isotrop Half-Life [a]                                       & $87.7$     \\ \hline
+Flight time and Storage (incl. Margins) [a]                 & $7$        \\ \hline
 Power Loss Degradation until BOM $\ W_{el}$                 & $0.56$     \\ \hline
 BOM Power $P_{el,\text{BOM}}$ $\ W_{el}$                    & $13.44$    \\ \hline
-Europa Day Duration [$h$]                                     & $85$       \\ \hline
-Mission Duration [$d$]                                        & $106.25$   \\ \hline
+Europa Day Duration [h]                                     & $85$       \\ \hline
+Mission Duration [d]                                        & $106.25$   \\ \hline
 End of Mission Power $P_{el,\text{EOM}}$ [$\ W_{el}$]         & $13.42$   \\ \hline
 \textbf{Final Power for Study} $P_{el}$ [$\ W_{el}$] (incl. $10\%$ scaling Margin) & \textbf{12.08}    \\ \hline
-
 \end{tabular}
-\caption{Parameters for the scaled eSMMRTG based on the eMMRTG.}
 \label{tab:esmmrtg}
 \end{table}
 
@@ -294,9 +293,9 @@ Furthermore INSPIRE will also be equipped with some radiation hardend solar arra
 
 
 \subsection{Energy Storage} 
-For the energy storage of INSPIRE many possible battery types were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilize LiIon batteries as the secondary batteries of INSPIRE. This decision is primarly based on LiIon batteries high energy density, temperature range, robust performance and long operating and cycle life in extreme environments\cite{IRSatUniversityofStuttgart.2020}\cite{IRSatUniversityofStuttgart.2020}. \\
+For the energy storage of INSPIRE many possible battery types were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilize LiIon batteries as the secondary batteries of INSPIRE. This decision is primarly based on LiIon batteries high energy density, temperature range, robust performance and long operating and cycle life in extreme environments\cite{IRSatUniversityofStuttgart.2020}\\
 As the RTG only generates a small constant power the main energy source during the mission will be the accumulated energy of the batteries. The rover will charge the batteries at night, so the next exploration day can start with full capacity. Furthermore the batteries have to be charged during day time to maintain operations.\\
-For the sizing of the batteries, the rover motion was chosen as the design driver, since this is the highest energy consuming state of the rover and additionally mission critical for INSPIRE. The rover motion consists of an interaction of the Locomotion and Perception mode as already mentioned in \autoref{chap:Operation}. Therefore it was defined that INSPIRE shall be able to drive $ 50 \ m $ (including alternating Locomotion and Perception Mode) with a fully charged Battery. Furthermore the battery mass shall not exceed $2$ kg. The required battery capacity $C_\text{Batt,req}$ can be caculated using \autoref{eq:batreq}. The results are listed in \autoref{tab:batsize} \cite{S.Klinkner.2021}.
+For the sizing of the batteries, the rover motion was chosen as the design driver, since this is the highest energy consuming state of the rover and additionally mission critical for INSPIRE. The rover motion consists of an interaction of the Locomotion and Perception mode as already mentioned in \autoref{chap:Operation}. Therefore it was defined that INSPIRE shall be able to drive $ 50$ m (including alternating Locomotion and Perception Mode) with a fully charged Battery. Furthermore the battery mass shall not exceed $2$ kg. The required battery capacity $C_\text{Batt,req}$ can be caculated using \autoref{eq:batreq}. The results are listed in \autoref{tab:batsize} \cite{S.Klinkner.2021}.
 
 
 \begin{equation}
@@ -306,19 +305,19 @@ C_\text{Batt,req} = \frac{P_\text{el,req} \cdot t_e }{DoD \cdot \eta_\text{LiIon
 
 \begin{table}[htb]
 \centering
-
+\caption{Power consumption mode used as design case for the battery sizing.}
 \begin{tabular}{|l|c|c|}
 \hline
 \textbf{Power Consumption Mode:}                        & \textbf{Locomotion} & \textbf{Perception} \\ \hline
 Required Electrical Power $P_\text{el,req}$ [$W_{el}$]         & $135.27$              & $18.74$               \\ \hline
-Duration of the mode $t_e$ [$s$]                          & $500$              & $15000$            \\ \hline
+Duration of the mode $t_e$ [s]                          & $500$              & $15000$            \\ \hline
 $DOD$ for Dimensioning [-]                              & $0.90$                & $0.90$                \\ \hline
 Efficiency of LiIon Cells $\eta_\text{LiIon}$ [-]       & $0.95$                & $0.95$                \\ \hline
-Required Battery Capacity per mode $C_\text{mode}$ [$Wh$] & $21.97$              & $91.33$              \\ \hline
-\textbf{Total Required Battery Capacity} $C_\text{Batt,req}$ [$Wh$]    & \multicolumn{2}{c|}{\textbf{113.30}}               \\ \hline
+Required Battery Capacity per mode $C_\text{mode}$ [Wh] & $21.97$              & $91.33$              \\ \hline
+\textbf{Total Required Battery Capacity} $C_\text{Batt,req}$ [Wh]    & \multicolumn{2}{c|}{\textbf{113.30}}               \\ \hline
 \end{tabular}
 
-\caption{Power consumption mode used as design case for the battery sizing.}
+
 \label{tab:batsize}
 \end{table}
 
