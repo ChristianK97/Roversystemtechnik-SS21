@@ -351,12 +351,49 @@ Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}
   \label{fig:LB-R2L}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
-  		\includegraphics[width=0.9\textwidth]{Media/LB-LandertoRover.png}
-  \caption{Lander to Rover complete uplink budget.}
-  \label{fig:LB-L2R}
-\end{figure}
+
+\begin{table}[]
+\centering
+\caption{Complete link budget for Lander to Rover transmission.}
+\label{tab:lb-L2R}
+\begin{tabular}{llll}
+\multicolumn{4}{l}{Lander to Rover (L2R) Link Budget (downlink)}                 \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Lander}                               \\
+Lander transmitter Output Power           &      & 5                      & W    \\
+                                          &      & 6.99                   & dB   \\
+Lander line loss                          &      & 0.6                    & dB   \\
+Lander antenna gain                       &      & 1                      & dB   \\
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Uplink Path}                          \\
+pointing loss                             &      & 0                      & dB   \\
+polarization loss                         &      & 0.3                    & dB   \\
+path loss                                 &      & 116.74                 & dB   \\
+atmospheric loss                          &      & 0                      & dB   \\ \hline
+signal level at Lander					  & RIP  & 109.65				  & dB   \\ 
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Rover}                                \\
+Rover LGA pointing loss                   &      & 0                      & dB   \\
+Rover antenna gain                        &      & 1                      & dB   \\ \hline
+signal after Rover LGA                    &      & 108.65                 & dB   \\ \hline
+Rover total line loss                     &      & 0.6                    & dB   \\
+Rover effective noise temp.               &      & 24.77                  & dB   \\ \hline
+Rover signal to noise power density       & $\frac{{C}{{N}_{0}}$	 & 94.57                  & dB   \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Data Rate}                            \\ \hline
+data rate                                 &      & 2                      & kbps \\
+                                          &      & 33.01                  & dBHz \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Total}                                \\ \hline
+System $\frac{{E}_{b}{{N}_{0}}$	 for L2R link                 &      & 61.56                  & dB   \\
+\multicolumn{4}{l}{}                                                             \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Demodulation}                         \\ \hline
+specified Bit Error Rate                  &      & $10^{-6}$ 			  & n/a  \\
+FEC coding used                           &      & none                   &      \\
+EB/N0 threshold                           &      & 9                      & dB   \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Uncertain Losses}                     \\ \hline
+technical degradation                     &      & 1                      & dB   \\
+implementation loss                       &      & 1                      & dB   \\
+\multicolumn{4}{l}{}                                                             \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Link Margin}                          \\ \hline
+system link margin after uncertain losses &      & 50.56                  & dB  
+\end{tabular}
+\end{table}
 
 \begin{figure}[h]
 	\centering
