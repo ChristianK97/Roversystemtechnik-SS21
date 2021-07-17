@@ -11,9 +11,9 @@ In this chapter, the individual subsystems of the rover system will be discussed
 \subsection{Storage Configuration and Rover Deployment}
 
 The Main Characteristics of the Rover Chassis design of INSPIRE focuses on compact storage geometry and low Mass. 
-During the design process it's been possible to achieve a reduce of volume in comparison to the first INSPIRE chassis design of about xxx%.
+During the design process it's been possible to achieve a reduce of volume in comparison to the first INSPIRE chassis design of about xxx~\%.
 The geometry data in storage configuration is shown in figure XXX.
-The storage volume that is required is 131 l.
+The storage volume that is required is 131~l.
 For the Rover Deployment there had been a lot of possible concepts, for example a sky crane, a robotic arm or a ramp. Depending of the reason that there are no further informations about the TRIPLE Lander and that the complexity of such a deployment system should be as simple as possible, the decision felt on a ramp where INSPIRE will drive slowly downwards the surface of Europa. 
 A possible concept of the rover deployment is shown in the following figure XXX.
 
@@ -24,15 +24,15 @@ This will be possible with a cogwheel mechanism which will be operated by two Mo
 
 \subsection{Static Analysis}
 
-As part of the design process, it was necessary to perform a static analysis of the chassis. The following load cases were considered: 
-- Stowed configuration inside the TRIPLE lander on Europa 
-- Exploration configuration on the surface of Europa
+As part of the design process, it was necessary to perform a static analysis of the chassis. The following load cases were considered: \\
+- Stowed configuration inside the TRIPLE lander on Europa \\
+- Exploration configuration on the surface of Europa \\
 The analysis was created with the computer aided design software "Autodesk Inventor". 
 The results of this analysis are shown in the following figures XXX and XXX.
 
 \subsection{Mass Budget}
 
-A really important part of each space system is the mass budget. Due to the strict mass restriction, it was quite difficult to find a suitable concept that is both light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5kg was chosen which could also be adhered to. The following table lists the masses of the individual components of the structure and mechanisms system. 
+A really important part of each space system is the mass budget. Due to the strict mass restriction, it was quite difficult to find a suitable concept that is both light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5~kg was chosen which could also be adhered to. The following table lists the masses of the individual components of the structure and mechanisms system. 
 A table with all components of the INSPIRE Rover system is stored in Appendix A under Mass Budget.
 
 %-------------------------------------------------------------------------------
@@ -252,7 +252,7 @@ The EPS (Electrical Power System) is the subsystem responsible for the electrica
 
 \subsection{EPS Budget and Overview}
 \autoref{fig:epspowersummary} summarizes the power budget of INSPIRE based on the rover system modes defined in \autoref{chap:rovsubmod}. The holistic power budget can be found in \autoref{tab:powerbudgetcomplete}.
-As can be seen, the Locomotion mode has the highest demands on the EPS. The two payload modes also have a high power demand. The Communication mode also has a high consumption. However, since this is primarily used at night and the rover can be charged again afterwards without any problems, it does not place any major restrictions on the power budget. Idle/Perception mode has a low consumption, but is usually used for a long time at a stretch and therefore also places high demands on the EPS. In Charging mode, the EPS is able to charge $8.82 \ W_{el} $.
+As can be seen, the Locomotion mode has the highest demands on the EPS. The two payload modes also have a high power demand. The Communication mode also has a high consumption. However, since this is primarily used at night and the rover can be charged again afterwards without any problems, it does not place any major restrictions on the power budget. Idle/Perception mode has a low consumption, but is usually used for a long time at a stretch and therefore also places high demands on the EPS. In Charging mode, the EPS is able to charge $8.82 \ W_\text{el} $.
 
 
 \begin{figure}[htb]
@@ -284,8 +284,8 @@ As can be seen, the Locomotion mode has the highest demands on the EPS. The two 
 
 \subsection{Energy Source}
 For the energy generation of INSPIRE many possible sources were taken into consideration for a trade-off. As a conclusion of this trade-off the decision was made to utilise a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE.\\
-As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilised, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of $m_\text{RTG}=3 \ \text{kg}$ was defined and the eMMRTG was scaled down using the given data.\\
-In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a BOL specific power of $\alpha_\text{BOL}= 4.0 \ \frac{W_{el}}{kg}$ and provides an electrical power of $P_{el} = 12.08 \ W_{el}$ during the mission duration\cite{R.Abelsonetal..2004}\cite{S.Magdum.2019}\cite{Holgate.2015}\cite{eMMRTG.NASA}\cite{Lakdawalla.2018}.
+As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilised, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of $m_\text{RTG}=3~\text{kg}$ was defined and the eMMRTG was scaled down using the given data.\\
+In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a BOL specific power of $\alpha_\text{BOL}= 4.0 \ \frac{\text{W}_\text{el}}{\text{kg}}$ and provides an electrical power of $P_\text{el} = 12.08~\text{W}_\text{el}$ during the mission duration\cite{R.Abelsonetal..2004}\cite{S.Magdum.2019}\cite{Holgate.2015}\cite{eMMRTG.NASA}\cite{Lakdawalla.2018}.
 
 
 
@@ -303,21 +303,23 @@ In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scale
 \begin{table}[H]
 \centering
 \caption{Parameters for the scaled eSMMRTG based on the eMMRTG.}
-\begin{tabular}{|c|c|}
-\hline
-\multicolumn{2}{|c|}{Scaled eSMMRTG Parameter}                \\ \hline
-\textbf{System Mass} $m_\text{RTG}$ [kg]                             & \textbf{3.5}     \\ \hline
-BOL Specific Power $\alpha_\text{BOL}$ $\frac{W_{el}}{\text{kg}}$  & $4.0$     \\ \hline
-BOL Power $P_{el,\text{BOL}}$ $ W_{el}$                    & $14$       \\ \hline
-Isotrop                                                     & Pu-238   \\ \hline
-Isotrop Half-Life [a]                                       & $87.7$     \\ \hline
-Flight time and Storage (incl. Margins) [a]                 & $7$        \\ \hline
-Power Loss Degradation until BOM $\ W_{el}$                 & $0.56$     \\ \hline
-BOM Power $P_{el,\text{BOM}}$ $\ W_{el}$                    & $13.44$    \\ \hline
-Europa Day Duration [h]                                     & $85$       \\ \hline
-Mission Duration [d]                                        & $106.25$   \\ \hline
-End of Mission Power $P_{el,\text{EOM}}$ [$\ W_{el}$]         & $13.42$   \\ \hline
-\textbf{Final Power for Study} $P_{el}$ [$\ W_{el}$] (incl. $10\%$ scaling Margin) & \textbf{12.08}    \\ \hline
+\begin{tabular}{lcc}
+\toprule
+Scaled eSMMRTG Parameter &	Unit	&   Value            \\
+\midrule
+\textbf{System Mass} $m_\text{RTG}$ & kg  & \textbf{3.5}     \\
+BOL Specific Power $\alpha_\text{BOL}$ & $\frac{W_{el}}{\text{kg}}$  & $4.0$     \\
+BOL Power $P_{\text{el},\text{BOL}}$ & $ W_{el}$                    & $14$       \\
+Isotrop                 &         -                           & Pu-238   \\
+Isotrop Half-Life & a                                       & $87.7$     \\
+Flight time and Storage (incl. Margins) & a                & $7$        \\
+Power Loss Degradation until BOM & $\ W_{el}$                 & $0.56$     \\
+BOM Power $P_{\text{el},\text{BOM}}$ & $\ W_{el}$                    & $13.44$    \\
+Europa Day Duration & h                                     & $85$       \\
+Mission Duration & d                                        & $106.25$   \\
+End of Mission Power $P_{\text{el},\text{EOM}}$ & $\ W_{el}$         & $13.42$   \\
+\textbf{Final Power for Study} $P_\text{el}$ (incl. $10~\%$ scaling Margin) & $\ W_{el}$  & \textbf{12.08}    \\
+\bottomrule
 \end{tabular}
 \label{tab:esmmrtg}
 \end{table}
@@ -339,15 +341,17 @@ C_\text{Batt,req} = \frac{P_\text{el,req} \cdot t_e }{DoD \cdot \eta_\text{LiIon
 \begin{table}[htb]
 \centering
 \caption{Power consumption mode used as design case for the battery sizing.}
-\begin{tabular}{|l|c|c|}
-\hline
-\textbf{Power Consumption Mode:}                        & \textbf{Locomotion} & \textbf{Perception} \\ \hline
-Required Electrical Power $P_\text{el,req}$ [$W_{el}$]         & $135.27$              & $18.74$               \\ \hline
-Duration of the mode $t_e$ [s]                          & $500$              & $15000$            \\ \hline
-$DOD$ for Dimensioning [-]                              & $0.90$                & $0.90$                \\ \hline
-Efficiency of LiIon Cells $\eta_\text{LiIon}$ [-]       & $0.95$                & $0.95$                \\ \hline
-Required Battery Capacity per mode $C_\text{mode}$ [Wh] & $21.97$              & $91.33$              \\ \hline
-\textbf{Total Required Battery Capacity} $C_\text{Batt,req}$ [Wh]    & \multicolumn{2}{c|}{\textbf{113.30}}               \\ \hline
+\begin{tabular}{lccc}
+\toprule
+\textbf{Power Consumption Mode:}             &     \textbf{Unit}      & \textbf{Locomotion} & \textbf{Perception} \\
+\midrule
+Required Electrical Power $P_\text{el,req}$ & $\text{W}_\text{el}$         & $135.27$              & $18.74$               \\
+Duration of the mode $t_\text{e}$ & s                         & $500$              & $15000$            \\
+$DOD$ for Dimensioning               &     -          & $0.90$                & $0.90$                \\
+Efficiency of LiIon Cells $\eta_\text{LiIon}$   &  -  & $0.95$                & $0.95$                \\
+Required Battery Capacity per mode $C_\text{mode}$ & Wh & $21.97$              & $91.33$              \\
+\textbf{Total Required Battery Capacity} $C_\text{Batt,req}$  & Wh & \multicolumn{2}{c}{\textbf{113.30}}               \\
+\bottomrule
 \end{tabular}
 
 
@@ -361,7 +365,7 @@ C_\text{Batt} = C_\text{cell} \cdot V_\text{cell} \cdot N \cdot M .
 \label{eq:batuse}
 \end{equation}
 
-According to the ECSS reliability restrictions 1 battery string must be substracted for dimensionsing. Furthermore a $30 \%$ margin on the energy content was applied. This leads to a final battery configuration with a capacity of $C_\text{Batt}=156.24$ Wh and a mass of $m_\text{Batt} = 1980$ g. The final battery values are listed in \autoref{tab:battery} \cite{SAFTBatteries.2018}.
+According to the ECSS reliability restrictions 1 battery string must be substracted for dimensionsing. Furthermore a $30~\%$ margin on the energy content was applied. This leads to a final battery configuration with a capacity of $C_\text{Batt}=156.24$ Wh and a mass of $m_\text{Batt} = 1980$ g. The final battery values are listed in \autoref{tab:battery} \cite{SAFTBatteries.2018}.
 
 
 \subsection{EPS Power Control and Distribution}
@@ -382,14 +386,14 @@ To achieve the scientific output from \autoref{chap:sc-output} the transmission 
 \subsection{Communication System}
 Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 25 dB high gain antenna [Missing Reference] and a low gain antenna which is not further specified in literature.\\
 
-The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59\ dB$, resulting in a Bit Error Rate of less than $10^{-4}$. The link budget has been performed under the conservative considerations listed in \autoref{tab:lb-param}.\\
+The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59~\text{dB}$, resulting in a Bit Error Rate of less than $10^{-4}$. The link budget has been performed under the conservative considerations listed in \autoref{tab:lb-param}.\\
 
 Using the Landers LGA greatly increases robustness due to the elimination of pointing errors and higher margin for rover positioning error. Additionally, the INSPIRE rover’s communication link would not interfere with the Landers communication to the relay carrier by blocking the HGA.
 
 \subsubsection{Component Selection}
 
-Due to the considerably high link margin the focus is on low mass and low power components with flight heritage such as flown on CubeSat missions. Criteria with relatively small impact on the link budget such as component noise or even FEC have not been taken into account. The rover communication uses X-Band for increased compatibility with the lander and has a total system mass of less than $1\ kg$. \\
-Since radiation hardness was not included in most datasheets a total dose of $<20\ krad$ was assumed in accordance with values for LEO [Missing Reference]. \\
+Due to the considerably high link margin the focus is on low mass and low power components with flight heritage such as flown on CubeSat missions. Criteria with relatively small impact on the link budget such as component noise or even FEC have not been taken into account. The rover communication uses X-Band for increased compatibility with the lander and has a total system mass of less than $1~\text{kg}$. \\
+Since radiation hardness was not included in most data sheets a total dose of $<20~\text{krad}$ was assumed in accordance with values for LEO [Missing Reference]. \\
 
 The selected components are listed in \autoref{tab:ComCompComp}. 
 
@@ -434,7 +438,7 @@ The main heat source of the rover is the waste heat of the RTG (see \autoref{sec
 Carbon-based straps \textit{LyNX}\textsuperscript{\tiny\textregistered} with a high thermal conductivity to density ratio will be used, \cite{ref_tcs_01}.
 However, the thermal conductivity is highly depend on the materials temperature, see \autoref{fig:tcs_strap01}.
 The curve was aproximated by an qubic interpolation, \autoref{fig:tcs_lynx} and \autoref{eq:tcs_lynx}.
-To consider heat loss as a result of surface contact and radiation, the thermal conductivity was reduced about 20\% ($f_{r}=0.8$).
+To consider heat loss as a result of surface contact and radiation, the thermal conductivity was reduced about 20~\% ($f_{r}=0.8$).
 
 
 \begin{figure}[h]
@@ -469,7 +473,7 @@ For special requirements, white paint will be used, \autoref{tab:tcs_surf}.
 	\centering
 	\subfloat[Comparison between data and theory (experimental results), \cite{ref_tcs_04} ]{\includegraphics[height=0.22\textwidth]{Media/tcs_diag_orig.png}\label{fig:tcs_switch21}}\qquad
 	\subfloat[Linearised characteristic of bi-metallic heat switch. ]{\includegraphics[height=0.22\textwidth]{Media/tcs_diag_lin}\label{fig:tcs_switch22}}
-	\caption{Change of the heat switch conductivity $R_t$ over the mean temperature $T_M$.}
+	\caption{Change of the heat switch conductivity $R_\text{t}$ over the mean temperature $T_\text{M}$.}
 	\label{fig:tcs_switch02}
 \end{figure}
 
