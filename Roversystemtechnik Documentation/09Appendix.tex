@@ -384,31 +384,43 @@ The HIREW compression algorithm is suggested for the mission considering a high 
 %-------------------------------------------------
 \subsection{Heat energy eqilibrium}  \label{sec:app_tcs_01}
 The follwing equiations describe each node of the thermal network.
-The input values were tanken from EPS, \autoref{sec:app_therm_2}, \autoref{sec:app_therm_3}, \autoref{sec:app_therm_4} respectively.\\
+The input values were tanken from EPS, \autoref{sec:app_therm_2}, \autoref{sec:app_therm_3}, \autoref{sec:app_therm_4} respectively.
+
+\begin{table}[H]
+	\begin{tabular}{l@{\quad}l@{\qquad\qquad\qquad}l@{\quad}l}
+		\multicolumn{4}{l}{\textit{Subscript} for eqilibrium:}\\[0.5em]
+		Bay & Electrical Bay & Dr	& Drill\\
+		Bo & Bogie & 	E,D & Drive Engine\\
+		Cam & Camera & E,S & Steer Engine\\
+		Ch & Chassis & WF & Wheel Fork\\
+	\end{tabular}
+
+\end{table}
 
 \underline{RTG:}
 
 \begin{equation}
-	\begin{aligned}
-		0=\  &\dot{Q}_{RTG} +CON_1 \cdot (T_{Bay}-T_{RTG})+CON_2 \cdot (T_{Ch}-T_{RTG})+ \\[1em]
-		 & + CON_5 \cdot (T_{Drill}-T_{RTG})- \epsilon_{RTG}\cdot \sigma_b \cdot S_{RTG}\cdot T_{RTG}^4 \\[2em]
-	\end{aligned}
+\begin{aligned}
+0=\  &\dot{Q}_{RTG} +CON_1 \cdot (T_{Bay}-T_{RTG})+CON_2 \cdot (T_{Ch}-T_{RTG})+ \\[1em]
+& + CON_5 \cdot (T_{Dr}-T_{RTG})+ CON_9 \cdot (T_{E,S}-T_{RTG})\\[1em]
+& +   CON_12 \cdot (T_{E,D}-T_{RTG}) - \epsilon_{RTG}\cdot \sigma_b \cdot S_{RTG}\cdot T_{RTG}^4 \\[2em]
+\end{aligned}
 \end{equation}
 
 \underline{Electric Bay:}\quad \small{Subscript\ \textit{Bay}}
 \begin{equation}0=\  \dot{Q}_{Bay}+ CON_1 \cdot (T_{RTG}-T_{Bay})+ CON_3 \cdot (T_{Ch}-T_{Bay})  -\epsilon_{Bay}\cdot \sigma_b \cdot S_{Bay}\cdot T_{Bay}^4 \end{equation}\\
 with: 
-\begin{equation} \dot{Q}_{B,intern} = \dot{Q}_{OBC} + \dot{Q}_{Tranceiver} +\dot{Q}_{Receiver} +\dot{Q}_{PCDU} \end{equation}\\
+\begin{equation} \dot{Q}_{Bay} = \dot{Q}_{OBC} + \dot{Q}_{Tranceiver} +\dot{Q}_{Receiver} +\dot{Q}_{PCDU} \end{equation}\\
 
 \underline{Drill \& Analyser:}
-\begin{equation} 0= \ \dot{Q}_{Drill} +CON_4 \cdot (T_{Ch}-T_{Drill})+CON_5 \cdot (T_{RTG}-T_{Drill})   \end{equation} \\
+\begin{equation} 0= \ \dot{Q}_{Dr} +CON_4 \cdot (T_{Ch}-T_{Dr})+CON_5 \cdot (T_{RTG}-T_{Dr})   \end{equation} \\
 
 \underline{Camera:}
 \begin{equation}
-	\begin{aligned}
-		0=\  &  \dot{Q}_{Cam} + \dot{Q}_{RHU} +CON_6 \cdot (T_{Ch}-T_{Cam})+ \\[1em]
-		& +(CON_{14} +n_{S1}\cdot CON_{S1}) \cdot (T_{Rad}-T_{Cam})  - \epsilon_{Cam}\cdot \sigma_b \cdot S_{Cam}\cdot T_{Cam}^4 \\[2em]
-	\end{aligned}
+\begin{aligned}
+0=\  &  \dot{Q}_{Cam} + \dot{Q}_{RHU} +CON_6 \cdot (T_{Ch}-T_{Cam})+ \\[1em]
+& +(CON_{14} +n_{S1}\cdot CON_{S1}) \cdot (T_{Rad}-T_{Cam})  - \epsilon_{Cam}\cdot \sigma_b \cdot S_{Cam}\cdot T_{Cam}^4 \\[2em]
+\end{aligned}
 \end{equation}
 
 \underline{Radiator:}
@@ -416,44 +428,44 @@ with:
 
 \underline{Chassis:}
 \begin{equation}
-	\begin{aligned}
-		0=\  &   \dot{Q}_{Radar}+\dot{Q}_{Hazcam}  +CON_2 \cdot (T_{RTG}-T_{Ch})+CON_3 \cdot (T_{Bay}-T_{Ch})+ \\[1em]
-		&  +CON_4 \cdot (T_{Drill}-T_{Ch})+ CON_6 \cdot (T_{Cam}-T_{Ch})+CON_7 \cdot (T_{Node_1}-T_{Ch}) +  \\[1em]
-		&  + \alpha_{Ch}\cdot [ S_0 \cdot (1+\rho_E) \cdot (S_{Ch1} \cdot \varphi_1  +S_{Ch2} \cdot \varphi_2 ) +   \epsilon_{E} \cdot \sigma_b \cdot S_{Ch3}\cdot T_{Surface}^4 ]-  \\[1em]
-		&   -\epsilon_{Ch}\cdot \sigma_b \cdot S_{Ch}\cdot T_{Ch}^4 \\[2em]
-	\end{aligned}
+\begin{aligned}
+0=\  &   \dot{Q}_{Radar}+\dot{Q}_{Hazcam}  +CON_2 \cdot (T_{RTG}-T_{Ch})+CON_3 \cdot (T_{Bay}-T_{Ch})+ \\[1em]
+&  +CON_4 \cdot (T_{Drill}-T_{Ch})+ CON_6 \cdot (T_{Cam}-T_{Ch})+CON_7 \cdot (T_{Node_1}-T_{Ch}) +  \\[1em]
+&  + \alpha_{Ch}\cdot [ S_0 \cdot (1+\rho_E) \cdot (S_{Ch1} \cdot \varphi_1  +S_{Ch2} \cdot \varphi_2 ) +   \epsilon_{E} \cdot \sigma_b \cdot S_{Ch3}\cdot T_{Surface}^4 ]-  \\[1em]
+&   -\epsilon_{Ch}\cdot \sigma_b \cdot S_{Ch}\cdot T_{Ch}^4 \\[2em]
+\end{aligned}
 \end{equation}
 
 \underline{Steer Engine:}
 \begin{equation}
-	\begin{aligned}
-		0=\  &  4\cdot [\dot{Q}_{E,S} +(CON_8 +n_{S2}\cdot CON_{S2}) \cdot (T_{Node1}-T_{E,S})+ \\[1em]
-		&   +CON_9 \cdot (T_{RTG}-T_{E,S}) -\epsilon_{E,S}\cdot \sigma_b \cdot S_{E,S}\cdot T_{E,S}^4] \\[2em]
-	\end{aligned}
+\begin{aligned}
+0=\  &  4\cdot [\dot{Q}_{E,S} +(CON_8 +n_{S2}\cdot CON_{S2}) \cdot (T_{Node1}-T_{E,S})+ \\[1em]
+&   +CON_9 \cdot (T_{RTG}-T_{E,S}) -\epsilon_{E,S}\cdot \sigma_b \cdot S_{E,S}\cdot T_{E,S}^4] \\[2em]
+\end{aligned}
 \end{equation}
 
 \underline{Distribution Node 1:}
 \begin{equation}
-	\begin{aligned}
-		0=\  &  4\cdot [CON_7 \cdot (T_{Ch}-T_{Node_1})+CON_8 \cdot (T_{E,S}-T_{Node_1})+ \\[1em]
-		&   +CON_10 \cdot (T_{Node_2}-T_{Node_1})] %\\[2em]
-	\end{aligned}
+\begin{aligned}
+0=\  &  4\cdot [CON_7 \cdot (T_{Ch}-T_{Node_1})+CON_8 \cdot (T_{E,S}-T_{Node_1})+ \\[1em]
+&   +CON_10 \cdot (T_{Node_2}-T_{Node_1})] %\\[2em]
+\end{aligned}
 \end{equation}
 
 \underline{Drive Engine:}
 \begin{equation}
-	\begin{aligned}
-		0=\  &  4 \cdot [\dot{Q}_{E,D}+ (CON_{11}+n_{S3}\cdot CON_{S3}) \cdot (T_{Node_2}-T_{E,D})+ \\[1em]
-		&  + CON_{12} \cdot (T_{RTG}-T_{E,D})-\epsilon_{E,D}\cdot \sigma_b \cdot S_{E,D}\cdot T_{E,D}^4 ]  %\\[2em]
-	\end{aligned}
+\begin{aligned}
+0=\  &  4 \cdot [\dot{Q}_{E,D}+ (CON_{11}+n_{S3}\cdot CON_{S3}) \cdot (T_{Node_2}-T_{E,D})+ \\[1em]
+&  + CON_{12} \cdot (T_{RTG}-T_{E,D})-\epsilon_{E,D}\cdot \sigma_b \cdot S_{E,D}\cdot T_{E,D}^4 ]  %\\[2em]
+\end{aligned}
 \end{equation}
 
 \underline{Distribution Node 2:}
 \begin{equation}
-	\begin{aligned}
-		0=\ & 4 \cdot [CON_{10} \cdot (T_{Node_1}-T_{Node_2})+CON_{11} \cdot (T_{E,D}-T_{Node_2})+   \\[1em]
-		&   +CON_{13} \cdot (T_{Ground}-T_{Node_2})  ]% \\[2em]
-	\end{aligned}
+\begin{aligned}
+0=\ & 4 \cdot [CON_{10} \cdot (T_{Node_1}-T_{Node_2})+CON_{11} \cdot (T_{E,D}-T_{Node_2})+   \\[1em]
+&   +CON_{13} \cdot (T_{Ground}-T_{Node_2})  ]% \\[2em]
+\end{aligned}
 \end{equation}
 \clearpage
 
@@ -473,29 +485,44 @@ with:
 		Part &  Cross section & Thickness  & Material & Amount \\ \hline
 		& & & & \\[-0.75em]
 		Insulation & $S_I=3'770\ \mm^2$ & $t_I=12\ \mm$ & Aerogel & 1 \\[0.5em]
-		Bolts, M6 & $S_B=28.3\ \mm^2$ & $t_B=12\ \mm$ & Titan & 10 \\[4em]
+		Bolts, M6 & $S_B=28.3\ \mm^2$ & $t_B=12\ \mm$ & Titan & 10 \\[5em]
 		
 		\hline
 		Name &  Linked Components &  \multicolumn{3}{c}{Geometry}\\ \hline
 		& & & & \\[-0.5em]
-		\textbf{Linkage} & \textbf{EBay} $\leftrightarrow$ \textbf{Chassis}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.45\textwidth]{Media/tcs_con_bay}}}}  \\[1em]
+		\textbf{Linkage} & \textbf{EBay} $\leftrightarrow$ \textbf{Chassis}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.5\textwidth]{Media/tcs_con_bay}}}}  \\[1em]
 		& & & &  \\
 		\multicolumn{2}{l}{$CON_3= CON_{I}+n_{B}\cdot CON_{B}$} & & &  \\[1em]
-		\multicolumn{2}{l}{$CON_3= 2.80 \cdot 10^{-1}\ \frac{\W}{\K}$} & & & \\[4em]
+		\multicolumn{2}{l}{$CON_3= 2.80 \cdot 10^{-1}\ \frac{\W}{\K}$} & & & \\[3em]
 		
 		\hline
 		Part &  Cross section & Thickness  & Material & Amount \\ \hline
 		& & & & \\[-0.75em]
 		Insulation & $S_I=27'120 \ \mm^2$ & $t_I=12\ \mm$ & Aerogel & 1 \\[0.5em]
-		Bolts, M6 & $S_B=28.3 \ \mm^2$ & $t_B=12\ \mm$ & Titan & 10 \\[3em]		
+		Bolts, M6 & $S_B=28.3 \ \mm^2$ & $t_B=12\ \mm$ & Titan & 10 \\	
 	\end{tabular}
-\label{tab:tcs_nodes}
+	\label{tab:tcs_nodes1}
 \end{table}	
 
 \begin{table}[H]
 	\centering
 	\caption{Definition of heat conductance $CON=\frac{1}{R}$ between the nodes according to \autoref{fig:tcs_network}.}
 	\begin{tabular}{l@{\qquad}cccc}
+				\hline
+		Name &  Linked Components &  \multicolumn{3}{c}{Geometry}\\ \hline
+		& & & & \\[-0.5em]
+		\textbf{Linkage} & \textbf{Drill} $\leftrightarrow$ \textbf{Chassis}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.55\textwidth]{Media/tcs_con_drill}}}}  \\[1em]
+		& & & &  \\
+		\multicolumn{2}{l}{$CON_{4}=CON_{F1}+CON_{F2} $} & & & \\[1em]
+		\multicolumn{2}{l}{$CON_{4}= 1.56 \cdot 10^{-1}\ \frac{\W}{\K}$} & & & \\[4em]
+		
+		\hline
+		Part &  Cross section & Length  & Material & Amount \\ \hline
+		& & & & \\[-0.75em]
+		Fork 1& $S_{F1}=40 \ \mm^2$ & $l_{F1}=90$ & Aluminium & 1 \\[0.5em]	
+		Fork 1& $S_{F2}=40 \ \mm^2$ & $l_{F2}=150$ & Aluminium & 1 \\[5em]	
+		
+		
 		\hline
 		Name &  Linked Components &  \multicolumn{3}{c}{Geometry}\\ \hline
 		& & & & \\[-0.5em]
@@ -504,71 +531,78 @@ with:
 		\multicolumn{2}{l}{$CON_6= \left( \frac{1}{CON_{B1}} +\frac{1}{CON_{B2}}+\frac{1}{CON_{B3}}+\frac{1}{CON_{F}} \right)^{-1} $} & & & \\[2em]
 		\multicolumn{2}{l}{$CON_6= 7.10 \cdot 10^{-2}\ \frac{\W}{\K}$} & & &  \\[8em]
 		\hline
-		Part &  Cross section & Thickness  & Material & Amount \\ \hline
+		Part &  Cross section & Length  & Material & Amount \\ \hline
 		& & & & \\[-0.75em]
-		Boom 1 & $S_{B1}= 181 \ \mm^2$ & $t_{B1}=116 \ \mm$ & Aluminium & 1 \\[0.5em]
-		Boom 2 & $S_{B2}= 134 \ \mm^2$ & $t_{B2}=95 \ \mm$ & Aluminium & 1 \\[0.5em]
-		Boom 3 & $S_{B3}= 97 \ \mm^2$ & $t_{B3}= 60\ \mm$ & Aluminium & 1 \\[0.5em]
-		Fork & $S_{F}= 200\ \mm^2$ & $t_{F}=170\ \mm$ & Aluminium & 1 \\[4em]
-		
-		\hline
-		Name &  Linked Components &  \multicolumn{3}{c}{Geometry}\\ \hline
-		& & & & \\[-0.5em]
-		\textbf{Suspension} & \textbf{Node$_1$} $\leftrightarrow$ \textbf{Chassis}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.45\textwidth]{Media/tcs_con_bay}}}}  \\[1em]
-		& & & &  \\
-		\multicolumn{2}{l}{$CON_7= 1.61 \cdot 10^{-1}\ \frac{\W}{\K}$} & & & \\[3em]
-		
-		\hline
-		Part &  Cross section & Thickness  & Material & Amount \\ \hline
-		& & & & \\[-0.75em]
-		Suspension & $S_S=137 \ \mm^2$ & $t_S=201\ \mm$ & Aluminium & 1 \\[3em]		
+		Boom 1 & $S_{B1}= 181 \ \mm^2$ & $l_{B1}=116 \ \mm$ & Aluminium & 1 \\[0.5em]
+		Boom 2 & $S_{B2}= 134 \ \mm^2$ & $ll_{B2}=95 \ \mm$ & Aluminium & 1 \\[0.5em]
+		Boom 3 & $S_{B3}= 97 \ \mm^2$ & $l_{B3}= 60\ \mm$ & Aluminium & 1 \\[0.5em]
+		Fork & $S_{F}= 200\ \mm^2$ & $l_{F}=170\ \mm$ & Aluminium & 1 \\
+		\label{tab:tcs_nodes2}
 	\end{tabular}
 \end{table}	
 
 \begin{table}[H]
-	\centering
-	\caption{Definition of heat conductance $CON=\frac{1}{R}$ between the nodes according to \autoref{fig:tcs_network}.}
-	\begin{tabular}{l@{\qquad}cccc}
+\centering
+\caption{Definition of heat conductance $CON=\frac{1}{R}$ between the nodes according to \autoref{fig:tcs_network}.}
+\begin{tabular}{l@{\qquad}cccc}		
+		\hline
+		Name &  Linked Components &  \multicolumn{3}{c}{Geometry}\\ \hline
+		& & & & \\[-0.5em]
+		\textbf{Suspension} & \textbf{Chassis} $\leftrightarrow$ \textbf{Node$_1$}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.455\textwidth]{Media/tcs_con_bogie}}}}  \\[1em]
+		& & & &  \\
+		\multicolumn{2}{l}{$CON_7=\left( \frac{1}{CON_{B1}} +\frac{1}{CON_{B2}}+\frac{1}{CON_{B3}}\right)^{-1}$} & & & \\[1em]
+		\multicolumn{2}{l}{$CON_7= 1.30 \cdot 10^{-1}\ \frac{\W}{\K}$} & & & \\[6em]
+		
+		\hline
+		Part &  Cross section & Length  & Material & Amount \\ \hline
+		& & & & \\[-0.75em]
+		Bogie 1 & $S_{B1}=275 \ \mm^2$ & $t_{B1}=20\ \mm$ & Aluminium & 1 \\[0.5em]
+		Bogie 2 & $S_{B2}=113 \ \mm^2$ & $t_{B2}=162\ \mm$ & Aluminium & 1 \\[0.5em]
+		Bogie 3 & $S_{B3}=201 \ \mm^2$ & $t_{B3}=37\ \mm$ & Aluminium & 1 \\[5em]		
+
 		\hline
 		Name &  Linked Components &  \multicolumn{3}{c}{Geometry}\\ \hline
 		& & & & \\[-0.75em]
 		\textbf{Mounting} & \textbf{Steer Engine} $\leftrightarrow$ \textbf{Node$_1$}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.4\textwidth]{Media/tcs_con_steer}}}}  \\[1em]
 		& & & &  \\
 		\multicolumn{2}{l}{$CON_8=CON_C+CON_I+n_B\cdot CON_B  $} & & & \\[2em]
-		\multicolumn{2}{l}{$CON_8= 6.85\cdot 10^{-1}\ \frac{\W}{\K}$} & & &  \\[7em]
+		\multicolumn{2}{l}{$CON_8= 6.85\cdot 10^{-1}\ \frac{\W}{\K}$} & & &  \\[6em]
 		\hline
 		Part &  Cross section & Thickness  & Material & Amount \\ \hline
 		& & & & \\[-0.75em]
-		 Clutch & $S_{C}= 45.4 \ \mm^2$ & $t_{C}=14 \ \mm$ & Aluminium  & 1 \\[0.5em]
-		 Insulation & $S_{I}= 691 \ \mm^2$ & $t_{I}=18 \ \mm$ & Aerogel & 1 \\[0.5em]
-		 Bolts & $S_{B}= 3.14 \ \mm^2$ & $t_{B}= 18\ \mm$ & Steel & 4 \\[4em]
+		Clutch & $S_{C}= 45.4 \ \mm^2$ & $t_{C}=14 \ \mm$ & Aluminium  & 1 \\[0.5em]
+		Insulation & $S_{I}= 691 \ \mm^2$ & $t_{I}=18 \ \mm$ & Aerogel & 1 \\[0.5em]
+		Bolts & $S_{B}= 3.14 \ \mm^2$ & $t_{B}= 18\ \mm$ & Steel & 4 \\
 		\hline
-	Name &  Linked Components &  \multicolumn{3}{c}{Geometry}\\ \hline
-	& & & & \\[-0.5em]
-	\textbf{Wheel Fork} & \textbf{Node$_1$} $\leftrightarrow$ \textbf{Node$_2$}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.45\textwidth]{Media/tcs_con_bay}}}}  \\[1em]
-	& & & &  \\
-	\multicolumn{2}{l}{$CON_{10}= 2.29 \cdot 10^{-1}\ \frac{\W}{\K}$} & & & \\[3em]
-	
-	\hline
-	Part &  Cross section & Thickness  & Material & Amount \\ \hline
-	& & & & \\[-0.75em]
-	Wheel Fork & $S_{WF}=200 \ \mm^2$ & $t_{WF}=175$ & Aluminium & 1 \\[3em]	
-	
-\end{tabular}
+		\label{tab:tcs_nodes3}
+	\end{tabular}
 \end{table}	
 
 
 \begin{table}[H]
 	\centering
 	\caption{Definition of heat conductance $CON=\frac{1}{R}$ between the nodes according to \autoref{fig:tcs_network}.}
-	\begin{tabular}{l@{\qquad}cccc}
+	\begin{tabular}{l@{\qquad}cccc}		
+		Name &  Linked Components &  \multicolumn{3}{c}{Geometry}\\ \hline
+		& & & & \\[-0.5em]
+		\textbf{Wheel Fork} & \textbf{Node$_1$} $\leftrightarrow$ \textbf{Node$_2$}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.45\textwidth]{Media/tcs_con_fork}}}}  \\[1em]
+		& & & &  \\
+		\multicolumn{2}{l}{$CON_{10}=\left( \frac{1}{CON_{F1}} +\frac{1}{CON_{F2}}\right)^{-1} $} & & & \\[1em]
+		\multicolumn{2}{l}{$CON_{10}= 1.46 \cdot 10^{-1}\ \frac{\W}{\K}$} & & & \\[8em]
+		
+		\hline
+		Part &  Cross section & Length  & Material & Amount \\ \hline
+		& & & & \\[-0.75em]
+		Fork 1& $S_{F1}=200 \ \mm^2$ & $l_{F1}=175$ & Aluminium & 1 \\[0.5em]	
+		Fork 1& $S_{F2}=200 \ \mm^2$ & $l_{F2}=175$ & Aluminium & 1 \\[5em]	
+
 		\hline
 		Name &  Linked Components &  \multicolumn{3}{c}{Geometry}\\ \hline
 		& & & & \\[-0.5em]
 		\textbf{Mounting} & \textbf{Drive Engine} $\leftrightarrow$ \textbf{Node$_2$}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.5\textwidth]{Media/tcs_con_drive}}}}  \\[1em]
 		& & & &  \\
 		\multicolumn{2}{l}{$CON_{11}=  \left( \frac{1}{CON_G} +\frac{1}{CON_S+CON_I+n_B\cdot CON_B} \right)^{-1} $} & & & \\[2em]
-		\multicolumn{2}{l}{$CON_{11}= 2.19 \cdot 10^{-1}\ \frac{\W}{\K}$} & & & \\[6em]
+		\multicolumn{2}{l}{$CON_{11}= 2.19 \cdot 10^{-1}\ \frac{\W}{\K}$} & & & \\[5em]
 		
 		\hline
 		Part &  Cross section & Thickness  & Material & Amount \\ \hline
@@ -576,23 +610,31 @@ with:
 		Gear Box & $S_{G}= 566 \ \mm^2$ & $t_{G}= 43.1\ \mm$ & Steel & 1 \\[0.5em]
 		Shaft & $S_{S}= 23.8 \ \mm^2$ & $t_{S}=8 \ \mm$ & Steel & 1 \\[0.5em]
 		Insulation & $S_{I}=490  \ \mm^2$ & $t_{I}=8 \ \mm$ & Aerogel  & 1 \\[0.5em]
-		Bolts, M3 & $S_{B}=7.07  \ \mm^2$ & $t_{B}= 8\ \mm$ & Steel  & 4 \\[4em]	
-		
-		
+		Bolts, M3 & $S_{B}=7.07  \ \mm^2$ & $t_{B}= 8\ \mm$ & Steel  & 4 \\[5em]	
+	\end{tabular}
+\label{tab:tcs_nodes4}
+\end{table}	
+
+
+\begin{table}[H]
+	\centering
+	\caption{Definition of heat conductance $CON=\frac{1}{R}$ between the nodes according to \autoref{fig:tcs_network}.}
+	\begin{tabular}{l@{\qquad}cccc}		
 		\hline
 		Name &  Linked Components &  \multicolumn{3}{c}{Geometry}\\ \hline
 		& & & & \\[-0.5em]
-		\textbf{Rim} & \textbf{Node$_2$} $\leftrightarrow$ \textbf{Ground}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.45\textwidth]{Media/tcs_con_bay}}}}  \\[1em]
+		\textbf{Rim} & \textbf{Node$_2$} $\leftrightarrow$ \textbf{Ground}  &  \multicolumn{3}{c}{\multirow{2}{*}{\adjustbox{valign=t}{\includegraphics[width=0.3\textwidth]{Media/tcs_con_rim}}}}  \\[1em]
 		& & & &  \\
-		\multicolumn{2}{l}{$CON_{13}= 5.11 \cdot 10^{-3}\ \frac{\W}{\K}$} & & & \\[8em]
+		\multicolumn{2}{l}{$CON_{13}= 5.11 \cdot 10^{-3}\ \frac{\W}{\K}$} & & & \\[7em]
 		
 		\hline
-		Part &  Cross section & Thickness  & Material & Amount \\ \hline
+		Part &  Cross section & Length  & Material & Amount \\ \hline
 		& & & & \\[-0.75em]
-		Rim & $S_R=12 \ \mm^2$ & $t_r=100\ \mm$ & Titan & 6 \\[1.5em]
+		Rim & $S_R=12 \ \mm^2$ & $l_r=100\ \mm$ & Aluminium & 6 \\[1.5em]
 		\multicolumn{5}{l}{\textit{Note}: It was assumed, that the wheel temperature equals the surface temperature} \\
-		\multicolumn{5}{l}{because of the remarkable difference of the heat conduction, $\frac{\lambda_{Wheel}}{\lambda_{Rim}}=28.2.$ } \\[3em]	
+		\multicolumn{5}{l}{because of the thin rims and resulting low heat conduction.} \\[3em]	
 	\end{tabular}
+\label{tab:tcs_nodes5}
 \end{table}	
 
 \subsection{Heat switch} \label{sec:app_therm_3}
@@ -636,9 +678,10 @@ The used toggle temperature are listed in autoref
 	\begin{tabular}{c@{\quad}ccc}
 		\hline
 		Heat switch name  & Linked Components & Temperature  & Amount \\ \hline
-		 $CON_{S1}$ & {Camera} $\leftrightarrow$ {Radiator} & -20\ $^\circ$C  & $n_{S1}=?1?$  \\[1em]
-		 $CON_{S2}$ & {Steer Engine} $\leftrightarrow$ {Node$_1$} & -30\ $^\circ$C  & $n_{S2}=?1?$  \\[1em]
-		 $CON_{S3}$ & {Drive Engine} $\leftrightarrow$ {Node$_2$} & -20\ $^\circ$C  & $n_{S3}=?1?$  \\[1em]\hline
+		$CON_{S1}$ & {Camera} $\leftrightarrow$ {Radiator} & -20\ $^\circ$C  & $n_{S1}=$4  \\[1em]
+		$CON_{S2}$ & {EBay} $\leftrightarrow$ {Chassis} & -30\ $^\circ$C  & $n_{S2}=$2  \\[1em]
+		$CON_{S3}$ & {Drive Engine} $\leftrightarrow$ {Node$_2$} & -20\ $^\circ$C  & $n_{S3}=1$  \\
+	 			&											&						& (in total 4)  \\\hline
 	\end{tabular}
 	\label{tab:tcs_toggle}
 \end{table}
@@ -665,11 +708,11 @@ The view factors during eclipse are set to zero.
 
 
 \subsection{Input Values} \label{sec:app_therm_5}
-\begin{table}[htb]
+\begin{table}[H]
 	\centering
 	\caption{Temperatur limits of the rover components.}
 	\begin{tabular}{lccc}
-		\hline
+		\hline 
 		& \multicolumn{2}{l}{Temperature limits in [$^\circ$C]} & Source\\ 
 		Component	&	min. & max. &\\\hline
 		OBC & -55 & 70 & \\
@@ -686,12 +729,34 @@ The view factors during eclipse are set to zero.
 	\label{tab:tcs_limits}
 \end{table}
 
-\begin{figure}[htb] 
+\begin{figure}[H] 
 	\centering
 	\includegraphics[width=0.8\textwidth]{Media/tcs_lynx_calc}
-	\caption{Digitalised \cite{ref_tcs_01} and calculated heat conduction in comparison.\\[0.75em] $\lambda(T)= \left(1.76 \cdot 10^{-4}\ \frac{\W}{\m \K^4} \cdot T^3 -2.37\cdot 10^{-1}\ \frac{\W}{\m \K^3} \cdot T^2 +79.5 \frac{\W}{\m \K^2} \cdot T -5.55\cdot 10^{3}\ \frac{\W}{\m \K}\right) \cdot f_{r}  $ \\[0.75em] Reduction fator: $f_{r}=0.8$}
+	\caption{Digitalised \cite{ref_tcs_01} and calculated heat conduction in comparison.}
 	\label{fig:tcs_lynx}
 \end{figure}
+The characteristic of the \textit{LyNX}\textsuperscript{\tiny\textregistered} conduction was approximated with follwing function,
+\begin{equation}
+\lambda(T)= \left(1.76 \cdot 10^{-4}\ \frac{\W}{\m \K^4} \cdot T^3 -2.37\cdot 10^{-1}\ \frac{\W}{\m \K^3} \cdot T^2 +79.5 \frac{\W}{\m \K^2} \cdot T -5.55\cdot 10^{3}\ \frac{\W}{\m \K}\right) \cdot f_{r}  
+\label{eq:tcs_lynx}
+\end{equation}
+with the reduction fator $f_{r}$=0.8.
+
+\begin{table}[H]
+	\centering
+	\caption{Dimensions of the thermal straps \textit{LyNX}\textsuperscript{\tiny\textregistered}.}
+	\begin{tabular}{l@{\quad}cc}
+		\hline
+		Linked Components & Cross section  & Length$^{1)}$  \\ \hline
+		EBay $\leftrightarrow$ RTG & 42\ mm$^2$ & 230 mm  \\[0.25em] 
+		Drill $\leftrightarrow$ RTG &10 \ mm$^2$ &345 \ mm \\[0.25em] 
+		Steer Engine $\leftrightarrow$ RTG & 36\ mm$^2$&644\ mm  \\[0.25em] 
+		Drive Engine $\leftrightarrow$ RTG &42 \ mm$^2$&897\ mm  \\[0.25em] \hline
+		& &   \\[-0.5em]
+		\multicolumn{3}{l}{$^{1)}$\ Du to uncertainties the length was increased about 15\%.}\\[1em]
+	\end{tabular}
+	\label{tab:tcs_lynx}
+\end{table}
 
 The Europa surface temperature varies at the  equator between $T_{e,min}=80$\ K and\\ $T_{e,max}=130$\ K, depending on the sun inclination.
 The temperature at the pole is $T_{Pole}=50$\ K, \cite{Europa}.
@@ -703,7 +768,7 @@ For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.\\
 \begin{table}[H]
 	\centering
 	\caption{Minimum and maximum of surface emisivity and absorptivity values, \cite{ref_tcs_05}.}
-	\begin{tabular}{l@{\qquad}cc@{\qquad}cc}
+	\begin{tabular}{l@{\qquad\qquad}cc@{\qquad\qquad}cc}
 		\hline
 		& \multicolumn{2}{l}{Emisivity [-]} & \multicolumn{2}{l}{Absorptivity [-]}  \\ 
 		Surface finishing	&	min. & max. 	&	min. & max.   \\\hline
@@ -738,15 +803,17 @@ For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.\\
 	\begin{tabular}{l@{\qquad}l@{\qquad}ll}
 		\hline
 		Part  & Surface [$\m^2$] & Finishing & Note \\ \hline
-		Chassis - top/bottom & $S_{Ch1}=0.086$ & & for albedo\\
-		Chassis - side & $S_{Ch2}=0.085$ & & for albedo\\
-		Chassis - total & $S_{Ch3}=0.388$ & & for emisivity\\
-		Camera - housing & $S_{Cam}=0.011$ & &\\
-		Camera - radiator & $S_{Rad}=0.???$ & white paint &  \\
-		Steer Engine& $S_{E,S}=0.1$ & & \\
-		Drive Engine& $S_{E,D}=0.04$ & & \\
+		Chassis - top/bottom & $S_{Ch1}=0.086$ &  white paint & for albedo\\
+		Chassis - side & $S_{Ch2}=0.081$ &  white paint & for albedo\\
+		Chassis - total & $S_{Ch3}=0.423$ &  white paint & for emisivity\\
+		RTG& $S_{RTG}=0.086$ & white paint & konstant emisivity of 0.9\\
 		Electric Bay& $S_{Bay}=0.146$ & aluminium, sand blastet & \\
-		RTG& $S_{RTG}=0.086$ & white paint & \\\hline
+		Camera - housing & $S_{Cam}=0.027$ &aluminium, sand blastet &\\
+		Camera - radiator & $S_{Rad}=0.066$ & white paint &  \\
+		Steer Engine& $S_{E,S}=0.002$ & white paint& \\
+		Drive Engine& $S_{E,D}=0.003$ &white paint & \\
+		Bogie & $S_{B}=0.018$ &white paint & \\
+		Wheel Fork& $S_{F}=0.008$ &white paint & \\ \hline
 		&&& \\
 		\multicolumn{3}{l}{The cross sections were taken form the CAD model.}
 	\end{tabular}
@@ -914,7 +981,17 @@ With inserted values this results in a mass saving of \(\Delta m\) = 736.2 g.
 \setcounter{figure}{0}
 \setcounter{table}{0}
 
-\section{Digital Appendix}
-\label{app:DigitalAppendix}
+%-----------------------------------------------------------
+\section{Digital Appendix}		\label{app:DigitalAppendix}
+%-----------------------------------------------------------
+
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{llcc}
+		\hline
+		Name  & Path & Type & Size  \\ \hline
+		TCS Analysis final & \300 Thermal\ & Exle Sheet with Macros, *.xlsm & 326 kB  \\   \hline
+	\end{tabular}
+\end{table}
 
 \cleardoublepage
