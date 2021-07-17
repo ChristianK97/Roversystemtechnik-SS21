@@ -663,6 +663,7 @@ with:
 \clearpage
 
 \subsection{Heat conductance} \label{sec:app_therm_2}
+
 \begin{table}[htb]
 	\centering
 	\caption{Definition of heat conductance C between the nodes according to \autoref{fig:tcs_network}.}
@@ -697,7 +698,7 @@ with:
 	\label{tab:tcs_nodes1}
 \end{table}	
 
-\begin{table}[H]
+\begin{table}[htb]
 	\centering
 	\caption{Definition of heat conductance $CON=\frac{1}{R}$ between the nodes according to \autoref{fig:tcs_network}.}
 	\begin{tabular}{l@{\qquad}cccc}
@@ -734,7 +735,7 @@ with:
 	\end{tabular}
 \end{table}	
 
-\begin{table}[H]
+\begin{table}[htb]
 \centering
 \caption{Definition of heat conductance $CON=\frac{1}{R}$ between the nodes according to \autoref{fig:tcs_network}.}
 \begin{tabular}{l@{\qquad}cccc}		
@@ -772,7 +773,7 @@ with:
 \end{table}	
 
 
-\begin{table}[H]
+\begin{table}[htb]
 	\centering
 	\caption{Definition of heat conductance $CON=\frac{1}{R}$ between the nodes according to \autoref{fig:tcs_network}.}
 	\begin{tabular}{l@{\qquad}cccc}		
@@ -808,8 +809,9 @@ with:
 \label{tab:tcs_nodes4}
 \end{table}	
 
+\clearpage
 
-\begin{table}[H]
+\begin{table}[htb]
 	\centering
 	\caption{Definition of heat conductance $CON=\frac{1}{R}$ between the nodes according to \autoref{fig:tcs_network}.}
 	\begin{tabular}{l@{\qquad}cccc}		
@@ -828,9 +830,10 @@ with:
 		\multicolumn{5}{l}{because of the thin rims and resulting low heat conduction.} \\[3em]	
 	\end{tabular}
 \label{tab:tcs_nodes5}
-\end{table}	
+\end{table}
 
 \subsection{Heat switch} \label{sec:app_therm_3}
+
 The charateristic of the switch conductance depends on the mean temperature $T_M$, shown by measurements in cite .
 As this temperature won´t be calculated in the analysis, the corresponding component temperature $T_C$ shall be used.
 In order to describe the characteristic, it was diveded in three sections, \autoref{fig:tcs_switch03}.
@@ -839,6 +842,9 @@ By reducing the heigt, the toggle temperature can be increased and the character
 It was assumed, that the gradients of section 2 and 3 as well as the temperature range of section 2 keep constant.
 The axis interseption is a function the toggle temperature ($a_2=f(\Delta T_{toggle}),\ \Delta T_{Toggle}=T_{new}-T_{old}|_{toggle}$).
 The used toggle temperature are listed in autoref
+
+\newpage
+
 \begin{table}[H]
 	\centering
 	\caption{Sections and range of the switch characteristic.}
@@ -933,7 +939,7 @@ The characteristic of the \textit{LyNX}\textsuperscript{\tiny\textregistered} co
 \lambda(T)= \left(1.76 \cdot 10^{-4}\ \frac{\W}{\m \K^4} \cdot T^3 -2.37\cdot 10^{-1}\ \frac{\W}{\m \K^3} \cdot T^2 +79.5 \frac{\W}{\m \K^2} \cdot T -5.55\cdot 10^{3}\ \frac{\W}{\m \K}\right) \cdot f_{r}  
 \label{eq:tcs_lynx}
 \end{equation}
-with the reduction fator $f_{r}$=0.8.
+with the reduction factor $f_{r}$=0.8.
 
 \begin{table}[H]
 	\centering
@@ -1172,14 +1178,14 @@ In \autoref{fig:Radiation_Improvements_Individual}, the TID over 30 days within 
 	\label{fig:Radiation_Improvements_Individual}
 \end{figure}
 
-The resulting mass savings can be calculated with \autoref{eq:RadiationImprovementsIndividual} with \(m^*\) as the specific weight of the radiation protection and \(N\) as the amount of components within the E-Bay with a radiation resistance under 43.27 krad as of \autoref{tab:RadiationList}.
+The resulting mass savings can be calculated with \autoref{eq:RadiationImprovementsIndividual} with \(m^*\) as the specific weight of the radiation protection and \(N\) as the amount of components within the E-Bay with a radiation resistance under 43.27~krad as of \autoref{tab:RadiationList}.
 
 \begin{equation}
 	\Delta m = SA_\text{E-Bay} \cdot m^*_\text{Shielding} - \sum\nolimits_{n=0}^N SA_\text{Component, n} \cdot m^*_\text{Shielding}
 	\label{eq:RadiationImprovementsIndividual}
 \end{equation}
 
-With inserted values this results in a mass saving of \(\Delta m\) = 736.2 g.
+With inserted values this results in a mass saving of \(\Delta m\) = 736.2~g.
 
 \begin{figure}[htp]
 	\centering
