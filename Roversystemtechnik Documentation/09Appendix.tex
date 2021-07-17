@@ -182,7 +182,7 @@ pointing Loss  		             & 0      & {[}dB{]}   & ${n/a}$       & omnidirect
 line Loss  		                 & 0,6    & {[}dB{]}   & ${L}_{l2}$	   & FLP                          &  \\
 eff. noise temperature           & 300    & {[}K{]}    & ${T}_{s}$	   & worst case E-bay temperature &  \\ \hline
 Demodulation \& Uncertain Losses &        &            &               &                              &  \\ \hline\hline
-eff. data rate                   & 5000   & {[}kbps{]} & ${R}$         &                              &  \\
+eff. data rate                   & 5000   & {[}kbps{]} & ${R}$         & 50 \% of max. data rate                            &  \\
 FEC coding                       & none   & {[}-{]}    & ${n/a}$       &                              &  \\
 technical degradation            & 1      & {[}dB{]}   & ${L}_{i1}$    & FLP                          &  \\
 implementation loss              & 1      & {[}dB{]}   & ${L}_{i1}$	   & FLP                          &  \\
@@ -200,7 +200,7 @@ The free space loss ${L}_{s}$ [$m^3$] in \autoref{tab:lb-param} is calculated us
 	\label{eqn:Ls}
 \end{equation}
 
-The signal travel distance {s} is assumed to be $s = 2000\ m$ which is in excess of the mission goal. In accordance with X-Band communication the frequency {f} is set to a value of $f = 8,2\ GHz$. The parameter c represents the speed of light in vacuum. For simplification purposes $c = 3 \cdot 10^9\ \frac{m}{s}$ is assumed. \\ \\   
+The signal travel distance {s} is assumed to be $s = 2000\ m$ which is in excess of the mission goal described in \autoref{chap:sc-output}. In accordance with X-Band communication the frequency {f} is set to a value of $f = 8,2\ GHz$. The parameter c represents the speed of light in vacuum. For simplification purposes $c = 3 \cdot 10^9\ \frac{m}{s}$ is assumed. \\ \\   
 Combining the parameters from \autoref{tab:lb-param} the link budget is calculated using \autoref{eqn:EbzuN0}. For the simplification of \autoref{eqn:EbzuN0} the line losses for the rover ${L}_{l1}$ and lander ${L}_{l2}$ are expressed as the sum ${L}_{l}$. In the same manner technical degradation and implementation losses are combined to ${L}_{i}$. Atmospheric losses ${L}_{a}$ and pointing errors in \autoref{eqn:EbzuN0} are neglected due to a lack of atmosphere and the utilisation of omnidirectional low gain antennas. Parameter ${k}$ describes the Boltzmann constant.   
 
 \begin{equation}
@@ -241,8 +241,8 @@ Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}
 
 The analysis of the mission data concept for memory capacity and transmission times is focuses on the payload camera and Hazcams as images require far more data than telemetry or other payload data. \\
 
-In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit leads to a file size of 42 Mbit per image.\\
-To calculate the message size in \autoref{tab:TimePerPic}, it is assumed that a transmission frame consists of 10264 bits including a payload frame of maximum 8840 bits.   
+In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit of the (CAMERA REFERENCE), a file size of 42 Mbit per image is assumed.\\
+To calculate the message size in \autoref{tab:TimePerPic}, it is assumed that a transmission frame consists of 10264 bits including a payload frame of maximum 8840 bits (FLP VORELESUNG).   
 
 \begin{table}[h]
 \centering
@@ -266,7 +266,7 @@ File per tal & Compression & File Size  & Total Data & Tx time    \\ \hline\hlin
 \label{tab:Tx-tptal}
 \end{table}
 
-The HIREW compression algorithm is suggested for the mission considering a high average compression of 0,56 \% and a high compression speed of 123 Mbit/s for grayscale and 104,4 Mbit/s for RGB image files. 
+The HIREW compression algorithm is suggested for the mission considering a high average compression of 0,56 \% and a high compression speed of 123 Mbit/s for grayscale and 104,4 Mbit/s for RGB image files (COMPRESSSION PAPER REFERENCE). 
 
 \subsection{Communications Trade Off}
 \label{app:Com_TrOff}

@@ -392,25 +392,25 @@ The PCDU has the challenging task not only to process the RTG as the main energy
 
 \section{Communications and Command \& Data-Handling}
 \label{sec:comm}
-The Communications subsystem consists of redundant transmitters and receivers which are cross linked to four antennas and the OBC. Additionally hard wired connections to the PCDU enable for reboots via direct commands.\\
+The Communications subsystem consists of redundant transmitters and receivers which are cross strapped to four antennas and the OBC. Additionally hard wired connections linking the communication system to the PCDU enable for reboots via direct commands.\\
 C\&DH is responsible for the generation of telemetry from the housekeeping boards and the execution of telecommands, as well as the storing and compressing of payload data. 
 
-\subsection{Operation Concept}
+\subsection{Operational Concept}
 
-Due to power and time constraints, the rover will only transmit telemetry during the locomotion and payload phases. Payload data will be compressed and stored and forwarded to the Lander at the end of a mission tal. \\ 
+Due to power and time constraints, the rover will transmit only telemetry during the locomotion and payload campaigns. Payload data will be compressed, stored and forwarded to the Lander at the end of a mission day. \\ 
  
-To achieve the scientific output from \autoref{chap:sc-output} the transmission time per tal is calculated in \autoref{app:MissionDataOutput} (\autoref{tab:Tx-tptal}) and adds up to 38,23 minutes. 
+To achieve the scientific output from \autoref{chap:sc-output} the transmission time per european day is calculated in \autoref{app:MissionDataOutput} (\autoref{tab:Tx-tptal}) and adds up to 38,23 minutes. 
 	
 \subsection{Communication System}
 Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 25 dB high gain antenna [Missing Reference] and a low gain antenna which is not further specified in literature.\\
 
-The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59\ dB$, resulting in a Bit Error Rate of less than $10^{-4}$. The link budget has been performed under the conservative considerations listed in\autoref{tab:lb-param}.\\
+The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59\ dB$, resulting in a Bit Error Rate of less than $10^{-4}$. The link budget has been performed under the conservative considerations listed in \autoref{tab:lb-param}.\\
 
 Using the Landers LGA greatly increases robustness due to the elimination of pointing errors and higher margin for rover positioning error. Additionally, the INSPIRE rover’s communication link would not interfere with the Landers communication to the relay carrier by blocking the HGA.
 
 \subsubsection{Component Selection}
 
-Due to the considerably high link margin the focus is on low mass and low power components with flight heritage such as flown on CubeSat missions. Criteria with relatively small impact on the link budget such as component noise or even FEC have not been taken into account. Ideally the rover communication uses X-Band for increased compatibility with the lander and has a total system mass of less than $1\ kg$. \\
+Due to the considerably high link margin the focus is on low mass and low power components with flight heritage such as flown on CubeSat missions. Criteria with relatively small impact on the link budget such as component noise or even FEC have not been taken into account. The rover communication uses X-Band for increased compatibility with the lander and has a total system mass of less than $1\ kg$. \\
 Since radiation hardness was not included in most datasheets a total dose of $<20\ krad$ was assumed in accordance with values for LEO [Missing Reference]. \\
 
 The selected components are listed in \autoref{tab:ComCompComp}. 
@@ -427,9 +427,9 @@ Antenna     & Endurosat & patch antenna & mass          & 2,2 g    & frequency  
 \label{tab:ComCompComp}
 \end{table}
 
-Expected transmission times per mission day are less than 40 minutes (see \autoref{app:MissionDataOutput} \autoref{tab:Tx-tptal}). Therefore the transmitter mass is identified as more critical than power. \\
+Expected transmission times per mission day are less than 40 minutes (see \autoref{app:MissionDataOutput}, \autoref{tab:Tx-tptal}). Therefore the transmitter mass is identified as more critical than power. \\
 Receiver duty cycles on the other hand range close to 100 \% (REFERENCE POWER BUDGET). Thus power has been identified as the most crucial criteria. \\
-A passive X-Band antenna was selected due to compact dimensions and no power consumption.  \\
+A passive X-Band antenna was selected due to compact dimensions and zero power consumption.  \\
 The entire trade off can be found in (APP Trade off).
 
  \subsection{Command \& Data Handling}
@@ -440,7 +440,7 @@ Criteria of less importance are CPU speed and dimensions. \\
 
 Instead of designing a new OBC board a trade-off was performed among existing single board computers. SBCs provide peripheral services such as bus interfaces, timer and memory in a flight proven configuration, which promises an effective mission development. \\
 
-BAE Systems provides a SBC with their flight proven Power PC750 Architecture which withstands a total radiation dose of up to $1\ Mrad$. The robustness comes at the cost of a $182\ MHz$ processor speed. \\
+BAE Systems provides a SBC with their flight proven Power PC750 Architecture which withstands a total radiation dose of up to $1\ Mrad$. The robustness comes at the cost of a $182\ MHz$ processor speed (DATASHEET REFEreNCE). \\
 
 Additionally a custom housekeeping board will be tasked with providing engine control peripherals and sensor read out electronics. 
  
