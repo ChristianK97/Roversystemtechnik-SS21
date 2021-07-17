@@ -35,6 +35,67 @@ The results of this analysis are shown in the following figures XXX and XXX.
 An really important part of each space system is the mass budget. Due to the strict mass restriction, it was quite difficult to find a suitable concept that is both light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5kg was chosen which could also be adhered to. The following table lists the masses of the individual components of the structure and mechanisms system. 
 A table with all components of the INSPIRE Rover system is stored in Appendix A under Mass Budget.
 
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+\begin{table}[]
+\centering
+\caption{INSPIRE Mass Budget}
+\label{tab:my-table}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{cccccc}
+\hline
+Subsystem                                & component name                      & mass per component {[}kg{]} & quantity & component margin & total {[}kg{]} \\ \hline
+\multirow{5}{*}{Structure and Mechanism} & Harness                             & 3                           & 1        & 20\%             & 3,60           \\
+                                         & Chassi                              & look up at Chassi Table     & 1        & 20\%             & 5,01           \\
+                                         & E-Bay Box                           & 1,033                       & 1        & 20\%             & 1,24           \\
+                                         & Boom                                & 0,17                        & 1        & 20\%             & 0,20           \\
+                                         & Solar Cell Plate                    & 0,121                       & 1        & 20\%             & 0,15           \\
+\multirow{7}{*}{Locomotion}              & wheels                              & 0,158                       & 4        & 20\%             & 0,76           \\
+                                         & rims                                & 0,162                       & 4        & 20\%             & 0,78           \\
+                                         & motor (wheels)                      & 0,057                       & 4        & 10\%             & 0,25           \\
+                                         & planetary gear(wheels)              & 0,118                       & 4        & 10\%             & 0,52           \\
+                                         & Motor (steering)                    & 0,07                        & 4        & 5\%              & 0,29           \\
+                                         & Motor (deployment)                  & 0,07                        & 6        & 5\%              & 0,44           \\
+                                         & IMU                                 & 0,012                       & 4        & 10\%             & 0,05           \\
+\multirow{4}{*}{EPS}                     & Battery                             & 1,98                        & 1        & 10\%             & 2,18           \\
+                                         & RTG                                 & 3,5                         & 1        & 10\%             & 3,85           \\
+                                         & SolarCells                          & 0,0012975                   & 10       & 20\%             & 0,02           \\
+                                         & PCDU                                & 0,33                        & 1        & 20\%             & 0,40           \\
+\multirow{4}{*}{COM}                     & LGAs                                & 0,002                       & 4        & 5\%              & 0,01           \\
+                                         & Transmitter                         & 0,195                       & 2        & 5\%              & 0,41           \\
+                                         & Receiver                            & 0,22                        & 2        & 10\%             & 0,48           \\
+                                         & Multiplexer                         & 0,065                       & 2        & 5\%              & 0,14           \\
+\multirow{4}{*}{C\&DH / sensors}         & Sun Sensors                         & 0,016                       & 4        & 5\%              & 0,07           \\
+                                         & OBC                                 & 0,35                        & 2        & 5\%              & 0,74           \\
+                                         & temperature Sensor                  & 0,0002                      & 20       & 20\%             & 0,00           \\
+                                         & Housekeeping                        & 0,2                         & 1        & 5\%              & 0,21           \\
+\multirow{5}{*}{TCS}                     & Heaters                             & 0,00181                     & 10       & 5\%              & 0,02           \\
+                                         & isolation                           & 0,15                        & 1        & 20\%             & 0,18           \\
+                                         & Carbon Straps                       & 0,53                        & 1        & 5\%              & 0,56           \\
+                                         & RHU                                 & 0,1                         & 1        & 5\%              & 0,11           \\
+                                         & Magnetic Switch                     & 0,06                        & 6        & 10\%             & 0,40           \\
+\multirow{10}{*}{Payload}                & Ice Core Drill Motor \& Electronics & 1,3                         & 1        & 20\%             & 1,56           \\
+                                         & Ice Core Drill Titanium bit         & 0,041                       & 1        & 20\%             & 0,05           \\
+                                         & Groundradar electronics             & 0,045                       & 1        & 5\%              & 0,05           \\
+                                         & Ground Radar antenna                & 0,00273                     & 2        & 10\%             & 0,01           \\
+                                         & APXS Analyzer                       & 0,43                        & 1        & 20\%             & 0,52           \\
+                                         & Haz Cams                            & 0,064                       & 3        & 5\%              & 0,20           \\
+                                         & Stereo Vision Cam                   & 0,064                       & 2        & 5\%              & 0,13           \\
+                                         & objective StereoCam                 & 0,08                        & 2        & 20\%             & 0,19           \\
+                                         & objective HazCam                    & 0,048                       & 3        & 20\%             & 0,17           \\
+                                         & LEDs                                & 0,003                       & 16       & 10\%             & 0,05           \\
+\multirow{2}{*}{Radiation}               & Cam shielding                       & 0,02905                     & 5        & 20\%             & 0,17           \\
+                                         & E-Bay shielding                     & 0,94                        & 1        & 20\%             & 1,13           \\
+\multicolumn{5}{c}{Mass with component margins and 2mm Aluminum Chassi}                                                                    & 27,28          \\
+\multicolumn{5}{c}{Mass with component margins and 1,5mm Aluminum Chassi}                                                                  & 26,64          \\
+\multicolumn{5}{c}{System Margin}                                                                                                          & 10\%           \\
+\multicolumn{5}{c}{Total Mass (2mm Aluminum Chassi)}                                                                                       & 30,0           \\
+\multicolumn{5}{c}{Total Mass (1,5mm Aluminum Chassi)}                                                                                     & 29,31          \\\hline
+\end{tabular}%
+}
+\end{table}
+
 %-------------------------------------------------------------------------------
 \section{Locomotion} \label{sec:locomotion}
 %-------------------------------------------------------------------------------
