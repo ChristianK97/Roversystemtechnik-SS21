@@ -10,16 +10,16 @@ In this chapter, the individual subsystems of the rover system will be discussed
 
 \subsection{Storage Configuration and Rover Deployment}
 
-The Main Caracteristics of the Rover Chassi design of INSPIRE focuses on compact storage geometry and low Mass. 
-During the design process its been possible to achieve a reduce of volume in comparison to the first INSPIRE chassi design of about xxx%.
+The Main Characteristics of the Rover Chassis design of INSPIRE focuses on compact storage geometry and low Mass. 
+During the design process it's been possible to achieve a reduce of volume in comparison to the first INSPIRE chassis design of about xxx%.
 The geometry data in storage configuration is shown in figure XXX.
 The storage volume that is required is 131 l.
-For the Rover Deployment there had been a lot of possible concepts, for example a sky crane, a robotic arm or a ramp. Depending of the reason that there are no further informations about the TRIPLE Lander and that the complexity of such a deployment system shoud be as simple as possble, the decission felt on a ramp where INSPIRE will drive slowly downwards the surface of Europa. 
+For the Rover Deployment there had been a lot of possible concepts, for example a sky crane, a robotic arm or a ramp. Depending of the reason that there are no further informations about the TRIPLE Lander and that the complexity of such a deployment system should be as simple as possible, the decision felt on a ramp where INSPIRE will drive slowly downwards the surface of Europa. 
 A possible concept of the rover deployment is shown in the following figure XXX.
 
 \subsection{Exploration Configuration}
 
-When the deployment is sucessfuly done, INSPIRE has to switch from storage - to exploration configuration.
+When the deployment is successfully done, INSPIRE has to switch from storage - to exploration configuration.
 This will be possible with a cogwheel mechanism which will be operated by two Motors (QUELLENVERWEIS). When the wheel forks are horizontal to the ground, the rover is ready for its journey. In order to withstand the potential bumps on the moon's surface, a planetary gear differential is installed which should prevent the rover from tipping over by reflecting the pushing force on the other side of the landing gear to ensure ground contact. 
 
 \subsection{Static Analysis}
@@ -44,7 +44,7 @@ A table with all components of the INSPIRE Rover system is stored in Appendix A 
 \hline
 Subsystem                                & component name                      & mass per component {[}kg{]} & quantity & component margin & total {[}kg{]} \\ \hline
 \multirow{5}{*}{Structure and Mechanism} & Harness                             & 3                           & 1        & 20\%             & 3,60           \\
-                                         & Chassi                              & look up at Chassi Table     & 1        & 20\%             & 5,01           \\
+                                         & Chassis                              & look up at Chassis Table     & 1        & 20\%             & 5,01           \\
                                          & E-Bay Box                           & 1,033                       & 1        & 20\%             & 1,24           \\
                                          & Boom                                & 0,17                        & 1        & 20\%             & 0,20           \\
                                          & Solar Cell Plate                    & 0,121                       & 1        & 20\%             & 0,15           \\
@@ -303,8 +303,8 @@ As can be seen, the Locomotion mode has the highest demands on the EPS. The two 
 
 
 \subsection{Energy Source}
-For the energy generation of INSPIRE many possible sources were taken into consideration for a trade-off. As a conclusion of this trade-off the decision was made to utilize a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE.\\
-As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilized, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of $m_\text{RTG}=3 \ \text{kg}$ was defined and the eMMRTG was scaled down using the given data.\\
+For the energy generation of INSPIRE many possible sources were taken into consideration for a trade-off. As a conclusion of this trade-off the decision was made to utilise a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE.\\
+As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilised, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of $m_\text{RTG}=3 \ \text{kg}$ was defined and the eMMRTG was scaled down using the given data.\\
 In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a BOL specific power of $\alpha_\text{BOL}= 4.0 \ \frac{W_{el}}{kg}$ and provides an electrical power of $P_{el} = 12.08 \ W_{el}$ during the mission duration\cite{R.Abelsonetal..2004}\cite{S.Magdum.2019}\cite{Holgate.2015}\cite{eMMRTG.NASA}\cite{Lakdawalla.2018}.
 
 
@@ -518,7 +518,7 @@ A thermal analysis was performed in order to get
 \end{itemize}
 
 For that, a thermal network with ten nodes was derived from the rover, shown in \autoref{fig:tcs_network}.
-At the intersection of the steering and drive engien, two additional nodes were defined to calculate the heat flow.
+At the intersection of the steering and drive engine, two additional nodes were defined to calculate the heat flow.
 
 \begin{figure}[H]
 	\centering
@@ -527,31 +527,31 @@ At the intersection of the steering and drive engien, two additional nodes were 
 	\label{fig:tcs_network}
 \end{figure}
 
-On the basis of the thermal network, the heat energy equlibrium for each node was defined (see \appref{sec:app_tcs_01}).
+On the basis of the thermal network, the heat energy equilibrium for each node was defined (see \appref{sec:app_tcs_01}).
 The calculation were considered as a quasi-static analysis, were the component temperatures stay constant, $\frac{\dd T}{\dd t}=0$.
-Due to the early state of the rover, simplifications and asumptions for the analysis were made.
+Due to the early state of the rover, simplifications and assumptions for the analysis were made.
 \begin{itemize}
 	\item The convection was neglected due to the thin atmosphere.
 	\item The whole electrical power of the components will be dissipated into heat.
-	\item A variation of $\pm 20\%$ for the emisivity and absorpsivity values was considered, if applicable (seet \autoref{tab:tcs_surface}).
+	\item A variation of $\pm 20\%$ for the emissivity and absorptivity values was considered, if applicable (see \autoref{tab:tcs_surface}).
 	\item The heat as a result of retardation radiation inside the shielding was neglected.
-	\item No dicrete nodes for the radar, hazcams and deployment engines were considered. Their heat will be lead into the chassis.
+	\item No discrete nodes for the radar, hazcams and deployment engines were considered. Their heat will be lead into the chassis.
 \end{itemize}
 
 
 \subsection{Analysis}
-The thermal analysis was perfomred as an Excel calculation, which can be found in the corresponding folder of Team 3.
+The thermal analysis was performed as an Excel calculation, which can be found in the corresponding folder of Team 3.
 The calculation sheet offers the possibility to adapt and customise input values and dimension.
 The major driving load cases are the  hot and the cold cases, where the maximum and minimum temperatures of the rover components will be reached.
-For that, the most powerful components were set to operating mode at once or only the minium requred components were turned on, respectively.
-The emisivity and absorptivity were adjusted to fulfil the cases.
+For that, the most powerful components were set to operating mode at once or only the minimum required components were turned on, respectively.
+The emissivity and absorptivity were adjusted to fulfil the cases.
 There were further load cases defined in order to cover important mission cases.
 
 \subsection{Results}
 The resulting temperatures for each node for the hot and cold cases  are listed in \autoref{tab:tcs_temp}.
-The temperature margins for uncertainties, acceptance tests and qulification tests were considered with 5 K each, $\pm$15 K in total.
+The temperature margins for uncertainties, acceptance tests and qualification tests were considered with 5 K each, $\pm$15 K in total.
 The corresponding temperatures are listed in \autoref{tab:tcs_temp}.
-All temperature lay betwenn their limits without using a heater.
+All temperature lay between their limits without using a heater.
 Nevertheless, heaters were considered for the power calculation, see \autoref{sec:EPS}.
 
 \begin{table}[htb]
@@ -572,8 +572,8 @@ Nevertheless, heaters were considered for the power calculation, see \autoref{se
 	\label{tab:tcs_temp}
 \end{table}
 
-In a furher step, a more detailed analysis should to be carried out with the Finite-Element-Method to identify the correct heat and temperature distribution.
-The FE results could be used to verify and adjust the analytical analysis to get a helpful tool for fast thermal calculation to evaluate different materials or desings in the further development phases.
+In a further step, a more detailed analysis should to be carried out with the Finite-Element-Method to identify the correct heat and temperature distribution.
+The FE results could be used to verify and adjust the analytical analysis to get a helpful tool for fast thermal calculation to evaluate different materials or designs in the further development phases.
 %A transient analysis could also help to optimise the insulation design.
 
 
