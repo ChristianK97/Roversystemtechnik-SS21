@@ -1,10 +1,12 @@
 \chapter{Subsystems}
 \label{chap:subsystems}
 
+In this chapter, the individual subsystems of the rover system will be discussed in more detail.
+
 \section{Structure and Mechanisms}
 \label{sec:mechanics}
 
-In this chapter, the individual subsystems of the rover system will be discussed in more detail.
+...
 
 \subsection{Storage Configuration and Rover Deployment}
 
@@ -211,30 +213,39 @@ The EPS (Electrical Power System) is the subsystem responsible for the electrica
 
 
 \subsection{EPS Budget and Overview}
-\autoref{tab:powbud} summarizes the power budget of INSPIRE based on the rover system modes defined in \autoref{chap:rovsubmod}. The complete power budget can be found in \autoref{tab:powerbudgetcomplete}.
-As can be seen, the Locomotion mode has the highest demands on the EPS. Communication mode also has a high consumption. However, since this is primarily used at night and the rover can be charged again afterwards without any problems, it does not place any major restrictions on the power budget. Idle/Perception mode has a low consumption, but is usually used for a long time at a stretch and therefore also places high demands on the EPS. In Charging mode, the EPS is able to charge $7.04 \ W_{el} $.
+\autoref{fig:epspowersummary} summarizes the power budget of INSPIRE based on the rover system modes defined in \autoref{chap:rovsubmod}. The holistic power budget can be found in \autoref{tab:powerbudgetcomplete}.
+As can be seen, the Locomotion mode has the highest demands on the EPS. The two payload modes also have a high power demand. The Communication mode also has a high consumption. However, since this is primarily used at night and the rover can be charged again afterwards without any problems, it does not place any major restrictions on the power budget. Idle/Perception mode has a low consumption, but is usually used for a long time at a stretch and therefore also places high demands on the EPS. In Charging mode, the EPS is able to charge $8.82 \ W_{el} $.
 
 
-\begin{table}[htb]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-\textbf{Rover System Mode} & \textbf{\begin{tabular}[c]{@{}c@{}}Total Rover \\ Power Demand \\ including battery charge $P_\text{mode}$ [$W_{el}$]\end{tabular}} \\ \hline
-Idle/Perception            & $15.25$                                                                                                                             \\ \hline
-Safe/Hibernation           & $-5.84$                                                                                                                             \\ \hline
-Communication              & $36.92$                                                                                                                             \\ \hline
-Charging                   & $-7.04$                                                                                                                             \\ \hline
-Locomotion                 & $232.36$                                                                                                                            \\ \hline
-Payload: Observation       & $15.41$                                                                                                                             \\ \hline
-Payload: Ice Core Mode     & $9.77$                                                                                                                              \\ \hline
-\end{tabular}
-\caption{Overview of the Power Budget of INSPIRE.}
-\label{tab:powbud}
-\end{table}
+\begin{figure}[htb]
+{\centering
+\includegraphics[width=0.7\textwidth]{Media/epspowersummary}
+\caption{Functional Flow Chart Diagram for the EPS Subsystem.}
+\label{fig:epspowersummary}
+}
+\end{figure}
+
+
+%\begin{table}[htb]
+%\centering
+%\begin{tabular}{|c|c|}
+%\hline
+%\textbf{Rover System Mode} & \textbf{\begin{tabular}[c]{@{}c@{}}Total Rover \\ Power Demand \\ including battery charge $P_\text{mode}$ [$W_{el}$]\end{tabular}} \\ \hline
+%Idle/Perception            & $15.25$                                                                                                                             \\ \hline
+%Safe/Hibernation           & $-5.84$                                                                                                                             \\ \hline
+%Communication              & $36.92$                                                                                                                             \\ \hline
+%Charging                   & $-7.04$                                                                                                                             \\ \hline
+%Locomotion                 & $232.36$                                                                                                                            \\ \hline
+%Payload: Observation       & $15.41$                                                                                                                             \\ \hline
+%Payload: Ice Core Mode     & $9.77$                                                                                                                              \\ \hline
+%\end{tabular}
+%\caption{Overview of the Power Budget of INSPIRE.}
+%\label{tab:powbud}
+%\end{table}
 
 
 \subsection{Energy Source}
-For the energy generation of INSPIRE many possible sources were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilize a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE.\\
+For the energy generation of INSPIRE many possible sources were taken into consideration for a trade-off. As a conclusion of this trade-off the decision was made to utilize a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE.\\
 As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilized, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of $m_\text{RTG}=3 \ \text{kg}$ was defined and the eMMRTG was scaled down using the given data.\\
 In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a BOL specific power of $\alpha_\text{BOL}= 4.0 \ \frac{W_{el}}{kg}$ and provides an electrical power of $P_{el} = 12.08 \ W_{el}$ during the mission duration\cite{R.Abelsonetal..2004}\cite{S.Magdum.2019}\cite{Holgate.2015}\cite{eMMRTG.NASA}\cite{Lakdawalla.2018}.
 
@@ -253,24 +264,23 @@ In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scale
 
 \begin{table}[H]
 \centering
+\caption{Parameters for the scaled eSMMRTG based on the eMMRTG.}
 \begin{tabular}{|c|c|}
 \hline
 \multicolumn{2}{|c|}{Scaled eSMMRTG Parameter}                \\ \hline
-\textbf{System Mass} $m_\text{RTG}$ [$kg$]                             & \textbf{3.5}     \\ \hline
-BOL Specific Power $\alpha_\text{BOL}$ $\frac{W_{el}}{kg}$  & $4.0$     \\ \hline
-BOL Power $P_{el,\text{BOL}}$ $\ W_{el}$                    & $14$       \\ \hline
+\textbf{System Mass} $m_\text{RTG}$ [kg]                             & \textbf{3.5}     \\ \hline
+BOL Specific Power $\alpha_\text{BOL}$ $\frac{W_{el}}{\text{kg}}$  & $4.0$     \\ \hline
+BOL Power $P_{el,\text{BOL}}$ $ W_{el}$                    & $14$       \\ \hline
 Isotrop                                                     & Pu-238   \\ \hline
-Isotrop Half-Life [$a$]                                       & $87.7$     \\ \hline
-Flight time and Storage (incl. Margins) [$a$]                 & $7$        \\ \hline
+Isotrop Half-Life [a]                                       & $87.7$     \\ \hline
+Flight time and Storage (incl. Margins) [a]                 & $7$        \\ \hline
 Power Loss Degradation until BOM $\ W_{el}$                 & $0.56$     \\ \hline
 BOM Power $P_{el,\text{BOM}}$ $\ W_{el}$                    & $13.44$    \\ \hline
-Europa Day Duration [$h$]                                     & $85$       \\ \hline
-Mission Duration [$d$]                                        & $106.25$   \\ \hline
+Europa Day Duration [h]                                     & $85$       \\ \hline
+Mission Duration [d]                                        & $106.25$   \\ \hline
 End of Mission Power $P_{el,\text{EOM}}$ [$\ W_{el}$]         & $13.42$   \\ \hline
 \textbf{Final Power for Study} $P_{el}$ [$\ W_{el}$] (incl. $10\%$ scaling Margin) & \textbf{12.08}    \\ \hline
-
 \end{tabular}
-\caption{Parameters for the scaled eSMMRTG based on the eMMRTG.}
 \label{tab:esmmrtg}
 \end{table}
 
@@ -278,9 +288,9 @@ Furthermore INSPIRE will also be equipped with some radiation hardend solar arra
 
 
 \subsection{Energy Storage} 
-For the energy storage of INSPIRE many possible battery types were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilize LiIon batteries as the secondary batteries of INSPIRE. This decision is primarly based on LiIon batteries high energy density, temperature range, robust performance and long operating and cycle life in extreme environments\cite{IRSatUniversityofStuttgart.2020}. \\
+For the energy storage of INSPIRE many possible battery types were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilize LiIon batteries as the secondary batteries of INSPIRE. This decision is primarly based on LiIon batteries high energy density, temperature range, robust performance and long operating and cycle life in extreme environments\cite{IRSatUniversityofStuttgart.2020}\\
 As the RTG only generates a small constant power the main energy source during the mission will be the accumulated energy of the batteries. The rover will charge the batteries at night, so the next exploration day can start with full capacity. Furthermore the batteries have to be charged during day time to maintain operations.\\
-For the sizing of the batteries, the rover motion was chosen as the design driver, since this is the highest energy consuming state of the rover and additionally mission critical for INSPIRE. The rover motion consists of an interaction of the Locomotion and Perception mode as already mentioned in \autoref{chap:Operation}. Therefore it was defined that INSPIRE shall be able to drive $ 50 \ m $ (including alternating Locomotion and Perception Mode) with a fully charged Battery. The required battery capacity $C_\text{Batt,req}$ can be caculated using \autoref{eq:batreq}. The results are listed in \autoref{tab:batsize} \cite{S.Klinkner.2021}.
+For the sizing of the batteries, the rover motion was chosen as the design driver, since this is the highest energy consuming state of the rover and additionally mission critical for INSPIRE. The rover motion consists of an interaction of the Locomotion and Perception mode as already mentioned in \autoref{chap:Operation}. Therefore it was defined that INSPIRE shall be able to drive $ 50$ m (including alternating Locomotion and Perception Mode) with a fully charged Battery. Furthermore the battery mass shall not exceed $2$ kg. The required battery capacity $C_\text{Batt,req}$ can be caculated using \autoref{eq:batreq}. The results are listed in \autoref{tab:batsize} \cite{S.Klinkner.2021}.
 
 
 \begin{equation}
@@ -290,19 +300,19 @@ C_\text{Batt,req} = \frac{P_\text{el,req} \cdot t_e }{DoD \cdot \eta_\text{LiIon
 
 \begin{table}[htb]
 \centering
-
+\caption{Power consumption mode used as design case for the battery sizing.}
 \begin{tabular}{|l|c|c|}
 \hline
 \textbf{Power Consumption Mode:}                        & \textbf{Locomotion} & \textbf{Perception} \\ \hline
-Required Electrical Power $P_\text{el,req}$ [$W_{el}$]         & 283.43              & 14.01               \\ \hline
-Duration of the mode $t_e$ [$s$]                          & 500              & 15000            \\ \hline
-$DOD$ for Dimensioning [-]                              & 0.90                & 0.90                \\ \hline
-Efficiency of LiIon Cells $\eta_\text{LiIon}$ [-]       & 0.95                & 0.95                \\ \hline
-Required Battery Capacity per mode $C_\text{mode}$ [$Wh$] & 46.04               & 68.27               \\ \hline
-\textbf{Total Required Battery Capacity} $C_\text{Batt,req}$ [$Wh$]    & \multicolumn{2}{c|}{\textbf{114.32}}               \\ \hline
+Required Electrical Power $P_\text{el,req}$ [$W_{el}$]         & $135.27$              & $18.74$               \\ \hline
+Duration of the mode $t_e$ [s]                          & $500$              & $15000$            \\ \hline
+$DOD$ for Dimensioning [-]                              & $0.90$                & $0.90$                \\ \hline
+Efficiency of LiIon Cells $\eta_\text{LiIon}$ [-]       & $0.95$                & $0.95$                \\ \hline
+Required Battery Capacity per mode $C_\text{mode}$ [Wh] & $21.97$              & $91.33$              \\ \hline
+\textbf{Total Required Battery Capacity} $C_\text{Batt,req}$ [Wh]    & \multicolumn{2}{c|}{\textbf{113.30}}               \\ \hline
 \end{tabular}
 
-\caption{Power consumption mode used as design case for the battery sizing.}
+
 \label{tab:batsize}
 \end{table}
 
@@ -313,7 +323,7 @@ C_\text{Batt} = C_\text{cell} \cdot V_\text{cell} \cdot N \cdot M .
 \label{eq:batuse}
 \end{equation}
 
-According to the ECSS reliability restrictions 1 battery string must be substracted for dimensionsing. Furthermore a $30 \%$ margin on the energy content was applied. This leads to a final battery configuration with a capacity of $C_\text{Batt}=138,88 \ Wh$ and a mass of $m_\text{Batt} = 1980 \ g$. The final battery values are listed in \autoref{tab:battery} \cite{SAFTBatteries.2018}.
+According to the ECSS reliability restrictions 1 battery string must be substracted for dimensionsing. Furthermore a $30 \%$ margin on the energy content was applied. This leads to a final battery configuration with a capacity of $C_\text{Batt}=156.24$ Wh and a mass of $m_\text{Batt} = 1980$ g. The final battery values are listed in \autoref{tab:battery} \cite{SAFTBatteries.2018}.
 
 
 \subsection{EPS Power Control and Distribution}
