@@ -8,22 +8,27 @@ In this chapter, the individual subsystems of the rover system will be discussed
 
 The Structure and Mechanisms subsystem mainly deals with the accommodation of the payloads and all necessary components for the operation of the rover system. This also includes the mechanisms that are necessary for the rover system to ensure its functionality. 
 
+
+\begin{figure}[htb]
+     \centering
+     \includegraphics[width=0.8\textwidth]{Media/INSPIRE_blackwhite.pdf}
+     \caption{Geometrical Data of Storage Configuration inside the lander}
+     \label{fig:Geometry}
+\end{figure}
+
+
+
 \subsection{Storage Configuration and Rover Deployment}
 
 The Main Characteristics of the Rover Chassis design of INSPIRE focuses on compact storage geometry and low mass.  
 The geometry data in storage configuration is shown in figure \autoref{fig:Geometry}.
 The storage volume that is required is 131~l.
 For the Rover Deployment there had been a lot of possible concepts, for example a sky crane, a robotic arm or a ramp. Depending of the reason that there are no further informations about the TRIPLE Lander and that the complexity of such a deployment system should be as simple as possible, the decision felt on a ramp where INSPIRE will drive slowly downwards the surface of Europa.
-The following is a brief explanation of the Rover deployment. \\
+The following is a brief explanation of the Rover deployment.
  
 The rover is stowed in the lander as in \autoref{fig:HighResStore} and must first place its wheels parallel to the chassis. Then the bogies are rotated by at least 15 degrees so that the Chassi lifts slightly from the lander. As soon as this has happened, a mechanism is triggered which unfolds the ramp. Now INSPIRE can carefully roll out of the lander until it finally reaches the surface of Europa.
 
-\begin{figure}[htb]
-     \centering
-     \includegraphics[width=\textwidth]{Media/INSPIRE_blackwhite.pdf}
-     \caption{Geometrical Data of Storage Configuration inside the lander}
-     \label{fig:Geometry}
-\end{figure}
+
 
 \subsection{Exploration Configuration}
 
@@ -41,25 +46,25 @@ Due to the symmetrical design and the central position of the center of gravity,
 
 \begin{figure}[htb]
      \centering
-     \begin{subfigure}[b]{0.49\textwidth}
+     \begin{subfigure}[b]{0.38\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Media/Static1.pdf}
          \label{fig:stat1}
      \end{subfigure}
      \hfill
-     \begin{subfigure}[b]{0.49\textwidth}
+     \begin{subfigure}[b]{0.38\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Media/Static4.pdf}
          \label{fig:stat4}
      \end{subfigure}
      \hfill
-     \begin{subfigure}[b]{0.49\textwidth}
+     \begin{subfigure}[b]{0.38\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Media/Static2.pdf}
          \label{fig:stat2}
      \end{subfigure}
      \hfill
-     \begin{subfigure}[b]{0.49\textwidth}
+     \begin{subfigure}[b]{0.38\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Media/Static3.pdf}
          \label{fig:stat3}
@@ -67,11 +72,11 @@ Due to the symmetrical design and the central position of the center of gravity,
      \caption{Results of the investigation into the tilting behavior of the INSPIRE Rover System}
      \label{fig:StaticAnal}
 \end{figure}
-
+\clearpage
 \subsection{Mass Budget}
 
 A really important part of each space system is the mass budget. Due to the strict mass restriction, it was quite difficult to find a suitable concept that is both light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5~kg was chosen which could also be adhered to. The following table lists the masses of the individual components of the structure and mechanisms system. 
-A table with all components of the INSPIRE Rover system is shown in %\autoref{Muss noch verlinkt werden!}.
+A table with all components of the INSPIRE Rover system is shown in \autoref{tab:totalMass}.
 
 %-------------------------------------------------------------------------------
 \section{Locomotion} \label{sec:locomotion}
@@ -443,15 +448,15 @@ Additionally a custom housekeeping board will be tasked with providing engine co
 %-------------------------------------------------------------------------------
 \section{Thermal Control System} \label{sec:thermalcontrol}
 %-------------------------------------------------------------------------------
-The main object of the Thermal Control System (TCS) is to keep the electric components within their temperature limits, listed in \autoref{tab:tcs_limits}.
-As a result of Europas low surface temperature, a small solar constant and the thin atmosphere the heat loss of the rover has to be minimised  \cite{Europa}.
+The main object of the Thermal Control System is to keep the electric components within their temperature limits, listed in \autoref{tab:tcs_limits}.
+As a result of Europas low surface temperature, a small solar constant and the thin atmosphere, the heat loss of the rover has to be minimised  \cite{Europa}.
 
 \subsection{Concepts}
-The main heat source of the rover is the waste heat of the RTG (see \autoref{sec:EPS}), which will be led by thermal straps to the temperature sensitive components.
-Carbon-based straps \textit{LyNX}\textsuperscript{\tiny\textregistered} with a high thermal conductivity to density ratio will be used \cite{ref_tcs_01}.
+The main heat source of the rover is the waste heat of the RTG, which shall be led by thermal straps to the thermal sensitive components.
+Carbon-based straps \textit{LyNX}\textsuperscript{\tiny\textregistered} with high thermal conductivity to density ratio will be used \cite{ref_tcs_01}.
 However, the thermal conductivity is highly dependent on the material temperature, see \autoref{fig:tcs_strap01}.
 The curve was approximated by  a cubic  interpolation, \autoref{fig:tcs_lynx} and \autoref{eq:tcs_lynx}.
-To consider heat loss as a result of surface contact and radiation, the thermal conductivity was reduced about 20\%.
+To consider heat loss as a result of surface contact and radiation, the thermal conductivity was reduced by about 20\%.
 %
 \begin{figure}[h]
 	\centering
@@ -461,15 +466,15 @@ To consider heat loss as a result of surface contact and radiation, the thermal 
 	\label{fig:tcs_strap01}
 \end{figure}
 %
-The camera, exposed on a mast, will be heated by a seperate, lightweight Radioisotope Heater Unit (RHU), which has  been used during several NASA missions \cite{ref_tcs_02}.
+The camera, exposed on a mast, will be heated by a separate, lightweight Radioisotope Heater Unit (RHU), which has  been used during several NASA missions \cite{ref_tcs_02}.
 For the insulation, the material \textit{Aerogel} will be applied, which has a very low heat conductivity \cite{ref_tcs_03}.
 
-To avoid the risk of overheating, concerning the ebay, camera and drive engine, passive bi-metallic heat switches  will be  placed between the application and the connection interface (see \autoref{fig:tcs_switch01}).
-These switches change their heat conductivity beyond a certain temperature due to the expansion of the disk (see \autoref{fig:tcs_switch21}).
-It was assumed that the toggle temperature can be adapted by modifying the disk height.
-The influence of the changed disk stiffness on the contact pressure and therefore the heat conductivity was neglected for this study.
-The measured heat conductivity characteristic was divided in three linear sections (\autoref{fig:tcs_switch22}), to enable a simple modelling in the thermal calculation.
-For most components, a cost-efficient sand blasting of the surface is applicable.
+To avoid the risk of overheating, concerning the E-Bay, camera and drive engine, passive bi-metallic heat switches  will be  placed between the application and the connection interface (see \autoref{fig:tcs_switch01}).
+These switches change their heat conductivity beyond a specific temperature due to the expansion of the disk (see \autoref{fig:tcs_switch21}).
+It was assumed that the toggle temperature could be adapted by modifying the disk height.
+The influence of the changed disk stiffness on the contact pressure and the heat conductivity was neglected for this study.
+The measured heat conductivity characteristic was divided in three linear sections (\autoref{fig:tcs_switch22}) to enable  simple modelling into the thermal calculation.
+For most components, a cost-efficient sandblasting of the surface is applicable.
 For special requirements, white paint will be used, \autoref{tab:tcs_surf}.
 
 \begin{figure}[H]
@@ -489,7 +494,7 @@ For special requirements, white paint will be used, \autoref{tab:tcs_surf}.
 \end{figure}
 
 \subsection{Thermal Network}
-A thermal analysis was performed in order to get
+A thermal analysis was performed to get
 \begin{itemize}
 	\item the dimension of the insulation and heat straps,
 	\item the necessary amount of RHUs and heat switches,
@@ -498,22 +503,20 @@ A thermal analysis was performed in order to get
 \end{itemize}
 
 For that, a thermal network with ten nodes was derived from the rover, shown in \autoref{fig:tcs_network}.
-At the intersection of the steer and drive engine, two additional nodes were defined to calculate the heat flow.
-
+At steer and drive engine intersection, two additional nodes were defined to calculate the heat flow.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Media/tcs_network}
 	\caption{Thermal network of the rover.}
 	\label{fig:tcs_network}
 \end{figure}
-
-On the basis of the thermal network, the heat energy equilibrium for each node was defined (see \appref{sec:app_tcs_01}).
+Based on the thermal network, the heat energy equilibrium for each node was defined (see \appref{sec:app_tcs_01}).
 The calculations were considered as a quasi-static analysis, where the component temperatures stay constant, $\frac{\dd T}{\dd t}=0$.
 Following simplifications and assumptions for the analysis were made.
 \begin{itemize}
 	\item The convection was neglected due to the thin atmosphere.
-	\item The whole electrical power of the components will be dissipated into heat.
-	\item A variation of $\pm 20\%$ for the emissivity and absorptivity values was considered, if applicable (seet \autoref{tab:tcs_surface}). The dissipation power of the LED ist 1.2 Watt.
+	\item The whole electrical power of the components will be dissipated into heat. The dissipation power of the LED is 1.2 Watt.
+	\item A variation of $\pm 20\%$ for the emissivity and absorptivity values was considered, if applicable (seet \autoref{tab:tcs_surface}). 
 	\item The heat as a result of retardation radiation inside the shielding was neglected.
 	\item No discrete nodes for the radar, hazcams, APXS and deployment engines were considered. Their heat will be led into the chassis.
 	\item The mechanism engines weren't considered.
@@ -524,18 +527,18 @@ Following simplifications and assumptions for the analysis were made.
 \subsection{Analysis}
 The thermal analysis was performed as an Excel calculation with the  possibility to adapt input values and dimensions, \autoref{app:DigitalAppendix} Nr. 1.
 The major driving load cases are the  hot and the cold cases, where the maximum and minimum temperatures of the rover components will be reached.
-For that, the most powerful components were set to operating mode at once or only the minimum required components were turned on, respectively.
+The most powerful components were set to operating mode at once, or only the minimum required components were turned on, respectively.
 The emissivity and absorptivity were adjusted to fulfil the cases.
-There were further load cases defined to consider the  battery charging, the communication mode and the drill \& analyse operation.
+Further load cases were defined to consider: battery charging, communication mode and  drill \& analyse operation.
 
 \subsection{Results}
-The resulting temperatures for each node over all loadcases  are listed in \autoref{tab:tcs_temp1}.
+The resulting temperatures for each node over all load cases  are listed in \autoref{tab:tcs_temp1}.
 All temperatures lay between their limits without using a heater.
 The margins for uncertainties, acceptance tests and qualification tests were considered with 5 K each, $\pm$15 K in total \cite{ref_tcs_05}.
 The corresponding temperatures are listed in \autoref{tab:tcs_temp2}.
-Due to the margin, the electric ebay exceeds the temperature limits of the transmitter.
-The issue can be solved by optimising the heat paths and adding further insulation during a detailed ebay design process.
-Yet another result can be found in \autoref{tab:tcs_nodes1} to \autoref{tab:tcs_nodes5}, \autoref{tab:tcs_toggle} and  \autoref{tab:tcs_lynx}.
+Due to the margin, the electric E-Bay exceeds the temperature limits of the transmitter.
+The issue can be solved by optimising the heat paths and adding further insulation during a detailed E-Bay design process.
+Further result can be found in \autoref{tab:tcs_nodes1} to \autoref{tab:tcs_nodes5}, \autoref{tab:tcs_toggle} and  \autoref{tab:tcs_lynx}.
 
 %-------------------------------------------------------------------------------
 \section{Radiation} \label{sec:Radiation}
