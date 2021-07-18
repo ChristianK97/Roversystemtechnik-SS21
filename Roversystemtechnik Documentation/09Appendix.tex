@@ -556,7 +556,7 @@ system link margin after uncertain losses &$\frac{{E}_{b}}{{N}_{0}}$	& 48.56    
 
 The analysis of the mission data concept for memory capacity and transmission times is focuses on the payload camera and Hazcams as images require far more data than telemetry or other payload data. \\
 
-In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit of the , a file size of 42 Mbit per image is assumed (CAMERA REFERENCE).\\
+In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit of the , a file size of 42 Mbit per image is assumed (camera datasheet in \autoref{app:DigitalAppendix}).\\
 To calculate the message size in \autoref{tab:TimePerPic}, it is assumed that a transmission frame consists of 10264 bits including a payload frame of maximum 8840 bits \cite{FLP}.   
 
 \begin{table}[h]
@@ -1036,8 +1036,8 @@ For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.\\
 		\toprule
 		& \multicolumn{2}{l}{Emissivity [-]} & \multicolumn{2}{l}{Absorptivity [-]}  \\ 
 		Surface finishing	&	min. & max. 	&	min. & max.   \\\midrule
-		Aluminium, polished & &0.05  & & 0.2   \\
-		Aluminium, sand blasted & &0.2  & & 0.4   \\
+		Aluminium, polished &0.04 &0.06  & 0.16& 0.24   \\
+		Aluminium, sandblasted & 0.16&0242  &0.36 & 0.44   \\
 		White paint & 0.8 & 0.9 & 0.2 & 0.5  \\ \bottomrule
 		& & & & \\
 	\end{tabular}
