@@ -138,6 +138,50 @@ Subsystem                               & component name                      & 
 
 \clearpage
 
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\begin{table}[]
+\centering
+\caption{INSPIRE Chassi Mass Budget}
+\label{tab:my-table}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\multicolumn{2}{c}{Component  Name}                  & \multicolumn{1}{c}{mass per  component {[}kg{]}} & \multicolumn{1}{c}{quantity} & \multicolumn{1}{c}{component margin} & \multicolumn{1}{c}{total {[}kg{]}} \\ \midrule
+\multicolumn{2}{c}{Cam Head Box}                     & \multicolumn{1}{c}{0,223}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,27}           \\
+\multicolumn{2}{c}{CamHead  Fork}                    & \multicolumn{1}{c}{0,119}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,14}           \\
+\multicolumn{2}{c}{Frontplate}                       & \multicolumn{1}{c}{0,165}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,20}           \\
+\multicolumn{2}{c}{Sideplate}                        & \multicolumn{1}{c}{0,244}                        & \multicolumn{1}{c}{2}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,59}           \\
+\multicolumn{2}{c}{Backplate}                        & \multicolumn{1}{c}{0,16}                         & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,19}           \\
+\multicolumn{2}{c}{Topplate}                         & \multicolumn{1}{c}{0,32}                         & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,38}           \\
+\multicolumn{2}{c}{Drillingbay}                      & \multicolumn{1}{c}{0,433}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,52}           \\
+\multicolumn{2}{c}{Midplate}                         & \multicolumn{1}{c}{0,491}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,59}           \\
+\multicolumn{2}{c}{Differential}                     & \multicolumn{1}{c}{0,237}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,28}           \\
+\multicolumn{2}{c}{Faulhaber Motor}                  & \multicolumn{1}{c}{0,015}                        & \multicolumn{1}{c}{4}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,07}           \\
+\multicolumn{2}{c}{IceCoreDeployment Housing}        & \multicolumn{1}{c}{0,005}                        & \multicolumn{1}{c}{4}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,02}           \\
+\multicolumn{2}{c}{Trapdoor}                         & \multicolumn{1}{c}{0,047}                        & \multicolumn{1}{c}{2}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,11}           \\
+\multicolumn{2}{c}{DrillFork1}                       & \multicolumn{1}{c}{0,011}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,01}           \\
+\multicolumn{2}{c}{DrillFork2}                       & \multicolumn{1}{c}{0,017}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,02}           \\
+\multicolumn{2}{c}{Wheel  Fork}                      & \multicolumn{1}{c}{0,122}                        & \multicolumn{1}{c}{4}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,59}           \\
+\multicolumn{2}{c}{Gear  \& Motor Housing (Driving)} & \multicolumn{1}{c}{0,015}                        & \multicolumn{1}{c}{4}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,07}           \\
+\multicolumn{2}{c}{Deployment  Mechanism Housing}    & \multicolumn{1}{c}{0,118}                        & \multicolumn{1}{c}{2}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,28}           \\
+\multicolumn{2}{c}{Bogie}                            & \multicolumn{1}{c}{0,11}                         & \multicolumn{1}{c}{4}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,53}           \\
+\multicolumn{2}{c}{HazCamBox\_Front}                 & \multicolumn{1}{c}{0,046}                        & \multicolumn{1}{c}{2}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,11}           \\
+\multicolumn{2}{c}{HazCamBox\_Heck}                  & \multicolumn{1}{c}{0,027}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,03}           \\
+\multicolumn{2}{c}{GroundRadarAntenna  holder}       & \multicolumn{1}{c}{0,03}                         & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,04}           \\ \midrule
+\multicolumn{5}{c}{Mass with component margins}                                                                                                                               & \multicolumn{1}{c}{5,02}           \\
+\multicolumn{5}{c}{System Margin}                                                                                                                                             & \multicolumn{1}{c}{10\%}           \\
+\multicolumn{5}{c}{Total Mass}                                                                                                                                                & \multicolumn{1}{c}{5,52}           \\\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+
+
+
+\clearpage
+
 \setcounter{figure}{0}
 \setcounter{table}{0}
 
