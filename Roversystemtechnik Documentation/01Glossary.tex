@@ -14,28 +14,32 @@
 
 \(a\)					&	Constant for the Geometry of a Porous Media	& nm							\\
 \(A\)					&	Wheel Ground Contact Area					& m								\\
-\(b\)					&	Wheel Width 								& m								\\
+\(b_\text{w}\)			&	Wheel Width 								& m								\\
 \(c\)					&	Coefficient of Soil Cohesion				& Pa							\\
 $C_\text{batt,req}$		&	Total Required Battery Capacity				& Wh							\\
 $C_\text{batt,req}$		&	Battery Nominal Capacity					& Wh							\\
 $C_\text{cell}$			&	Cell Voltage								& V								\\
 $CON_*$					&	Heat conductance of concerning component	& $\frac{\W}{\K}$				\\
-\(C_\text{rr}\)		&	Rolling Resistance Coefficient					& -								\\	
-\(d\)					&	Wheel Diameter								& m								\\
+\(C_\text{rr}\)			&	Rolling Resistance Coefficient					& -								\\	
+\(d\)					&	Wheel Distance Vertical						& m								\\
+\(d_\text{w}\)			&	Wheel Diameter								& m								\\
 $DoD$					&	Depth of Discharge							& $\%$							\\
 \(DP\)					&	Drawbar Pull								& N								\\
 \(H\)					&	Soil Thrust									& N								\\
 \(h_\text{ice}\)		&	Ice Crust Surface Thickness on Europa		&	m							\\
 \(k_\text{c}\)			&	Sinkage Modulus								& \(\frac{\text{kN}}{\text{m}^{n+2}}\) \\
 \(k_\phi\)				&	Soil Friction Angle Sinkage Modulus			& \(\frac{\text{kN}}{\text{m}^{n+3}}\) \\
-\(l\)					&	Ground Contact Length						& m								\\
+\(l_\text{w}\)			&	Wheel Ground Contact Length					& m								\\
+\(l\)					&	Wheel Distance Length						& m								\\
 $R_t$					&	Heat resistance								& $\frac{\K}{\W}$				\\
 \(T_\text{surface}\)	&	Surface Temperature on Europa				&	K							\\
 $M$						&	Number of Cells in Parallel					& -								\\
+\(MMP\)					& 	Mean Maximum Pressure 						& kPa							\\
 $m_\text{RTG}$			&	RTG Mass									& kg							\\
 \(m_\text{w}\)			&	Weight per Wheel							& kg							\\
 \(n\)					&	Soil Deformation Exponent					& -								\\
 $N$						&	Number of Cells in Series					& -								\\
+\(P\)					&	Wheel Electrical  Power						& W								\\
 $P_\text{el}$			&	RTG Electrical Power						& $W_\text{el}$					\\
 $P_\text{el,req}$		&	Required Electrical Power					& $W_\text{el}$					\\
 $P_\text{mode}$			&	Demanded Electrical Power per Mode			& $W_\text{el}$					\\
@@ -45,27 +49,32 @@ $\dot{Q}$				&	Heat flow									& W								\\
 \(R_\text{c}\)			&	Compaction Resistance						& N								\\
 \(R_\text{g}\)			&	Gravitational Resistance					& N								\\
 \(R_\text{r}\)			&	Rolling Resistance							& N								\\
-S						&	Radiation surface							& m$^2$							\\
+\(R_\text{total}\)		&	Total Resistance							& N								\\
+\(S\)					&	Radiation surface							& m$^2$							\\
 $t_\text{e}$			&	Mode Duration								& s								\\
-\(W_\text{wheel}\)		&	Normal Force per Wheel						& N								\\
-\(z\)					&	Sinkage										& m								\\
+\(v\)					&	Velocity									& \(\frac{\text{m}}{\text{s}}\)	\\
+\(W\)					&	Normal Force 								& N								\\
+\(W_\text{w}\)			&	Normal Force per Wheel						& N								\\
+\(z\)					&	Sinking Depth								& m								\\
 
 
 %Greek Symbols
 
 $\alpha$				&	Absorptivity								& -  							\\
 $\alpha_\text{BOL}$		&	BOL Specific Power							& $\frac{W_{el}}{kg}$			\\
-$\delta_\text{R}$				&	Ecliptic latitude of the rover on Europa	& $\circ$						\\
+\(\delta\)				&	Wheel Deflection							& m								\\
+$\delta_\text{R}$		&	Ecliptic latitude of the rover on Europa	& $\circ$						\\
 \(\epsilon\)			&	Emissivity 									&	-							\\
 $\eta_\text{LiIon}$		&	Efficiency of LiIon Cells					& -								\\
 $\lambda$				&	Heat conductivity							& $\frac{\W}{\m \K}$			\\
-$\lambda_\text{R}$				&	Ecliptic longitude of the rover on Europa	& $\circ$						\\
-\(\phi\)				&	Friciton Angle								& \(^\circ\)					\\
+$\lambda_\text{R}$		&	Ecliptic longitude of the rover on Europa	& $\circ$						\\
+\(\Phi\)				&	Friction Angle								& deg							\\
 $\varphi$				&	View factor									& -								\\
-\(\rho_\text{E}\)		&	Albedo of Europa			  				&	-	\\
+\(\rho_\text{E}\)		&	Albedo of Europa			  				& -								\\
 \(\rho_\text{ice}\)		&	Inner Encoder Ring Diameter  				&	\(\frac{\text{kg}}{m^3}\)	\\
-$\sigma_\text{b}$ 				&	Stefan-Boltzmann constant					& $\frac{\W}{\m^2\K^4}$ \\
-\(\theta\)				&	Slope Angle									& \(^\circ\)					\\
+$\sigma_\text{b}$ 		&	Stefan-Boltzmann constant					& $\frac{\W}{\m^2\K^4}$ 		\\
+\(\theta\)				&	Slope Angle									& deg							\\
+\(\tau\)				&	Torque										& Nm							\\
 
 
 
@@ -82,6 +91,7 @@ $\sigma_\text{b}$ 				&	Stefan-Boltzmann constant					& $\frac{\W}{\m^2\K^4}$ \\
 2D		& Two Dimensional \\
 3D		& Three Dimensional \\
 APXS	& Alpha Particle X-Ray Spectrometer \\
+BLDC	& Brushless Direct Current	\\
 BOL     & Begin of Life \\
 BOM     & Begin of Mission \\
 COMM    & Communications \\
@@ -102,7 +112,6 @@ PCU     & Power Control Unit \\
 PDU     & Power Distribution and Control Unit \\
 IMU     & Inertial Measurement Unit \\
 ESA		& European Space Agency	\\
-MMP		& Mean Maximum Pressure \\
 MP		& Mobility Package \\
 NASA    &   National Aeronautics and Space Administration \\
 SPENVIS	&	SPace ENVironment Information System	\\
