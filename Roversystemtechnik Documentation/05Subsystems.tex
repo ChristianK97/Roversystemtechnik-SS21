@@ -78,7 +78,7 @@ The fundamental rover design can be described by the wheel formula 4x4x4, based 
 \hline
 \rowcolor[HTML]{B3BBD1} 
 \multicolumn{1}{|c|}{\cellcolor[HTML]{B3BBD1}Wheeled System}                                                                                                                     & \multicolumn{1}{c|}{\cellcolor[HTML]{B3BBD1}4-Wheels}                                                                                                \\ \hline
-\begin{tabular}[c]{@{}l@{}}One of the most common types of platform\\ - high level of experience\\ - high TRL\end{tabular}                                                       & \begin{tabular}[c]{@{}l@{}}Compared to 2-wheels:\\ - stability  can be ensured \(\rightarrow\) important for drilling\\ - MMP decreases\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}One of the most common types of platform\\ - high level of experience\\ - high TRL\end{tabular}                                                       & \begin{tabular}[c]{@{}l@{}}Compared to 2-wheels:\\ - stability  can be ensured \(\rightarrow\) important for drilling\\ - \(MMP\) decreases\end{tabular} \\ \hline
 \begin{tabular}[c]{@{}l@{}}Compared to other systems:\\ - analysis quite straightforward\\ - simplification \(\rightarrow\) one of the most critical design drivers\end{tabular} & \begin{tabular}[c]{@{}l@{}}Compared to 6-wheels:\\ - less complex \(\rightarrow\) simplification\\ - mass can be reduced\end{tabular}                \\ \hline
 \rowcolor[HTML]{B3BBD1} 
 \multicolumn{1}{|c|}{\cellcolor[HTML]{B3BBD1}All-Wheel Drive}                                                                                                                    & \multicolumn{1}{c|}{\cellcolor[HTML]{B3BBD1}All-Wheel Actuation}                                                                                     \\ \hline
@@ -151,21 +151,21 @@ The required power for the rover can be calculated by the resistances that have 
 
 \begin{equation}
  	R_{\text{total}} \:  = \: 
- 	\underbrace{R_\text{compaction}}_{= \: \frac{z^{n+1}}{n+1} \left( k_\text{c} + b  k_\phi \right)} + 
+ 	\underbrace{R_\text{compaction}}_{R_\text{c} = \: \frac{z^{n+1}}{n+1} \left( k_\text{c} + b  k_\phi \right)} + 
  	\underbrace{R_\text{rolling}}_{R_\text{r} = \: W_\text{w}  C_\text{rr}} +  
  	\underbrace{R_\text{gravity}}_{R_\text{g} = \: W_\text{w}  \sin \theta} +
  	\underbrace{R_\text{bulldozing}}_{R_\text{b} \rightarrow 0}. 	
  	\label{eq:Resistance}
  \end{equation} 
 
-Due to the hard surface of Europa, it can be assumed that \( R_\text{b} \rightarrow 0\). In contrast to the \( R_\text{g} \), \( R_\text{r}\) can be defined as constant. With a rolling resistance coefficient of \( C_\text{rr} = 0.02\), the resulting resistance is \( R_\text{r}\) = 0.1972~N \cite{rolling coefficient}. Analogous to \(z\), the lower limit of \(R_{\text{total}}\) with soil properties of heavy clay is plotted in \autoref{fig:RClay}, while the upper limit is shown in \autoref{fig:RSnow} for snow.
+Due to the hard surface of Europa, it can be assumed that \( R_\text{b} \rightarrow 0\). In contrast to \( R_\text{g} \), \( R_\text{r}\) can be defined as constant. With a rolling resistance coefficient of \( C_\text{rr} = 0.02\), the resulting resistance is \( R_\text{r}\) = 0.1972~N \cite{rolling coefficient}. Analogous to \(z\), the lower limit of \(R_{\text{total}}\) with soil properties of heavy clay is plotted in \autoref{fig:RClay}, while the upper limit is shown in \autoref{fig:RSnow} for snow.
 
-In addition to the resistance that needs to be exceeded in order to move, an upper limit can also be determined. The ground thrust \(H\) indicates the maximum amount of traction that can be achieved before the wheels slip.  Therefore, following applies:
+In addition to the resistance that needs to be exceeded in order to move, a maximum limit can also be determined. The ground thrust \(H\) indicates the amount of traction that can be achieved before the wheels slip.  Therefore, following applies:
 \begin{equation}
 	H \:  = \: A \cdot c + W_\text{w} \cdot \tan \Phi , 
 	\label{eq:}
 \end{equation}
- with the wheel ground contact area \(A = \frac{\pi}{4} \cdot b_\text{w} \cdot l\) and the ground contact length \(l = \frac{d_\text{w}}{2} \cdot \cos^{-1} \left( 1 - \left( \frac{2z}{d_\text{w}} \right) \right)  \). As a result, the absolute upper limit of traction is presented in \autoref{fig:HClay} for heavy clay and \autoref{fig:HSnow} for snow. 
+ with the wheel ground contact area \(A = \frac{\pi}{4} \cdot b_\text{w} \cdot l_\text{w}\) and the ground contact length \(l_\text{w}=\frac{d_\text{w}}{2}\cos^{-1}\left(1 - \left( \frac{2z}{d_\text{w}} \right) \right)\). As a result, the absolute upper limit of traction is presented in \autoref{fig:HClay} for heavy clay and \autoref{fig:HSnow} for snow. 
  
 
 \begin{figure}[htb]
@@ -197,17 +197,17 @@ In addition to the resistance that needs to be exceeded in order to move, an upp
          \caption{\(R_\text{total}\) for Snow (Sweden)}
          \label{fig:RSnow}
      \end{subfigure}
-     \caption{Comparison of the rover's soil thrust versus the motion resistance to exceed, each for the soil parameters of snow in Sweden and heavy clay, referenced to \autoref{fig:SoilParameters}.}
+     \caption{Comparison of the rover's soil thrust versus the motion resistance to exceed, each for the soil parameters of snow in Sweden and heavy clay, referenced to \autoref{tab:SoilParam}.}
      \label{fig:SoilThrust_MotionResistance}
 \end{figure}
 
-In addition to the determined parameters, it should also be verified that the mean maximum pressure \(MMP\) does not increase excessively due to the selected geometric parameters. For this conservative calculation, a rigid wheel is assumed, whereby for the deflection \(\delta\) applies, that \( 0 \leq \delta \leq 0.1 d\). For terrestrial snow, 40~kPa should not be exceeded, but ideally the \(MMP\) should be less than 10~kPa. The associated verification calculation can be found in \appref{app:MMP}. \\ 
-For the Rover, configuration 6 is chosen as it offers the lowest resistance to exceed whilst maintaining the lowest \(MMP\). It should be noted, that the rover has additional grousers. These are enhancing the traction, whereby the maximum reachable soil thrust \(H\) can be increased. However, the grousers are not taken into account in this study, as this is a conservative estimation, and the grousers can be seen as a further design improvement. 
+In addition to the determined parameters, it should also be verified that the mean maximum pressure \(MMP\) does not increase excessively due to the selected geometric parameters \cite{MMP}. For this conservative calculation, a rigid wheel is assumed, whereby for the deflection \(\delta\) applies, that \( 0 \leq \delta \leq 0.1 d\). For terrestrial snow, 40~kPa should not be exceeded, but ideally the \(MMP\) should be less than 10~kPa \cite{Bekker}. The associated verification calculation can be found in \appref{app:MMP}. \\ 
+For the rover design, configuration 6 is chosen as it offers the lowest resistance to exceed whilst maintaining the lowest \(MMP\). As shown in \autoref{fig:MMP}, the \(MMP_\text{Config6}\) is less than 10~kPa for \(\delta \geq 0.01\)~mm . It should be noted, that the rover has additional grousers. These are enhancing the traction, whereby the maximum reachable soil thrust \(H\) can be increased. However, the grousers are not taken into account in this study, as this is a conservative estimation, and the grousers can be seen as a further design improvement. 
 
 \subsubsection*{Steering}
 \label{sec:Steering}
 
-Since the rover has an all-wheel actuation, it can be operated with on-point steering and, in order to avoid greater obstacles, with Ackerman steering. Considering that with Ackerman steering, the radius of the outer wheels is at a greater distance in the circumventing circle than that of the inner wheels, the angles of the wheel positions, which are important for the control of the rover, can be found in \autoref{tab:Ackerman}.
+Since the rover has an all-wheel actuation, it can be operated with on-point steering and, in order to avoid greater obstacles, with Ackerman steering. Considering that with Ackerman steering the radius of the outer wheels is at a greater distance in the circumventing circle than that of the inner wheels, the angles of the wheel positions, which are important for the control of the rover, are further examined in \appref{app:Ackerman}.
 
 
 
