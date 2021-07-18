@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.7 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,12 +16,12 @@
   {}
 \endgroup
 
-\sortlist[entry]{nty/global/}
+\datalist[entry]{none/global//global/global}
   \entry{Mission_01}{misc}{}
     \name{author}{1}{}{%
       {{hash=J}{%
          family={{Jet Propusion Laboratory}},
-         family_i={J\bibinitperiod},
+         familyi={J\bibinitperiod},
       }}%
     }
     \strng{namehash}{J1}
@@ -38,7 +38,7 @@
     \name{author}{1}{}{%
       {{hash=N}{%
          family={{NASA Science}},
-         family_i={N\bibinitperiod},
+         familyi={N\bibinitperiod},
       }}%
     }
     \strng{namehash}{N3}
@@ -55,7 +55,7 @@
     \name{author}{1}{}{%
       {{hash=I}{%
          family={{Institut für Planetenforschung, DLR}},
-         family_i={I\bibinitperiod},
+         familyi={I\bibinitperiod},
       }}%
     }
     \strng{namehash}{I1}
@@ -64,8 +64,8 @@
     \field{labeltitlesource}{title}
     \field{title}{{Die Mission JUICE zum Jupitersystem}}
     \verb{url}
-    \verb
-  https://www.dlr.de/pf/desktopdefault.aspx/tabid-10617/18438_read-43016/
+    \verb https://www.dlr.de/pf/desktopdefault.aspx/tabid-10617/18438_read-4301
+    \verb 6/
     \endverb
   \endentry
 
@@ -73,7 +73,7 @@
     \name{author}{1}{}{%
       {{hash=N}{%
          family={{NASA}},
-         family_i={N\bibinitperiod},
+         familyi={N\bibinitperiod},
       }}%
     }
     \strng{namehash}{N1}
@@ -90,7 +90,7 @@
     \name{author}{1}{}{%
       {{hash=N}{%
          family={{NASA / JPL}},
-         family_i={N\bibinitperiod},
+         familyi={N\bibinitperiod},
       }}%
     }
     \strng{namehash}{N2}
@@ -107,17 +107,19 @@
     \name{author}{1}{}{%
       {{hash=SSKAFHCTUEHWNSAASRC}{%
          family={Soon Sam\bibnamedelima Kim},
-         family_i={S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+         familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
   K\bibinitperiod},
          suffix={Steven R.\bibnamedelima Carnes},
-         suffix_i={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+         suffixi={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
   C\bibinitperiod},
          given={Albert F. Haldemann Christopher T. Ulmer Eddie Ho Wah Ng Steven
   A.\bibnamedelima Arcone},
-         given_i={A\bibinitperiod\bibinitdelim F\bibinitperiod H\bibinitperiod
-  C\bibinitperiod T\bibinitperiod U\bibinitperiod E\bibinitperiod
-  H\bibinitperiod W\bibinitperiod N\bibinitperiod S\bibinitperiod
-  A\bibinitperiod\bibinitdelim A\bibinitperiod},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
+  H\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  T\bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim
+  E\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  W\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim
+  S\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
     \strng{namehash}{SSKSRCAFHCTUEHWNSAA1}
@@ -137,7 +139,7 @@
     \name{author}{1}{}{%
       {{hash=P}{%
          family={Pasternack},
-         family_i={P\bibinitperiod},
+         familyi={P\bibinitperiod},
       }}%
     }
     \strng{namehash}{P1}
@@ -154,45 +156,45 @@
     \name{author}{7}{}{%
       {{hash=GJ}{%
          family={Gironés},
-         family_i={G\bibinitperiod},
+         familyi={G\bibinitperiod},
          given={J.},
-         given_i={J\bibinitperiod},
+         giveni={J\bibinitperiod},
       }}%
       {{hash=SD}{%
          family={Schmanke},
-         family_i={S\bibinitperiod},
+         familyi={S\bibinitperiod},
          given={Dirk},
-         given_i={D\bibinitperiod},
+         giveni={D\bibinitperiod},
       }}%
       {{hash=KG}{%
          family={Klingelhoefer},
-         family_i={K\bibinitperiod},
+         familyi={K\bibinitperiod},
          given={Goestar},
-         given_i={G\bibinitperiod},
+         giveni={G\bibinitperiod},
       }}%
       {{hash=MJ}{%
          family={Maul},
-         family_i={M\bibinitperiod},
+         familyi={M\bibinitperiod},
          given={Jasmine},
-         given_i={J\bibinitperiod},
+         giveni={J\bibinitperiod},
       }}%
       {{hash=BJ}{%
          family={Brueckner},
-         family_i={B\bibinitperiod},
+         familyi={B\bibinitperiod},
          given={Johannes},
-         given_i={J\bibinitperiod},
+         giveni={J\bibinitperiod},
       }}%
       {{hash=DC}{%
          family={Duston},
-         family_i={D\bibinitperiod},
+         familyi={D\bibinitperiod},
          given={Claude},
-         given_i={C\bibinitperiod},
+         giveni={C\bibinitperiod},
       }}%
       {{hash=GR}{%
          family={Gellert},
-         family_i={G\bibinitperiod},
+         familyi={G\bibinitperiod},
          given={Ralf},
-         given_i={R\bibinitperiod},
+         giveni={R\bibinitperiod},
       }}%
     }
     \strng{namehash}{GJSDKGMJBJDCGR1}
@@ -210,9 +212,9 @@
     \name{author}{1}{}{%
       {{hash=SN}{%
          family={Science},
-         family_i={S\bibinitperiod},
+         familyi={S\bibinitperiod},
          given={NASA},
-         given_i={N\bibinitperiod},
+         giveni={N\bibinitperiod},
       }}%
     }
     \strng{namehash}{SN1}
@@ -229,7 +231,7 @@
     \name{author}{1}{}{%
       {{hash=F}{%
          family={{Fraunhofer Institute for Solar Energy Systems ISE}},
-         family_i={F\bibinitperiod},
+         familyi={F\bibinitperiod},
       }}%
     }
     \strng{namehash}{F1}
@@ -242,5 +244,5 @@
     \endverb
     \field{year}{2021}
   \endentry
-\endsortlist
+\enddatalist
 \endinput
