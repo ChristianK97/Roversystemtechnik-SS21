@@ -1014,7 +1014,7 @@ with:
 		Part &  Cross section & Length  & Material & Amount \\ \hline
 		& & & & \\[-0.75em]
 		Rim & $S_R=12 \ \mm^2$ & $l_r=100\ \mm$ & Aluminium & 6 \\[1.5em]
-		\multicolumn{5}{l}{\textit{Note}: It was assumed, that the wheel temperature equals the surface temperature} \\
+		\multicolumn{5}{l}{\textit{Note}: It was assumed that the wheel temperature equals the surface temperature} \\
 		\multicolumn{5}{l}{because of the thin rims and resulting low heat conduction.} \\
 	\end{tabular}
 \label{tab:tcs_nodes5}
@@ -1022,13 +1022,13 @@ with:
 
 \subsection{Heat switch} \label{sec:app_therm_3}
 
-The charateristic of the switch conductance depends on the mean temperature $T_M$, shown by measurements in cite .
+The characteristic of the switch conductance depends on the mean temperature $T_M$, shown by measurements in cite .
 As this temperature won´t be calculated in the analysis, the corresponding component temperature $T_C$ shall be used.
-In order to describe the characteristic, it was diveded in three sections, \autoref{fig:tcs_switch03}.
+In order to describe the characteristic, it was divided in three sections, \autoref{fig:tcs_switch03}.
 The temperature where the disk decouples is $T_{toggle}=108 K$ and not applicable for the current application.
-By reducing the heigt, the toggle temperature can be increased and the characteristic can be shifted to higher termperatures ("to the right").
-It was assumed, that the gradients of section 2 and 3 as well as the temperature range of section 2 keep constant.
-The axis interseption is a function the toggle temperature ($a_2=f(\Delta T_{toggle}),\ \Delta T_{Toggle}=T_{new}-T_{old}|_{toggle}$).
+By reducing the height, the toggle temperature can be increased and the characteristic can be shifted to higher temperatures ("to the right").
+It was assumed that the gradients of section 2 and 3 as well as the temperature range of section 2 keep constant.
+The axis interception is a function the toggle temperature ($a_2=f(\Delta T_{toggle}),\ \Delta T_{Toggle}=T_{new}-T_{old}|_{toggle}$).
 The used toggle temperature are listed in autoref
 
 \begin{table}[H]
@@ -1072,9 +1072,9 @@ The used toggle temperature are listed in autoref
 \end{figure}
 
 \subsection{Rover absorptivity} \label{sec:app_therm_4}
-The rover position relativ to the direct sun radiation is given by the ecliptic longitude $\lambda_R$ and latitude $\delta_R$ angle, where the axis $x_E$ points always to the sun, \autoref{fig:tcs_rad2}.
+The rover position relative to the direct sun radiation is given by the ecliptic longitude $\lambda_R$ and latitude $\delta_R$ angle, where the axis $x_E$ points always to the sun, \autoref{fig:tcs_rad2}.
 The amount of solar radiation $S_0$ absorbed by the rover surfaces depends on the sun altitude and can be determined by the view factor $\varphi$, see \autoref{fig:tcs_rad1}.
-The view factors during eclipse are set to zero.
+The view factors during the eclipse are set to zero.
 
 \begin{table}[H]
 	\begin{tabular}{l@{\qquad}ll}
@@ -1085,7 +1085,7 @@ The view factors during eclipse are set to zero.
 
 \begin{figure}[h]
 	\centering
-	\subfloat[View factor depending on the absorbtion surface.]{\includegraphics[height=0.4\textwidth]{Media/tcs_rover_rad}\label{fig:tcs_rad1}}\qquad\qquad
+	\subfloat[View factor depending on the absorption surface.]{\includegraphics[height=0.4\textwidth]{Media/tcs_rover_rad}\label{fig:tcs_rad1}}\qquad\qquad
 	\subfloat[Definition of ecliptic longitude $\lambda_R$ and latitude $\delta_R$ of the rover on Europa.]{\includegraphics[height=0.3\textwidth]{Media/tcs_angle.png}\label{fig:tcs_rad2}}
 	\caption{Bi-metallic heat switch, \cite{ref_tcs_04}.}
 	\label{fig:tcs_rad}
@@ -1120,7 +1120,7 @@ The view factors during eclipse are set to zero.
 	\caption{Digitalised \cite{ref_tcs_01} and calculated heat conduction in comparison.}
 	\label{fig:tcs_lynx}
 \end{figure}
-The characteristic of the \textit{LyNX}\textsuperscript{\tiny\textregistered} conduction was approximated with follwing function,
+The characteristic of the \textit{LyNX}\textsuperscript{\tiny\textregistered} conduction was approximated with following function,
 \begin{equation}
 \lambda(T)= \left(1.76 \cdot 10^{-4}\ \frac{\W}{\m \K^4} \cdot T^3 -2.37\cdot 10^{-1}\ \frac{\W}{\m \K^3} \cdot T^2 +79.5 \frac{\W}{\m \K^2} \cdot T -5.55\cdot 10^{3}\ \frac{\W}{\m \K}\right) \cdot f_{r}  
 \label{eq:tcs_lynx}
@@ -1145,17 +1145,17 @@ with the reduction factor $f_{r}$=0.8.
 
 The Europa surface temperature varies at the  equator between $T_{e,min}=80~\K$ and\\ $T_{e,max}=130~\K$, depending on the sun inclination.
 The temperature at the pole is ${T_{Pole}=50~\K}$, \cite{Europa}.
-It was assumed, that the surface temperature depends on the sun altitude.
+It was assumed that the surface temperature depends on the sun altitude.
 A trigonometrical interpolation was defined as follows.
 \[ T_{Surface}(\lambda, \delta) = T_{Pole} + \cos (\delta) \cdot [(T_{e,min}+\cos (\lambda)\cdot (T_{e,max}-T_{e,min}))-T_{Pole}] \]
 For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.\\
 
 \begin{table}[H]
 	\centering
-	\caption{Minimum and maximum of surface emisivity and absorptivity values, \cite{ref_tcs_05}.}
+	\caption{Minimum and maximum of surface emissivity and absorptivity values, \cite{ref_tcs_05}.}
 	\begin{tabular}{l@{\qquad\qquad}cc@{\qquad\qquad}cc}
 		\toprule
-		& \multicolumn{2}{l}{Emisivity [-]} & \multicolumn{2}{l}{Absorptivity [-]}  \\ 
+		& \multicolumn{2}{l}{Emissivity [-]} & \multicolumn{2}{l}{Absorptivity [-]}  \\ 
 		Surface finishing	&	min. & max. 	&	min. & max.   \\\midrule
 		Aluminium, polished & &0.05  & & 0.2   \\
 		Aluminium, sand blasted & &0.2  & & 0.4   \\
@@ -1190,8 +1190,8 @@ For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.\\
 		Part  & Surface [$\m^2$] & Finishing & Note \\ \midrule
 		Chassis - top/bottom & $S_{Ch1}=0.086$ &  white paint & for albedo\\
 		Chassis - side & $S_{Ch2}=0.081$ &  white paint & for albedo\\
-		Chassis - total & $S_{Ch3}=0.423$ &  white paint & for emisivity\\
-		RTG& $S_{RTG}=0.086$ & white paint & konstant emisivity of 0.9\\
+		Chassis - total & $S_{Ch3}=0.423$ &  white paint & for emissivity\\
+		RTG& $S_{RTG}=0.086$ & white paint & konstant emissivity of 0.9\\
 		Electric Bay& $S_{Bay}=0.146$ & AL, sand blastet & \\
 		Camera - housing & $S_{Cam}=0.027$ & AL, sand blastet &\\
 		Camera - radiator & $S_{Rad}=0.066$ & white paint &  \\
