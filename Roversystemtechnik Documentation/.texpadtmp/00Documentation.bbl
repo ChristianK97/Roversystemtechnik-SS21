@@ -133,6 +133,30 @@
   \endentry
 
   \entry{patch_ant_GPR}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BAKCCCML}{%
+         family={Brad A.\bibnamedelima Krainer},
+         familyi={B\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+         suffix={Miiig\bibnamedelima Lee},
+         suffixi={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={Chi-Chih\bibnamedelima Chen},
+         giveni={C\bibinithyphendelim C\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+      {{hash=VJD}{%
+         family={Volakis},
+         familyi={V\bibinitperiod},
+         given={John\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BAKMLCCCVJD1}
+    \strng{fullhash}{BAKMLCCCVJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{GPR Implications of Miniaturized Antenna Developments}
+    \field{year}{2004}
   \endentry
 
   \entry{Patch_Ant_design}{misc}{}

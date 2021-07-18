@@ -394,12 +394,12 @@ C\&DH is responsible for the generation of telemetry from the housekeeping board
 
 Due to power and time constraints, the rover will transmit only telemetry during the locomotion and payload campaigns. Payload data will be compressed, stored and forwarded to the Lander at the end of a mission day. \\ 
  
-To achieve the scientific output from \autoref{chap:sc-output} the transmission time per Europa day is calculated in \autoref{app:MissionDataOutput} (\autoref{tab:Tx-tptal}) and adds up to 38,23 minutes. 
+To achieve the scientific output from \autoref{chap:sc-output} the transmission time per Europa day is calculated in \autoref{app:MissionDataOutput} (\autoref{tab:Tx-tptal}) and adds up to 38.23 minutes. 
 	
 \subsection{Communication System}
 Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 25 dB high gain antenna \cite{Lander_HGA} and a low gain antenna which is not further specified in literature.\\
 
-The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59~\text{dB}$, resulting in a Bit Error Rate of less than $10^{-4}$ (reference \autoref{fig:BitErrorRate}). The link budget in \autoref{tab:lb-R2L} has been performed under the conservative considerations listed in \autoref{tab:lb-param}.\\
+The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10.59~\text{dB}$, resulting in a Bit Error Rate of less than $10^{-4}$ (reference \autoref{fig:BitErrorRate}). The link budget in \autoref{tab:lb-R2L} has been performed under the conservative considerations listed in \autoref{tab:lb-param}.\\
 
 Using the Landers LGA greatly increases robustness due to the elimination of pointing errors and higher margin for rover positioning error. Additionally, the INSPIRE rover’s communication link would not interfere with the Landers communication to the relay carrier by blocking the HGA.
 
@@ -417,9 +417,9 @@ The selected components are listed in \autoref{tab:ComCompComp}.
 \toprule
 Component   & Supplier  & Part Description     & 1. Criteria   & Value    & 2. Criteria & Value          \\
 \midrule
-Transmitter & Sputnix   & SXC-XTX-01           & mass          & 0,195 kg & data rate   & 10 Mbit/s \\
-Receiver    & Endurosat & S-Band receiver      & power         & max. 2 W & mass        & 0,220 kg       \\
-Antenna     & Endurosat & patch antenna & mass          & 2,2 g    & frequency   & X-Band         \\
+Transmitter & Sputnix   & SXC-XTX-01           & mass          & 0.195 kg & data rate   & 10 Mbit/s \\
+Receiver    & Endurosat & S-Band receiver      & power         & max. 2 W & mass        & 0.220 kg       \\
+Antenna     & Endurosat & patch antenna & mass          & 2.2 g    & frequency   & X-Band         \\
 \bottomrule
 \end{tabular}
 \label{tab:ComCompComp}
@@ -514,8 +514,8 @@ The calculations were considered as a quasi-static analysis, where the component
 Following simplifications and assumptions for the analysis were made.
 \begin{itemize}
 	\item The convection was neglected due to the thin atmosphere.
-	\item The whole electrical power of the components will be dissipated into heat.
-	\item A variation of $\pm 20\%$ for the emissivity and absorptivity values was considered, if applicable (see \autoref{tab:tcs_surface}). The dissipation power of the LED ist 1.2 Watt.
+	\item The whole electrical power of the components will be dissipated into heat. The dissipation power of the LED ist 1.2 Watt.
+	\item A variation of $\pm 20\%$ for the emissivity and absorptivity values was considered, if applicable (see \autoref{tab:tcs_surface}).
 	\item The heat as a result of retardation radiation inside the shielding was neglected.
 	\item No discrete nodes for the radar, hazcams, APXS and deployment engines were considered. Their heat will be led into the chassis.
 	\item The mechanism engines weren't considered.
@@ -524,7 +524,7 @@ Following simplifications and assumptions for the analysis were made.
 
 
 \subsection{Analysis}
-The thermal analysis was performed as an Excel calculation with the  possibility to adapt input values and dimensions, \autoref{app:DigitalAppendix} Nr. 1.
+The thermal analysis was performed as an Excel calculation with the  possibility to adapt input values and dimensions, \autoref{app:DigitalAppendix}.
 The major driving load cases are the  hot and the cold cases, where the maximum and minimum temperatures of the rover components will be reached.
 For that, the most powerful components were set to operating mode at once or only the minimum required components were turned on, respectively.
 The emissivity and absorptivity were adjusted to fulfil the cases.
@@ -536,7 +536,7 @@ All temperatures lay between their limits without using a heater.
 The margins for uncertainties, acceptance tests and qualification tests were considered with 5 K each, $\pm$15 K in total \cite{ref_tcs_05}.
 The corresponding temperatures are listed in \autoref{tab:tcs_temp2}.
 Due to the margin, the electric E-bay exceeds the temperature limits of the transmitter.
-The issue can be solved by optimising the heat paths and adding further insulation during a detailed ebay design process.
+The issue can be solved by optimising the heat paths and adding further insulation during a detailed E-bay design process.
 Yet another result can be found in \autoref{tab:tcs_nodes1} to \autoref{tab:tcs_nodes5}, \autoref{tab:tcs_toggle} and  \autoref{tab:tcs_lynx}.
 
 \clearpage

@@ -35,11 +35,10 @@ I was expecting a `,' or a `}'---line 177 of file ../References.bib
  : @misc{ref_tcs_06,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--string name "brad" is undefined
---line 244 of file ../References.bib
-I was expecting a `,' or a `}'---line 244 of file ../References.bib
- :  author = brad 
- :                A. Krainer, Miiig Lee, Chi-Chih Chen and John D. Volakis},
+I was expecting a `,' or a `}'---line 248 of file ../References.bib
+ :  
+ :  booktitle={Tenth International Conference on Ground Penetrating Radar}
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 293 of file ../References.bib
  :  
@@ -901,43 +900,43 @@ Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro 
 while executing---line 2813 of file biblatex.bst
 You've used 54 entries,
             6393 wiz_defined-function locations,
-            1504 strings with 18905 characters,
-and the built_in function-call counts, 302075 in all, are:
-= -- 19078
-> -- 11154
-< -- 1421
-+ -- 10348
-- -- 7363
-* -- 19708
-:= -- 32665
+            1506 strings with 19019 characters,
+and the built_in function-call counts, 310432 in all, are:
+= -- 19891
+> -- 11253
+< -- 1433
++ -- 10494
+- -- 7401
+* -- 20534
+:= -- 33710
 add.period$ -- 0
 call.type$ -- 54
-change.case$ -- 527
+change.case$ -- 534
 chr.to.int$ -- 472
 cite$ -- 106
-duplicate$ -- 26170
-empty$ -- 27969
-format.name$ -- 2980
-if$ -- 59757
+duplicate$ -- 26583
+empty$ -- 28710
+format.name$ -- 3044
+if$ -- 61491
 int.to.chr$ -- 0
-int.to.str$ -- 146
+int.to.str$ -- 147
 missing$ -- 0
-newline$ -- 1280
-num.names$ -- 2249
-pop$ -- 18159
+newline$ -- 1302
+num.names$ -- 2287
+pop$ -- 18180
 preamble$ -- 1
-purify$ -- 785
+purify$ -- 798
 quote$ -- 0
-skip$ -- 9261
+skip$ -- 9364
 stack$ -- 0
-substring$ -- 36643
-swap$ -- 6230
-text.length$ -- 1275
+substring$ -- 38667
+swap$ -- 6308
+text.length$ -- 1289
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 1824
 warning$ -- 0
-while$ -- 3222
+while$ -- 3305
 width$ -- 0
-write$ -- 1227
+write$ -- 1249
 (There were 428 error messages)

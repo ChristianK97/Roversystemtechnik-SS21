@@ -72,6 +72,9 @@ Number & Rover System Modes                  & Abbrevation & \multicolumn{1}{c|}
 
 \clearpage
 
+\setcounter{figure}{0}
+\setcounter{table}{0}
+
 %-------------------------------------------------
 \section{Structure and Mechanism} \label{sec:AppendixStructureandMechanism}
 %-------------------------------------------------
@@ -82,13 +85,13 @@ Number & Rover System Modes                  & Abbrevation & \multicolumn{1}{c|}
 % \usepackage{graphicx}
 \begin{table}[hbt]
 \centering
-\caption{INSPIRE Mass Budget}
-\resizebox{0.75\textwidth}{!}{%
+\caption{INSPIRE mass budget.}
+\resizebox{0.9\textwidth}{!}{%
 \begin{tabular}{@{}cccccc@{}}
 \toprule
-Subsystem                               & component name                      & mass per component {[}kg{]} & quantity & component margin & total {[}kg{]} \\ \midrule
+Subsystem                               & Component Name                      & Mass per Component / kg & Quantity & Component Margin & Total / kg \\ \midrule
 \multirow{5}{*}{Structure \& Mechanism} & Harness                             & 3                           & 1        & 20\%             & 3,60           \\
-                                        & Chassi                              & look up at Chassi Table     & 1        & 20\%             & 5,02           \\
+                                        & Chassis                              & look up at Chassis Table     & 1        & 20\%             & 5,02           \\
                                         & E-Bay Box                           & 1,033                       & 1        & 20\%             & 1,24           \\
                                         & Boom                                & 0,17                        & 1        & 20\%             & 0,20           \\
                                         & Solar Cell Plate                    & 0,121                       & 1        & 20\%             & 0,15           \\ \midrule
@@ -143,11 +146,11 @@ Subsystem                               & component name                      & 
 % \usepackage{graphicx}
 \begin{table}[hbt]
 \centering
-\caption{INSPIRE Chassi Mass Budget}
+\caption{INSPIRE chassis mass budget.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}llllll@{}}
 \toprule
-\multicolumn{2}{c}{Component  Name}                  & \multicolumn{1}{c}{mass per  component {[}kg{]}} & \multicolumn{1}{c}{quantity} & \multicolumn{1}{c}{component margin} & \multicolumn{1}{c}{total {[}kg{]}} \\ \midrule
+\multicolumn{2}{c}{Component  Name}                  & \multicolumn{1}{c}{Mass per  Component / kg} & \multicolumn{1}{c}{Quantity} & \multicolumn{1}{c}{Component Margin} & \multicolumn{1}{c}{Total / kg} \\ \midrule
 \multicolumn{2}{c}{Cam Head Box}                     & \multicolumn{1}{c}{0,223}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,27}           \\
 \multicolumn{2}{c}{CamHead  Fork}                    & \multicolumn{1}{c}{0,119}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,14}           \\
 \multicolumn{2}{c}{Frontplate}                       & \multicolumn{1}{c}{0,165}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,20}           \\
@@ -169,7 +172,7 @@ Subsystem                               & component name                      & 
 \multicolumn{2}{c}{HazCamBox\_Front}                 & \multicolumn{1}{c}{0,046}                        & \multicolumn{1}{c}{2}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,11}           \\
 \multicolumn{2}{c}{HazCamBox\_Heck}                  & \multicolumn{1}{c}{0,027}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,03}           \\
 \multicolumn{2}{c}{GroundRadarAntenna  holder}       & \multicolumn{1}{c}{0,03}                         & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,04}           \\ \midrule
-\multicolumn{5}{c}{Mass with component margins}                                                                                                                               & \multicolumn{1}{c}{5,02}           \\
+\multicolumn{5}{c}{Mass with Component Margins}                                                                                                                               & \multicolumn{1}{c}{5,02}           \\
 \multicolumn{5}{c}{System Margin}                                                                                                                                             & \multicolumn{1}{c}{10\%}           \\
 \multicolumn{5}{c}{Total Mass}                                                                                                                                                & \multicolumn{1}{c}{5,52}           \\\bottomrule
 \end{tabular}%
@@ -315,7 +318,7 @@ Each wheel has a separate BLDC motor for driving. The necessary torque is listed
 	\toprule
 		\multicolumn{1}{l}{\(\theta\)} & \multicolumn{1}{c}{\(R_\text{total,Snow}\)} & \multicolumn{1}{c}{\(\tau_\text{snow}\)} & \multicolumn{1}{c}{\(R_\text{total,HeavyClay}\)} & \multicolumn{1}{c|}{\(\tau_\text{HeavyClay}\)}	& \multicolumn{1}{c}{\(v\)}  & \multicolumn{1}{c}{\(P_\text{Min.,Snow}\)}  & \multicolumn{1}{c}{\(P_\text{Min.,HeavyClay}\)}			 \\
 		
-	\multicolumn{1}{l}{\:\:\:\:\:\: deg} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Nm} & \multicolumn{1}{c}{N} & \multicolumn{1}{c|}{Nm} & \multicolumn{1}{c}{\(\frac{m}{s}\)} & \multicolumn{1}{c}{W} & \multicolumn{1}{c}{W} \\
+	\multicolumn{1}{l}{deg} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Nm} & \multicolumn{1}{c}{N} & \multicolumn{1}{c|}{Nm} & \multicolumn{1}{c}{\(\frac{m}{s}\)} & \multicolumn{1}{c}{W} & \multicolumn{1}{c}{W} \\
 
 	\midrule
 		
@@ -406,6 +409,7 @@ Link budget considerations are performed under the conservative assumptions list
 
 \begin{table}[h]
 \centering
+\caption{Transmission link parameters.}
 \begin{tabular}{llclll}
 \hline
 Parameter                        & Value  & Unit	       & Symbol        & Source                       &  \\ \hline
@@ -430,7 +434,6 @@ technical degradation            & 1      & {[}dB{]}   & ${L}_{i1}$    & \cite{F
 implementation loss              & 1      & {[}dB{]}   & ${L}_{i1}$	   & \cite{FLP_Exercise}                          &  \\
                                  &        &            &               &                              & 
 \end{tabular}
-\caption{Transmission link parameters}
 \label{tab:lb-param}
 \end{table}
 
@@ -553,33 +556,41 @@ system link margin after uncertain losses &$\frac{{E}_{b}}{{N}_{0}}$	& 48.56    
   \label{fig:BitErrorRate}
 \end{figure}
 
+\clearpage
+
 \subsection{Mission Data Output}
 \label{app:MissionDataOutput}
 
-The analysis of the mission data concept for memory capacity and transmission times is focuses on the payload camera and Hazcams as images require far more data than telemetry or other payload data. \\
+The analysis of the mission data concept for memory capacity and transmission times is focuses on the payload camera and hazcams as images require far more data than telemetry or other payload data. \\
 
 In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit of the , a file size of 42 Mbit per image is assumed (camera datasheet in \autoref{app:DigitalAppendix}).\\
 To calculate the message size in \autoref{tab:TimePerPic}, it is assumed that a transmission frame consists of 10264 bits including a payload frame of maximum 8840 bits \cite{FLP}.   
 
-\begin{table}[h]
+\begin{table}[htb]
 \centering
-\begin{tabular}{llllll}
-File Type & Compression    & File Size  & Message Size & Data Rate & Tx t per File \\ \hline\hline
-image     & none           & 42 Mbit    & 48,77 Mbit   & 5 Mbit    & 8,12 s        \\
-image     & HIREW          & 23,52 Mbit & 27,31 Mbit   & 5 Mbit    & 5,45 s        \\ \hline
-\end{tabular}
 \caption{Comparison of transmission times per image (message frame bits included)}
+\begin{tabular}{llllll}
+\toprule
+File Type & Compression    & File Size  & Message Size & Data Rate & Tx t per File \\ 
+\midrule
+image     & none           & 42 Mbit    & 48,77 Mbit   & 5 Mbit    & 8,12 s        \\
+image     & HIREW          & 23,52 Mbit & 27,31 Mbit   & 5 Mbit    & 5,45 s        \\
+\bottomrule
+\end{tabular}
 \label{tab:TimePerPic}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[htb]
 \centering
-\begin{tabular}{lllll}
-File per tal & Compression & File Size  & Total Data & Tx time    \\ \hline\hline
-420          & none        & 42 Mbit    & 2,21 GB    & 56,9 Min.  \\
-420          & HIREW       & 23,52 Mbit & 1,22 GB    & 38,23 Min. \\ \hline
-\end{tabular}
 \caption{Transmission time and total data output per mission day}
+\begin{tabular}{lllll}
+\toprule
+File per tal & Compression & File Size  & Total Data & Tx time    \\
+\midrule
+420          & none        & 42 Mbit    & 2,21 GB    & 56,9 Min.  \\
+420          & HIREW       & 23,52 Mbit & 1,22 GB    & 38,23 Min. \\
+\bottomrule
+\end{tabular}
 \label{tab:Tx-tptal}
 \end{table}
 
@@ -619,14 +630,14 @@ The HIREW compression algorithm is suggested for the mission considering a high 
 		Components & Hot Case & Cold Case & Charging & Communication & Analyse  \\[0.25em]
 		Margin & +15~K & -15~K & +15~K & +15~K & +15~K \\ \hline
 		RTG  & 430 & 376 & 417 & 422  & 416    \\
-		Electric Bay & 316 & \cellcolor[HTML]{FFCE93} 253$^1)$ & 308 &\cellcolor[HTML]{FFCE93} 328$^1)$ & 296 \\
+		Electric Bay & 316 & \cellcolor[HTML]{FFCE93} 253$^{1)}$ & 308 &\cellcolor[HTML]{FFCE93} 328$^{1)}$ & 296 \\
 		Drill  & 298 & 241 & 282 & 286 & 343  \\
 		Camera & 342 & 234 & 271 & 272 & 271 \\
 		Chassis & 283 & 215 & 260 & 266 & 261 \\
 		Steering Engine & 311 & 234 & 275 & 277 & 276  \\
 		Drive Engine & 359 & 236 & 277 & 277 & 277 \\   \hline
 		& & & & & \\[-0.5em]
-		\multicolumn{6}{l}{$^1)$\ Exeeding transmitter temperature limits.}
+		\multicolumn{6}{l}{$^{1)}$\ Exeeding transmitter temperature limits.}
 	\end{tabular}
 	\label{tab:tcs_temp2}
 \end{table}
@@ -1274,15 +1285,16 @@ Both improvements would save the mass of the lead and iron shielding for the opt
 
 \begin{table}[htb]
 	\centering
+	\caption{Digital Appendix}
 	\begin{adjustbox}{max width=\textwidth}
 	\begin{tabular}{llcc}
 	\toprule
 		Name  & Path & Type & Size  \\
 	\midrule
-		TCS Analysis final & 300 Thermal\ & Exle Sheet with Macros, *.xlsm & 189 kB  \\
-		Comms \& C\&DH Datasheets & 600\_C\&DH\_Communication & *.pdf & \\
-		Comms \& C\&DH Trade Offs &	600\_C\&DH\_Communication & *.png & \\
-				Locomotion MMP Deflection 			& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 101 kB  \\	
+		TCS Analysis final & 300 Thermal\ & Excle Sheet with Macros, *.xlsm & 189 kB  \\
+		Comms \& C\&DH Datasheets & 600\_C\&DH\_Communication & *.pdf & 42.5 MB\\
+		Comms \& C\&DH Trade Offs &	600\_C\&DH\_Communication & *.png & 479 kB\\
+				Locomotion MMP Deflection 			& 200 Locomotion\ & Excle Sheet with Data, *.xlsx	& 101 kB  \\	
 		
 		Locomotion Motor wheels EC32flat	& 200 Locomotion\ & PDF Datasheet, *.pdf	& 101 kB  \\	
 		
@@ -1306,17 +1318,17 @@ Both improvements would save the mass of the lead and iron shielding for the opt
 		
 		SoilThrustSnow						& 200 Locomotion\ & Matlab File, *.m	& 4 kB  \\
 		
-		SinkageSnow 						& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 4 kB  \\
-				SinkageClay				 			& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 4 kB  \\	
+		SinkageSnow 						& 200 Locomotion\ & Excle Sheet with Data, *.xlsx	& 4 kB  \\
+				SinkageClay				 			& 200 Locomotion\ & Excle Sheet with Data, *.xlsx	& 4 kB  \\	
 		
-		Torque and Power 					& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 11 kB  \\
+		Torque and Power 					& 200 Locomotion\ & Excle Sheet with Data, *.xlsx	& 11 kB  \\
 		
-		WheelDimensionsV3 reduced			& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 11 kB  \\
+		WheelDimensionsV3 reduced			& 200 Locomotion\ & Excle Sheet with Data, *.xlsx	& 11 kB  \\
 		
-		WheelDimensionsV3 groß				& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 12 kB  \\
-		Tradeoff Locomotion				& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 475 kB  \\
+		WheelDimensionsV3 groß				& 200 Locomotion\ & Excle Sheet with Data, *.xlsx	& 12 kB  \\
+		Tradeoff Locomotion				& 200 Locomotion\ & Excle Sheet with Data, *.xlsx	& 475 kB  \\
 			
-Lens Assembly GH VIS SWIR OEM lens Avill 12.5mm		& 700 Payload\ & PDF Datasheet, *.pdf	& 353 kB  \\	
+Lens Assembly		& 700 Payload\ & PDF Datasheet, *.pdf	& 353 kB  \\	
 
 RadHard Lenses Schott 					& 700 Payload\ & PDF Datasheet, *.pdf	& 338 kB  \\	
 
@@ -1327,8 +1339,7 @@ SunSensorSpaceGradeMAUS		& 700 Payload\ & PDF Datasheet, *.pdf	& 487 kB  \\
 	\bottomrule
 	\end{tabular}
 	\end{adjustbox}
-	\caption{Digital Appendix}
 	\label{app:DigitalAppendix}
 \end{table}
 
-\cleardoublepage
+\clearpage
