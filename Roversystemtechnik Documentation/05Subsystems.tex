@@ -27,25 +27,36 @@ One bogie then will execute a counter movement du to the tilt of the other bogie
 
 \subsection{Static Analysis}
 
-Part of the design process was to examine the stability behavior of the rover when climbing mountains or on slopes. In order to determine the maximum possible gradients, an adjustable gradient was simulated using the CAD model, on which the rover system was then placed. The results of this investigation can be seen in Figures XXX and YYY. As can be seen in the pictures, significantly higher angles are possible if the center of gravity of the rover is offset by the expansion mechanism. 
+Part of the design process was to examine the stability behavior of the rover when climbing mountains or on slopes. In order to determine the maximum possible gradients, an adjustable gradient was simulated using the CAD model, on which the rover system was then placed. The results of this investigation can be seen in Figure \autoref{fig:StaticAnal}. As can be seen in the pictures, significantly higher angles are possible if the center of gravity of the rover is offset by the expansion mechanism. 
 Due to the symmetrical design and the central position of the center of gravity, investigations were only carried out for one half of the chassis. The maximum possible angles are therefore assumed to be identical on both sides. 
 
 \begin{figure}[htb]
      \centering
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{Media/INSPIRE_Locomotion}
-         \label{fig:StoreConfig}
+         \includegraphics[width=\textwidth]{Media/Static1.pdf}
+         \label{fig:stat1}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{Media/INSPIRE_Radiation}
-         \label{fig:ExplConfig}
+         \includegraphics[width=\textwidth]{Media/Static4.pdf}
+         \label{fig:stat4}
      \end{subfigure}
      \hfill
-     \caption{Results of the Static Analysis in Inventor. From left to right: Storage Configuration, Exploration Configuration }
-     \label{fig:StaticAnalysis}
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Static2.pdf}
+         \label{fig:stat2}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Static3.pdf}
+         \label{fig:stat3}
+     \end{subfigure}
+     \caption{Results of the investigation into the tilting behavior of the INSPIRE Rover System}
+     \label{fig:StaticAnal}
 \end{figure}
 
 \subsection{Mass Budget}
