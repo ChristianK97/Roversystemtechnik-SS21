@@ -409,23 +409,23 @@ Link budget considerations are performed under the conservative assumptions list
 Parameter                        & Value  & Unit	       & Symbol        & Source                       &  \\ \hline
 Rover                            &        &            &               &                              &  \\ \hline\hline
 antenna Gain           		     & 2      & {[}dB{]}   & ${G}_{R}$  	   & omnidirectional LGA          &  \\
-output power        	         & 1      & {[}W{]}    & ${P}_{R}$  	   &                              &  \\
-line loss               	     & 0,6    & {[}dB{]}   & ${L}_{l1}$ 	   & FLP                          &  \\ \hline
+output power        	         & 1      & {[}W{]}    & ${P}_{R}$  	   & Digital Appendix                            &  \\
+line loss               	     & 0,6    & {[}dB{]}   & ${L}_{l1}$ 	   & \cite{FLP_Exercise}                          &  \\ \hline
 Path                             &        &            &               &                              &  \\ \hline\hline
-R2L polarisation loss            & 0,3    & {[}dB{]}   & ${L}_{p}$ 	   & FLP                          &  \\
-free space loss                  & 117,55 & {[}$m^3${]}& ${L}_{s}$  	   &                              &  \\
+R2L polarisation loss            & 0,3    & {[}dB{]}   & ${L}_{p}$ 	   & \cite{FLP_Exercise}                          &  \\
+free space loss                  & 117,55 & {[}$m^3${]}& ${L}_{s}$  	   & \autoref{eqn:Ls}                             &  \\
 atmospheric loss                 & 0      & {[}dB{]}   & ${L}_{a}$	   & negligible atmosphere        &  \\ \hline
 Lander                           &        &            &               &                              &  \\ \hline\hline
 antenna Gain             		 & 1      & {[}dB{]}   & ${G}_{L}$	   & conservative estimation      &  \\
 output power        	         & 5      & {[}W{]}    & ${P}_{L}$  	   & conservative estimation      &  \\
 pointing Loss  		             & 0      & {[}dB{]}   & ${n/a}$       & omnidirectional LGA          &  \\
-line Loss  		                 & 0,6    & {[}dB{]}   & ${L}_{l2}$	   & FLP                          &  \\
+line Loss  		                 & 0,6    & {[}dB{]}   & ${L}_{l2}$	   & \cite{FLP_Exercise}                          &  \\
 eff. noise temperature           & 300    & {[}K{]}    & ${T}_{s}$	   & worst case E-bay temperature &  \\ \hline
 Demodulation \& Uncertain Losses &        &            &               &                              &  \\ \hline\hline
 eff. data rate                   & 5000   & {[}kbps{]} & ${R}$         & 50 \% of max. data rate                            &  \\
-FEC coding                       & none   & {[}-{]}    & ${n/a}$       &                              &  \\
-technical degradation            & 1      & {[}dB{]}   & ${L}_{i1}$    & FLP                          &  \\
-implementation loss              & 1      & {[}dB{]}   & ${L}_{i1}$	   & FLP                          &  \\
+FEC coding                       & none   & {[}-{]}    & ${n/a}$       &  ${n/a}$                            &  \\
+technical degradation            & 1      & {[}dB{]}   & ${L}_{i1}$    & \cite{FLP_Exercise}                          &  \\
+implementation loss              & 1      & {[}dB{]}   & ${L}_{i1}$	   & \cite{FLP_Exercise}                          &  \\
                                  &        &            &               &                              & 
 \end{tabular}
 \caption{Transmission link parameters}
@@ -545,7 +545,7 @@ system link margin after uncertain losses &$\frac{{E}_{b}}{{N}_{0}}$	& 48.56    
 
 \begin{figure}[h]
 	\centering
-  		\includegraphics[width=0.9\textwidth]{Media/Bit_Error_Rate.png}
+  		\includegraphics[width=0.5\textwidth]{Media/Bit_Error_Rate.png}
   \caption{Bit Error Rate for different FEC codes}
   \label{fig:BitErrorRate}
 \end{figure}
@@ -580,7 +580,7 @@ File per tal & Compression & File Size  & Total Data & Tx time    \\ \hline\hlin
 \label{tab:Tx-tptal}
 \end{table}
 
-The HIREW compression algorithm is suggested for the mission considering a high average compression of 0,56 \% and a high compression speed of 123 Mbit/s for grayscale and 104,4 Mbit/s for RGB image files (COMPRESSSION PAPER REFERENCE). 
+The HIREW compression algorithm is suggested for the mission considering a high average compression of 0,56 \% and a high compression speed of 123 Mbit/s for grayscale and 104,4 Mbit/s for RGB image files \cite{HIREW}. 
 
 \subsection{Communications Trade Off}
 \label{app:Com_TrOff}
