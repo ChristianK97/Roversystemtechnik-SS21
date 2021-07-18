@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: 00Documentation.aux
 The style file: biblatex.bst
@@ -27,7 +27,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11533 items from 5000.
+Reallocated field_info (elt_size=4) to 11811 items from 5000.
 Database file #1: 00Documentation-blx.bib
 Database file #2: References.bib
 I was expecting a `,' or a `}'---line 177 of file References.bib
@@ -46,6 +46,7 @@ I was expecting a `,' or a `}'---line 293 of file References.bib
  :  journal = {IEEE TRANSACTIONS ON ANTENNAS AND PROPAGATION},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "tab:powerbudgetcomplete"
 Biblatex version: 3.13
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
@@ -899,45 +900,45 @@ Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro 
 while executing---line 2805 of file biblatex.bst
 Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
 while executing---line 2805 of file biblatex.bst
-You've used 47 entries,
+You've used 48 entries,
             6365 wiz_defined-function locations,
-            1460 strings with 17403 characters,
-and the built_in function-call counts, 253896 in all, are:
-= -- 16332
-> -- 8484
-< -- 1152
-+ -- 7767
-- -- 5396
-* -- 16806
-:= -- 26744
+            1465 strings with 17559 characters,
+and the built_in function-call counts, 262544 in all, are:
+= -- 16854
+> -- 9075
+< -- 1210
++ -- 8323
+- -- 5874
+* -- 17229
+:= -- 27778
 add.period$ -- 0
-call.type$ -- 47
-change.case$ -- 453
-chr.to.int$ -- 328
-cite$ -- 92
-duplicate$ -- 21684
-empty$ -- 24120
-format.name$ -- 2468
-if$ -- 51540
+call.type$ -- 48
+change.case$ -- 490
+chr.to.int$ -- 352
+cite$ -- 94
+duplicate$ -- 22264
+empty$ -- 24795
+format.name$ -- 2513
+if$ -- 53058
 int.to.chr$ -- 0
-int.to.str$ -- 125
+int.to.str$ -- 128
 missing$ -- 0
-newline$ -- 1072
-num.names$ -- 1933
-pop$ -- 15702
+newline$ -- 1093
+num.names$ -- 2003
+pop$ -- 16071
 preamble$ -- 1
-purify$ -- 660
+purify$ -- 700
 quote$ -- 0
-skip$ -- 7820
+skip$ -- 8056
 stack$ -- 0
-substring$ -- 31727
-swap$ -- 5193
-text.length$ -- 1044
+substring$ -- 32795
+swap$ -- 5344
+text.length$ -- 1073
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1586
+type$ -- 1620
 warning$ -- 0
-while$ -- 2593
+while$ -- 2656
 width$ -- 0
-write$ -- 1026
+write$ -- 1046
 (There were 428 error messages)
