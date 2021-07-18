@@ -40,6 +40,7 @@ I was expecting a `,' or a `}'---line 293 of file ../References.bib
  :  journal = {IEEE TRANSACTIONS ON ANTENNAS AND PROPAGATION},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Europe"
 Biblatex version: 3.3
 Warning--Version mismatch: biblatex.bst=2.7, biblatex.sty=3.7
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
@@ -316,7 +317,7 @@ Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldeman
 while executing---line 2746 of file biblatex.bst
 You've used 12 entries,
             6256 wiz_defined-function locations,
-            1237 strings with 10348 characters,
+            1239 strings with 10360 characters,
 and the built_in function-call counts, 46090 in all, are:
 = -- 2940
 > -- 912
