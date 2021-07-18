@@ -10,7 +10,7 @@ The Ground Radars main task is the identification of suitable drilling sites. Ad
 Due to its small dimensions, the CRUX GPR is selected. The system is tested for lunar application at 800~MHz, resulting in a resolution of 15~cm and a penetration depth of 5~m \cite{CRUX_GPR}. The INSPIRE mission makes use of a 1.5~GHz frequency to increase the resolution. 
 Reduced penetration depths are acceptable since the depth of interest for the ice core sampling is 10~cm (see \autoref{sec:IceCoreDrill}).
 
-Additionally, high frequencies lead to compact antenna design which is beneficial to the INSPIRE mission due to weight constraints. 
+Additionally, high frequencies lead to a compact antenna design which is beneficial to the INSPIRE mission due to weight constraints. 
 A custom patch antenna with the properties in \autoref{tab:GPR-A-Prp} is proposed \cite{patch_ant_GPR, Patch_Ant_design}.
 
 \begin{table}[h]
@@ -27,12 +27,11 @@ Substrate ${\varepsilon}_\text{r}$ & Width & Length & Height & Mass   \\
 \end{table}
 
 \section{Ice Core Drill} \label{sec:IceCoreDrill}
-The ice core drill is an in-house development based on drills from Honeybee Robotics \cite{Honeybee1} \cite{Honeybee2} and the drill from Philae \cite{PhilaeDrill}. The drill bit is made out of titanium to ensure that it does not deform or even breakthrough during the drilling process.
+The Ice Core Drill is an in-house development based on drills from Honeybee Robotics \cite{Honeybee1, Honeybee2} and the drill from Philae \cite{PhilaeDrill}. The drill bit is made out of titanium to ensure that it does not deform or even breakthrough during the drilling process.
 The ice core sample that can be obtained has a length of 100~mm and a diameter of 10~mm.
 In order to save space, the drill is retracted while driving and will be extended for drilling, which is illustrated in the following \autoref{fig:DrillBay}.
-When the drilling process is finished, it is folded in again, and the trap doors are closed.
-Now the sample can be pushed out with the help of a piston, and meanwhile, it can be analysed by the APXS sensor. 
-When the sample has left the drill body, and the analysis is completed, the rover can switch back to Locomotion mode and look for a new place to drill. As soon as a new drilling process starts, the previously taken sample falls to the ground to make room for a new one.
+After finishing the drill process, the drill retracts and the sample can be pushed out with the help of a piston, and meanwhile, it can be analysed by the APXS sensor.
+When the sample has left the drill body, and the analysis is completed, the rover can switch back to locomotion mode and look for a new place to drill. As soon as a new drilling process starts, the previously taken sample falls to the ground to make room for a new one.
 
 \begin{figure}[htb]
      \centering
@@ -53,7 +52,7 @@ When the sample has left the drill body, and the analysis is completed, the rove
 \end{figure}
 
 \section{APXS Analyser}
-The Alpha Particle X-Ray Spectrometer is an analyser that has been used in many explorer missions like the Philae lander or the Mars rover Curiosity, \cite{ref_pay_1} \cite{ref_pay_2}.
+The Alpha Particle X-Ray Spectrometer is an analyser that has been used in many explorer missions like the Philae lander or the Mars rover Curiosity \cite{ref_pay_1, ref_pay_2}.
 The spectrometer uses alpha particles as well as X-rays to identify the sort of atom inside a probe.
 The main advantage is the small mass and the  low power it needs during the operation.
 As a result of the relatively thin ice core samples, one-third of APXS sources and detectors will used.
