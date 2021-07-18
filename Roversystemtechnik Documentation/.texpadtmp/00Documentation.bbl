@@ -103,6 +103,35 @@
     \endverb
   \endentry
 
+  \entry{CRUX_GPR}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SSKAFHCTUEHWNSAASRC}{%
+         family={Soon Sam\bibnamedelima Kim},
+         familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+         suffix={Steven R.\bibnamedelima Carnes},
+         suffixi={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+         given={Albert F. Haldemann Christopher T. Ulmer Eddie Ho Wah Ng Steven
+  A.\bibnamedelima Arcone},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
+  H\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  T\bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim
+  E\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  W\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim
+  S\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSKSRCAFHCTUEHWNSAA1}
+    \strng{fullhash}{SSKSRCAFHCTUEHWNSAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1\bibrangedash 2}
+    \field{title}{Miniature Ground Penetrating Radar, CRUX GPR}
+    \field{journaltitle}{IEEEAC}
+    \field{year}{2005}
+  \endentry
+
   \entry{ref_pay_1}{article}{}
     \name{author}{7}{}{%
       {{hash=GJ}{%
