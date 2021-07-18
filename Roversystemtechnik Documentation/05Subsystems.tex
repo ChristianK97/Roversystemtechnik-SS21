@@ -402,7 +402,7 @@ To achieve the scientific output from \autoref{chap:sc-output} the transmission 
 \subsection{Communication System}
 Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 25 dB high gain antenna \cite{Lander_HGA} and a low gain antenna which is not further specified in literature.\\
 
-The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59~\text{dB}$, resulting in a Bit Error Rate of less than $10^{-4}$. The link budget has been performed under the conservative considerations listed in \autoref{tab:lb-param}.\\
+The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59~\text{dB}$, resulting in a Bit Error Rate of less than $10^{-4}$ \autoref{fig:BitErrorRate}. The link budget has been performed under the conservative considerations listed in \autoref{tab:lb-param}.\\
 
 Using the Landers LGA greatly increases robustness due to the elimination of pointing errors and higher margin for rover positioning error. Additionally, the INSPIRE rover’s communication link would not interfere with the Landers communication to the relay carrier by blocking the HGA.
 
@@ -415,7 +415,7 @@ The selected components are listed in \autoref{tab:ComCompComp}.
 
 \begin{table}[h]
 \centering
-\caption{Key criteria of selected communication components}
+\caption{Key criteria of selected communication components \autoref{app:DigitalAppendix}.}
 \begin{tabular}{lll|ll|ll}
 \toprule
 Component   & Supplier  & Part Description     & 1. Criteria   & Value    & 2. Criteria & Value          \\
@@ -429,9 +429,9 @@ Antenna     & Endurosat & patch antenna & mass          & 2,2 g    & frequency  
 \end{table}
 
 Expected transmission times per mission day are less than 40 minutes (see \autoref{app:MissionDataOutput}, \autoref{tab:Tx-tptal}). Therefore the transmitter mass is identified as more critical than power. \\
-On the other hand receiver duty cycles are 100 \% as can be found in \cite{tab:powerbudgetcomplete}. Thus power has been identified as the most crucial criteria. \\
+On the other hand receiver duty cycles are 100 \% as can be found in \autoref{tab:powerbudgetcomplete}. Thus power has been identified as the most crucial criteria. \\
 A passive X-Band antenna was selected due to compact dimensions and zero power consumption.  \\
-The entire trade off can be found in the digital appendix.
+The entire trade off can be found in \autoref{app:DigitalAppendix}.
 
  \subsection{Command \& Data Handling} \label{C&DH}
  
@@ -441,7 +441,7 @@ Criteria of less importance are CPU speed and dimensions. \\
 
 Instead of designing a new OBC board a trade-off was performed among existing single board computers. SBCs provide peripheral services such as bus interfaces, timer and memory in a flight proven configuration, which promises an effective mission development. \\
 
-BAE Systems provides a SBC with their flight proven Power PC750 Architecture which withstands a total radiation dose of up to $1~\text{Mrad}$. The robustness comes at the cost of a $182~\text{MHz}$ processor speed (DATASHEET REFEreNCE). \\
+BAE Systems provides a SBC with their flight proven Power PC750 Architecture which withstands a total radiation dose of up to $1~\text{Mrad}$. The robustness comes at the cost of a $182~\text{MHz}$ processor speed (datasheet in \autoref{app:DigitalAppendix}). \\
 
 Additionally a custom housekeeping board will be tasked with providing engine control peripherals and sensor read out electronics. 
 
@@ -609,11 +609,11 @@ Detailed calculations for local shielding and water improvements can be found in
 
 \label{subsec:RadiationConclusion}
 
-In order to protect the rover against the high radiation levels at the surface of Europa, the rover has different compartments. High sensible components are placed within a radiation vault which has a mass optimised structure. Components which has to be outside the radiation vault but are highly sensible are shielded individually. Low sensible Components are protected by the Aluminium structure. \autoref{fig:RadiationOverview} illustrates the different compartments within the rover and the accorded TIDs.
+In order to protect the rover against the high radiation levels at the surface of Europa, the rover has different compartments. High sensible components are placed within a radiation vault which has a mass optimised structure. Components which has to be outside the radiation vault but are highly sensible are shielded individually. Low sensible Components are protected by the Aluminium structure. \autoref{fig:RadiationOverview} illustrates the different compartments within the rover and the accorded TIDs. \\
 
 \begin{figure}[htb]
      \centering
-     \includegraphics[width=\textwidth]{Media/INSPIRE_Radiation}
+     \includegraphics[width=0.75\textwidth]{Media/INSPIRE_Radiation}
      \caption{Overview of TIDs within different compartments within the rover.}
      \label{fig:RadiationOverview}
 \end{figure}
