@@ -245,6 +245,179 @@
     \field{year}{2021}
   \endentry
 
+  \entry{Europa_g}{online}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{JPL Solar System Dynamics}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J3}
+    \strng{fullhash}{J3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Europa By The Numbers}
+    \verb{url}
+    \verb https://solarsystem.nasa.gov/moons/jupiter-moons/europa/by-the-number
+    \verb s/
+    \endverb
+    \field{urlday}{13}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Europa_geysers}{online}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Svetlana Shekhtman, NASA}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S4}
+    \strng{fullhash}{S4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{NASA Scientists Confirm Water Vapor on Europa}
+    \verb{url}
+    \verb https://www.nasa.gov/feature/goddard/2019/nasa-scientists-confirm-wat
+    \verb er-vapor-on-europa
+    \endverb
+    \field{urlday}{11}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Parameters}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EA}{%
+         family={Ellery},
+         familyi={E\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Mobile robotics, Planetary exploration, Mars rover, Bekker theory,
+  Mobility analysis, Robot–environment interaction}
+    \strng{namehash}{EA1}
+    \strng{fullhash}{EA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Planetary exploration through the deployment of robotic rovers on planetary
+  surfaces such as mars imposes unique constraints on mobile robotics. In
+  particular, I examine the issue of mobility across a hostile planetary
+  surface as an oft-neglected aspect of robotic autonomy. I compare the
+  traction performance of a wheeled concept (the rocker–bogie springless
+  system adopted on Sojourner), a tracked vehicle concept and a novel concept
+  called the elastic loop mobility system (ELMS). I highlight some limitations
+  of the Bekker theory analysis used here in the determination of mobility
+  characteristics of any vehicle locomotion system.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.robot.2004.08.007
+    \endverb
+    \field{issn}{0921-8890}
+    \field{note}{Mobile Robotics in the United Kingdom}
+    \field{number}{1}
+    \field{pages}{29\bibrangedash 39}
+    \field{title}{Environment–robot interaction—the basis for mobility in
+  planetary micro-rovers}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0921889004002015
+    \endverb
+    \field{volume}{51}
+    \field{journaltitle}{Robotics and Autonomous Systems}
+    \field{year}{2005}
+  \endentry
+
+  \entry{rollingCoefficient}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HA}{%
+         family={Hoffman},
+         familyi={H\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SLH}{%
+         family={Steen-Larsen},
+         familyi={S\bibinithyphendelim L\bibinitperiod},
+         given={Hans},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Christianson},
+         familyi={C\bibinitperiod},
+         given={Knut},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hvidberg},
+         familyi={H\bibinitperiod},
+         given={Christine},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HASLHCKHC1}
+    \strng{fullhash}{HASLHCKHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.5194/gi-8-149-2019
+    \endverb
+    \field{pages}{149\bibrangedash 159}
+    \field{title}{A low-cost autonomous rover for polar science}
+    \field{volume}{8}
+    \field{journaltitle}{Geoscientific Instrumentation, Methods and Data
+  Systems}
+    \field{month}{06}
+    \field{year}{2019}
+  \endentry
+
+  \entry{MMP}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{M. Saarilahti, University of Helsinki}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{SOIL INTERACTION MODEL}
+    \verb{url}
+    \verb https://helda.helsinki.fi/bitstream/handle/1975/8020/ECO031.pdf?seque
+    \verb nce=3&isAllowed=y
+    \endverb
+    \field{urlday}{13}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Bekker}{book}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{J.Y. Wong}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {John Wiley}%
+      {Sons}%
+    }
+    \strng{namehash}{J4}
+    \strng{fullhash}{J4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{0-471-35461-9}
+    \field{subtitle}{Third Edition}
+    \field{title}{Theory of Ground Vehicles}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{2001}
+  \endentry
+
   \entry{R.Abelsonetal..2004}{misc}{}
     \name{author}{1}{}{%
       {{hash=R}{%
