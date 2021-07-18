@@ -6,7 +6,7 @@ In this chapter, the individual subsystems of the rover system will be discussed
 \section{Structure and Mechanisms}
 \label{sec:mechanics}
 
-...
+
 
 \subsection{Storage Configuration and Rover Deployment}
 
@@ -34,10 +34,28 @@ As part of the design process, it was necessary to perform a static analysis of 
 The analysis was created with the computer aided design software "Autodesk Inventor". 
 The results of this analysis are shown in the following figures XXX and XXX.
 
+\begin{figure}[htb]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/INSPIRE_Locomotion}
+         \label{fig:StoreConfig}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/INSPIRE_Radiation}
+         \label{fig:ExplConfig}
+     \end{subfigure}
+     \hfill
+     \caption{Results of the Static Analysis in Inventor. From left to right: Storage Configuration, Exploration Configuration }
+     \label{fig:StaticAnalysis}
+\end{figure}
+
 \subsection{Mass Budget}
 
 A really important part of each space system is the mass budget. Due to the strict mass restriction, it was quite difficult to find a suitable concept that is both light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5~kg was chosen which could also be adhered to. The following table lists the masses of the individual components of the structure and mechanisms system. 
-A table with all components of the INSPIRE Rover system is stored in Appendix A under Mass Budget.
+A table with all components of the INSPIRE Rover system is stored in Appendix B under Mass Budget.
 
 %-------------------------------------------------------------------------------
 \section{Locomotion} \label{sec:locomotion}
@@ -191,6 +209,14 @@ For the Rover, configuration 6 is chosen as it offers the lowest resistance to e
 \label{sec:Steering}
 
 Since the rover has an all-wheel actuation, it can be operated with on-point steering and, in order to avoid greater obstacles, with Ackerman steering. Considering that with Ackerman steering, the radius of the outer wheels is at a greater distance in the circumventing circle than that of the inner wheels, the angles of the wheel positions, which are important for the control of the rover, can be found in \autoref{tab:Ackerman}.
+
+\begin{figure}[htb]
+{\centering
+\includegraphics[width=0.7\textwidth]{Media/INSPIRE_Locomotion}
+\caption{Ackerman Steering Ilustration}
+\label{fig:Ackerman}
+}
+\end{figure}
 
 
 \subsubsection*{Hardware Selection}
