@@ -245,6 +245,20 @@
     \field{year}{2021}
   \endentry
 
+  \entry{Europa}{article}{}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.heliyon.2019.e01908
+    \endverb
+    \field{issn}{2405-8440}
+    \field{number}{6}
+    \field{pages}{e01908}
+    \field{title}{The surface temperature of Europa}
+    \field{volume}{5}
+    \field{journaltitle}{Heliyon}
+    \field{year}{2019}
+  \endentry
+
   \entry{Europa_g}{online}{}
     \name{author}{1}{}{%
       {{hash=J}{%
@@ -397,12 +411,13 @@
   \entry{Bekker}{book}{}
     \name{author}{1}{}{%
       {{hash=J}{%
-         family={{J.Y. Wong,}},
+         family={{J.Y. Wong}},
          familyi={J\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {John Wiley & Sons}%
+    \list{publisher}{2}{%
+      {John Wiley}%
+      {Sons}%
     }
     \strng{namehash}{J4}
     \strng{fullhash}{J4}
@@ -705,20 +720,6 @@
     \field{year}{2013}
   \endentry
 
-  \entry{Europa}{article}{}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.heliyon.2019.e01908
-    \endverb
-    \field{issn}{2405-8440}
-    \field{number}{6}
-    \field{pages}{e01908}
-    \field{title}{The surface temperature of Europa}
-    \field{volume}{5}
-    \field{journaltitle}{Heliyon}
-    \field{year}{2019}
-  \endentry
-
   \entry{ref_tcs_01}{misc}{}
     \name{author}{1}{}{%
       {{hash=T}{%
@@ -941,6 +942,27 @@
     \field{labeltitlesource}{title}
     \field{title}{{Exercise 5 - Satellite Operations using the example of the
   small satellite Flying Laptop}}
+    \list{institution}{1}{%
+      {{IRS at University of Stuttgart}}%
+    }
+    \field{year}{2020}
+  \endentry
+
+  \entry{FLP}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SPJB}{%
+         family={Susann\bibnamedelima Paetschke},
+         familyi={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={Jonas\bibnamedelima Burgdorf},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPJB1}
+    \strng{fullhash}{SPJB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Lecture Series - Satellite Operations using the example of
+  the small satellite Flying Laptop}}
     \list{institution}{1}{%
       {{IRS at University of Stuttgart}}%
     }
