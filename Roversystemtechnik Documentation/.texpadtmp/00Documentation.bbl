@@ -152,6 +152,69 @@
     \endverb
   \endentry
 
+  \entry{Honeybee1}{online}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{Honeybee Robotics}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{H1}
+    \strng{fullhash}{H1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Volatiles Extractor}
+    \verb{url}
+    \verb https://www.honeybeerobotics.com/products/volatiles-extractor/#156226
+    \verb 7018150-cf7c081e-3ad7405c-e09c
+    \endverb
+    \field{urlday}{12}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Honeybee2}{online}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{Honeybee Robotics}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{H1}
+    \strng{fullhash}{H1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Drills}
+    \verb{url}
+    \verb https://www.honeybeerobotics.com/products/drills/#1562267018150-cf7c0
+    \verb 81e-3ad71913-bc36
+    \endverb
+    \field{urlday}{12}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{PhilaeDrill}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{DLR}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D2}
+    \strng{fullhash}{D2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Philae Lander Fact Sheet}
+    \verb{url}
+    \verb https://www.dlr.de/dlr/Portaldata/1/Resources/documents/Philae_Lander
+    \verb _FactSheets.pdf
+    \endverb
+    \field{urlday}{14}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
   \entry{ref_pay_1}{article}{}
     \name{author}{7}{}{%
       {{hash=GJ}{%
@@ -257,6 +320,24 @@
     \field{volume}{5}
     \field{journaltitle}{Heliyon}
     \field{year}{2019}
+  \endentry
+
+  \entry{ref_tcs_12}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Aluminium Giesserei Hannover GmbH}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Produktdatenblatt AA7075}}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/7075_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
   \endentry
 
   \entry{Europa_g}{online}{}
@@ -1036,24 +1117,6 @@
     \field{title}{Produktdatenblatt AA6082}
     \verb{url}
     \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/6082_Produkt
-    \verb datenblatt_A4.pdf
-    \endverb
-  \endentry
-
-  \entry{ref_tcs_12}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=A}{%
-         family={{Aluminium Giesserei Hannover GmbH}},
-         familyi={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{A1}
-    \strng{fullhash}{A1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Produktdatenblatt AA7075}}
-    \verb{url}
-    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/7075_Produkt
     \verb datenblatt_A4.pdf
     \endverb
   \endentry
