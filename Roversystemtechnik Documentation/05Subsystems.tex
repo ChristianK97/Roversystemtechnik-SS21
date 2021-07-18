@@ -7,12 +7,12 @@ In this chapter, the individual subsystems of the rover system will be discussed
 \label{sec:mechanics}
 
 The Structure and Mechanisms subsystem mainly deals with the accommodation of the payloads and all necessary components for the operation of the rover system. This also includes the mechanisms that are necessary for the rover system to ensure its functionality. 
-In the design process, the material aluminum 7075 \cite{ref_tcs_12} was used because it saves weight in relation to the size of the rover and the complexity in relation to other materials.
+In the design process, the material aluminum 7075 \cite{ref_tcs_12} is used because it saves weight in relation to the size of the rover and the complexity in relation to other materials.
 
 \begin{figure}[htb]
      \centering
      \includegraphics[width=0.8\textwidth]{Media/INSPIRE_blackwhite.pdf}
-     \caption{Geometrical Data of Storage Configuration inside the lander}
+     \caption{Geometrical Data of Storage Configuration inside the lander.}
      \label{fig:Geometry}
 \end{figure}
 
@@ -20,27 +20,26 @@ In the design process, the material aluminum 7075 \cite{ref_tcs_12} was used bec
 
 \subsection{Storage Configuration and Rover Deployment}
 
-The Main Characteristics of the Rover Chassis design of INSPIRE focuses on compact storage geometry and low mass.  
+The main characteristics of the rover chassis design of INSPIRE focuses on compact storage geometry and low mass.  
 The geometry data in storage configuration is shown in figure \autoref{fig:Geometry}.
 The storage volume that is required is 131~l.
-For the Rover Deployment there had been a lot of possible concepts, for example a sky crane, a robotic arm or a ramp. Depending of the reason that there are no further informations about the TRIPLE Lander and that the complexity of such a deployment system should be as simple as possible, the decision felt on a ramp where INSPIRE will drive slowly downwards the surface of Europa.
-The following is a brief explanation of the Rover deployment.
+For the rover deployment, option 1 and option 2 described in \autoref{chap:rovsubmod} are most suitable, but a ramp is more likely and involves a more complex design. Consequently, for this conservative feasibility study option 2 is used and the mechanism is briefly described in the following.
  
-The rover is stowed in the lander as in \autoref{fig:EndStorageConfig} and must first place its wheels parallel to the chassis. Then the bogies are rotated by at least 15 degrees so that the Chassi lifts slightly from the lander. As soon as this has happened, a mechanism is triggered which unfolds the ramp. Now INSPIRE can carefully roll out of the lander until it finally reaches the surface of Europa.
+The rover is stowed in the lander as in \autoref{fig:EndStorageConfig} and must first place its wheels parallel to the chassis. Then the bogies are rotated by at least 15 degrees so that the Chassis lifts slightly from the lander. As soon as this has happened, a mechanism is triggered which unfolds the ramp. Now INSPIRE can carefully roll out of the lander until it finally reaches the surface of Europa.
 
 
 
 \subsection{Exploration Configuration}
 
-When the deployment is successfully done, INSPIRE has to switch from storage - to exploration configuration.
-This will be possible with a cogwheel mechanism which will be operated by two Motors. When the wheel forks are horizontal to the ground, the rover is ready for its journey.
+When the deployment is successfully, INSPIRE has to switch from storage to exploration configuration.
+This will be possible with a cogwheel mechanism which will be operated by two motors. When the wheel forks are horizontal to the ground, the rover is ready for its journey.
 In order to maintain the rover stability while driving on rough terrain an averaging differential mechanism is needed.
 This will be achieved by a planetary gear with a transmission ration of 1:1.
 One bogie then will execute a counter movement du to the tilt of the other bogie. (\autoref{fig:EndExplorationConfig})
 
 \subsection{Static Analysis}
 
-Part of the design process was to examine the stability behavior of the rover when climbing mountains or on slopes. In order to determine the maximum possible gradients, an adjustable gradient was simulated using the CAD model, on which the rover system was then placed. The results of this investigation can be seen in Figure \autoref{fig:StaticAnal}. As can be seen in the pictures, significantly higher angles are possible if the center of gravity of the rover is offset by the expansion mechanism. 
+Part of the design process was to examine the stability of the rover. In order to determine the maximum possible gradients, an adjustable gradient was simulated using the CAD model, on which the rover system was then placed. The results of this investigation can be seen in \autoref{fig:StaticAnal}. As shown, significantly higher angles are possible if the center of gravity of the rover is offset by the expansion mechanism. 
 Due to the symmetrical design and the central position of the center of gravity, investigations were only carried out for one half of the chassis. The maximum possible angles are therefore assumed to be identical on both sides. 
 
 \begin{figure}[htb]
@@ -68,14 +67,13 @@ Due to the symmetrical design and the central position of the center of gravity,
          \includegraphics[width=\textwidth]{Media/Static3.pdf}
          \label{fig:stat3}
      \end{subfigure}
-     \caption{Results of the investigation into the tilting behavior of the INSPIRE Rover System}
+     \caption{Results of the investigation into the tilting behaviour of the INSPIRE Rover System.}
      \label{fig:StaticAnal}
 \end{figure}
 \clearpage
 \subsection{Mass Budget}
 
-A really important part of each space system is the mass budget. Due to the strict mass restriction, it was quite difficult to find a suitable concept that is both light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5~kg was chosen which could also be adhered to. The following table lists the masses of the individual components of the structure and mechanisms system. 
-A table with all components of the INSPIRE Rover system is shown in \autoref{tab:totalMass}.
+Due to the strict mass restriction, it is quite difficult to find a suitable concept that is both, light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5~kg was chosen. A table with all components of the INSPIRE Rover system is shown in \autoref{tab:totalMass}.
 
 %-------------------------------------------------------------------------------
 \section{Locomotion} \label{sec:locomotion}
@@ -108,7 +106,7 @@ The fundamental rover design can be described by the wheel formula 4x4x4, based 
 }
 \end{table}
 
-Furthermore, the normal force on Europa can be calculated to \( W \:  = \:	m_\text{total} \cdot g_\text{Europa} \:  = \: 39.45 ~ \text{N} \) \cite{Europa_g}. Since each wheel is individually driven and controllable, the parameters in the following are designed for one wheel; the normal force per wheel is correspondingly \(W_\text{w} = 9.8625 ~ \text{N}\).
+Furthermore, the normal force on Europa can be calculated to \( W \:  = \:	m_\text{total} \cdot g_\text{Europa} \:  = \: 39.45 ~ \text{N} \)~\cite{Europa_g}. Since each wheel is individually driven and controllable, the parameters in the following are designed for one wheel; the normal force per wheel is correspondingly \(W_\text{w} = 9.8625 ~ \text{N}\).
 
 \subsection{System Parameters}
 \label{sec:SystemParametersLoco}
@@ -164,7 +162,7 @@ As shown in \autoref{fig:Sinkage}, the sinking depth \(z\) depends not only on t
          \includegraphics[width=\textwidth]{Media/Sinkage for each config in snow (Sweden).pdf}
          \caption{Snow (Sweden)}
      \end{subfigure}
-     \caption{Wheel sinkage \(z\) as a function of the slope angle \(\theta\) of each configuration with different soil parameters, referred to \autoref{tab:SoilParam}.}
+     \caption{Wheel sinkage \(z\) as a function of the slope angle \(\theta\) of each configuration with different soil parameters, referred to \autoref{tab:SoilParam}. More information about the calculation can be found in \autoref{app:DigitalAppendix}.}
      \label{fig:Sinkage}
 \end{figure}
 
@@ -186,7 +184,7 @@ In addition to the resistance that needs to be exceeded in order to move, a maxi
 	H \:  = \: A \cdot c + W_\text{w} \cdot \tan \Phi , 
 	\label{eq:}
 \end{equation}
- with the wheel ground contact area \(A = \frac{\pi}{4} \cdot b_\text{w} \cdot l_\text{w}\) and the ground contact length \(l_\text{w}=\frac{d_\text{w}}{2}\cos^{-1}\left(1 - \left( \frac{2z}{d_\text{w}} \right) \right)\). As a result, the absolute upper limit of traction is presented in \autoref{fig:HClay} for heavy clay and \autoref{fig:HSnow} for snow. 
+ with the wheel ground contact area \(A = \frac{\pi}{4} \cdot b_\text{w} \cdot l_\text{w}\) and the ground contact length \(l_\text{w}=\frac{d_\text{w}}{2}\cos^{-1}\left(1 - \left( \frac{2z}{d_\text{w}} \right) \right)\). As a result, the upper limit of traction is presented in \autoref{fig:HClay} for heavy clay and \autoref{fig:HSnow} for snow. 
  
 
 \begin{figure}[htb]
@@ -218,11 +216,11 @@ In addition to the resistance that needs to be exceeded in order to move, a maxi
          \caption{\(R_\text{total}\) for Snow (Sweden)}
          \label{fig:RSnow}
      \end{subfigure}
-     \caption{Comparison of the rover's soil thrust versus the motion resistance to exceed, each for the soil parameters of snow in Sweden and heavy clay, referenced to \autoref{tab:SoilParam}.}
+     \caption{Comparison of the rover's soil thrust versus the motion resistance to exceed, each for the soil parameters of snow in Sweden and heavy clay, referenced to \autoref{tab:SoilParam}. Additional information about the calculation can be found in \autoref{app:DigitalAppendix}.}
      \label{fig:SoilThrust_MotionResistance}
 \end{figure}
 
-In addition to the determined parameters, it should also be verified that the mean maximum pressure \(MMP\) does not increase excessively due to the selected geometric parameters \cite{MMP}. For this conservative calculation, a rigid wheel is assumed, whereby for the deflection \(\delta\) applies, that \( 0 \leq \delta \leq 0.1 d\) \cite{Parameters}. For terrestrial snow, 40~kPa should not be exceeded, but ideally the \(MMP\) should be less than 10~kPa \cite{Bekker}. The associated verification calculation can be found in \appref{app:MMP}. \\ 
+In addition to the determined parameters, it should also be verified that the mean maximum pressure (\(MMP\)) does not increase excessively due to the selected geometric parameters \cite{MMP}. For this conservative calculation, a rigid wheel is assumed, whereby for the deflection \(\delta\) applies, that \( 0 \leq \delta \leq 0.1 d\) \cite{Parameters}. For terrestrial snow, 40~kPa should not be exceeded, but ideally the \(MMP\) should be less than 10~kPa \cite{Bekker}. The associated verification calculation can be found in \appref{app:MMP}. \\ 
 For the rover design, "Configuration 6" is chosen as it offers the lowest resistance to exceed whilst maintaining the lowest \(MMP\). The \(MMP_\text{Config6}\) is less than 40~kPa for \(\delta \geq 5\cdot 10^{-4}\), so the deflection of the wheels for the rover can be obtained to \(5\cdot 10^{-4} \leq \delta \leq 0.01\)~m. Additional information of the \(MMP_\text{Config6}\) can be found in \autoref{app:DigitalAppendix}. It should be noted, that the rover has additional grousers. These are enhancing the traction, whereby the maximum reachable soil thrust \(H\) can be increased. However, the grousers are not taken into account in this study, as this is a conservative estimation, and the grousers can be seen as a further design improvement. 
 
 \subsubsection*{Steering}
@@ -237,7 +235,7 @@ Since the rover has an all-wheel actuation, it can be operated with on-point ste
 For the wheel driving system, BLDC motors were chosen. In contrast to stepper motors, these are optimised for a uniform torque and not for precise motion control. The resulting power of each wheel can be calculated with respect to the required torque \(\tau\) and the estimated velocity \(v\):
 
 \begin{equation}
-	P \:  = \:	\underbrace{\tau}_{= \:	R_\text{total} \left(\frac{d_\text{w}}{2} - \delta \right)} \left(\frac{2v}{d_\text{w}} \right).
+	P \:  = \:	\underbrace{\tau}_{R_\text{total} \left(\frac{d_\text{w}}{2} - \delta \right)} \left(\frac{2v}{d_\text{w}} \right).
 	\label{eq:power}
 \end{equation}
 
@@ -253,7 +251,7 @@ The deployment mechanism enables the rover to be stored in the lander in a space
 \section{Electrical Power System}
 %-------------------------------------------------------------------------------
 \label{sec:EPS}
-The EPS (Electrical Power System) is the subsystem responsible for the electrical power supply of INSPIRE. It consists of four funadmental parts, which are the energy source, the PCDU unit (Power Control and Distribution) and the Energy Storage as well as the rover subsystems as the consumers. The EPS is visualized in \autoref{fig:epsflowchart}.
+The EPS (Electrical Power System) is the subsystem responsible for the electrical power supply of INSPIRE. It consists of four fundamental parts, which are the energy source, the PCDU unit (Power Control and Distribution) and the Energy Storage as well as the rover subsystems as the consumers. The EPS is visualised in \autoref{fig:epsflowchart}.
 
 \begin{figure}[htb]
 {\centering
@@ -265,7 +263,7 @@ The EPS (Electrical Power System) is the subsystem responsible for the electrica
 
 
 \subsection{EPS Budget and Overview}
-\autoref{fig:epspowersummary} summarizes the power budget of INSPIRE based on the rover system modes defined in \autoref{chap:rovsubmod}. The holistic power budget can be found in \autoref{tab:powerbudgetcomplete}.
+\autoref{fig:epspowersummary} summarises the power budget of INSPIRE based on the rover system modes defined in \autoref{chap:rovsubmod}. The holistic power budget can be found in \autoref{tab:powerbudgetcomplete}. \\ \\
 As can be seen, the Locomotion mode has the highest demands on the EPS. The two payload modes also have a high power demand. The Communication mode also has a high consumption. However, since this is primarily used at night and the rover can be charged again afterwards without any problems, it does not place any major restrictions on the power budget. Idle/Perception mode has a low consumption, but is usually used for a long time at a stretch and therefore also places high demands on the EPS. In Charging mode, the EPS is able to charge $8.82 \ W_\text{el} $.
 
 
@@ -297,9 +295,9 @@ As can be seen, the Locomotion mode has the highest demands on the EPS. The two 
 
 
 \subsection{Energy Source}
-For the energy generation of INSPIRE many possible sources were taken into consideration for a trade-off. As a conclusion of this trade-off the decision was made to utilise a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE.\\
-As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilised, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of $m_\text{RTG}=3~\text{kg}$ was defined and the eMMRTG was scaled down using the given data.\\
-In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a BOL specific power of $\alpha_\text{BOL}= 4.0 \ \frac{\text{W}_\text{el}}{\text{kg}}$ and provides an electrical power of $P_\text{el} = 12.08~\text{W}_\text{el}$ during the mission duration\cite{R.Abelsonetal..2004}\cite{S.Magdum.2019}\cite{Holgate.2015}\cite{eMMRTG.NASA}\cite{Lakdawalla.2018}.
+For the energy generation of INSPIRE many possible sources were taken into consideration for a trade-off. As a conclusion of this trade-off the decision was made to utilise a Radioisotope Thermoelectric Generator (RTG) as the main energy source for INSPIRE.\\ \\
+As the research couldn't find an RTG with a mass suitable for INSPIRE, the solution was to scale down a bigger RTG as an approximation. As a baseline of the scaling the eMMRTG (Enhanced Multi Mission Radioisotope Thermoelectric Generator) was utilised, which is currently under development at NASA and is especially designed for deep space missions like Europa. For the scaling a goal RTG mass of $m_\text{RTG}=3~\text{kg}$ was defined and the eMMRTG was scaled down using the given data.\\ \\
+In \autoref{tab:esmmrtg} the scaling results for the eSMMRTG (Enhanced and Scaled Multi Mission Radioisotope Thermoelectric Generator) are listed. The eSMMRTG has a BOL specific power of $\alpha_\text{BOL}= 4.0 \ \frac{\text{W}_\text{el}}{\text{kg}}$ and provides an electrical power of $P_\text{el} = 12.08~\text{W}_\text{el}$ during the mission duration \cite{R.Abelsonetal..2004, S.Magdum.2019, Holgate.2015, eMMRTG.NASA, Lakdawalla.2018}.
 
 
 
@@ -338,11 +336,11 @@ End of Mission Power $P_{\text{el},\text{EOM}}$ & $\ W_{el}$         & $13.42$  
 \label{tab:esmmrtg}
 \end{table}
 
-Furthermore INSPIRE will also be equipped with some radiation hardend solar arrays as already explained in \autoref{subsec:radhard}\cite{FraunhoferInstituteforSolarEnergySystemsISE.2021}. Since these solar cells are primarily used for technology testing, the mission must also be able to operate completely without this generated energy. For this reason, and because the expected energy generated by the solar cells is minimal, only the energy generated by the RTG is considered for the Phase 0 Study. However, it should be noted that these solar cells will also generate a certain amount of energy, which will benefitial for the EPS.
+Furthermore INSPIRE will also be equipped with some radiation hardend solar arrays as already explained in \autoref{subsec:radhard} \cite{FraunhoferInstituteforSolarEnergySystemsISE.2021}. Since these solar cells are primarily used for technology testing, the mission must also be able to operate completely without this generated energy. For this reason, and because the expected energy generated by the solar cells is minimal, only the energy generated by the RTG is considered for the Phase 0/A Study. However, it should be noted that these solar cells will also generate a certain amount of energy, which will beneficial for the EPS.
 
 
 \subsection{Energy Storage} 
-For the energy storage of INSPIRE many possible battery types were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilize LiIon batteries as the secondary batteries of INSPIRE. This decision is primarly based on LiIon batteries high energy density, temperature range, robust performance and long operating and cycle life in extreme environments\cite{IRSatUniversityofStuttgart.2020}\\
+For the energy storage of INSPIRE many possible battery types were taken into consideration for a trade-off. As a conclusion of this trad-off the decision was made to utilise LiIon batteries as the secondary batteries of INSPIRE. This decision is primarly based on LiIon batteries high energy density, temperature range, robust performance and long operating and cycle life in extreme environments\cite{IRSatUniversityofStuttgart.2020}\\
 As the RTG only generates a small constant power the main energy source during the mission will be the accumulated energy of the batteries. The rover will charge the batteries at night, so the next exploration day can start with full capacity. Furthermore the batteries have to be charged during day time to maintain operations.\\
 For the sizing of the batteries, the rover motion was chosen as the design driver, since this is the highest energy consuming state of the rover and additionally mission critical for INSPIRE. The rover motion consists of an interaction of the Locomotion and Perception mode as already mentioned in \autoref{chap:Operation}. Therefore it was defined that INSPIRE shall be able to drive $ 50$ m (including alternating Locomotion and Perception Mode) with a fully charged Battery. Furthermore the battery mass shall not exceed $2$ kg. The required battery capacity $C_\text{Batt,req}$ can be caculated using \autoref{eq:batreq}. The results are listed in \autoref{tab:batsize} \cite{S.Klinkner.2021}.
 
@@ -372,14 +370,14 @@ Required Battery Capacity per mode $C_\text{mode}$ & Wh & $21.97$              &
 \label{tab:batsize}
 \end{table}
 
-Using these values a suitable battery cell and battery design configuration were conducted. Under consideration of these parameters the battery capacity $C_\text{Batt}$ can be calcuated:
+Using these values a suitable battery cell and battery design configuration were conducted. Under consideration of these parameters the battery capacity $C_\text{Batt}$ can be calculated:
 
 \begin{equation}
 C_\text{Batt} = C_\text{cell} \cdot V_\text{cell} \cdot N \cdot M .
 \label{eq:batuse}
 \end{equation}
 
-According to the ECSS reliability restrictions 1 battery string must be substracted for dimensionsing. Furthermore a $30~\%$ margin on the energy content was applied. This leads to a final battery configuration with a capacity of $C_\text{Batt}=156.24$ Wh and a mass of $m_\text{Batt} = 1980$ g. The final battery values are listed in \autoref{tab:battery} \cite{SAFTBatteries.2018}.
+According to the ECSS reliability restrictions 1 battery string must be subtracted for dimensioning. Furthermore a $30~\%$ margin on the energy content was applied. This leads to a final battery configuration with a capacity of $C_\text{Batt}=156.24$ Wh and a mass of $m_\text{Batt} = 1980$ g. The final battery values are listed in \autoref{tab:battery} \cite{SAFTBatteries.2018}.
 
 
 \subsection{EPS Power Control and Distribution} 
@@ -390,13 +388,13 @@ The PCDU has the challenging task not only to process the RTG as the main energy
 \section{Communications and Command \& Data-Handling}
 \label{sec:comm}
 The Communications subsystem consists of redundant transmitters and receivers which are cross strapped to four antennas and the OBC. Additionally hard wired connections linking the communication system to the PCDU enable for reboots via direct commands (see \autoref{ssec:EPS_Control_Distr}).\\
-C\&DH is responsible for the generation of telemetry from the housekeeping boards and the execution of telecommands, as well as the storing and compressing of payload data. 
+C\&DH is responsible for the generation of telemetry from the housekeeping boards and the execution of tele commands, as well as the storing and compressing of payload data. 
 
 \subsection{Operational Concept}
 
 Due to power and time constraints, the rover will transmit only telemetry during the locomotion and payload campaigns. Payload data will be compressed, stored and forwarded to the Lander at the end of a mission day. \\ 
  
-To achieve the scientific output from \autoref{chap:sc-output} the transmission time per european day is calculated in \autoref{app:MissionDataOutput} (\autoref{tab:Tx-tptal}) and adds up to 38,23 minutes. 
+To achieve the scientific output from \autoref{chap:sc-output} the transmission time per Europa day is calculated in \autoref{app:MissionDataOutput} (\autoref{tab:Tx-tptal}) and adds up to 38,23 minutes. 
 	
 \subsection{Communication System}
 Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 25 dB high gain antenna \cite{Lander_HGA} and a low gain antenna which is not further specified in literature.\\
@@ -414,7 +412,7 @@ The selected components are listed in \autoref{tab:ComCompComp}.
 
 \begin{table}[h]
 \centering
-\caption{Key criteria of selected communication components (datasheets \autoref{app:DigitalAppendix}).}
+\caption{Key criteria of selected communication components (data-sheets \autoref{app:DigitalAppendix}).}
 \begin{tabular}{lll|ll|ll}
 \toprule
 Component   & Supplier  & Part Description     & 1. Criteria   & Value    & 2. Criteria & Value          \\
@@ -440,7 +438,7 @@ Criteria of less importance are CPU speed and dimensions. \\
 
 Instead of designing a new OBC board a trade-off was performed among existing single board computers. SBCs provide peripheral services such as bus interfaces, timer and memory in a flight proven configuration, which promises an effective mission development. \\
 
-BAE Systems provides a SBC with their flight proven Power PC750 Architecture which withstands a total radiation dose of up to $1~\text{Mrad}$. The robustness comes at the cost of a $182~\text{MHz}$ processor speed (datasheet in \autoref{app:DigitalAppendix}). \\
+BAE Systems provides a SBC with their flight proven Power PC750 Architecture which withstands a total radiation dose of up to $1~\text{Mrad}$. The robustness comes at the cost of a $182~\text{MHz}$ processor speed (data-sheet in \autoref{app:DigitalAppendix}). \\
 
 Additionally a custom housekeeping board will be tasked with providing engine control peripherals and sensor read out electronics. 
 
@@ -468,7 +466,7 @@ To consider heat loss as a result of surface contact and radiation, the thermal 
 The camera, exposed on a mast, will be heated by a seperate, lightweight Radioisotope Heater Unit (RHU), which has  been used during several NASA missions \cite{ref_tcs_02}.
 For the insulation, the material \textit{Aerogel} will be applied, which has a very low heat conductivity \cite{ref_tcs_03}.
 
-To avoid the risk of overheating, concerning the ebay, camera and drive engine, passive bi-metallic heat switches  will be  placed between the application and the connection interface (see \autoref{fig:tcs_switch01}).
+To avoid the risk of overheating, concerning the E-bay, camera and drive engine, passive bi-metallic heat switches  will be  placed between the application and the connection interface (see \autoref{fig:tcs_switch01}).
 These switches change their heat conductivity beyond a certain temperature due to the expansion of the disk (see \autoref{fig:tcs_switch21}).
 It was assumed that the toggle temperature can be adapted by modifying the disk height.
 The influence of the changed disk stiffness on the contact pressure and therefore the heat conductivity was neglected for this study.
@@ -517,7 +515,7 @@ Following simplifications and assumptions for the analysis were made.
 \begin{itemize}
 	\item The convection was neglected due to the thin atmosphere.
 	\item The whole electrical power of the components will be dissipated into heat.
-	\item A variation of $\pm 20\%$ for the emissivity and absorptivity values was considered, if applicable (seet \autoref{tab:tcs_surface}). The dissipation power of the LED ist 1.2 Watt.
+	\item A variation of $\pm 20\%$ for the emissivity and absorptivity values was considered, if applicable (see \autoref{tab:tcs_surface}). The dissipation power of the LED ist 1.2 Watt.
 	\item The heat as a result of retardation radiation inside the shielding was neglected.
 	\item No discrete nodes for the radar, hazcams, APXS and deployment engines were considered. Their heat will be led into the chassis.
 	\item The mechanism engines weren't considered.
@@ -537,9 +535,11 @@ The resulting temperatures for each node over all loadcases  are listed in \auto
 All temperatures lay between their limits without using a heater.
 The margins for uncertainties, acceptance tests and qualification tests were considered with 5 K each, $\pm$15 K in total \cite{ref_tcs_05}.
 The corresponding temperatures are listed in \autoref{tab:tcs_temp2}.
-Due to the margin, the electric ebay exceeds the temperature limits of the transmitter.
+Due to the margin, the electric E-bay exceeds the temperature limits of the transmitter.
 The issue can be solved by optimising the heat paths and adding further insulation during a detailed ebay design process.
 Yet another result can be found in \autoref{tab:tcs_nodes1} to \autoref{tab:tcs_nodes5}, \autoref{tab:tcs_toggle} and  \autoref{tab:tcs_lynx}.
+
+\clearpage
 
 %-------------------------------------------------------------------------------
 \section{Radiation} \label{sec:Radiation}
@@ -594,7 +594,7 @@ Due to the mass savings of the optimised structure it will be used where the rad
 
 \label{subsec:RadiationComponents}
 
-Every component on the rover has a different radiation tolerance and therefore have to be placed at different compartments within the rover. The radiation tolerances are listed in \autoref{tab:RadiationList}. None sensitive components like the electric motors and harness are only shielded by an aluminium structure where components like the metal within the wire are resistant against the radiation. However, isolators around the cables have to be selected to be resistant in order to prevent short circuits. Highly sensitive components like cameras have an additional protective layer in order to reduce the TID to under 30~krad. Components which are within the rover like the on-board computer (OBC) are placed within the radiation vault which reduces the TID to under 20~krad. For this purpose the optimised shield structure with a weight target of 0.5~\(\text{g/cm}^2\) is used. Detailed TIDs for all compartments are shown in \autoref{fig:CompartmentTID} and for all components in \autoref{tab:RadiationList}.
+Every component on the rover has a different radiation tolerance and therefore have to be placed at different compartments within the rover. The radiation tolerances are listed in \autoref{tab:RadiationList}. None sensitive components like the electric motors and harness are only shielded by an aluminium structure as the metal within the wire are resistant against the radiation. However, isolators around the cables have to be selected to be resistant in order to prevent short circuits. Highly sensitive components like cameras have an additional protective layer in order to reduce the TID to under 30~krad. Components which are within the rover like the on-board computer (OBC) are placed within the radiation vault which reduces the TID to under 20~krad. For this purpose the optimised shield structure with a weight target of 0.5~\(\text{g/cm}^2\) is used. Detailed TIDs for all compartments are shown in \autoref{fig:CompartmentTID} and for all components in \autoref{tab:RadiationList}.
 
 \subsection{Improvements}
 
@@ -608,7 +608,7 @@ Detailed calculations for local shielding and water improvements can be found in
 
 \label{subsec:RadiationConclusion}
 
-In order to protect the rover against the high radiation levels at the surface of Europa, the rover has different compartments. High sensible components are placed within a radiation vault which has a mass optimised structure. Components which has to be outside the radiation vault but are highly sensible are shielded individually. Low sensible Components are protected by the Aluminium structure. \autoref{fig:RadiationOverview} illustrates the different compartments within the rover and the accorded TIDs. \\
+In order to protect the rover against the high radiation levels at the surface of Europa, the rover has different compartments. High sensible components are placed within a radiation vault which has a mass optimised structure. Components which has to be outside the radiation vault but are highly sensible are shielded individually. Low sensible components are protected by the aluminium structure. \autoref{fig:RadiationOverview} illustrates the different compartments within the rover and the accorded TIDs. \\
 
 \begin{figure}[htb]
      \centering

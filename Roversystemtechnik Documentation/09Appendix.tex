@@ -47,7 +47,7 @@
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 \begin{table}[hbt]
 \centering
-\resizebox{0.7\textwidth}{!}{%
+\resizebox{0.72\textwidth}{!}{%
 \begin{tabular}{|c|c|c|l|}
 \hline
 Number & Rover System Modes                  & Abbrevation & \multicolumn{1}{c|}{Definition}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \\ \hline
@@ -83,7 +83,7 @@ Number & Rover System Modes                  & Abbrevation & \multicolumn{1}{c|}
 \begin{table}[hbt]
 \centering
 \caption{INSPIRE Mass Budget}
-\resizebox{\textwidth}{!}{%
+\resizebox{0.75\textwidth}{!}{%
 \begin{tabular}{@{}cccccc@{}}
 \toprule
 Subsystem                               & component name                      & mass per component {[}kg{]} & quantity & component margin & total {[}kg{]} \\ \midrule
@@ -204,7 +204,7 @@ In this section all necessary values for the design of the locomotion system are
 }
 \end{figure}
 
-The parameters for the soils are taken from the literature \cite{Bekker}. Here, a hard soil was chosen as the lower boundary and a substitute for ice, heavy clay, and snow from Sweden for the upper boundary. 
+The parameters for the soils are taken from the literature \cite{Bekker}. Here, a hard soil was chosen as the lower boundary and a substitute for ice, heavy clay, and snow from Sweden for the upper boundary. All calculations were performed and plotted using MATLAB\textsuperscript{\textregistered}. Further information on the files can be found in \autoref{app:DigitalAppendix}.
      
 \begin{table}[htb]
      \centering
@@ -292,10 +292,12 @@ The rover has 4 number ox axles, each with a quarter proportion of axles driven.
 
 with \(K = 6.05\) and the number of wheels \(N=4\). The resulting \(MMP\) for the 6 considered configurations are shown in \autoref{fig:MMP}. 
 
+\clearpage
+
 \begin{figure}[htb] 
   \centering
      \includegraphics[width=1\textwidth]{Media/MMP for each Config.pdf}
-  \caption{}
+  \caption{Mean maximum pressure plotted over the deflection \(\delta\). The maximum value of 40~kPa is only exceeded for very small values of \(\delta\).}
   \label{fig:MMP}
 \end{figure}
 
@@ -306,7 +308,7 @@ Each wheel has a separate BLDC motor for driving. The necessary torque is listed
 
 \begin{table}[htb]
 \centering
-\caption{}
+\caption{Calculated torque and power of the configuration 6 in respect to the slope angle and velocity.}
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}[l]{lcccc|ccc}
 
@@ -1272,6 +1274,7 @@ Both improvements would save the mass of the lead and iron shielding for the opt
 
 \begin{table}[htb]
 	\centering
+	\begin{adjustbox}{max width=\textwidth}
 	\begin{tabular}{llcc}
 	\toprule
 		Name  & Path & Type & Size  \\
@@ -1279,8 +1282,51 @@ Both improvements would save the mass of the lead and iron shielding for the opt
 		TCS Analysis final & 300 Thermal\ & Exle Sheet with Macros, *.xlsm & 189 kB  \\
 		Comms \& C\&DH Datasheets & 600\_C\&DH\_Communication & *.pdf & \\
 		Comms \& C\&DH Trade Offs &	600\_C\&DH\_Communication & *.png & \\
+				Locomotion MMP Deflection 			& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 101 kB  \\	
+		
+		Locomotion Motor wheels EC32flat	& 200 Locomotion\ & PDF Datasheet, *.pdf	& 101 kB  \\	
+		
+		Locomotion PlanetaryGear Wheels		& 200 Locomotion\ & PDF Datasheet, *.pdf	& 180 kB  \\	
+		
+		Locomotion StepperMotors physpace	& 200 Locomotion\ & PDF Datasheet, *.pdf	& 1610 kB  \\
+		
+		Locomotion IMU Vectornav VN-110		& 200 Locomotion\ & PDF Datasheet, *.pdf	& 3718 kB  \\
+		
+		MMP 								& 200 Locomotion\ & Matlab File, *.m	& 3 kB  \\
+		
+		ResistanceHeavyClay					& 200 Locomotion\ & Matlab File, *.m	& 4 kB  \\
+		
+		ResistanceSnow						& 200 Locomotion\ & Matlab File, *.m	& 4 kB  \\
+		
+		Sinkage HeavyClay					& 200 Locomotion\ & Matlab File, *.m	& 3 kB  \\
+		
+		Sinkage Snow						& 200 Locomotion\ & Matlab File, *.m	& 3 kB  \\
+		
+		SoilThrustHeavyClay					& 200 Locomotion\ & Matlab File, *.m	& 4 kB  \\
+		
+		SoilThrustSnow						& 200 Locomotion\ & Matlab File, *.m	& 4 kB  \\
+		
+		SinkageSnow 						& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 4 kB  \\
+				SinkageClay				 			& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 4 kB  \\	
+		
+		Torque and Power 					& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 11 kB  \\
+		
+		WheelDimensionsV3 reduced			& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 11 kB  \\
+		
+		WheelDimensionsV3 groß				& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 12 kB  \\
+		Tradeoff Locomotion				& 200 Locomotion\ & Exle Sheet with Data, *.xlsx	& 475 kB  \\
+			
+Lens Assembly GH VIS SWIR OEM lens Avill 12.5mm		& 700 Payload\ & PDF Datasheet, *.pdf	& 353 kB  \\	
+
+RadHard Lenses Schott 					& 700 Payload\ & PDF Datasheet, *.pdf	& 338 kB  \\	
+
+PowerLED		& 700 Payload\ & PDF Datasheet, *.pdf	& 843 kB  \\
+
+SpaceGradeCameraCMOS		& 700 Payload\ & PDF Datasheet, *.pdf	& 869 kB  \\
+SunSensorSpaceGradeMAUS		& 700 Payload\ & PDF Datasheet, *.pdf	& 487 kB  \\
 	\bottomrule
 	\end{tabular}
+	\end{adjustbox}
 	\caption{Digital Appendix}
 	\label{app:DigitalAppendix}
 \end{table}

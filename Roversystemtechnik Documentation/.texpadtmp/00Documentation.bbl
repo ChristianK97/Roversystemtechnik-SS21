@@ -1008,6 +1008,132 @@
     \field{year}{2019}
   \endentry
 
+  \entry{6497188}{inproceedings}{}
+    \name{author}{11}{}{%
+      {{hash=ZK}{%
+         family={Zacny},
+         familyi={Z\bibinitperiod},
+         given={Kris},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Paulsen},
+         familyi={P\bibinitperiod},
+         given={Gale},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Chu},
+         familyi={C\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hedlund},
+         familyi={H\bibinitperiod},
+         given={Magnus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Spring},
+         familyi={S\bibinitperiod},
+         given={Justin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=OL}{%
+         family={Osborne},
+         familyi={O\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Matthews},
+         familyi={M\bibinitperiod},
+         given={Jaret},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZD}{%
+         family={Zarzhitsky},
+         familyi={Z\bibinitperiod},
+         given={Dimitri},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=NIA}{%
+         family={Nesnas},
+         familyi={N\bibinitperiod},
+         given={Issa\bibnamedelima A.},
+         giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Szwarc},
+         familyi={S\bibinitperiod},
+         given={Timothy},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Indyk},
+         familyi={I\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZKPGCPHMSJOLMJZDNIASTIS1}
+    \strng{fullhash}{ZKPGCPHMSJOLMJZDNIASTIS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2013 IEEE Aerospace Conference}
+    \verb{doi}
+    \verb 10.1109/AERO.2013.6497188
+    \endverb
+    \field{pages}{1\bibrangedash 11}
+    \field{title}{Axel rover NanoDrill and PowderDrill: Acquisition of cores,
+  regolith and powder from steep walls}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Phytron}{online}{}
+    \name{author}{1}{}{%
+      {{hash=p}{%
+         family={phySPACE},
+         familyi={p\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{p1}
+    \strng{fullhash}{p1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Stepper Motor Series for SPACE applications, Standard and
+  Customised Solutions}
+    \verb{url}
+    \verb https://www.phytron.eu/fileadmin/user_upload/produkte/motoren_aktuato
+    \verb ren/pdf/ds-physpace-en.pdf
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Maxon}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Maxon},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{EC 32 flat}
+    \verb{url}
+    \verb https://www.maxongroup.de/medias/sys_master/root/8839930445854/DE-282
+    \verb .pdf
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
   \entry{FLP_Exercise}{misc}{}
     \name{author}{1}{}{%
       {{hash=PS}{%
