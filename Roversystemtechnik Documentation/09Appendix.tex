@@ -193,7 +193,18 @@ Subsystem                               & component name                      & 
 \subsection{Locomotion Design Drivers}
 \label{app:DesignDrivers}
 
-In this section all necessary table values for the design of the locomotion system are presented.    
+In this section all necessary values for the design of the locomotion system are presented.   
+
+
+\begin{figure}[htb]
+{\centering
+\includegraphics[width=0.7\textwidth]{Media/Geometries}
+\caption{Geometric dimensions for the locomotion system.}
+\label{fig:Ackerman}
+}
+\end{figure}
+
+ 
      
 \begin{table}[htb]
      \centering
@@ -229,9 +240,9 @@ In this section all necessary table values for the design of the locomotion syst
 \multicolumn{1}{l}{\:\:\:\:\:\: m}		& \multicolumn{1}{c}{m} 			& \multicolumn{1}{c|}{g} 					& \multicolumn{1}{l}{\:\:\:\:\:\: m}& \multicolumn{1}{c}{m}					& \multicolumn{1}{c}{g} \\
 	\midrule
 	
-	0.05	&	0.1		&	127		& 0.05	&	0.15	&	185									\\ 
+	0.05	&	0.1		&	127		& 0.05		&	0.15	&	185									\\ 
 	0.06	&	0.1		&	153		&	0.06	&	0.15	&	\cellcolor[HTML]{CB0000}221		\\	
-	0.07	&	0.1		&	178		0.07	&	0.15	&	\cellcolor[HTML]{CB0000}258		\\
+	0.07	&	0.1		&	178		&	0.07	&	0.15	&	\cellcolor[HTML]{CB0000}258		\\
 	0.08	&	0.1		&	\cellcolor[HTML]{CB0000}204	&	0.08	&	0.15	&	\cellcolor[HTML]{CB0000}294		\\	
 	0.09	&	0.1		&	\cellcolor[HTML]{CB0000}229	&	0.09	&	0.15	&	\cellcolor[HTML]{CB0000}331		\\
 	0.1		&	0.1		&	\cellcolor[HTML]{CB0000}265	&	0.1		&	0.15	&	\cellcolor[HTML]{CB0000}367		\\	
@@ -290,7 +301,6 @@ As mentioned in \autoref{sec:Steering}, with Ackerman steering it is important t
 
 With a wheel distance of \(d = 277\)~mm and \(l = 365\)~mm, the respective angles of the wheel positions can be determined. These values are necessary to control the drive in an autonomous drive mode.
 
-\newpage
 
 \subsubsection*{Hardware Selection}
 \label{app:Hardware}
@@ -448,14 +458,51 @@ Referencing \autoref{fig:BitErrorRate} a Bit Error Rate of $10^{-4}$ can be achi
 
 Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}_{b}}{{N}_{0}} = 50,56\ dB$ corresponding to a Bit Error Rate of potentially less than $10^{-6}$. Therefore the downlink does not contribute to the design decisions. The complete link budget for the uplink path can be found in \autoref{fig:LB-L2R}.
 
-\begin{figure}[htb]
-	\centering
-  		\includegraphics[width=0.5\textwidth]{Media/LB-RovertoLander.png}
-  \caption{Rover to Lander complete downlink budget.}
-  \label{fig:LB-R2L}
-\end{figure}
+%Complete Link Budget for Rover to Lander Transmission
+\begin{table}[]
+\centering
+\caption{Complete link budget for Rover to Lander transmission.}
+\label{tab:lb-R2L}
+\begin{tabular}{llll}
+\multicolumn{4}{l}{Rover to Lander (R2L) Link Budget (uplink)}                   \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Rover}                                \\
+Rover transmitter output power            &${P}_{R}$		& 1                      & W    \\
+                                          &${P}_{R}$    & 0                      & dB   \\
+Rover line loss                           &${L}_{l1}$   & 0.6                    & dB   \\
+Rover antenna gain                        &${G}_{R}$ 	& 2                      & dB   \\
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Downlink Path}                        \\
+Rover antenna pointing loss               &n/a    		& 0                      & dB   \\
+polarization loss                     	  &${L}_{p}$		& 0.3                    & dB   \\
+free space loss                           &${L}_{s}$		& 116.74                 & dB   \\
+atmospheric loss                          &${L}_{a}$		& 0                      & dB   \\ \hline
+signal level at Lander                    &RIP      		& -115.64                & dB   \\
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Lander}                               \\
+Lander LGA pointing loss                  &      		& 0                      & dB   \\
+Lander antenna gain                       &${G}_{L}$		& 1                      & dB   \\ \hline
+signal after Lander LGA                   &      		& -114.64                & dB   \\ \hline
+Lander line loss                    		  &${L}_{l2}$	& 0.6                    & dB   \\
+Lander effective noise temp.              &${T}_{s}$ 	& 24.77                  & dB   \\ \hline
+Lander signal to noise power density      & $\frac{C}{{N}_{0}}$ & 88.58                  & dB   \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Data Rate}                            \\ \hline
+data rate                                 &${R}$			& 5000                   & kbps \\
+                                          &${R}$			& -66.99                 & dBHz \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Total}                                \\ \hline
+System $\frac{{E}_{b}}{{N}_{0}}$ for L2R link &$\frac{{E}_{b}}{{N}_{0}}$& 21.59                  & dB   \\
+\multicolumn{4}{l}{}                                                             \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Demodulation}                         \\ \hline
+specified Bit Error Rate                  &BER      		& $10^{-4}$ 				 & n/a  \\
+FEC coding used                           &      		& none                   &      \\
+$\frac{{E}_{b}}{{N}_{0}}$ threshold       &      		& 9                      & dB   \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Uncertain Losses}                     \\ \hline
+technical degradation                     &${L}_{i1}$	& 1                      & dB   \\
+implementation loss                       &${L}_{i2}$	& 1                      & dB   \\
+\multicolumn{4}{l}{}                                                             \\ \hline
+\multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Link Margin}                          \\ \hline
+system link margin after uncertain losses &$\frac{{E}_{b}}{{N}_{0}}$& 10.59                  & dB  
+\end{tabular}
+\end{table}
 
-
+%Complete Link Budget for Lander to Rover Transmission
 \begin{table}[]
 \centering
 \caption{Complete link budget for Lander to Rover (L2R) transmission.}
@@ -463,39 +510,39 @@ Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}
 \begin{tabular}{llll}
 \multicolumn{4}{l}{Lander to Rover (L2R) Link Budget (downlink)}                 \\ \hline
 \multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Lander}                               \\
-Lander transmitter Output Power           &      & 5                      & W    \\
-                                          &      & 6.99                   & dB   \\
-Lander line loss                          &      & 0.6                    & dB   \\
-Lander antenna gain                       &      & 1                      & dB   \\
+Lander transmitter output power           &${P}_{L}$		& 5                      & W    \\
+                                          &${P}_{L}$		& 6.99                   & dB   \\
+Lander line loss                          &${L}_{l2}$	& 0.6                    & dB   \\
+Lander antenna gain                       &${G}_{L}$		& 1                      & dB   \\
 \multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Uplink Path}                          \\
-pointing loss                             &      & 0                      & dB   \\
-polarization loss                         &      & 0.3                    & dB   \\
-path loss                                 &      & 116.74                 & dB   \\
-atmospheric loss                          &      & 0                      & dB   \\ \hline
+pointing loss                             &n/a	    		& 0                      & dB   \\
+polarization loss                         &${L}_{p}$		& 0.3                    & dB   \\
+free space loss                           &${L}_{s}$		& 116.74                 & dB   \\
+atmospheric loss                          &${L}_{a}$		& 0                      & dB   \\ \hline
 signal level at Lander					  & RIP  & 109.65				  & dB   \\ 
 \multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Rover}                                \\
-Rover LGA pointing loss                   &      & 0                      & dB   \\
-Rover antenna gain                        &      & 1                      & dB   \\ \hline
-signal after Rover LGA                    &      & 108.65                 & dB   \\ \hline
-Rover total line loss                     &      & 0.6                    & dB   \\
-Rover effective noise temp.               &      & 24.77                  & dB   \\ \hline
+Rover LGA pointing loss                   &n/a	    		& 0                      & dB   \\
+Rover antenna gain                        &${G}_{R}$		& 1                      & dB   \\ \hline
+signal after Rover LGA                    &      		& 108.65                 & dB   \\ \hline
+Rover line loss                     	      &${L}_{l1}$	& 0.6                    & dB   \\
+Rover effective noise temp.               &${T}_{s}$ 	& 24.77                  & dB   \\ \hline
 Rover signal to noise power density       & $\frac{C}{{N}_{0}}$	 & 94.57                  & dB   \\ \hline
 \multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Data Rate}                            \\ \hline
-data rate                                 &      & 2                      & kbps \\
-                                          &      & 33.01                  & dBHz \\ \hline
+data rate                                 &${R}$   		& 2                      & kbps \\
+                                          &${R}$ 		& 33.01                  & dBHz \\ \hline
 \multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Total}                                \\ \hline
-System $\frac{{E}_{b}}{{N}_{0}}$	 for L2R link &      & 61.56                  & dB   \\
+System $\frac{{E}_{b}}{{N}_{0}}$for L2R link &      		& 61.56                  & dB   \\
 \multicolumn{4}{l}{}                                                             \\ \hline
 \multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Demodulation}                         \\ \hline
-specified Bit Error Rate                  &      & $10^{-6}$ 			  & n/a  \\
-FEC coding used                           &      & none                   &      \\
-$\frac{{E}_{b}}{{N}_{0}}$ threshold       &      & 9                      & dB   \\ \hline
+specified Bit Error Rate                  &BER      		& $10^{-6}$ 			  & n/a  \\
+FEC coding used                           &      		& none                   &      \\
+$\frac{{E}_{b}}{{N}_{0}}$ threshold       &				& 11                     & dB   \\ \hline
 \multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Uncertain Losses}                     \\ \hline
-technical degradation                     &      & 1                      & dB   \\
-implementation loss                       &      & 1                      & dB   \\
+technical degradation                     &${L}_{i1}$	& 1                      & dB   \\
+implementation loss                       &${L}_{i1}$	& 1                      & dB   \\
 \multicolumn{4}{l}{}                                                             \\ \hline
 \multicolumn{4}{l}{\cellcolor[HTML]{DAE8FC}Link Margin}                          \\ \hline
-system link margin after uncertain losses &      & 50.56                  & dB  
+system link margin after uncertain losses &$\frac{{E}_{b}}{{N}_{0}}$	& 48.56      & dB  
 \end{tabular}
 \end{table}
 
