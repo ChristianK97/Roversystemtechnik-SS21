@@ -193,7 +193,7 @@ Subsystem                               & component name                      & 
 \subsection{Locomotion Design Drivers}
 \label{app:DesignDrivers}
 
-In this section all necessary values for the design of the locomotion system are presented.   
+In this section all necessary values for the design of the locomotion system are presented. In \autoref{app:Ackerman} shows the geometric parameters of the locomotion system in a top view of the rover.
 
 
 \begin{figure}[htb]
@@ -204,7 +204,7 @@ In this section all necessary values for the design of the locomotion system are
 }
 \end{figure}
 
- 
+The parameters for the soils are taken from the literature \cite{Bekker}. Here, a hard soil was chosen as the lower boundary and a substitute for ice, heavy clay, and snow from Sweden for the upper boundary. 
      
 \begin{table}[htb]
      \centering
@@ -260,6 +260,17 @@ In this section all necessary values for the design of the locomotion system are
 \label{tab:Geometry}
 \end{table}
 
+\subsubsection*{Ackerman Steering}
+\label{app:Ackerman}
+
+As mentioned in \autoref{sec:Steering}, with Ackerman steering it is important to take into account that the angles of the front wheel positions differ: 
+
+\begin{equation}
+	\cot \theta_{i} - \cot \theta_\text{o} \:  = \:	- \frac{d}{l}	.
+	\label{eq:Ackerman}
+\end{equation}
+
+With a wheel distance of \(d = 277\)~mm and \(l = 365\)~mm, the respective angles of the wheel positions can be determined. These values are necessary to control the drive in an autonomous drive mode.
 
 \subsubsection*{Mean Maximum Pressure}
 \label{app:MMP}
@@ -288,24 +299,10 @@ with \(K = 6.05\) and the number of wheels \(N=4\). The resulting \(MMP\) for th
   \label{fig:MMP}
 \end{figure}
 
-
-\subsubsection*{Ackerman Steering}
-\label{app:Ackerman}
-
-As mentioned in \autoref{sec:Steering}, with Ackerman steering it is important to take into account that the angles of the front wheel positions differ: 
-
-\begin{equation}
-	\cot \theta_{i} - \cot \theta_\text{o} \:  = \:	- \frac{d}{l}	.
-	\label{eq:Ackerman}
-\end{equation}
-
-With a wheel distance of \(d = 277\)~mm and \(l = 365\)~mm, the respective angles of the wheel positions can be determined. These values are necessary to control the drive in an autonomous drive mode.
-
-
 \subsubsection*{Hardware Selection}
 \label{app:Hardware}
 
-Each wheel has a separate BLDC motor for driving. The necessary torque is listed for both soil parameters depending on the slope angle. In addition, necessary power is listed for different velocities to be reached, also for both soils. It should be noted, that the deflection \(\delta\) is not considered and assumed to be \(\delta = 0\).
+Each wheel has a separate BLDC motor for driving. The necessary torque is listed for both soil parameters depending on the slope angle. In addition, necessary power is listed for different velocities to be reached, also for both soils. It should be noted, that the deflection \(\delta\) is not considered for this conservative estimation, though it is in the range of \(5\cdot 10^{-4} \leq \delta \leq 0.01\)~m for the chosen configuration 6 .
 
 \begin{table}[htb]
 \centering
