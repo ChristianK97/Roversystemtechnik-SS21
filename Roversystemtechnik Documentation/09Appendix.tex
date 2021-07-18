@@ -454,7 +454,7 @@ Combining the parameters from \autoref{tab:lb-param} the link budget is calculat
 \autoref{eqn:EbzuN0} and the conservative assumptions from \autoref{tab:lb-param} results in an energy per bit over noise $\frac{{E}_{b}}{{N}_{0}} = 10,59\ dB$. The complete link budget can be found in \autoref{fig:LB-R2L}. \\
 Referencing \autoref{fig:BitErrorRate} a Bit Error Rate of $10^{-4}$ can be achieved in the downlink path, which is considered sufficient for a first assessment. Optionally a FEC code can be implemented in later design phases.\\
 
-Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}_{b}}{{N}_{0}} = 50,56\ dB$ corresponding to a Bit Error Rate of potentially less than $10^{-6}$. Therefore the downlink does not contribute to the design decisions. The complete link budget for the uplink path can be found in \autoref{fig:LB-L2R}.
+Using the same parameters listed in \autoref{tab:lb-param} leads to a $\frac{{E}_{b}}{{N}_{0}} = 50,56\ dB$ corresponding to a Bit Error Rate of potentially less than $10^{-6}$. Therefore the downlink does not contribute to the design decisions. The complete link budget for the uplink path can be found in \autoref{fig:lb-L2R}.
 
 %Complete Link Budget for Rover to Lander Transmission
 \begin{table}[]
@@ -556,7 +556,7 @@ system link margin after uncertain losses &$\frac{{E}_{b}}{{N}_{0}}$	& 48.56    
 
 The analysis of the mission data concept for memory capacity and transmission times is focuses on the payload camera and Hazcams as images require far more data than telemetry or other payload data. \\
 
-In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit of the , a file size of 42 Mbit per image is assumed (CAMERA REFERENCE).\\
+In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit of the , a file size of 42 Mbit per image is assumed (camera datasheet in \autoref{app:DigitalAppendix}).\\
 To calculate the message size in \autoref{tab:TimePerPic}, it is assumed that a transmission frame consists of 10264 bits including a payload frame of maximum 8840 bits \cite{FLP}.   
 
 \begin{table}[h]
@@ -1277,6 +1277,8 @@ Both improvements would save the mass of the lead and iron shielding for the opt
 		Name  & Path & Type & Size  \\
 	\midrule
 		TCS Analysis final & 300 Thermal\ & Exle Sheet with Macros, *.xlsm & 189 kB  \\
+		Comms \& C\&DH Datasheets & 600\_C\&DH\_Communication & *.pdf & \\
+		Comms \& C\&DH Trade Offs &	600\_C\&DH\_Communication & *.png & \\
 	\bottomrule
 	\end{tabular}
 	\caption{Digital Appendix}
