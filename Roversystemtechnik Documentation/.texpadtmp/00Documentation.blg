@@ -9,6 +9,10 @@ A level-1 auxiliary file: 02Mission.aux
 A level-1 auxiliary file: 03Payload.aux
 A level-1 auxiliary file: 04Operation.aux
 A level-1 auxiliary file: 05Subsystems.aux
+White space in argument---line 62 of file /Users/danielbolke/Documents/GitHub/Roversystemtechnik-SS21/Roversystemtechnik Documentation/.texpadtmp/00Documentation.aux
+ : \citation{rolling
+ :                   coefficient}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: 06Outlook.aux
 A level-1 auxiliary file: 08Bibilography.aux
 A level-1 auxiliary file: 09Appendix.aux
@@ -27,7 +31,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11720 items from 5000.
+Reallocated field_info (elt_size=4) to 10040 items from 5000.
 Database file #1: ../00Documentation-blx.bib
 Database file #2: ../References.bib
 I was expecting a `,' or a `}'---line 177 of file ../References.bib
@@ -35,105 +39,19 @@ I was expecting a `,' or a `}'---line 177 of file ../References.bib
  : @misc{ref_tcs_06,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--string name "brad" is undefined
---line 244 of file ../References.bib
-I was expecting a `,' or a `}'---line 244 of file ../References.bib
- :  author = brad 
+I was expecting a `,' or a `}'---line 243 of file ../References.bib
+ :  author = Brad 
  :                A. Krainer, Miiig Lee, Chi-Chih Chen and John D. Volakis},
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 293 of file ../References.bib
+I was expecting a `,' or a `}'---line 285 of file ../References.bib
  :  
  :  journal = {IEEE TRANSACTIONS ON ANTENNAS AND PROPAGATION},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Europa_g"
-Warning--I didn't find a database entry for "Europa_geysers"
-Warning--I didn't find a database entry for "Parameters"
-Warning--I didn't find a database entry for "rollingCoefficient"
 Warning--I didn't find a database entry for "MMP"
 Warning--I didn't find a database entry for "Bekker"
 Biblatex version: 3.16
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2697 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2697 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2697 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2697 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2697 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2697 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
@@ -158,274 +76,18 @@ Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Co
 while executing---line 2697 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2701 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2701 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2701 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2701 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2707 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2707 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2707 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2707 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2711 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2711 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
@@ -438,218 +100,18 @@ Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Co
 while executing---line 2711 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2711 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2711 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2715 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2715 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2715 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2715 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2721 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2721 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2721 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2721 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2725 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2725 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
@@ -661,142 +123,8 @@ while executing---line 2725 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2725 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
-while executing---line 2725 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2725 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
 while executing---line 2725 of file biblatex.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
-while executing---line 2813 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2813 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2813 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2813 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2813 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2813 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2813 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2813 of file biblatex.bst
-Name 1 in "Nacer Chahat, Brant Cook, Heather Lim, and Polly Estabrook" has a comma at the end for entry Lander_HGA
-while executing---line 2813 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2813 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
@@ -815,135 +143,45 @@ Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Co
 while executing---line 2813 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
-while executing---line 2813 of file biblatex.bst
-You've used 42 entries,
+You've used 34 entries,
             6393 wiz_defined-function locations,
-            1437 strings with 16028 characters,
-and the built_in function-call counts, 230712 in all, are:
-= -- 15111
-> -- 7692
-< -- 1030
-+ -- 7129
-- -- 4971
-* -- 15298
-:= -- 24497
+            1390 strings with 14804 characters,
+and the built_in function-call counts, 173224 in all, are:
+= -- 10692
+> -- 6107
+< -- 808
++ -- 5593
+- -- 3892
+* -- 11101
+:= -- 18438
 add.period$ -- 0
-call.type$ -- 42
-change.case$ -- 426
-chr.to.int$ -- 274
-cite$ -- 82
-duplicate$ -- 19288
-empty$ -- 21950
-format.name$ -- 2176
-if$ -- 46459
+call.type$ -- 34
+change.case$ -- 308
+chr.to.int$ -- 220
+cite$ -- 66
+duplicate$ -- 15715
+empty$ -- 16232
+format.name$ -- 1851
+if$ -- 34638
 int.to.chr$ -- 0
-int.to.str$ -- 108
+int.to.str$ -- 91
 missing$ -- 0
-newline$ -- 931
-num.names$ -- 1728
-pop$ -- 14061
+newline$ -- 788
+num.names$ -- 1387
+pop$ -- 11320
 preamble$ -- 1
-purify$ -- 609
+purify$ -- 468
 quote$ -- 0
-skip$ -- 6985
+skip$ -- 5661
 stack$ -- 0
-substring$ -- 29800
-swap$ -- 4534
-text.length$ -- 924
+substring$ -- 19553
+swap$ -- 3684
+text.length$ -- 767
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1416
+type$ -- 1144
 warning$ -- 0
-while$ -- 2299
+while$ -- 1909
 width$ -- 0
-write$ -- 890
-(There were 428 error messages)
+write$ -- 755
+(There were 49 error messages)

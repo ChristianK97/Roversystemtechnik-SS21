@@ -193,7 +193,7 @@ Subsystem                               & component name                      & 
 \subsection{Locomotion Design Drivers}
 \label{app:DesignDrivers}
 
-In this section all necessary values for the design of the locomotion system are presented. In \autoref{app:Ackerman} shows the geometric parameters of the locomotion system in a top view of the rover.
+In this section all necessary values for the design of the locomotion system are presented.   
 
 
 \begin{figure}[htb]
@@ -204,7 +204,7 @@ In this section all necessary values for the design of the locomotion system are
 }
 \end{figure}
 
-The parameters for the soils are taken from the literature \cite{Bekker}. Here, a hard soil was chosen as the lower boundary and a substitute for ice, heavy clay, and snow from Sweden for the upper boundary. 
+ 
      
 \begin{table}[htb]
      \centering
@@ -260,17 +260,6 @@ The parameters for the soils are taken from the literature \cite{Bekker}. Here, 
 \label{tab:Geometry}
 \end{table}
 
-\subsubsection*{Ackerman Steering}
-\label{app:Ackerman}
-
-As mentioned in \autoref{sec:Steering}, with Ackerman steering it is important to take into account that the angles of the front wheel positions differ: 
-
-\begin{equation}
-	\cot \theta_{i} - \cot \theta_\text{o} \:  = \:	- \frac{d}{l}	.
-	\label{eq:Ackerman}
-\end{equation}
-
-With a wheel distance of \(d = 277\)~mm and \(l = 365\)~mm, the respective angles of the wheel positions can be determined. These values are necessary to control the drive in an autonomous drive mode.
 
 \subsubsection*{Mean Maximum Pressure}
 \label{app:MMP}
@@ -299,10 +288,24 @@ with \(K = 6.05\) and the number of wheels \(N=4\). The resulting \(MMP\) for th
   \label{fig:MMP}
 \end{figure}
 
+
+\subsubsection*{Ackerman Steering}
+\label{app:Ackerman}
+
+As mentioned in \autoref{sec:Steering}, with Ackerman steering it is important to take into account that the angles of the front wheel positions differ: 
+
+\begin{equation}
+	\cot \theta_{i} - \cot \theta_\text{o} \:  = \:	- \frac{d}{l}	.
+	\label{eq:Ackerman}
+\end{equation}
+
+With a wheel distance of \(d = 277\)~mm and \(l = 365\)~mm, the respective angles of the wheel positions can be determined. These values are necessary to control the drive in an autonomous drive mode.
+
+
 \subsubsection*{Hardware Selection}
 \label{app:Hardware}
 
-Each wheel has a separate BLDC motor for driving. The necessary torque is listed for both soil parameters depending on the slope angle. In addition, necessary power is listed for different velocities to be reached, also for both soils. It should be noted, that the deflection \(\delta\) is not considered for this conservative estimation, though it is in the range of \(5\cdot 10^{-4} \leq \delta \leq 0.01\)~m for the chosen configuration 6 .
+Each wheel has a separate BLDC motor for driving. The necessary torque is listed for both soil parameters depending on the slope angle. In addition, necessary power is listed for different velocities to be reached, also for both soils. It should be noted, that the deflection \(\delta\) is not considered and assumed to be \(\delta = 0\).
 
 \begin{table}[htb]
 \centering
@@ -409,29 +412,28 @@ Link budget considerations are performed under the conservative assumptions list
 Parameter                        & Value  & Unit	       & Symbol        & Source                       &  \\ \hline
 Rover                            &        &            &               &                              &  \\ \hline\hline
 antenna Gain           		     & 2      & {[}dB{]}   & ${G}_{R}$  	   & omnidirectional LGA          &  \\
-output power        	         & 1      & {[}W{]}    & ${P}_{R}$  	   & Digital Appendix                            &  \\
-line loss               	     & 0,6    & {[}dB{]}   & ${L}_{l1}$ 	   & \cite{FLP_Exercise}                          &  \\ \hline
+output power        	         & 1      & {[}W{]}    & ${P}_{R}$  	   &                              &  \\
+line loss               	     & 0,6    & {[}dB{]}   & ${L}_{l1}$ 	   & FLP                          &  \\ \hline
 Path                             &        &            &               &                              &  \\ \hline\hline
-R2L polarisation loss            & 0,3    & {[}dB{]}   & ${L}_{p}$ 	   & \cite{FLP_Exercise}                          &  \\
-free space loss                  & 117,55 & {[}$m^3${]}& ${L}_{s}$  	   & \autoref{eqn:Ls}                             &  \\
+R2L polarisation loss            & 0,3    & {[}dB{]}   & ${L}_{p}$ 	   & FLP                          &  \\
+free space loss                  & 117,55 & {[}$m^3${]}& ${L}_{s}$  	   &                              &  \\
 atmospheric loss                 & 0      & {[}dB{]}   & ${L}_{a}$	   & negligible atmosphere        &  \\ \hline
 Lander                           &        &            &               &                              &  \\ \hline\hline
 antenna Gain             		 & 1      & {[}dB{]}   & ${G}_{L}$	   & conservative estimation      &  \\
 output power        	         & 5      & {[}W{]}    & ${P}_{L}$  	   & conservative estimation      &  \\
 pointing Loss  		             & 0      & {[}dB{]}   & ${n/a}$       & omnidirectional LGA          &  \\
-line Loss  		                 & 0,6    & {[}dB{]}   & ${L}_{l2}$	   & \cite{FLP_Exercise}                          &  \\
+line Loss  		                 & 0,6    & {[}dB{]}   & ${L}_{l2}$	   & FLP                          &  \\
 eff. noise temperature           & 300    & {[}K{]}    & ${T}_{s}$	   & worst case E-bay temperature &  \\ \hline
 Demodulation \& Uncertain Losses &        &            &               &                              &  \\ \hline\hline
 eff. data rate                   & 5000   & {[}kbps{]} & ${R}$         & 50 \% of max. data rate                            &  \\
-FEC coding                       & none   & {[}-{]}    & ${n/a}$       &  ${n/a}$                            &  \\
-technical degradation            & 1      & {[}dB{]}   & ${L}_{i1}$    & \cite{FLP_Exercise}                          &  \\
-implementation loss              & 1      & {[}dB{]}   & ${L}_{i1}$	   & \cite{FLP_Exercise}                          &  \\
+FEC coding                       & none   & {[}-{]}    & ${n/a}$       &                              &  \\
+technical degradation            & 1      & {[}dB{]}   & ${L}_{i1}$    & FLP                          &  \\
+implementation loss              & 1      & {[}dB{]}   & ${L}_{i1}$	   & FLP                          &  \\
                                  &        &            &               &                              & 
 \end{tabular}
 \caption{Transmission link parameters}
 \label{tab:lb-param}
 \end{table}
-
 
 The free space loss ${L}_{s}$ [$m^3$] in \autoref{tab:lb-param} is calculated using the following correlation. 
 
@@ -546,7 +548,7 @@ system link margin after uncertain losses &$\frac{{E}_{b}}{{N}_{0}}$	& 48.56    
 
 \begin{figure}[h]
 	\centering
-  		\includegraphics[width=0.5\textwidth]{Media/Bit_Error_Rate.png}
+  		\includegraphics[width=0.9\textwidth]{Media/Bit_Error_Rate.png}
   \caption{Bit Error Rate for different FEC codes}
   \label{fig:BitErrorRate}
 \end{figure}
@@ -556,8 +558,8 @@ system link margin after uncertain losses &$\frac{{E}_{b}}{{N}_{0}}$	& 48.56    
 
 The analysis of the mission data concept for memory capacity and transmission times is focuses on the payload camera and Hazcams as images require far more data than telemetry or other payload data. \\
 
-In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit of the , a file size of 42 Mbit per image is assumed (CAMERA REFERENCE).\\
-To calculate the message size in \autoref{tab:TimePerPic}, it is assumed that a transmission frame consists of 10264 bits including a payload frame of maximum 8840 bits \cite{FLP}.   
+In a first assumption 420 images per day are stored and transmitted. Considering the sensor resolution of $2048\times2048$ pixels and a bit depth per pixel of 10 bit of the (CAMERA REFERENCE), a file size of 42 Mbit per image is assumed.\\
+To calculate the message size in \autoref{tab:TimePerPic}, it is assumed that a transmission frame consists of 10264 bits including a payload frame of maximum 8840 bits (FLP VORELESUNG).   
 
 \begin{table}[h]
 \centering
@@ -581,7 +583,128 @@ File per tal & Compression & File Size  & Total Data & Tx time    \\ \hline\hlin
 \label{tab:Tx-tptal}
 \end{table}
 
-The HIREW compression algorithm is suggested for the mission considering a high average compression of 0,56 \% and a high compression speed of 123 Mbit/s for grayscale and 104,4 Mbit/s for RGB image files \cite{HIREW}. 
+The HIREW compression algorithm is suggested for the mission considering a high average compression of 0,56 \% and a high compression speed of 123 Mbit/s for grayscale and 104,4 Mbit/s for RGB image files (COMPRESSSION PAPER REFERENCE). 
+
+\subsection{Communications Trade Off}
+\label{app:Com_TrOff}
+
+\subsubsection{Transmitter Selection}
+% Transmitter Trade off
+\begin{figure}[h]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/Transmitter/Weighting_trans.png}
+         \caption{Weighting of selection criteria for the transmitter.}
+         \label{fig:Weighting_trans}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/Transmitter/Values_trans.png}
+         \caption{Comparison of optional transmitters.}
+         \label{fig:Values_trans}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/Transmitter/TradeOff_trans.png}
+         \caption{Transmitter trade off.}
+         \label{fig:TradeOff_trans}
+     \end{subfigure}
+     \hfill
+     \caption{Transmitter Trade off for the Communication subsystem.}
+     \label{TrOff_Trans}
+\end{figure}
+
+\subsubsection{Receiver Trade Off}
+%Receiver Trade Off
+\begin{figure}[h]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/Receiver/Weighting_Rec.png}
+         \caption{Weighting of selection criteria for the receiver.}
+         \label{fig:Weighting_Rec}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/Receiver/Values_Rec.png}
+         \caption{Comparison of optional receivers.}
+         \label{fig:Values_Rec}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/Receiver/TradeOff_Rec.png}
+         \caption{Receiver trade off.}
+         \label{fig:TradeOff_Rec}
+     \end{subfigure}
+     \hfill
+     \caption{Receiver Trade off for the Communication subsystem.}
+     \label{TrOff_Trans}
+\end{figure}
+
+\subsubsection{Antenna Trade Off}
+%Antenna Trade Off
+\begin{figure}[h]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/Antenna/Weighting_Ant.png}
+         \caption{Weighting of selection criteria for the antenna.}
+         \label{fig:Weighting_Rec}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/Antenna/Values_Ant.png}
+         \caption{Comparison of optional antenna.}
+         \label{fig:Values_Rec}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/Antenna/TradeOff_Ant.png}
+         \caption{Antenna trade off.}
+         \label{fig:TradeOff_Rec}
+     \end{subfigure}
+     \hfill
+     \caption{Antenna trade off for the Communication subsystem.}
+     \label{TrOff_Trans}
+\end{figure}
+
+\subsection{Command \& Data Handling Trade Off}
+
+\subsubsection{OBC Trade Off}
+%OBC Trade Off
+\begin{figure}[htb]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/OBC/Weighting_OBC.png}
+         \caption{Weighting of selection criteria for the OBC.}
+         \label{fig:Weighting_Rec}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/OBC/Values_OBC.png}
+         \caption{Comparison of optional single board computers.}
+         \label{fig:Values_Rec}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Trade_off/OBC/TradeOff_OBC.png}
+         \caption{Antenna trade off.}
+         \label{fig:TradeOff_Rec}
+     \end{subfigure}
+     \hfill
+     \caption{OBC trade off for the Command \& Data Handling subsystem.}
+     \label{TrOff_Trans}
+\end{figure}
 
 \clearpage
 
@@ -966,7 +1089,7 @@ The view factors during the eclipse are set to zero.
 	\centering
 	\subfloat[View factor depending on the absorption surface.]{\includegraphics[height=0.4\textwidth]{Media/tcs_rover_rad}\label{fig:tcs_rad1}}\qquad\qquad
 	\subfloat[Definition of ecliptic longitude $\lambda_R$ and latitude $\delta_R$ of the rover on Europa.]{\includegraphics[height=0.3\textwidth]{Media/tcs_angle.png}\label{fig:tcs_rad2}}
-	\caption{Bi-metallic heat switch \cite{ref_tcs_04}.}
+	\caption{Bi-metallic heat switch, \cite{ref_tcs_04}.}
 	\label{fig:tcs_rad}
 \end{figure}
 
@@ -1023,7 +1146,7 @@ with the reduction factor $f_{r}$=0.8.
 \end{table}
 
 The Europa surface temperature varies at the  equator between $T_{e,min}=80~\K$ and\\ $T_{e,max}=130~\K$, depending on the sun inclination.
-The temperature at the pole is ${T_{Pole}=50~\K}$ \cite{Europa}.
+The temperature at the pole is ${T_{Pole}=50~\K}$, \cite{Europa}.
 It was assumed that the surface temperature depends on the sun altitude.
 A trigonometrical interpolation was defined as follows.
 \[ T_{Surface}(\lambda, \delta) = T_{Pole} + \cos (\delta) \cdot [(T_{e,min}+\cos (\lambda)\cdot (T_{e,max}-T_{e,min}))-T_{Pole}] \]
@@ -1031,7 +1154,7 @@ For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.\\
 
 \begin{table}[H]
 	\centering
-	\caption{Minimum and maximum of surface emissivity and absorptivity values \cite{ref_tcs_05}.}
+	\caption{Minimum and maximum of surface emissivity and absorptivity values, \cite{ref_tcs_05}.}
 	\begin{tabular}{l@{\qquad\qquad}cc@{\qquad\qquad}cc}
 		\toprule
 		& \multicolumn{2}{l}{Emissivity [-]} & \multicolumn{2}{l}{Absorptivity [-]}  \\ 
@@ -1052,9 +1175,9 @@ For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.\\
 		\toprule
 		Material & Nominal & Used & Source \\ \midrule
 		Aerogel & 0.002 - 0.05 & 0.05 & \cite{ref_tcs_03} \\
-		Aluminium$^{1)}$  & 110 - 220 & 220 & \cite{ref_tcs_10} \cite{ref_tcs_11} \cite{ref_tcs_12} \\
-		Steel$^{1)}$ & 15 - 43 & 45 & \cite{ref_tcs_08} \cite{ref_tcs_09} \\ 
-		Titan  & 7.1  & 7.1 & \cite{ref_tcs_06} \cite{ref_tcs_07} \\\bottomrule
+		Aluminium$^{1)}$  & 110 - 220 & 220 & \cite{ref_tcs_10}, \cite{ref_tcs_11}, \cite{ref_tcs_12} \\
+		Steel$^{1)}$ & 15 - 43 & 45 & \cite{ref_tcs_08}, \cite{ref_tcs_09} \\ 
+		Titan  & 7.1  & 7.1 & \cite{ref_tcs_06}, \cite{ref_tcs_07} \\\bottomrule
 		&&&\\[-0.75em]
 		\multicolumn{4}{l}{\small{$^{1)}$\  Depends on the alloying component, a conservative value was choosen.}}\\
 	\end{tabular}
