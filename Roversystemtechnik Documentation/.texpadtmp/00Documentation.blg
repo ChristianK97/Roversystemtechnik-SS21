@@ -27,7 +27,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11860 items from 5000.
+Reallocated field_info (elt_size=4) to 12280 items from 5000.
 Database file #1: ../00Documentation-blx.bib
 Database file #2: ../References.bib
 I was expecting a `,' or a `}'---line 177 of file ../References.bib
@@ -900,45 +900,45 @@ Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro 
 while executing---line 2813 of file biblatex.bst
 Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
 while executing---line 2813 of file biblatex.bst
-You've used 48 entries,
+You've used 51 entries,
             6393 wiz_defined-function locations,
-            1474 strings with 17832 characters,
-and the built_in function-call counts, 262020 in all, are:
-= -- 16854
-> -- 9075
-< -- 1210
-+ -- 8323
-- -- 5874
-* -- 17229
-:= -- 27778
+            1490 strings with 18252 characters,
+and the built_in function-call counts, 275937 in all, are:
+= -- 17392
+> -- 10114
+< -- 1303
++ -- 9160
+- -- 6652
+* -- 17869
+:= -- 29344
 add.period$ -- 0
-call.type$ -- 48
-change.case$ -- 490
-chr.to.int$ -- 352
-cite$ -- 94
-duplicate$ -- 22264
-empty$ -- 24795
-format.name$ -- 2513
-if$ -- 52534
+call.type$ -- 51
+change.case$ -- 508
+chr.to.int$ -- 424
+cite$ -- 100
+duplicate$ -- 23530
+empty$ -- 25981
+format.name$ -- 2654
+if$ -- 54954
 int.to.chr$ -- 0
-int.to.str$ -- 128
+int.to.str$ -- 138
 missing$ -- 0
-newline$ -- 1093
-num.names$ -- 2003
-pop$ -- 16046
+newline$ -- 1156
+num.names$ -- 2129
+pop$ -- 17022
 preamble$ -- 1
-purify$ -- 700
+purify$ -- 727
 quote$ -- 0
-skip$ -- 8081
+skip$ -- 8602
 stack$ -- 0
-substring$ -- 32795
-swap$ -- 5344
-text.length$ -- 1073
+substring$ -- 33638
+swap$ -- 5704
+text.length$ -- 1154
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1620
+type$ -- 1722
 warning$ -- 0
-while$ -- 2656
+while$ -- 2801
 width$ -- 0
-write$ -- 1046
+write$ -- 1106
 (There were 428 error messages)
