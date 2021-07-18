@@ -375,7 +375,7 @@ Due to power and time constraints, the rover will transmit only telemetry during
 To achieve the scientific output from \autoref{chap:sc-output} the transmission time per european day is calculated in \autoref{app:MissionDataOutput} (\autoref{tab:Tx-tptal}) and adds up to 38,23 minutes. 
 	
 \subsection{Communication System}
-Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 25 dB high gain antenna [Missing Reference] and a low gain antenna which is not further specified in literature.\\
+Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 25 dB high gain antenna \cite{Lander_HGA} and a low gain antenna which is not further specified in literature.\\
 
 The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59~\text{dB}$, resulting in a Bit Error Rate of less than $10^{-4}$. The link budget has been performed under the conservative considerations listed in \autoref{tab:lb-param}.\\
 
@@ -384,7 +384,7 @@ Using the Landers LGA greatly increases robustness due to the elimination of poi
 \subsubsection{Component Selection}
 
 Due to the considerably high link margin the focus is on low mass and low power components with flight heritage such as flown on CubeSat missions. Criteria with relatively small impact on the link budget such as component noise or even FEC have not been taken into account. The rover communication uses X-Band for increased compatibility with the lander and has a total system mass of less than $1~\text{kg}$. \\
-Since radiation hardness was not included in most data sheets a total dose of $<20~\text{krad}$ was assumed in accordance with values for LEO [Missing Reference]. \\
+Since radiation hardness was not included in most data sheets a total dose of $<20~\text{krad}$ was assumed in accordance with values for COTS components for LEO \cite{COTS_Rad}. \\
 
 The selected components are listed in \autoref{tab:ComCompComp}. 
 
@@ -406,9 +406,9 @@ Antenna     & Endurosat & patch antenna & mass          & 2,2 g    & frequency  
 Expected transmission times per mission day are less than 40 minutes (see \autoref{app:MissionDataOutput}, \autoref{tab:Tx-tptal}). Therefore the transmitter mass is identified as more critical than power. \\
 Receiver duty cycles on the other hand range close to 100 \% (REFERENCE POWER BUDGET). Thus power has been identified as the most crucial criteria. \\
 A passive X-Band antenna was selected due to compact dimensions and zero power consumption.  \\
-The entire trade off can be found in (APP Trade off).
+The entire trade off can be found in the digital appendix.
 
- \subsection{Command \& Data Handling}
+ \subsection{Command \& Data Handling} \label{C&DH}
  
  With respect to restricted power supply a redundant OBC hot-cold configuration stands to reason. Additionally, the standby mode is suggested during hibernation and charging modes relying solely on the PCDU (see chapter [Missing Reference]). 
 Emphasis for the Electronics selection is placed on flight proven radiation hardness to increase mission robustness in the high radiation environment of the Jupiter system. 
