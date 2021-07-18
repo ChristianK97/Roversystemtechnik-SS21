@@ -1355,7 +1355,9 @@ In order to simulate the TID for different radiation protections the Geant4 tool
 \label{app:AppendixRadiationImprovements}
 
 All simulations of the improvements introduced in \autoref{subsec:RadiationImprovements} are performed in the same way as in \autoref{subsec:AppendixRadiationExposures}. \\ \\
-In \autoref{fig:Radiation_Improvements_Individual}, the TID over 30 days within the E-Bay is shown. If all components with a radiation resistance under 43.27 krad are shielded individually, the additional shielding structure around the E-Bay can be removed and the aluminium structure would be sufficient.
+In \autoref{fig:Radiation_Improvements_Individual}, the TID over 30~days within the E-Bay is shown with only the aluminium structure. If all components with a radiation resistance under 43.27~krad are shielded individually, the additional shielding structure around the E-Bay can be removed and the aluminium structure would be sufficient. \\ \\
+The aluminium structure would also be sufficient if a layer of 1~cm of water mined in-situ would be used as shielding which is present in \autoref{fig:Radiation_Improvements_Ice}. \\ \\
+Both improvements would save the mass of the lead and iron shielding for the optimised shielding of 897.2~g.
 
 \begin{figure}[htp]
 	\centering
@@ -1364,14 +1366,14 @@ In \autoref{fig:Radiation_Improvements_Individual}, the TID over 30 days within 
 	\label{fig:Radiation_Improvements_Individual}
 \end{figure}
 
-The resulting mass savings can be calculated with \autoref{eq:RadiationImprovementsIndividual} with \(m^*\) as the specific weight of the radiation protection and \(N\) as the amount of components within the E-Bay with a radiation resistance under 43.27~krad as of \autoref{tab:RadiationList}.
+%The resulting mass savings can be calculated with \autoref{eq:RadiationImprovementsIndividual} with \(m^*\) as the specific weight of the radiation protection and \(N\) as the amount of components within the E-Bay with a radiation resistance under 43.27~krad as of \autoref{tab:RadiationList}.
 
-\begin{equation}
-	\Delta m = SA_\text{E-Bay} \cdot m^*_\text{Shielding} - \sum\nolimits_{n=0}^N SA_\text{Component, n} \cdot m^*_\text{Shielding}
-	\label{eq:RadiationImprovementsIndividual}
-\end{equation}
+%\begin{equation}
+%	\Delta m = SA_\text{E-Bay} \cdot m^*_\text{Shielding} - \sum\nolimits_{n=0}^N SA_\text{Component, n} \cdot m^*_\text{Shielding}
+%	\label{eq:RadiationImprovementsIndividual}
+%\end{equation}
 
-With inserted values this results in a mass saving of \(\Delta m\) = 736.2~g.
+%With inserted values this results in a mass saving of \(\Delta m\) = 736.2~g.
 
 \begin{figure}[htp]
 	\centering
