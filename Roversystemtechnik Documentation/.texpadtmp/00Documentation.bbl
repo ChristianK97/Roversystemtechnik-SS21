@@ -244,5 +244,893 @@
     \endverb
     \field{year}{2021}
   \endentry
+
+  \entry{Europa}{article}{}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.heliyon.2019.e01908
+    \endverb
+    \field{issn}{2405-8440}
+    \field{number}{6}
+    \field{pages}{e01908}
+    \field{title}{The surface temperature of Europa}
+    \field{volume}{5}
+    \field{journaltitle}{Heliyon}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Europa_g}{online}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{JPL Solar System Dynamics}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J3}
+    \strng{fullhash}{J3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Europa By The Numbers}
+    \verb{url}
+    \verb https://solarsystem.nasa.gov/moons/jupiter-moons/europa/by-the-number
+    \verb s/
+    \endverb
+    \field{urlday}{13}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Europa_geysers}{online}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Svetlana Shekhtman, NASA}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S4}
+    \strng{fullhash}{S4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{NASA Scientists Confirm Water Vapor on Europa}
+    \verb{url}
+    \verb https://www.nasa.gov/feature/goddard/2019/nasa-scientists-confirm-wat
+    \verb er-vapor-on-europa
+    \endverb
+    \field{urlday}{11}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Parameters}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EA}{%
+         family={Ellery},
+         familyi={E\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Mobile robotics, Planetary exploration, Mars rover, Bekker theory,
+  Mobility analysis, Robot–environment interaction}
+    \strng{namehash}{EA1}
+    \strng{fullhash}{EA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Planetary exploration through the deployment of robotic rovers on planetary
+  surfaces such as mars imposes unique constraints on mobile robotics. In
+  particular, I examine the issue of mobility across a hostile planetary
+  surface as an oft-neglected aspect of robotic autonomy. I compare the
+  traction performance of a wheeled concept (the rocker–bogie springless
+  system adopted on Sojourner), a tracked vehicle concept and a novel concept
+  called the elastic loop mobility system (ELMS). I highlight some limitations
+  of the Bekker theory analysis used here in the determination of mobility
+  characteristics of any vehicle locomotion system.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.robot.2004.08.007
+    \endverb
+    \field{issn}{0921-8890}
+    \field{note}{Mobile Robotics in the United Kingdom}
+    \field{number}{1}
+    \field{pages}{29\bibrangedash 39}
+    \field{title}{Environment–robot interaction—the basis for mobility in
+  planetary micro-rovers}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0921889004002015
+    \endverb
+    \field{volume}{51}
+    \field{journaltitle}{Robotics and Autonomous Systems}
+    \field{year}{2005}
+  \endentry
+
+  \entry{rollingCoefficient}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HA}{%
+         family={Hoffman},
+         familyi={H\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SLH}{%
+         family={Steen-Larsen},
+         familyi={S\bibinithyphendelim L\bibinitperiod},
+         given={Hans},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Christianson},
+         familyi={C\bibinitperiod},
+         given={Knut},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hvidberg},
+         familyi={H\bibinitperiod},
+         given={Christine},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HASLHCKHC1}
+    \strng{fullhash}{HASLHCKHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.5194/gi-8-149-2019
+    \endverb
+    \field{pages}{149\bibrangedash 159}
+    \field{title}{A low-cost autonomous rover for polar science}
+    \field{volume}{8}
+    \field{journaltitle}{Geoscientific Instrumentation, Methods and Data
+  Systems}
+    \field{month}{06}
+    \field{year}{2019}
+  \endentry
+
+  \entry{MMP}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{M. Saarilahti, University of Helsinki}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{SOIL INTERACTION MODEL}
+    \verb{url}
+    \verb https://helda.helsinki.fi/bitstream/handle/1975/8020/ECO031.pdf?seque
+    \verb nce=3&isAllowed=y
+    \endverb
+    \field{urlday}{13}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Bekker}{book}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{J.Y. Wong}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {John Wiley}%
+      {Sons}%
+    }
+    \strng{namehash}{J4}
+    \strng{fullhash}{J4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{0-471-35461-9}
+    \field{subtitle}{Third Edition}
+    \field{title}{Theory of Ground Vehicles}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{2001}
+  \endentry
+
+  \entry{R.Abelsonetal..2004}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{R. Abelson et al.}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=N}{%
+         family={{NASA JPL}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{JPL Pub 04-10}
+    \field{title}{{Enabling Exploration with Small Radioisotope Power Systems}}
+    \field{year}{2004}
+  \endentry
+
+  \entry{S.Magdum.2019}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{S. Magdum}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=W}{%
+         family={{Western Michigan University}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Model Based Development of The Enhanced Multi-Mission
+  Radioisotope Thermoelectric Generator and Effect of Thermoelectric Element
+  Length on eMMRTG}}
+    \verb{url}
+    \verb \url{http://homepages.wmich.edu/~leehs/ME539/Final%20Presentation%20o
+    \verb n%20eMMRTG.pdf}
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{Holgate.2015}{article}{}
+    \name{author}{6}{}{%
+      {{hash=HTC}{%
+         family={Holgate},
+         familyi={H\bibinitperiod},
+         given={Tim\bibnamedelima C.},
+         giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bennett},
+         familyi={B\bibinitperiod},
+         given={Russell},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hammel},
+         familyi={H\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Caillat},
+         familyi={C\bibinitperiod},
+         given={Thierry},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Keyser},
+         familyi={K\bibinitperiod},
+         given={Steve},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sievers},
+         familyi={S\bibinitperiod},
+         given={Bob},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HTCBRHTCTKSSB1}
+    \strng{fullhash}{HTCBRHTCTKSSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb \url{10.1007/s11664-014-3564-9}
+    \endverb
+    \field{issn}{0361-5235}
+    \field{number}{6}
+    \field{pages}{1814\bibrangedash 1821}
+    \field{pagination}{page}
+    \field{title}{{Increasing the Efficiency of the Multi-mission Radioisotope
+  Thermoelectric Generator}}
+    \field{volume}{44}
+    \field{journaltitle}{{Journal of Electronic Materials}}
+    \field{year}{2015}
+  \endentry
+
+  \entry{eMMRTG.NASA}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{JPL NASA}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=N}{%
+         family={{NASA JPL}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J2}
+    \strng{fullhash}{J2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Enhanced Multi-Mission Radioisotope Thermoelectric Generator
+  (eMMRTG) Concept}}
+    \verb{url}
+    \verb \url{https://rps.nasa.gov/resources/56/enhanced-multi-mission-radiois
+    \verb otope-thermoelectric-generator-emmrtg-concept/}
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{Lakdawalla.2018}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LE}{%
+         family={Lakdawalla},
+         familyi={L\bibinitperiod},
+         given={Emily},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer International Publishing}}%
+    }
+    \strng{namehash}{LE1}
+    \strng{fullhash}{LE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb \url{10.1007/978-3-319-68146-7}
+    \endverb
+    \field{isbn}{978-3-319-68144-3}
+    \field{title}{{The Design and Engineering of Curiosity}}
+    \list{location}{1}{%
+      {Cham}%
+    }
+    \field{year}{2018}
+  \endentry
+
+  \entry{IRSatUniversityofStuttgart.2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{S. Fasoulas et al.}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Lecture Series: Energy Systems for Space Application SS
+  2020}}
+    \list{institution}{1}{%
+      {{IRS at University of Stuttgart}}%
+    }
+    \field{year}{2020}
+  \endentry
+
+  \entry{S.Klinkner.2021}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=S}{%
+         family={{S. Klinkner}},
+         familyi={S\bibinitperiod},
+      }}%
+      {{hash=P}{%
+         family={{P. Winterhalder}},
+         familyi={P\bibinitperiod},
+      }}%
+      {{hash=M}{%
+         family={{M.Nitz et al.}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPM1}
+    \strng{fullhash}{SPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Lecture Series - Rover System Technology SS2021}}
+    \list{institution}{1}{%
+      {{IRS at University of Stuttgart}}%
+    }
+    \field{year}{2021}
+  \endentry
+
+  \entry{SAFTBatteries.2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{SAFT Batteries}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S3}
+    \strng{fullhash}{S3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Datasheet - SAFT MP 176065 xlr}}
+    \verb{url}
+    \verb \url{https://www.saftbatteries.com/products-solutions/products/mp-sma
+    \verb ll-vl}
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{BradfordSpace.2019}{misc}{}
+    \name{editor}{1}{}{%
+      {{hash=B}{%
+         family={{BRADFORD ENGINEERING BV}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{title}{{Datasheet - Nova PCDU}}
+    \verb{url}
+    \verb \url{https://satsearch.co/products/bradford-nova-pcdu}
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{Lander_HGA}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NCHLBC}{%
+         family={Nacer\bibnamedelima Chahat},
+         familyi={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+         suffix={Brant\bibnamedelima Cook},
+         suffixi={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Heather\bibnamedelima Lim},
+         giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=EP}{%
+         family={Estabrook},
+         familyi={E\bibinitperiod},
+         given={Polly},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NCBCHLEP1}
+    \strng{fullhash}{NCBCHLEP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{All-Metal Dual-Frequency RHCP High-Gain Antenna for a
+  Potential Europa Lander}
+  \endentry
+
+  \entry{COTS_Rad}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=DSJD}{%
+         family={Dough\bibnamedelima Sinclair},
+         familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Jonathan\bibnamedelima Dyer},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sinclair}%
+    }
+    \strng{namehash}{DSJD1}
+    \strng{fullhash}{DSJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{27th Annual AIAA/USU Conference on Small Satellites}
+    \field{pages}{2}
+    \field{title}{Radiation Effects and COTS Parts in SmallSats}
+    \field{year}{2013}
+  \endentry
+
+  \entry{ref_tcs_01}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Thermal Space and Thermal Straps }},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Graphene Thermal LyNX® Technology}}
+    \verb{url}
+    \verb https://thermal-space.com/thermal-lynx/
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_02}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Light-Weight Radioisotope Heater Unit}}
+    \verb{url}
+    \verb https://rps.nasa.gov/power-and-thermal-systems/thermal-systems/light-
+    \verb weight-radioisotope-heater-unit/
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_03}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NASA / JPL}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N2}
+    \strng{fullhash}{N2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Aerogel}}
+    \verb{url}
+    \verb https://solarsystem.nasa.gov/stardust/aerogel.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_04}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MFH}{%
+         family={Milanze},
+         familyi={M\bibinitperiod},
+         given={Fernando\bibnamedelima H.},
+         giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=MMB}{%
+         family={Mantelli},
+         familyi={M\bibinitperiod},
+         given={Marcia\bibnamedelima B.H.},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MFHMMB1}
+    \strng{fullhash}{MFHMMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0017-9310(03)00294-1
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{24}
+    \field{pages}{4573\bibrangedash 4586}
+    \field{pagination}{page}
+    \field{title}{Theoretical and experimental studies of a bi-metallic heat
+  switch for space applications}
+    \field{volume}{46}
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{year}{2003}
+  \endentry
+
+  \entry{ref_tcs_05}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=StTiId}{%
+         family={{S. Klinkner}},
+         familyi={S\bibinitperiod},
+         suffix={date =\bibnamedelima {2020}},
+         suffixi={d\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
+  \bibinitperiod},
+         given={title = {{Thermal Control System for Rover Systems}}
+  institution =\bibnamedelima {{IRS at University of Stuttgart}}},
+         giveni={t\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
+  T\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim
+  \bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SdtTiI1}
+    \strng{fullhash}{SdtTiI1}
+    \field{labelnamesource}{author}
+  \endentry
+
+  \entry{JupiterRadiationEnvironment}{online}{}
+    \name{author}{1}{}{%
+      {{hash=a}{%
+         family={astronomy.com},
+         familyi={a\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{a1}
+    \strng{fullhash}{a1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{What is the source of Jupiter’s radiation?}
+    \verb{url}
+    \verb https://astronomy.com/magazine/ask-astro/2020/02/what-is-the-source-o
+    \verb f-jupiters-radiation
+    \endverb
+    \field{urlday}{18}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Spenvis}{online}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={ESA},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{SPENVIS}
+    \verb{url}
+    \verb https://www.spenvis.oma.be
+    \endverb
+    \field{urlday}{18}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{8823057}{article}{}
+    \name{author}{7}{}{%
+      {{hash=WJZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Jian-Zhao},
+         giveni={J\bibinithyphendelim Z\bibinitperiod},
+      }}%
+      {{hash=MJN}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Ji-Nan},
+         giveni={J\bibinithyphendelim N\bibinitperiod},
+      }}%
+      {{hash=QJW}{%
+         family={Qiu},
+         familyi={Q\bibinitperiod},
+         given={Jia-Wen},
+         giveni={J\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Dai},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ZAW}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={An-Wen},
+         giveni={A\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=ZQX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Qing-Xiang},
+         giveni={Q\bibinithyphendelim X\bibinitperiod},
+      }}%
+      {{hash=ZAS}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Ao-Song},
+         giveni={A\bibinithyphendelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJZMJNQJWTDZAWZQXZAS1}
+    \strng{fullhash}{WJZMJNQJWTDZAWZQXZAS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/TNS.2019.2939184
+    \endverb
+    \field{number}{10}
+    \field{pages}{2179\bibrangedash 2187}
+    \field{title}{Optimization Design of Radiation Vault in Jupiter Orbiting
+  Mission}
+    \field{volume}{66}
+    \field{journaltitle}{IEEE Transactions on Nuclear Science}
+    \field{year}{2019}
+  \endentry
+
+  \entry{FLP_Exercise}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PS}{%
+         family={Paetschke},
+         familyi={P\bibinitperiod},
+         given={Susann},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PS1}
+    \strng{fullhash}{PS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Exercise 5 - Satellite Operations using the example of the
+  small satellite Flying Laptop}}
+    \list{institution}{1}{%
+      {{IRS at University of Stuttgart}}%
+    }
+    \field{year}{2020}
+  \endentry
+
+  \entry{FLP}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SPJB}{%
+         family={Susann\bibnamedelima Paetschke},
+         familyi={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={Jonas\bibnamedelima Burgdorf},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPJB1}
+    \strng{fullhash}{SPJB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Lecture Series - Satellite Operations using the example of
+  the small satellite Flying Laptop}}
+    \list{institution}{1}{%
+      {{IRS at University of Stuttgart}}%
+    }
+    \field{year}{2020}
+  \endentry
+
+  \entry{HIREW}{article}{}
+    \name{author}{1}{}{%
+      {{hash=JTHHMHTOSHMSSISS}{%
+         family={Jun\bibnamedelima Takada},
+         familyi={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+         suffix={Shuji\bibnamedelima Senada},
+         suffixi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Hiroki Hihara Masahiro Hamai Takeshi Oshima Shinji Hagino
+  Makoto Suzuki Satoshi\bibnamedelima Ichikawa},
+         giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  T\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim
+  S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  S\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JTSSHHMHTOSHMSSI1}
+    \strng{fullhash}{JTSSHHMHTOSHMSSI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{479\bibrangedash 481}
+    \field{title}{A Fast Progressive Lossless Image Compression Method for
+  Space and Satellite Images}
+    \field{journaltitle}{IEEE}
+    \field{month}{09}
+    \field{year}{2007}
+  \endentry
+
+  \entry{ref_tcs_10}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GAGH}{%
+         family={GmbH},
+         familyi={G\bibinitperiod},
+         given={Aluminium Giesserei\bibnamedelima Hannover},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GAGH1}
+    \strng{fullhash}{GAGH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Produktdatenblatt AA5083}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/5083_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_11}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GAGH}{%
+         family={GmbH},
+         familyi={G\bibinitperiod},
+         given={Aluminium Giesserei\bibnamedelima Hannover},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GAGH1}
+    \strng{fullhash}{GAGH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Produktdatenblatt AA6082}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/6082_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_12}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Aluminium Giesserei Hannover GmbH}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Produktdatenblatt AA7075}}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/7075_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_08}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutsche Edelstahlwerke}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{1.4418X4 - CrNiMo16-5-1}}
+    \verb{url}
+    \verb https://www.dew-stahl.com/fileadmin/files/dew-stahl.com/documents/Pub
+    \verb likationen/Werkstoffdatenblaetter/Luft_Raumfahrt/1.4418_de.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_09}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=ED}{%
+         family={Edelstahlwerke},
+         familyi={E\bibinitperiod},
+         given={Deutsche},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ED1}
+    \strng{fullhash}{ED1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Firmodur 7225}
+    \verb{url}
+    \verb https://www.dew-stahl.com/fileadmin/files/dew-stahl.com/documents/Pub
+    \verb likationen/Werkstoffdatenblaetter/Baustahl/1.7225_1.7227_de.pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_06}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=t}{%
+         family={{thyssenkrupp Material Schweiz}},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{t1}
+    \strng{fullhash}{t1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Titan 6Al4V “ELI”}}
+    \verb{url}
+    \verb https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppBAMXSchw
+    \verb eiz/de/downloads/werkstoffdatenblaetter-titan/link-titan_grade_5_eli.
+    \verb pdf
+    \endverb
+  \endentry
+
+  \entry{ref_tcs_07}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=t}{%
+         family={{thyssenkrupp Material Schweiz}},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{t1}
+    \strng{fullhash}{t1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Titan Grade 5}}
+    \verb{url}
+    \verb https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppBAMXSchw
+    \verb eiz/de/downloads/werkstoffdatenblaetter-titan/link-titan_grade_5.pdf
+    \endverb
+  \endentry
 \enddatalist
 \endinput
