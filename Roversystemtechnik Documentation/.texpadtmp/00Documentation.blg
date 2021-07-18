@@ -9,7 +9,7 @@ A level-1 auxiliary file: 02Mission.aux
 A level-1 auxiliary file: 03Payload.aux
 A level-1 auxiliary file: 04Operation.aux
 A level-1 auxiliary file: 05Subsystems.aux
-White space in argument---line 56 of file /Users/danielbolke/Documents/GitHub/Roversystemtechnik-SS21/Roversystemtechnik Documentation/.texpadtmp/00Documentation.aux
+White space in argument---line 62 of file /Users/danielbolke/Documents/GitHub/Roversystemtechnik-SS21/Roversystemtechnik Documentation/.texpadtmp/00Documentation.aux
  : \citation{rolling
  :                   coefficient}
 I'm skipping whatever remains of this command
@@ -31,6 +31,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10040 items from 5000.
 Database file #1: ../00Documentation-blx.bib
 Database file #2: ../References.bib
 I was expecting a `,' or a `}'---line 177 of file ../References.bib
@@ -38,17 +39,8 @@ I was expecting a `,' or a `}'---line 177 of file ../References.bib
  : @misc{ref_tcs_06,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 195 of file ../References.bib
- : 
- : @misc{ref_tcs_09,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 201 of file ../References.bib
- : 
- : @misc{ref_tcs_10,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Platzhalter"
+Warning--I didn't find a database entry for "MMP"
+Warning--I didn't find a database entry for "Bekker"
 Biblatex version: 3.16
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
@@ -142,45 +134,45 @@ Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Co
 while executing---line 2813 of file biblatex.bst
 Too many commas in name 1 of "{S. Klinkner}, date = {2020}, title = {{Thermal Control System for Rover Systems}}, institution = {{IRS at University of Stuttgart}}" for entry ref_tcs_05
 while executing---line 2813 of file biblatex.bst
-You've used 29 entries,
+You've used 34 entries,
             6393 wiz_defined-function locations,
-            1359 strings with 13960 characters,
-and the built_in function-call counts, 131803 in all, are:
-= -- 7760
-> -- 4891
-< -- 646
-+ -- 4103
-- -- 3113
-* -- 8007
-:= -- 13418
+            1390 strings with 14804 characters,
+and the built_in function-call counts, 173224 in all, are:
+= -- 10692
+> -- 6107
+< -- 808
++ -- 5593
+- -- 3892
+* -- 11101
+:= -- 18438
 add.period$ -- 0
-call.type$ -- 29
-change.case$ -- 276
-chr.to.int$ -- 166
-cite$ -- 56
-duplicate$ -- 11819
-empty$ -- 12760
-format.name$ -- 1414
-if$ -- 26691
+call.type$ -- 34
+change.case$ -- 308
+chr.to.int$ -- 220
+cite$ -- 66
+duplicate$ -- 15715
+empty$ -- 16232
+format.name$ -- 1851
+if$ -- 34638
 int.to.chr$ -- 0
-int.to.str$ -- 85
+int.to.str$ -- 91
 missing$ -- 0
-newline$ -- 609
-num.names$ -- 1209
-pop$ -- 9480
+newline$ -- 788
+num.names$ -- 1387
+pop$ -- 11320
 preamble$ -- 1
-purify$ -- 385
+purify$ -- 468
 quote$ -- 0
-skip$ -- 4700
+skip$ -- 5661
 stack$ -- 0
-substring$ -- 13822
-swap$ -- 2903
-text.length$ -- 600
+substring$ -- 19553
+swap$ -- 3684
+text.length$ -- 767
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 974
+type$ -- 1144
 warning$ -- 0
-while$ -- 1304
+while$ -- 1909
 width$ -- 0
-write$ -- 581
-(There were 49 error messages)
+write$ -- 755
+(There were 47 error messages)
