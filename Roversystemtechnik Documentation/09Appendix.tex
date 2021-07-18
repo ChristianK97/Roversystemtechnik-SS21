@@ -704,6 +704,44 @@ The HIREW compression algorithm is suggested for the mission considering a high 
 %-------------------------------------------------
 \section{Thermal Controls System} \label{sec:AppendixThermal}
 %-------------------------------------------------
+\subsection{Results}
+\begin{table}[htb]
+	\centering
+	\caption{Temperature results in K of thermal analysis, \textit{with out}  margin .}
+	\begin{tabular}{lccccc}
+		\toprule
+		Components & Hot Case & Cold Case & Charging & Communication & Analyse  \\ \midrule
+		RTG  & 414 & 390 & 401 & 407  &  400   \\
+		Electric Bay & 297 & 264 & 289 & 309 & 277 \\
+		Drill  & 284 & 256 & 267 & 272 & 329  \\
+		Camera & 327 & 249 & 256 & 258 & 256 \\
+		Chassis & 269 & 231  & 245 & 252 & 247 \\
+		Steer Engine & 296 & 249 & 261 & 262 & 261  \\
+		Drive Engine & 344 & 251 & 262 & 262 & 262 \\   \bottomrule
+	\end{tabular}
+	\label{tab:tcs_temp1}
+\end{table}
+
+\begin{table}[htb]
+	\centering
+	\caption{Temperature results in K of thermal analysis, \textit{with}  margin .}
+	\begin{tabular}{lccccc}
+		\hline
+		Components & Hot Case & Cold Case & Charging & Communication & Analyse  \\[0.25em]
+		Margin & +15~K & -15~K & +15~K & +15~K & +15~K \\ \hline
+		RTG  & 429 & 375 & 416 & 422  & 415    \\
+		Electric Bay & 312 & 249 & 304 & 324 & 292 \\
+		Drill  & 299 & 241 & 282 & 287 & 344  \\
+		Camera & 342 & 234 & 271 & 273 & 271 \\
+		Chassis & 284 & 216 & 260 & 267 & 262 \\
+		Steering Engine & 311 & 234 & 276 & 277 & 276  \\
+		Drive Engine & 359 & 236 & 277 & 277 & 277 \\   \hline
+	\end{tabular}
+	\label{tab:tcs_temp2}
+\end{table}
+
+
+
 \subsection{Heat energy eqilibrium}  \label{sec:app_tcs_01}
 The follwing equiations describe each node of the thermal network.
 The input values were tanken from EPS, \autoref{sec:app_therm_2}, \autoref{sec:app_therm_3}, \autoref{sec:app_therm_4} respectively.
@@ -720,7 +758,6 @@ The input values were tanken from EPS, \autoref{sec:app_therm_2}, \autoref{sec:a
 \end{table}
 
 \underline{RTG:}
-
 \begin{equation}
 \begin{aligned}
 0=\  &\dot{Q}_{RTG} +CON_1 \cdot (T_{Bay}-T_{RTG})+CON_2 \cdot (T_{Ch}-T_{RTG})+ \\[1em]
@@ -729,39 +766,46 @@ The input values were tanken from EPS, \autoref{sec:app_therm_2}, \autoref{sec:a
 \end{aligned}
 \end{equation}
 
-\underline{Electric Bay:}\quad \small{Subscript\ \textit{Bay}}
-\begin{equation}0=\  \dot{Q}_{Bay}+ CON_1 \cdot (T_{RTG}-T_{Bay})+ CON_3 \cdot (T_{Ch}-T_{Bay})  -\epsilon_{Bay}\cdot \sigma_b \cdot S_{Bay}\cdot T_{Bay}^4 \end{equation}\\
+\underline{Electric Bay:}
+\begin{equation}
+	\begin{aligned}
+		0=\ &  \dot{Q}_{Bay}+ CON_1 \cdot (T_{RTG}-T_{Bay})+ (CON_3+n_{S2}\cdot CON_{S2}) \cdot (T_{Ch}-T_{Bay})-\\[1em]
+		&  -\epsilon_{Bay}\cdot \sigma_b \cdot S_{Bay}\cdot T_{Bay}^4
+	\end{aligned}
+\end{equation}\\
 with: 
 \begin{equation} \dot{Q}_{Bay} = \dot{Q}_{OBC} + \dot{Q}_{Tranceiver} +\dot{Q}_{Receiver} +\dot{Q}_{PCDU} \end{equation}\\
 
 \underline{Drill \& Analyser:}
 \begin{equation} 0= \ \dot{Q}_{Dr} +CON_4 \cdot (T_{Ch}-T_{Dr})+CON_5 \cdot (T_{RTG}-T_{Dr})   \end{equation} \\
-
+%
 \underline{Camera:}
 \begin{equation}
 \begin{aligned}
 0=\  &  \dot{Q}_{Cam} + \dot{Q}_{RHU} +CON_6 \cdot (T_{Ch}-T_{Cam})+ \\[1em]
-& +(CON_{14} +n_{S1}\cdot CON_{S1}) \cdot (T_{Rad}-T_{Cam})  - \epsilon_{Cam}\cdot \sigma_b \cdot S_{Cam}\cdot T_{Cam}^4 \\[2em]
+& +(CON_{14} +n_{S1}\cdot CON_{S1}) \cdot (T_{Rad}-T_{Cam})  -\\[1em]
+& - \epsilon_{Cam}\cdot \sigma_b \cdot S_{Cam}\cdot T_{Cam}^4 \\[2em]
 \end{aligned}
 \end{equation}
-
+%
 \underline{Radiator:}
-\begin{equation}(CON_{14} +n_{S1}\cdot CON_{S1}) \cdot (T_{Cam}-T_{Rad}) - \epsilon_{Rad}\cdot \sigma_b \cdot S_{Rad}\cdot T_{Rad}^4= 0  \end{equation}  \\
-
+\begin{equation}0=(CON_{14} +n_{S1}\cdot CON_{S1}) \cdot (T_{Cam}-T_{Rad}) - \epsilon_{Rad}\cdot \sigma_b \cdot S_{Rad}\cdot T_{Rad}^4  \end{equation}  \\
+%
 \underline{Chassis:}
 \begin{equation}
 \begin{aligned}
-0=\  &   \dot{Q}_{Radar}+\dot{Q}_{Hazcam}  +CON_2 \cdot (T_{RTG}-T_{Ch})+CON_3 \cdot (T_{Bay}-T_{Ch})+ \\[1em]
-&  +CON_4 \cdot (T_{Drill}-T_{Ch})+ CON_6 \cdot (T_{Cam}-T_{Ch})+CON_7 \cdot (T_{Node_1}-T_{Ch}) +  \\[1em]
-&  + \alpha_{Ch}\cdot [ S_0 \cdot (1+\rho_E) \cdot (S_{Ch1} \cdot \varphi_1  +S_{Ch2} \cdot \varphi_2 ) +   \epsilon_{E} \cdot \sigma_b \cdot S_{Ch3}\cdot T_{Surface}^4 ]-  \\[1em]
-&   -\epsilon_{Ch}\cdot \sigma_b \cdot S_{Ch}\cdot T_{Ch}^4 \\[2em]
+0=\  &   \dot{Q}_{Radar}+\dot{Q}_{Hazcam} +\dot{Q}_{Analyser} +\dot{Q}_{IMUs} +\\[1em]
+	& +CON_2 \cdot (T_{RTG}-T_{Ch})+(CON_3+n_{S2}\cdot CON_{S2})\cdot (T_{Bay}-T_{Ch})+ \\[1em]
+&  +  CON_4 \cdot (T_{Drill}-T_{Ch})+CON_6 \cdot (T_{Cam}-T_{Ch})+CON_7 \cdot (T_{Node_1}-T_{Ch}) +  \\[1em]
+&  + \alpha_{Ch}\cdot [ S_0 \cdot (1+\rho_E) \cdot (S_{Ch1} \cdot \varphi_1  +S_{Ch2} \cdot \varphi_2 ) +   \epsilon_{E} \cdot \sigma_b \cdot S_{Ch3}\cdot T_{Surface}^4 ]+  \\[1em]
+& +\epsilon_{Bay}\cdot \sigma_b \cdot S_{Bay}\cdot T_{Bay}^4 - \frac{1}{2} \cdot \epsilon_{Bo}\cdot \sigma_b \cdot S_{Bo}\cdot \left( \frac{T_{Ch}}{2} +\frac{T_{Node_1}}{2}  \right)^4  -\epsilon_{Ch}\cdot \sigma_b \cdot S_{Ch}\cdot T_{Ch}^4 \\[2em]
 \end{aligned}
 \end{equation}
 
 \underline{Steer Engine:}
 \begin{equation}
 \begin{aligned}
-0=\  &  4\cdot [\dot{Q}_{E,S} +(CON_8 +n_{S2}\cdot CON_{S2}) \cdot (T_{Node1}-T_{E,S})+ \\[1em]
+0=\  &  4\cdot [\dot{Q}_{E,S} +CON_8  \cdot (T_{Node1}-T_{E,S})+ \\[1em]
 &   +CON_9 \cdot (T_{RTG}-T_{E,S}) -\epsilon_{E,S}\cdot \sigma_b \cdot S_{E,S}\cdot T_{E,S}^4] \\[2em]
 \end{aligned}
 \end{equation}
@@ -770,7 +814,10 @@ with:
 \begin{equation}
 \begin{aligned}
 0=\  &  4\cdot [CON_7 \cdot (T_{Ch}-T_{Node_1})+CON_8 \cdot (T_{E,S}-T_{Node_1})+ \\[1em]
-&   +CON_10 \cdot (T_{Node_2}-T_{Node_1})] %\\[2em]
+&   +CON_10 \cdot (T_{Node_2}-T_{Node_1}) - \\[1em]
+&  - \frac{1}{2} \cdot \epsilon_{Bo}\cdot \sigma_b \cdot S_{Bo}\cdot \left( \frac{T_{Ch}}{2} +\frac{T_{Node_1}}{2}  \right)^4  - \\[1em]
+& - \frac{1}{2} \cdot \epsilon_{WF}\cdot \sigma_b \cdot S_{WF}\cdot \left( \frac{T_{Node_1}}{2} +\frac{T_{Node_2}}{2}  \right)^4- \\[1em]
+& -\epsilon_{E,S}\cdot \sigma_b \cdot S_{E,S}\cdot T_{E,S}^4\ ] \\[2em]
 \end{aligned}
 \end{equation}
 
@@ -778,15 +825,17 @@ with:
 \begin{equation}
 \begin{aligned}
 0=\  &  4 \cdot [\dot{Q}_{E,D}+ (CON_{11}+n_{S3}\cdot CON_{S3}) \cdot (T_{Node_2}-T_{E,D})+ \\[1em]
-&  + CON_{12} \cdot (T_{RTG}-T_{E,D})-\epsilon_{E,D}\cdot \sigma_b \cdot S_{E,D}\cdot T_{E,D}^4 ]  %\\[2em]
+&  + CON_{12} \cdot (T_{RTG}-T_{E,D})-\epsilon_{E,D}\cdot \sigma_b \cdot S_{E,D}\cdot T_{E,D}^4 ]  \\[2em]
 \end{aligned}
 \end{equation}
 
 \underline{Distribution Node 2:}
 \begin{equation}
 \begin{aligned}
-0=\ & 4 \cdot [CON_{10} \cdot (T_{Node_1}-T_{Node_2})+CON_{11} \cdot (T_{E,D}-T_{Node_2})+   \\[1em]
-&   +CON_{13} \cdot (T_{Ground}-T_{Node_2})  ]% \\[2em]
+0=\ & 4 \cdot [CON_{10} \cdot (T_{Node_1}-T_{Node_2})+CON_{13} \cdot (T_{Ground}-T_{Node_2}) +   \\[1em]
+&   +(CON_{11}+n_{S3}\cdot CON_{S3}) \cdot (T_{E,D}-T_{Node_2}) + \\[1em]
+& - \frac{1}{2} \cdot \epsilon_{WF}\cdot \sigma_b \cdot S_{WF}\cdot \left( \frac{T_{Node_1}}{2} +\frac{T_{Node_2}}{2}  \right)^4- \\[1em]
+& -\epsilon_{E,D}\cdot \sigma_b \cdot S_{E,D}\cdot T_{E,D}^4\ ] \\[2em]
 \end{aligned}
 \end{equation}
 \clearpage
@@ -956,7 +1005,7 @@ with:
 		& & & & \\[-0.75em]
 		Rim & $S_R=12 \ \mm^2$ & $l_r=100\ \mm$ & Aluminium & 6 \\[1.5em]
 		\multicolumn{5}{l}{\textit{Note}: It was assumed, that the wheel temperature equals the surface temperature} \\
-		\multicolumn{5}{l}{because of the thin rims and resulting low heat conduction.} \\[3em]	
+		\multicolumn{5}{l}{because of the thin rims and resulting low heat conduction.} \\
 	\end{tabular}
 \label{tab:tcs_nodes5}
 \end{table}
@@ -972,7 +1021,20 @@ It was assumed, that the gradients of section 2 and 3 as well as the temperature
 The axis interseption is a function the toggle temperature ($a_2=f(\Delta T_{toggle}),\ \Delta T_{Toggle}=T_{new}-T_{old}|_{toggle}$).
 The used toggle temperature are listed in autoref
 
-\newpage
+\begin{table}[H]
+	\centering
+	\caption{Toggle temperature and amount of bi-metallic heat switch.}
+	\begin{tabular}{c@{\quad}ccc}
+		\hline
+		Heat switch name  & Linked Components & Temperature  & Amount \\ \hline
+		$CON_{S1}$ & {Camera} $\leftrightarrow$ {Radiator} & -20\ $^\circ$C  & $n_{S1}=$4  \\[1em]
+		$CON_{S2}$ & {EBay} $\leftrightarrow$ {Chassis} & -30\ $^\circ$C  & $n_{S2}=$2  \\[1em]
+		$CON_{S3}$ & {Drive Engine} $\leftrightarrow$ {Node$_2$} & -20\ $^\circ$C  & $n_{S3}=1$  \\
+		&											&						& (in total 4)  \\\hline
+	\end{tabular}
+	\label{tab:tcs_toggle}
+\end{table}
+
 
 \begin{table}[H]
 	\centering
@@ -992,27 +1054,12 @@ The used toggle temperature are listed in autoref
 	\label{tab:tcs_section}
 \end{table}
 
-\begin{figure}[H]
+\begin{figure}[htb]
 	\centering
 	\includegraphics[width=1\textwidth]{Media/tcs_diag_section}
 	\caption{Conductance characteristic of heat switch diveded in sections.}
 	\label{fig:tcs_switch03}
 \end{figure}
-
-
-\begin{table}[H]
-	\centering
-	\caption{Toggle temperature and amount of bi-metallic heat switch.}
-	\begin{tabular}{c@{\quad}ccc}
-		\hline
-		Heat switch name  & Linked Components & Temperature  & Amount \\ \hline
-		$CON_{S1}$ & {Camera} $\leftrightarrow$ {Radiator} & -20\ $^\circ$C  & $n_{S1}=$4  \\[1em]
-		$CON_{S2}$ & {EBay} $\leftrightarrow$ {Chassis} & -30\ $^\circ$C  & $n_{S2}=$2  \\[1em]
-		$CON_{S3}$ & {Drive Engine} $\leftrightarrow$ {Node$_2$} & -20\ $^\circ$C  & $n_{S3}=1$  \\
-	 			&											&						& (in total 4)  \\\hline
-	\end{tabular}
-	\label{tab:tcs_toggle}
-\end{table}
 
 \subsection{Rover absorptivity} \label{sec:app_therm_4}
 The rover position relativ to the direct sun radiation is given by the ecliptic longitude $\lambda_R$ and latitude $\delta_R$ angle, where the axis $x_E$ points always to the sun, \autoref{fig:tcs_rad2}.
@@ -1039,20 +1086,20 @@ The view factors during eclipse are set to zero.
 \begin{table}[H]
 	\centering
 	\caption{Temperatur limits of the rover components.}
-	\begin{tabular}{lccc}
+	\begin{tabular}{l@{\qquad\qquad}cc}
 		\hline 
-		& \multicolumn{2}{l}{Temperature limits in [$^\circ$C]} & Source\\ 
-		Component	&	min. & max. &\\\hline
-		OBC & -55 & 70 & \\
-		Transmitter & -10 & 50 & \\
-		Receiver & -30 & 70 & \\
-		PCDU & -40 & 60 & \\
-		Battery & -20 & 60 & \cite{SAFTBatteries.2018}\\
-		Camera & -40 & 70  & \\
-		Objektive  & -40 & 71 & \\
-		Steering Engine & -30 & 100 & \\
-		Drive Engine & -40 & 100 & \\
-		Drive Gear & -40 & 100  & \\ \hline
+		& \multicolumn{2}{l}{Temperature limits in [$^\circ$C]} \\ 
+		Component	&	min. & max. \\\hline
+		OBC & -55 & 70 \\
+		Transmitter & -10 & 50 \\
+		Receiver & -30 & 70  \\
+		PCDU & -40 & 60  \\
+		Battery & -20 & 60 \\
+		Camera & -40 & 70  \\
+		Objektive  & -40 & 71  \\
+		Steering Engine & -30 & 100 \\
+		Drive Engine & -40 & 100 \\
+		Drive Gear & -40 & 100  \\ \hline
 	\end{tabular}
 	\label{tab:tcs_limits}
 \end{table}
@@ -1086,8 +1133,8 @@ with the reduction factor $f_{r}$=0.8.
 	\label{tab:tcs_lynx}
 \end{table}
 
-The Europa surface temperature varies at the  equator between $T_{e,min}=80$\ K and\\ $T_{e,max}=130$\ K, depending on the sun inclination.
-The temperature at the pole is $T_{Pole}=50$\ K, \cite{Europa}.
+The Europa surface temperature varies at the  equator between $T_{e,min}=80~\K$ and\\ $T_{e,max}=130~\K$, depending on the sun inclination.
+The temperature at the pole is ${T_{Pole}=50~\K}$, \cite{Europa}.
 It was assumed, that the surface temperature depends on the sun altitude.
 A trigonometrical interpolation was defined as follows.
 \[ T_{Surface}(\lambda, \delta) = T_{Pole} + \cos (\delta) \cdot [(T_{e,min}+\cos (\lambda)\cdot (T_{e,max}-T_{e,min}))-T_{Pole}] \]
@@ -1100,8 +1147,8 @@ For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.\\
 		\hline
 		& \multicolumn{2}{l}{Emisivity [-]} & \multicolumn{2}{l}{Absorptivity [-]}  \\ 
 		Surface finishing	&	min. & max. 	&	min. & max.   \\\hline
-		Aluminium, polished & \multicolumn{2}{c}{0.05} & \multicolumn{2}{c}{0.2}   \\
-		Aluminium, sand blasted & \multicolumn{2}{c}{0.2} & \multicolumn{2}{c}{0.4}   \\
+		Aluminium, polished & &0.05  & & 0.2   \\
+		Aluminium, sand blasted & &0.2  & & 0.4   \\
 		White paint & 0.8 & 0.9 & 0.2 & 0.5  \\ \hline
 		& & & & \\
 	\end{tabular}
@@ -1135,8 +1182,8 @@ For $\lambda$ and $\delta$ see \autoref{sec:app_therm_4}.\\
 		Chassis - side & $S_{Ch2}=0.081$ &  white paint & for albedo\\
 		Chassis - total & $S_{Ch3}=0.423$ &  white paint & for emisivity\\
 		RTG& $S_{RTG}=0.086$ & white paint & konstant emisivity of 0.9\\
-		Electric Bay& $S_{Bay}=0.146$ & aluminium, sand blastet & \\
-		Camera - housing & $S_{Cam}=0.027$ &aluminium, sand blastet &\\
+		Electric Bay& $S_{Bay}=0.146$ & AL, sand blastet & \\
+		Camera - housing & $S_{Cam}=0.027$ & AL, sand blastet &\\
 		Camera - radiator & $S_{Rad}=0.066$ & white paint &  \\
 		Steer Engine& $S_{E,S}=0.002$ & white paint& \\
 		Drive Engine& $S_{E,D}=0.003$ &white paint & \\
