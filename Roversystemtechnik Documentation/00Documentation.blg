@@ -9,10 +9,6 @@ A level-1 auxiliary file: 02Mission.aux
 A level-1 auxiliary file: 03Payload.aux
 A level-1 auxiliary file: 04Operation.aux
 A level-1 auxiliary file: 05Subsystems.aux
-White space in argument---line 76 of file 00Documentation.aux
- : \citation{rolling
- :                   coefficient}
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: 06Outlook.aux
 A level-1 auxiliary file: 08Bibilography.aux
 A level-1 auxiliary file: 09Appendix.aux
@@ -31,7 +27,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10977 items from 5000.
+Reallocated field_info (elt_size=4) to 11533 items from 5000.
 Database file #1: 00Documentation-blx.bib
 Database file #2: References.bib
 I was expecting a `,' or a `}'---line 177 of file References.bib
@@ -50,8 +46,6 @@ I was expecting a `,' or a `}'---line 293 of file References.bib
  :  journal = {IEEE TRANSACTIONS ON ANTENNAS AND PROPAGATION},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "MMP"
-Warning--I didn't find a database entry for "Bekker"
 Biblatex version: 3.13
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Too many commas in name 1 of "Soon Sam Kim, Steven R. Carnes, Albert F. Haldemann, Christopher T. Ulmer, Eddie Ho Wah Ng, Steven A. Arcone" for entry CRUX_GPR
@@ -905,45 +899,45 @@ Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro 
 while executing---line 2805 of file biblatex.bst
 Too many commas in name 1 of "Jun Takada, Shuji Senada, Hiroki Hihara, Masahiro Hamai, Takeshi Oshima, Shinji Hagino, Makoto Suzuki, Satoshi Ichikawa" for entry HIREW
 while executing---line 2805 of file biblatex.bst
-You've used 41 entries,
+You've used 47 entries,
             6365 wiz_defined-function locations,
-            1417 strings with 15512 characters,
-and the built_in function-call counts, 222479 in all, are:
-= -- 14582
-> -- 7100
-< -- 971
-+ -- 6572
-- -- 4494
-* -- 14876
-:= -- 23460
+            1460 strings with 17403 characters,
+and the built_in function-call counts, 253896 in all, are:
+= -- 16332
+> -- 8484
+< -- 1152
++ -- 7767
+- -- 5396
+* -- 16806
+:= -- 26744
 add.period$ -- 0
-call.type$ -- 41
-change.case$ -- 388
-chr.to.int$ -- 250
-cite$ -- 80
-duplicate$ -- 18708
-empty$ -- 21272
-format.name$ -- 2131
-if$ -- 45386
+call.type$ -- 47
+change.case$ -- 453
+chr.to.int$ -- 328
+cite$ -- 92
+duplicate$ -- 21684
+empty$ -- 24120
+format.name$ -- 2468
+if$ -- 51540
 int.to.chr$ -- 0
-int.to.str$ -- 105
+int.to.str$ -- 125
 missing$ -- 0
-newline$ -- 911
-num.names$ -- 1657
-pop$ -- 13715
+newline$ -- 1072
+num.names$ -- 1933
+pop$ -- 15702
 preamble$ -- 1
-purify$ -- 568
+purify$ -- 660
 quote$ -- 0
-skip$ -- 6723
+skip$ -- 7820
 stack$ -- 0
-substring$ -- 28719
-swap$ -- 4384
-text.length$ -- 895
+substring$ -- 31727
+swap$ -- 5193
+text.length$ -- 1044
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1382
+type$ -- 1586
 warning$ -- 0
-while$ -- 2236
+while$ -- 2593
 width$ -- 0
-write$ -- 871
-(There were 429 error messages)
+write$ -- 1026
+(There were 428 error messages)
