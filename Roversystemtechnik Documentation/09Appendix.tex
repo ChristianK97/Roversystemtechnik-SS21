@@ -45,7 +45,7 @@
 % \usepackage{graphicx}
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[htb]
+\begin{table}[hbt]
 \centering
 \resizebox{0.7\textwidth}{!}{%
 \begin{tabular}{|c|c|c|l|}
@@ -76,75 +76,109 @@ Number & Rover System Modes                  & Abbrevation & \multicolumn{1}{c|}
 \section{Structure and Mechanism} \label{sec:AppendixStructureandMechanism}
 %-------------------------------------------------
 
-\begin{table}[]
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{multirow}
+% \usepackage{graphicx}
+\begin{table}[hbt]
 \centering
 \caption{INSPIRE Mass Budget}
-\label{tab:my-table}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{cccccc}
+\begin{tabular}{@{}cccccc@{}}
 \toprule
-Subsystem                                & Component Name                      & Mass per Component / kg & Quantity & Component Margin & Total / kg \\
-\midrule
-\multirow{5}{*}{Structure and Mechanism} & Harness                             & 3                           & 1        & 20~\%             & 3,60           \\
-                                         & Chassis                              & look up at Chassis Table     & 1        & 20~\%             & 5,01           \\
-                                         & E-Bay Box                           & 1,033                       & 1        & 20~\%             & 1,24           \\
-                                         & Boom                                & 0,17                        & 1        & 20~\%             & 0,20           \\
-                                         & Solar Cell Plate                    & 0,121                       & 1        & 20~\%             & 0,15           \\
-\midrule
-\multirow{7}{*}{Locomotion}              & wheels                              & 0,158                       & 4        & 20~\%             & 0,76           \\
-                                         & rims                                & 0,162                       & 4        & 20~\%             & 0,78           \\
-                                         & motor (wheels)                      & 0,057                       & 4        & 10~\%             & 0,25           \\
-                                         & planetary gear(wheels)              & 0,118                       & 4        & 10~\%             & 0,52           \\
-                                         & Motor (steering)                    & 0,07                        & 4        & 5~\%              & 0,29           \\
-                                         & Motor (deployment)                  & 0,07                        & 6        & 5~\%              & 0,44           \\
-                                         & IMU                                 & 0,012                       & 4        & 10~\%             & 0,05           \\
-\midrule
-\multirow{4}{*}{EPS}                     & Battery                             & 1,98                        & 1        & 10~\%             & 2,18           \\
-                                         & RTG                                 & 3,5                         & 1        & 10~\%             & 3,85           \\
-                                         & SolarCells                          & 0,0012975                   & 10       & 20~\%             & 0,02           \\
-                                         & PCDU                                & 0,33                        & 1        & 20~\%             & 0,40           \\
-\midrule
-\multirow{4}{*}{COM}                     & LGAs                                & 0,002                       & 4        & 5~\%              & 0,01           \\
-                                         & Transmitter                         & 0,195                       & 2        & 5~\%              & 0,41           \\
-                                         & Receiver                            & 0,22                        & 2        & 10~\%             & 0,48           \\
-                                         & Multiplexer                         & 0,065                       & 2        & 5~\%              & 0,14           \\
-\midrule
-\multirow{4}{*}{C\&DH / sensors}         & Sun Sensors                         & 0,016                       & 4        & 5~\%              & 0,07           \\
-                                         & OBC                                 & 0,35                        & 2        & 5~\%              & 0,74           \\
-                                         & temperature Sensor                  & 0,0002                      & 20       & 20~\%             & 0,00           \\
-                                         & Housekeeping                        & 0,2                         & 1        & 5~\%              & 0,21           \\
-\midrule
-\multirow{5}{*}{TCS}                     & Heaters                             & 0,00181                     & 10       & 5~\%              & 0,02           \\
-                                         & isolation                           & 0,15                        & 1        & 20~\%             & 0,18           \\
-                                         & Carbon Straps                       & 0,53                        & 1        & 5~\%              & 0,56           \\
-                                         & RHU                                 & 0,1                         & 1        & 5~\%              & 0,11           \\
-                                         & Magnetic Switch                     & 0,06                        & 6        & 10~\%             & 0,40           \\
-\midrule
-\multirow{10}{*}{Payload}                & Ice Core Drill Motor \& Electronics & 1,3                         & 1        & 20~\%             & 1,56           \\
-                                         & Ice Core Drill Titanium bit         & 0,041                       & 1        & 20~\%             & 0,05           \\
-                                         & Groundradar electronics             & 0,045                       & 1        & 5~\%              & 0,05           \\
-                                         & Ground Radar antenna                & 0,00273                     & 2        & 10~\%             & 0,01           \\
-                                         & APXS Analyzer                       & 0,43                        & 1        & 20~\%             & 0,52           \\
-                                         & Haz Cams                            & 0,064                       & 3        & 5~\%              & 0,20           \\
-                                         & Stereo Vision Cam                   & 0,064                       & 2        & 5~\%              & 0,13           \\
-                                         & objective StereoCam                 & 0,08                        & 2        & 20~\%             & 0,19           \\
-                                         & objective HazCam                    & 0,048                       & 3        & 20~\%             & 0,17           \\
-                                         & LEDs                                & 0,003                       & 16       & 10~\%             & 0,05           \\
-\midrule
-\multirow{2}{*}{Radiation}               & Cam shielding                       & 0,02905                     & 5        & 20~\%             & 0,17           \\
-                                         & E-Bay shielding                     & 0,94                        & 1        & 20~\%             & 1,13           \\
-\midrule
-\multicolumn{5}{c}{Mass with component margins and 2mm Aluminum Chassis}                                                                    & 27,28          \\
-\multicolumn{5}{c}{Mass with component margins and 1,5mm Aluminum Chassis}                                                                  & 26,64          \\
-\midrule
-\multicolumn{5}{c}{System Margin}                                                                                                          & 10~\%           \\
-\midrule
-\multicolumn{5}{c}{Total Mass (2mm Aluminum Chassi)}                                                                                       & 30,0           \\
-\multicolumn{5}{c}{Total Mass (1,5mm Aluminum Chassi)}                                                                                     & 29,31          \\
-\bottomrule
+Subsystem                               & component name                      & mass per component {[}kg{]} & quantity & component margin & total {[}kg{]} \\ \midrule
+\multirow{5}{*}{Structure \& Mechanism} & Harness                             & 3                           & 1        & 20\%             & 3,60           \\
+                                        & Chassi                              & look up at Chassi Table     & 1        & 20\%             & 5,02           \\
+                                        & E-Bay Box                           & 1,033                       & 1        & 20\%             & 1,24           \\
+                                        & Boom                                & 0,17                        & 1        & 20\%             & 0,20           \\
+                                        & Solar Cell Plate                    & 0,121                       & 1        & 20\%             & 0,15           \\ \midrule
+\multirow{7}{*}{Locomotion}             & wheels                              & 0,158                       & 4        & 20\%             & 0,76           \\
+                                        & rims                                & 0,162                       & 4        & 20\%             & 0,78           \\
+                                        & motor (wheels)                      & 0,057                       & 4        & 10\%             & 0,25           \\
+                                        & planetary gear(wheels)              & 0,118                       & 4        & 10\%             & 0,52           \\
+                                        & Motor (steering)                    & 0,07                        & 4        & 5\%              & 0,29           \\
+                                        & Motor (deployment)                  & 0,07                        & 6        & 5\%              & 0,44           \\
+                                        & IMU                                 & 0,012                       & 4        & 10\%             & 0,05           \\ \midrule
+\multirow{4}{*}{EPS}                    & Battery                             & 1,98                        & 1        & 10\%             & 2,18           \\
+                                        & RTG                                 & 3,5                         & 1        & 10\%             & 3,85           \\
+                                        & SolarCells                          & 0,0012975                   & 10       & 20\%             & 0,02           \\
+                                        & PCDU                                & 0,33                        & 1        & 20\%             & 0,40           \\ \midrule
+\multirow{4}{*}{Communication}          & LGAs                                & 0,002                       & 4        & 5\%              & 0,01           \\ 
+                                        & Transmitter                         & 0,195                       & 2        & 5\%              & 0,41           \\
+                                        & Receiver                            & 0,22                        & 2        & 10\%             & 0,48           \\
+                                        & Multiplexer                         & 0,065                       & 2        & 5\%              & 0,14           \\\midrule
+\multirow{4}{*}{C\&DH / sensors}        & Sun Sensors                         & 0,016                       & 4        & 5\%              & 0,07           \\
+                                        & OBC                                 & 0,35                        & 2        & 5\%              & 0,74           \\
+                                        & temperature Sensor                  & 0,0002                      & 20       & 20\%             & 0,00           \\
+                                        & Housekeeping                        & 0,2                         & 1        & 5\%              & 0,21           \\ \midrule
+\multirow{5}{*}{Thermal Control System} & Heaters                             & 0,00181                     & 10       & 5\%              & 0,002          \\
+                                        & isolation                           & 0,07                        & 1        & 20\%             & 0,08           \\
+                                        & Carbon Straps                       & 0,48                        & 1        & 5\%              & 0,5            \\
+                                        & RHU                                 & 0,3                         & 1        & 5\%              & 0,32           \\
+                                        & Bi-metallic Heat Switch             & 0,06                        & 10       & 10\%             & 0,66           \\ \midrule
+\multirow{10}{*}{Payload}               & Ice Core Drill Motor \& Electronics & 1,3                         & 1        & 20\%             & 1,56           \\
+                                        & Ice Core Drill Titanium bit         & 0,041                       & 1        & 20\%             & 0,05           \\
+                                        & Groundradar electronics             & 0,045                       & 1        & 5\%              & 0,05           \\
+                                        & Ground Radar antenna                & 0,00273                     & 2        & 10\%             & 0,01           \\
+                                        & APXS Analyzer                       & 0,43                        & 1        & 20\%             & 0,52           \\
+                                        & Haz Cams                            & 0,064                       & 3        & 5\%              & 0,20           \\
+                                        & Stereo Vision Cam                   & 0,064                       & 2        & 5\%              & 0,13           \\
+                                        & objective StereoCam                 & 0,08                        & 2        & 20\%             & 0,19           \\
+                                        & objective HazCam                    & 0,048                       & 3        & 20\%             & 0,17           \\
+                                        & LEDs                                & 0,003                       & 16       & 10\%             & 0,05           \\ \midrule
+\multirow{2}{*}{Radiation}              & Cam shielding                       & 0,02905                     & 5        & 20\%             & 0,17           \\
+                                        & E-Bay shielding                     & 0,94                        & 1        & 20\%             & 1,13           \\ \midrule
+\multicolumn{5}{c}{Mass incl. Component Margins}                                                                                          & 27,25          \\
+\multicolumn{5}{c}{System Margin}                                                                                                         & 10\%         \\
+\multicolumn{5}{c}{Total Mass of INSPIRE}                                                                                                 & 29,97        \\\bottomrule
 \end{tabular}%
 }
+\label{tab:totalMass}
 \end{table}
+
+\clearpage
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\begin{table}[hbt]
+\centering
+\caption{INSPIRE Chassi Mass Budget}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\multicolumn{2}{c}{Component  Name}                  & \multicolumn{1}{c}{mass per  component {[}kg{]}} & \multicolumn{1}{c}{quantity} & \multicolumn{1}{c}{component margin} & \multicolumn{1}{c}{total {[}kg{]}} \\ \midrule
+\multicolumn{2}{c}{Cam Head Box}                     & \multicolumn{1}{c}{0,223}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,27}           \\
+\multicolumn{2}{c}{CamHead  Fork}                    & \multicolumn{1}{c}{0,119}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,14}           \\
+\multicolumn{2}{c}{Frontplate}                       & \multicolumn{1}{c}{0,165}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,20}           \\
+\multicolumn{2}{c}{Sideplate}                        & \multicolumn{1}{c}{0,244}                        & \multicolumn{1}{c}{2}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,59}           \\
+\multicolumn{2}{c}{Backplate}                        & \multicolumn{1}{c}{0,16}                         & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,19}           \\
+\multicolumn{2}{c}{Topplate}                         & \multicolumn{1}{c}{0,32}                         & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,38}           \\
+\multicolumn{2}{c}{Drillingbay}                      & \multicolumn{1}{c}{0,433}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,52}           \\
+\multicolumn{2}{c}{Midplate}                         & \multicolumn{1}{c}{0,491}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,59}           \\
+\multicolumn{2}{c}{Differential}                     & \multicolumn{1}{c}{0,237}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,28}           \\
+\multicolumn{2}{c}{Faulhaber Motor}                  & \multicolumn{1}{c}{0,015}                        & \multicolumn{1}{c}{4}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,07}           \\
+\multicolumn{2}{c}{IceCoreDeployment Housing}        & \multicolumn{1}{c}{0,005}                        & \multicolumn{1}{c}{4}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,02}           \\
+\multicolumn{2}{c}{Trapdoor}                         & \multicolumn{1}{c}{0,047}                        & \multicolumn{1}{c}{2}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,11}           \\
+\multicolumn{2}{c}{DrillFork1}                       & \multicolumn{1}{c}{0,011}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,01}           \\
+\multicolumn{2}{c}{DrillFork2}                       & \multicolumn{1}{c}{0,017}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,02}           \\
+\multicolumn{2}{c}{Wheel  Fork}                      & \multicolumn{1}{c}{0,122}                        & \multicolumn{1}{c}{4}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,59}           \\
+\multicolumn{2}{c}{Gear  \& Motor Housing (Driving)} & \multicolumn{1}{c}{0,015}                        & \multicolumn{1}{c}{4}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,07}           \\
+\multicolumn{2}{c}{Deployment  Mechanism Housing}    & \multicolumn{1}{c}{0,118}                        & \multicolumn{1}{c}{2}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,28}           \\
+\multicolumn{2}{c}{Bogie}                            & \multicolumn{1}{c}{0,11}                         & \multicolumn{1}{c}{4}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,53}           \\
+\multicolumn{2}{c}{HazCamBox\_Front}                 & \multicolumn{1}{c}{0,046}                        & \multicolumn{1}{c}{2}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,11}           \\
+\multicolumn{2}{c}{HazCamBox\_Heck}                  & \multicolumn{1}{c}{0,027}                        & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,03}           \\
+\multicolumn{2}{c}{GroundRadarAntenna  holder}       & \multicolumn{1}{c}{0,03}                         & \multicolumn{1}{c}{1}        & \multicolumn{1}{c}{20\%}             & \multicolumn{1}{c}{0,04}           \\ \midrule
+\multicolumn{5}{c}{Mass with component margins}                                                                                                                               & \multicolumn{1}{c}{5,02}           \\
+\multicolumn{5}{c}{System Margin}                                                                                                                                             & \multicolumn{1}{c}{10\%}           \\
+\multicolumn{5}{c}{Total Mass}                                                                                                                                                & \multicolumn{1}{c}{5,52}           \\\bottomrule
+\end{tabular}%
+}
+\label{tab:ChassiBudget}
+\end{table}
+
+
+
 
 \clearpage
 
@@ -159,47 +193,67 @@ Subsystem                                & Component Name                      &
 \subsection{Locomotion Design Drivers}
 \label{app:DesignDrivers}
 
+In this section all necessary table values for the design of the locomotion system are presented.    
+     
+\begin{table}[htb]
+     \centering
+     \caption{Soil parameters for both soils considered: heav clay as hard equivalent for ice values and snow in Sweden \cite{Bekker}.}
+     \begin{adjustbox}{max width=\textwidth}
+     \begin{tabular}[l]{lcccccc}
+     
+     	\toprule
+     		\multicolumn{1}{l}{Terrain} & \qquad \qquad	& \multicolumn{1}{c}{\(n\) /\(\frac{\text{kN}}{\text{m}^{n+1}}\)} & \multicolumn{1}{c}{\(k_\text{c}\)} & \multicolumn{1}{c}{\(k_\phi\) / \(\frac{\text{kN}}{\text{m}^{n+2}}\)} & \multicolumn{1}{c}{\(c\) /kPa} & \multicolumn{1}{c}{\(\phi\) /deg}  \\
+      
+       	\midrule
+ 
+     Heavy Clay		&	&	0.13	&	12.70	&	1555.95		&	68.95	&	34			\\	
+     Snow (Sweden)	&	&	1.44	&	10.55	&	66.08		&	6		&	20.7		\\	
 
-%\begin{figure}[htb] 
-%  \centering
-%     \includegraphics[width=1\textwidth]{Media/Geometries.pdf}
-%  \caption{Geometry parameters of the locomotion system. }
-%  \label{fig:Geo}
-%\end{figure}
-
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/LocomotionTradeOff.png}
-  \caption{Trade-off of the locomotion movement system. The criteria with the respective weighting factors are shown on the left. On the right side are the respective systems.}
-  \label{fig:TradeOffLoco}
-\end{figure}
+     	\bottomrule
+     
+     \end{tabular}
+     \end{adjustbox}
+     \label{tab:SoilParam}
+     \end{table}     
 
 
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/SoilParameters.png}
-  \caption{Soil Parameters}
-  \label{fig:SoilParameters}
-\end{figure}
+\begin{table}[htb]
+\centering
+\caption{Various wheel dimensions respective to the weight. Highlighted fields in red are not considered further for system design due to the limit of 200 g weight per wheel.}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}[l]{lcc|lcc}
 
+	\toprule
+		\multicolumn{1}{l}{Wheel Width} & \multicolumn{1}{c}{Wheel Diameter} & \multicolumn{1}{c|}{Weight per Wheel}	& \multicolumn{1}{l}{Wheel Width}	 & \multicolumn{1}{c}{Wheel Diameter} 		& \multicolumn{1}{c}{Weight per Wheel}    \\
 
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/Dimensions-WeightLimits.png}
-  \caption{Various wheel dimensions respective to the weight. Rows highlighted in red are not considered further for system design due to the limit of 200 g weight per wheel.}
-  \label{fig:DimensionsLoco}
-\end{figure}
+\multicolumn{1}{l}{\:\:\:\:\:\: m}		& \multicolumn{1}{c}{m} 			& \multicolumn{1}{c|}{g} 					& \multicolumn{1}{l}{\:\:\:\:\:\: m}& \multicolumn{1}{c}{m}					& \multicolumn{1}{c}{g} \\
+	\midrule
+	
+	0.05	&	0.1		&	127		& 0.05	&	0.15	&	185									\\ 
+	0.06	&	0.1		&	153		&	0.06	&	0.15	&	\cellcolor[HTML]{CB0000}221		\\	
+	0.07	&	0.1		&	178		0.07	&	0.15	&	\cellcolor[HTML]{CB0000}258		\\
+	0.08	&	0.1		&	\cellcolor[HTML]{CB0000}204	&	0.08	&	0.15	&	\cellcolor[HTML]{CB0000}294		\\	
+	0.09	&	0.1		&	\cellcolor[HTML]{CB0000}229	&	0.09	&	0.15	&	\cellcolor[HTML]{CB0000}331		\\
+	0.1		&	0.1		&	\cellcolor[HTML]{CB0000}265	&	0.1		&	0.15	&	\cellcolor[HTML]{CB0000}367		\\	
+	0.05	&	0.125	&	154		&	0.05	&	0.2		&	\cellcolor[HTML]{CB0000}236		\\
+	0.06	&	0.125	&	185		&	0.06	&	0.2		&	\cellcolor[HTML]{CB0000}284		\\
+	0.07	&	0.125	&	\cellcolor[HTML]{CB0000}217		&	0.07	&	0.2		&	\cellcolor[HTML]{CB0000}332		\\	
+	0.08	&	0.125	&	\cellcolor[HTML]{CB0000}247		&	0.08	&	0.2		&	\cellcolor[HTML]{CB0000}379		\\
+	0.09	&	0.125	&	\cellcolor[HTML]{CB0000}278		&	0.09	&	0.2		&	\cellcolor[HTML]{CB0000}427		\\
+	0.1		&	0.125	&	\cellcolor[HTML]{CB0000}309		&	0.1		&	0.2		&	\cellcolor[HTML]{CB0000}487		\\
+	
+	\bottomrule
+
+\end{tabular}
+\end{adjustbox}
+\label{tab:Geometry}
+\end{table}
+
 
 \subsubsection*{Mean Maximum Pressure}
 \label{app:MMP}
 
-
-\begin{figure}[htb] 
-  \centering
-     \includegraphics[width=1\textwidth]{Media/MMP for each Config.pdf}
-  \caption{}
-  \label{fig:MMP}
-\end{figure}
+To determine the mean maximum pressure, the data are taken from \autoref{fig:MMP_param}. 
 
 \begin{figure}[htb] 
   \centering
@@ -208,34 +262,72 @@ Subsystem                                & Component Name                      &
   \label{fig:MMP_param}
 \end{figure}
 
+The rover has 4 number ox axles, each with a quarter proportion of axles driven. Thus, the \(MMP\) can be calculated to:
+\begin{equation}
+	MMP \:  = \: \frac{K \cdot W}{2N{b_\text{w}}^{0.85}{d_\text{w}}^{1.15} { \left( \delta / d_\text{w} \right) }^{0.5}}		,
+	\label{eq:MMP}
+\end{equation}
+
+with \(K = 6.05\) and the number of wheels \(N=4\). The resulting \(MMP\) for the 6 considered configurations are shown in \autoref{fig:MMP}. 
+
+\begin{figure}[htb] 
+  \centering
+     \includegraphics[width=1\textwidth]{Media/MMP for each Config.pdf}
+  \caption{}
+  \label{fig:MMP}
+\end{figure}
+
+
 \subsubsection*{Ackerman Steering}
 \label{app:Ackerman}
 
+As mentioned in \autoref{sec:Steering}, with Ackerman steering it is important to take into account that the angles of the front wheel positions differ: 
 
+\begin{equation}
+	\cot \theta_{i} - \cot \theta_\text{o} \:  = \:	- \frac{d}{l}	.
+	\label{eq:Ackerman}
+\end{equation}
+
+With a wheel distance of \(d = 277\)~mm and \(l = 365\)~mm, the respective angles of the wheel positions can be determined. These values are necessary to control the drive in an autonomous drive mode.
+
+\newpage
+
+\subsubsection*{Hardware Selection}
+\label{app:Hardware}
+
+Each wheel has a separate BLDC motor for driving. The necessary torque is listed for both soil parameters depending on the slope angle. In addition, necessary power is listed for different velocities to be reached, also for both soils. It should be noted, that the deflection \(\delta\) is not considered and assumed to be \(\delta = 0\).
 
 \begin{table}[htb]
 \centering
 \caption{}
 \begin{adjustbox}{max width=\textwidth}
-\begin{tabular}[l]{lccc}
+\begin{tabular}[l]{lcccc|ccc}
 
 	\toprule
-		\multicolumn{1}{l}{Steering Angle} & \multicolumn{1}{c}{Mode 1} & \multicolumn{1}{c}{Mode 2} & \multicolumn{1}{c}{Mode 3} \\
+		\multicolumn{1}{l}{\(\theta\)} & \multicolumn{1}{c}{\(R_\text{total,Snow}\)} & \multicolumn{1}{c}{\(\tau_\text{snow}\)} & \multicolumn{1}{c}{\(R_\text{total,HeavyClay}\)} & \multicolumn{1}{c|}{\(\tau_\text{HeavyClay}\)}	& \multicolumn{1}{c}{\(v\)}  & \multicolumn{1}{c}{\(P_\text{Min.,Snow}\)}  & \multicolumn{1}{c}{\(P_\text{Min.,HeavyClay}\)}			 \\
 		
+	\multicolumn{1}{l}{\:\:\:\:\:\: deg} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Nm} & \multicolumn{1}{c}{N} & \multicolumn{1}{c|}{Nm} & \multicolumn{1}{c}{\(\frac{m}{s}\)} & \multicolumn{1}{c}{W} & \multicolumn{1}{c}{W} \\
+
 	\midrule
+		
+	0	&	4.882	&	0.244	&	0.234	&	0.012	&	0.2		&	0.976	&	0.047	\\		
+	7	&	6.040	&	0.302	&	1.436	&	0.072	&	0.35	&	2.114	&	0.503	\\
+	14	&	7.094	&	0.355	&	2.618	&	0.131	&	0.5		&	3.547	&	1.309	\\
+	21	&	8.028	&	0.401	&	3.765	&	0.188	&	0.65	&	5.219	&	2.447	\\
+	28	&	8.833	&	0.442	&	4.857	&	0.243	&	0.8		&	7.067	&	3.886	\\
+	35	&	9.499	&	0.475	&	5.880	&	0.294	&	0.95	&	9.024	&	5.586	\\
 	
-	
-	\(\theta_\text{o}\)	&	&	&	\\	
-	
-	\(\theta_\text{o}\) &	&	&	\\
-
-
 	\bottomrule
 
 \end{tabular}
 \end{adjustbox}
-\label{tab:Ackerman}
+\label{tab:TorquePower}
 \end{table}
+
+
+
+
+
 
 
 \clearpage

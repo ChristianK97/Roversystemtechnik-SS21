@@ -6,22 +6,21 @@ In this chapter, the individual subsystems of the rover system will be discussed
 \section{Structure and Mechanisms}
 \label{sec:mechanics}
 
-...
+The Structure and Mechanisms subsystem mainly deals with the accommodation of the payloads and all components that are necessary for the operation of the rover system. This also includes the mechanisms that are necessary for the rover system to ensure functionality 
 
 \subsection{Storage Configuration and Rover Deployment}
 
 The Main Characteristics of the Rover Chassis design of INSPIRE focuses on compact storage geometry and low Mass. 
 During the design process it's been possible to achieve a reduce of volume in comparison to the first INSPIRE chassis design of about xxx~\%.
-The geometry data in storage configuration is shown in figure XXX.
+The geometry data in storage configuration is shown in figure %\autoref{fig:StaticAnalysis}.
 The storage volume that is required is 131~l.
 For the Rover Deployment there had been a lot of possible concepts, for example a sky crane, a robotic arm or a ramp. Depending of the reason that there are no further informations about the TRIPLE Lander and that the complexity of such a deployment system should be as simple as possible, the decision felt on a ramp where INSPIRE will drive slowly downwards the surface of Europa. 
-A possible concept of the rover deployment is shown in the following figure XXX.
+A possible concept of the rover deployment is shown in the following figure %\autoref{fig:StaticAnalysis}.
 
 \subsection{Exploration Configuration}
 
 When the deployment is successfully done, INSPIRE has to switch from storage - to exploration configuration.
 This will be possible with a cogwheel mechanism which will be operated by two Motors (QUELLENVERWEIS). When the wheel forks are horizontal to the ground, the rover is ready for its journey.
-%In order to withstand the potential bumps on the moon's surface, a planetary gear differential is installed which should prevent the rover from tipping over by reflecting the pushing force on the other side of the landing gear to ensure ground contact.
 In order to maintain the rover stability while driving on rough terrain an averaging differential mechanism is needed.
 This will be achieved by a planetary gear with a transmission ration of 1:1.
 One bogie then will execute a counter movement du to the tilt of the other bogie.
@@ -32,12 +31,30 @@ As part of the design process, it was necessary to perform a static analysis of 
 - Stowed configuration inside the TRIPLE lander on Europa \\
 - Exploration configuration on the surface of Europa \\
 The analysis was created with the computer aided design software "Autodesk Inventor". 
-The results of this analysis are shown in the following figures XXX and XXX.
+The results of this analysis are shown in the following \autoref{fig:StaticAnalysis}.
+
+\begin{figure}[htb]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/INSPIRE_Locomotion}
+         \label{fig:StoreConfig}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/INSPIRE_Radiation}
+         \label{fig:ExplConfig}
+     \end{subfigure}
+     \hfill
+     \caption{Results of the Static Analysis in Inventor. From left to right: Storage Configuration, Exploration Configuration }
+     \label{fig:StaticAnalysis}
+\end{figure}
 
 \subsection{Mass Budget}
 
 A really important part of each space system is the mass budget. Due to the strict mass restriction, it was quite difficult to find a suitable concept that is both light and space-saving. In order to make the design process of INSPIRE more effective, a specially selected preferred maximum mass of the chassis with the mechanisms of 5~kg was chosen which could also be adhered to. The following table lists the masses of the individual components of the structure and mechanisms system. 
-A table with all components of the INSPIRE Rover system is stored in Appendix A under Mass Budget.
+A table with all components of the INSPIRE Rover system is shown in %\autoref{Muss noch verlinkt werden!}.
 
 %-------------------------------------------------------------------------------
 \section{Locomotion} \label{sec:locomotion}
@@ -49,7 +66,7 @@ The locomotion subsystem deals with the aspect of how the rover moves and the te
 \label{sec:DesignDriversLoco}
 
 %Initial considerations in the design of a rover's locomotion system are the environmental and operational conditions expected for mission operations, as well as design factors. 
-The fundamental rover design can be described by the wheel formula 4x4x4, based on a tradeoff, presented in \autoref{fig:TradeOffLoco}. A more detailed design and the main criteria related to this are summarised in \autoref{tab:Design Drivers Rover Movement}.
+The fundamental rover design can be described by the wheel formula 4x4x4, based on a tradeoff, listed in \autoref{app:DigitalAppendix}. A more detailed design and the main criteria related to this are summarised in \autoref{tab:Design Drivers Rover Movement}.
 
 \begin{table}[htb]
 \centering
@@ -75,28 +92,25 @@ Furthermore, the normal force on Europa can be calculated to \( W \:  = \:	m_\te
 \subsection{System Parameters}
 \label{sec:SystemParametersLoco}
 
-Regarding techniques of rover movement, it is crucial to consider the local conditions in which the rover will be operating. The surface of Europa can be assumed to be mainly covered by ice. However, since there are also geysers that transport water to the surface, surface areas may be covered by snow. Though Europa's surface temperature does not exceed 130 K, rather icy, hard-packed snow can be assumed. For this study, a conservative design of the rover is considered, with soil parameters of snow in Sweden as well as heavy clay as a substitute for a hard ice surface; both are listed in \autoref{fig:SoilParameters}.Furthermore, the parameters depend on the width and diameter of the wheels of the rover. Therefore, several sizes dependent on the respective weight were selected and a limit per wheel was set to 200 g, illustrated in \autoref{fig:DimensionsLoco}. This constraint results in 6 configurations considered for the Rover system design, listed in \autoref{tab:Configurations}.
+Regarding techniques of rover movement, it is crucial to consider the local conditions in which the rover will be operating. The surface of Europa can be assumed to be mainly covered by ice. However, since there are also geysers that transport water to the surface, surface areas may be covered by snow. Though Europa's surface temperature does not exceed 130 K, rather icy, hard-packed snow can be assumed. For this study, a conservative design of the rover is considered, with soil parameters of snow in Sweden as well as heavy clay as a substitute for a hard ice surface; both are listed in \autoref{tab:SoilParam}. Furthermore, the parameters depend on the width and diameter of the wheels of the rover. Therefore, several sizes dependent on the respective weight were selected and a limit per wheel was set to 200 g, illustrated in \autoref{tab:Geometry}. This constraint results in 6 configurations considered for the Rover system design, listed in \autoref{tab:Configurations}.
 
 \begin{table}[htb]
 \centering
 \caption{Configurations for rover classification respective to the wheel width \(b\text{w}\), wheel diameter \(d_\text{w}\) and weight per wheel \(m_\text{w}\).}
 \begin{adjustbox}{max width=\textwidth}
-\begin{tabular}[l]{cccc}
+\begin{tabular}{cccc|cccc}
 
 	\toprule
-		\multicolumn{1}{l}{Configuration} & \multicolumn{1}{c}{\(b_\text{w}\) /m} & \multicolumn{1}{c}{Diameter \(d_\text{w}\) /m} & \multicolumn{1}{c}{Weight \(m_\text{w}\) /kg}   \\
+		\multicolumn{1}{l}{Configuration} & \multicolumn{1}{c}{\(b_\text{w}\) /m} & \multicolumn{1}{c}{Diameter \(d_\text{w}\) /m} & \multicolumn{1}{c|}{Weight \(m_\text{w}\) /kg} &  \multicolumn{1}{l}{Configuration} & \multicolumn{1}{c}{\(b_\text{w}\) /m} & \multicolumn{1}{c}{Diameter \(d_\text{w}\) /m} & \multicolumn{1}{c}{Weight \(m_\text{w}\) /kg}  \\
 
 	\midrule
 		
-		1	&	0.05	&	0.1		&	0.127		\\	
-		2	&	0.06	&	0.1		&	0.153		\\
-		3	&	0.07	&	0.1		&	0.178		\\
-		4	&	0.05	&	0.125	&	0.154		\\
-		5	&	0.05	&	0.125	&	0.185		\\
-		6	&	0.05	&	0.15	&	0.185		\\
+		1	&	0.05	&	0.1		&	0.127		& 	4	&	0.05	&	0.125	&	0.154	\\
+		2	&	0.06	&	0.1		&	0.153		&	5	&	0.05	&	0.125	&	0.185	\\
+		3	&	0.07	&	0.1		&	0.178		& 	6	&	0.05	&	0.15	&	0.185	\\
 
 	\bottomrule
-
+	
 \end{tabular}
 \end{adjustbox}
 \label{tab:Configurations}
@@ -110,7 +124,7 @@ Regarding techniques of rover movement, it is crucial to consider the local cond
 The ability of traffic depends on the soil parameters as well as on the geometric dimensions of the wheels. The sinking depth \(z\) for each wheel of the rover can be determined to:
 
 \begin{equation}
-	z \:  = \:	\left( \frac{3 W_\text{wheel} \cos \theta}{(3-n)(k_\text{c} + b_\text{w}k_\phi) \sqrt{d_\text{w}}} \right) ^{\frac{2}{2n+1}}	.
+	z \:  = \:	\left( \frac{3 W_\text{w} \cos \theta}{(3-n)(k_\text{c} + b_\text{w}k_\phi) \sqrt{d_\text{w}}} \right) ^{\frac{2}{2n+1}}	.
 	\label{eq:Sinkage}
 \end{equation}
 
@@ -129,7 +143,7 @@ As shown in \autoref{fig:Sinkage}, the sinking depth \(z\) depends not only on t
          \includegraphics[width=\textwidth]{Media/Sinkage for each config in snow (Sweden).pdf}
          \caption{Snow (Sweden)}
      \end{subfigure}
-     \caption{Wheel sinkage \(z\) as a function of the slope angle \(\theta\) of each configuration with different soil parameters, referred to \autoref{fig:SoilParameters}.}
+     \caption{Wheel sinkage \(z\) as a function of the slope angle \(\theta\) of each configuration with different soil parameters, referred to \autoref{tab:SoilParam}.}
      \label{fig:Sinkage}
 \end{figure}
 
@@ -188,56 +202,39 @@ In addition to the resistance that needs to be exceeded in order to move, an upp
 \end{figure}
 
 In addition to the determined parameters, it should also be verified that the mean maximum pressure \(MMP\) does not increase excessively due to the selected geometric parameters. For this conservative calculation, a rigid wheel is assumed, whereby for the deflection \(\delta\) applies, that \( 0 \leq \delta \leq 0.1 d\). For terrestrial snow, 40~kPa should not be exceeded, but ideally the \(MMP\) should be less than 10~kPa. The associated verification calculation can be found in \appref{app:MMP}. \\ 
-For the Rover, configuration 6 is chosen as it offers the lowest resistance to exceed whilst maintaining the lowest \(MMP\). 
+For the Rover, configuration 6 is chosen as it offers the lowest resistance to exceed whilst maintaining the lowest \(MMP\). It should be noted, that the rover has additional grousers. These are enhancing the traction, whereby the maximum reachable soil thrust \(H\) can be increased. However, the grousers are not taken into account in this study, as this is a conservative estimation, and the grousers can be seen as a further design improvement. 
 
 \subsubsection*{Steering}
 \label{sec:Steering}
 
-Since the rover has an all-wheel actuation, it can be operated with on-point steering and, in order to avoid greater obstacles, with Ackerman steering. Considering that with Ackerman steering, the radius of the outer wheels is at a greater distance in the circumventing circle than that of the inner wheels, the following applies:
+Since the rover has an all-wheel actuation, it can be operated with on-point steering and, in order to avoid greater obstacles, with Ackerman steering. Considering that with Ackerman steering, the radius of the outer wheels is at a greater distance in the circumventing circle than that of the inner wheels, the angles of the wheel positions, which are important for the control of the rover, can be found in \autoref{tab:Ackerman}.
 
-\begin{equation}
-	\cot \theta_{i} - \cot \theta_\text{o} \:  = \:	- \frac{d}{l}	.
-	\label{eq:Ackerman}
-\end{equation}
-
-With a wheel distance of d= 277 mm and l = 365 mm, this results in the table shown in \autoref{tab:Ackerman}.
-
-
+\begin{figure}[htb]
+{\centering
+\includegraphics[width=0.7\textwidth]{Media/INSPIRE_Locomotion}
+\caption{Ackerman Steering Ilustration}
+\label{fig:Ackerman}
+}
+\end{figure}
 
 
 \subsubsection*{Hardware Selection}
 \label{sec:HardwareLoco}
 
-For the drive of the wheels, BLDC motors were chosen. In contrast to stepper motors, these are optimised for a uniform torque and not for precise motion control. The resulting torque of each wheel can be calculated to:
+For the wheel driving system, BLDC motors were chosen. In contrast to stepper motors, these are optimised for a uniform torque and not for precise motion control. The resulting power of each wheel can be calculated with respect to the required torque \(\tau\) and the estimated velocity \(v\):
 
 \begin{equation}
-	\tau \:  = \:	R_\text{total} \cdot \left(\frac{d_\text{w}}{2} - \delta \right).
-	\label{eq:Torque}
-\end{equation}
-
-The required power is then resulting in:
-
-\begin{equation}
-	P \:  = \:	\tau \cdot \left(\frac{2v_{\text{max}}}{d_\text{w}} \right),
+	P \:  = \:	\underbrace{\tau}_{= \:	R_\text{total} \left(\frac{d_\text{w}}{2} - \delta \right)} \left(\frac{2v}{d_\text{w}} \right).
 	\label{eq:power}
 \end{equation}
 
-with the estimated maximum velocity \(v_{\text{max}}\). 
-
-
-
-
-
-
-
-
-
-
-
-
+The motors are designed to produce the minimum achievable power for any soil condition and a slope angle of \(\theta_\text{max.} = 35^\circ\), listed in \autoref{tab:TorquePower} and velocities of \(0.1 \leq v \leq 1\)~m/s are achievable. However, as indicated in \autoref{fig:SoilThrust_MotionResistance}, higher power up to \(H\) can also be generated. Additional planetary gears increase the produced torque with a reduction ratio of 21:1 to \(\tau_\text{max} = 0.5\)~Nm. For the steering system, space grade stepper motors are selected, as a precise motion control is required. Additional information of the motors and gears can be found in \autoref{app:DigitalAppendix}.
 
 
 \subsection{Deployment mechanism}
+
+The deployment mechanism enables the rover to be stored in the lander in a space-saving arrangement. Two stepper motors are activated in the axle joints for this purpose. In addition, two further inactive motors are installed for redundancy. Stepper motors have the additional advantage that they maximise the holding torque. If in a further design step it should become apparent that the torque is not sufficient, a worm gear could be installed which has a self-retaining function. In addition to deploying after landing, the mechanism is used to reduce the distance to the ground for drilling. 
+
 
 %-------------------------------------------------------------------------------
 \section{Electrical Power System}
@@ -602,7 +599,7 @@ In order to protect the rover against the high radiation levels at the surface o
 
 \begin{figure}[htb]
      \centering
-     \includegraphics[width=\textwidth]{Media/RadiationOverview}
+     \includegraphics[width=\textwidth]{Media/INSPIRE_Radiation}
      \caption{Overview of TIDs within different compartments within the rover.}
      \label{fig:RadiationOverview}
 \end{figure}
