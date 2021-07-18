@@ -6,11 +6,11 @@ In this chapter, the individual subsystems of the rover system will be discussed
 \section{Structure and Mechanisms}
 \label{sec:mechanics}
 
-The Structure and Mechanisms subsystem mainly deals with the accommodation of the payloads and all components that are necessary for the operation of the rover system. This also includes the mechanisms that are necessary for the rover system to ensure functionality 
+The Structure and Mechanisms subsystem mainly deals with the accommodation of the payloads and all necessary components for the operation of the rover system. This also includes the mechanisms that are necessary for the rover system to ensure its functionality. 
 
 \subsection{Storage Configuration and Rover Deployment}
 
-The Main Characteristics of the Rover Chassis design of INSPIRE focuses on compact storage geometry and low Mass. 
+The Main Characteristics of the Rover Chassis design of INSPIRE focuses on compact storage geometry and low mass.  
 The geometry data in storage configuration is shown in figure \autoref{fig:Geometry}.
 The storage volume that is required is 131~l.
 For the Rover Deployment there had been a lot of possible concepts, for example a sky crane, a robotic arm or a ramp. Depending of the reason that there are no further informations about the TRIPLE Lander and that the complexity of such a deployment system should be as simple as possible, the decision felt on a ramp where INSPIRE will drive slowly downwards the surface of Europa. 
@@ -376,13 +376,14 @@ C_\text{Batt} = C_\text{cell} \cdot V_\text{cell} \cdot N \cdot M .
 According to the ECSS reliability restrictions 1 battery string must be substracted for dimensionsing. Furthermore a $30~\%$ margin on the energy content was applied. This leads to a final battery configuration with a capacity of $C_\text{Batt}=156.24$ Wh and a mass of $m_\text{Batt} = 1980$ g. The final battery values are listed in \autoref{tab:battery} \cite{SAFTBatteries.2018}.
 
 
-\subsection{EPS Power Control and Distribution}
+\subsection{EPS Power Control and Distribution} 
+\label{ssec:EPS_Control_Distr}
 In order to ensure the full functionality of the EPS, the last main component to be selected is a suitable PCDU. As described in \autoref{fig:epsflowchart}, the PCDU forms the heart of the EPS and is an important interface to the OBC and COMM. Furthermore the PCDU shall be able to monitor and control the rover system if necessary through watchdogs, HPC (High Priority Commands) and direct connections to the OBC and COMM.\\
 The PCDU has the challenging task not only to process the RTG as the main energy source, but also to process solar cells as secondary energy sources. Therefore, a PCDU was sought which has the required size, dimensions and range of functions. The research resulted in the Nova PCDU from Bradford DSI. In addition, margins were added to the PCDU to ensure feasibility\cite{BradfordSpace.2019}.
 
 \section{Communications and Command \& Data-Handling}
 \label{sec:comm}
-The Communications subsystem consists of redundant transmitters and receivers which are cross strapped to four antennas and the OBC. Additionally hard wired connections linking the communication system to the PCDU enable for reboots via direct commands.\\
+The Communications subsystem consists of redundant transmitters and receivers which are cross strapped to four antennas and the OBC. Additionally hard wired connections linking the communication system to the PCDU enable for reboots via direct commands (see \autoref{ssec:EPS_Control_Distr}).\\
 C\&DH is responsible for the generation of telemetry from the housekeeping boards and the execution of telecommands, as well as the storing and compressing of payload data. 
 
 \subsection{Operational Concept}
@@ -421,13 +422,13 @@ Antenna     & Endurosat & patch antenna & mass          & 2,2 g    & frequency  
 \end{table}
 
 Expected transmission times per mission day are less than 40 minutes (see \autoref{app:MissionDataOutput}, \autoref{tab:Tx-tptal}). Therefore the transmitter mass is identified as more critical than power. \\
-Receiver duty cycles on the other hand range close to 100 \% (REFERENCE POWER BUDGET). Thus power has been identified as the most crucial criteria. \\
+On the other hand receiver duty cycles are 100 \% as can be found in \cite{tab:powerbudgetcomplete}. Thus power has been identified as the most crucial criteria. \\
 A passive X-Band antenna was selected due to compact dimensions and zero power consumption.  \\
 The entire trade off can be found in the digital appendix.
 
  \subsection{Command \& Data Handling} \label{C&DH}
  
- With respect to restricted power supply a redundant OBC hot-cold configuration stands to reason. Additionally, the standby mode is suggested during hibernation and charging modes relying solely on the PCDU (see chapter [Missing Reference]). 
+ With respect to restricted power supply a redundant OBC hot-cold configuration stands to reason. Additionally, the standby mode is suggested during hibernation and charging modes relying solely on the PCDU (see \autoref{ssec:EPS_Control_Distr}). 
 Emphasis for the Electronics selection is placed on flight proven radiation hardness to increase mission robustness in the high radiation environment of the Jupiter system. 
 Criteria of less importance are CPU speed and dimensions. \\
 
