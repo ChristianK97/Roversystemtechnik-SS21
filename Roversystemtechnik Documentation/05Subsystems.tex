@@ -11,44 +11,59 @@ The Structure and Mechanisms subsystem mainly deals with the accommodation of th
 \subsection{Storage Configuration and Rover Deployment}
 
 The Main Characteristics of the Rover Chassis design of INSPIRE focuses on compact storage geometry and low Mass. 
-During the design process it's been possible to achieve a reduce of volume in comparison to the first INSPIRE chassis design of about xxx~\%.
-The geometry data in storage configuration is shown in figure %\autoref{fig:StaticAnalysis}.
+The geometry data in storage configuration is shown in figure \autoref{fig:Geometry}.
 The storage volume that is required is 131~l.
 For the Rover Deployment there had been a lot of possible concepts, for example a sky crane, a robotic arm or a ramp. Depending of the reason that there are no further informations about the TRIPLE Lander and that the complexity of such a deployment system should be as simple as possible, the decision felt on a ramp where INSPIRE will drive slowly downwards the surface of Europa. 
-A possible concept of the rover deployment is shown in the following figure %\autoref{fig:StaticAnalysis}.
+\autoref{fig:HighResStore}
+
+\begin{figure}[htb]
+     \centering
+     \includegraphics[width=\textwidth]{Media/INSPIRE_blackwhite.pdf}
+     \caption{Geometrical Data of Storage Configuration inside the lander}
+     \label{fig:Geometry}
+\end{figure}
 
 \subsection{Exploration Configuration}
 
 When the deployment is successfully done, INSPIRE has to switch from storage - to exploration configuration.
-This will be possible with a cogwheel mechanism which will be operated by two Motors (QUELLENVERWEIS). When the wheel forks are horizontal to the ground, the rover is ready for its journey.
+This will be possible with a cogwheel mechanism which will be operated by two Motors. When the wheel forks are horizontal to the ground, the rover is ready for its journey.
 In order to maintain the rover stability while driving on rough terrain an averaging differential mechanism is needed.
 This will be achieved by a planetary gear with a transmission ration of 1:1.
 One bogie then will execute a counter movement du to the tilt of the other bogie.
+\autoref{fig:HighResExplo}
 
 \subsection{Static Analysis}
 
-As part of the design process, it was necessary to perform a static analysis of the chassis. The following load cases were considered: \\
-- Stowed configuration inside the TRIPLE lander on Europa \\
-- Exploration configuration on the surface of Europa \\
-The analysis was created with the computer aided design software "Autodesk Inventor". 
-The results of this analysis are shown in the following \autoref{fig:StaticAnalysis}.
+Part of the design process was to examine the stability behavior of the rover when climbing mountains or on slopes. In order to determine the maximum possible gradients, an adjustable gradient was simulated using the CAD model, on which the rover system was then placed. The results of this investigation can be seen in Figure \autoref{fig:StaticAnal}. As can be seen in the pictures, significantly higher angles are possible if the center of gravity of the rover is offset by the expansion mechanism. 
+Due to the symmetrical design and the central position of the center of gravity, investigations were only carried out for one half of the chassis. The maximum possible angles are therefore assumed to be identical on both sides. 
 
 \begin{figure}[htb]
      \centering
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{Media/INSPIRE_Locomotion}
-         \label{fig:StoreConfig}
+         \includegraphics[width=\textwidth]{Media/Static1.pdf}
+         \label{fig:stat1}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{Media/INSPIRE_Radiation}
-         \label{fig:ExplConfig}
+         \includegraphics[width=\textwidth]{Media/Static4.pdf}
+         \label{fig:stat4}
      \end{subfigure}
      \hfill
-     \caption{Results of the Static Analysis in Inventor. From left to right: Storage Configuration, Exploration Configuration }
-     \label{fig:StaticAnalysis}
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Static2.pdf}
+         \label{fig:stat2}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Media/Static3.pdf}
+         \label{fig:stat3}
+     \end{subfigure}
+     \caption{Results of the investigation into the tilting behavior of the INSPIRE Rover System}
+     \label{fig:StaticAnal}
 \end{figure}
 
 \subsection{Mass Budget}
@@ -87,12 +102,12 @@ The fundamental rover design can be described by the wheel formula 4x4x4, based 
 }
 \end{table}
 
-Furthermore, the normal force on Europa can be calculated to \( W \:  = \:	m_\text{total} \cdot g_\text{Europa} \:  = \: 39.45 ~ \text{N} \). Since each wheel is individually driven and controllable, the parameters in the following are designed for one wheel; the normal force per wheel is correspondingly \(W_\text{w} = 9.8625 ~ \text{N}\).
+Furthermore, the normal force on Europa can be calculated to \( W \:  = \:	m_\text{total} \cdot g_\text{Europa} \:  = \: 39.45 ~ \text{N} \) \cite{Europa_g}. Since each wheel is individually driven and controllable, the parameters in the following are designed for one wheel; the normal force per wheel is correspondingly \(W_\text{w} = 9.8625 ~ \text{N}\).
 
 \subsection{System Parameters}
 \label{sec:SystemParametersLoco}
 
-Regarding techniques of rover movement, it is crucial to consider the local conditions in which the rover will be operating. The surface of Europa can be assumed to be mainly covered by ice. However, since there are also geysers that transport water to the surface, surface areas may be covered by snow. Though Europa's surface temperature does not exceed 130 K, rather icy, hard-packed snow can be assumed. For this study, a conservative design of the rover is considered, with soil parameters of snow in Sweden as well as heavy clay as a substitute for a hard ice surface; both are listed in \autoref{tab:SoilParam}. Furthermore, the parameters depend on the width and diameter of the wheels of the rover. Therefore, several sizes dependent on the respective weight were selected and a limit per wheel was set to 200 g, illustrated in \autoref{tab:Geometry}. This constraint results in 6 configurations considered for the Rover system design, listed in \autoref{tab:Configurations}. All necessary geometrical dimensions of the locomotion system are shown in \autoref{fig:Ackerman}.
+Regarding techniques of rover movement, it is crucial to consider the local conditions in which the rover will be operating. The surface of Europa can be assumed to be mainly covered by ice. However, since there are also geysers that transport water to the surface, surface areas may be covered by snow \cite{Europa_geysers}. Though Europa's surface temperature does not exceed 130 K, rather icy, hard-packed snow can be assumed. For this study, a conservative design of the rover is considered, with soil parameters of snow in Sweden as well as heavy clay as a substitute for a hard ice surface; both are listed in \autoref{tab:SoilParam}. Furthermore, the parameters depend on the width and diameter of the wheels of the rover. Therefore, several sizes dependent on the respective weight were selected and a limit per wheel was set to 200~g, illustrated in \autoref{tab:Geometry}. This constraint results in 6 configurations considered for the Rover system design, listed in \autoref{tab:Configurations}. All necessary geometrical dimensions of the locomotion system are shown in \autoref{fig:Ackerman}.
 
 \begin{table}[htb]
 \centering
@@ -121,7 +136,7 @@ Regarding techniques of rover movement, it is crucial to consider the local cond
 \subsubsection*{Trafficability Configuration}
 \label{sec:DP}
 
-The ability of traffic depends on the soil parameters as well as on the geometric dimensions of the wheels. The sinking depth \(z\) for each wheel of the rover can be determined to:
+The ability of traffic depends on the soil parameters as well as on the geometric dimensions of the wheels. The sinking depth \(z\) for each wheel of the rover can be determined to \cite{Parameters}:
 
 \begin{equation}
 	z \:  = \:	\left( \frac{3 W_\text{w} \cos \theta}{(3-n)(k_\text{c} + b_\text{w}k_\phi) \sqrt{d_\text{w}}} \right) ^{\frac{2}{2n+1}}	.
@@ -147,7 +162,7 @@ As shown in \autoref{fig:Sinkage}, the sinking depth \(z\) depends not only on t
      \label{fig:Sinkage}
 \end{figure}
 
-The required power for the rover can be calculated by the resistances that have to be exceeded. For the total resistance, the following a applies:
+The required power for the rover can be calculated by the resistances that have to be exceeded. For the total resistance, the following a applies \cite{Parameters}:
 
 \begin{equation}
  	R_{\text{total}} \:  = \: 
@@ -158,9 +173,9 @@ The required power for the rover can be calculated by the resistances that have 
  	\label{eq:Resistance}
  \end{equation} 
 
-Due to the hard surface of Europa, it can be assumed that \( R_\text{b} \rightarrow 0\). In contrast to \( R_\text{g} \), \( R_\text{r}\) can be defined as constant. With a rolling resistance coefficient of \( C_\text{rr} = 0.02\), the resulting resistance is \( R_\text{r}\) = 0.1972~N \cite{rolling coefficient}. Analogous to \(z\), the lower limit of \(R_{\text{total}}\) with soil properties of heavy clay is plotted in \autoref{fig:RClay}, while the upper limit is shown in \autoref{fig:RSnow} for snow.
+Due to the hard surface of Europa, it can be assumed that \( R_\text{b} \rightarrow 0\). In contrast to \( R_\text{g} \), \( R_\text{r}\) can be defined as constant. With a rolling resistance coefficient of \( C_\text{rr} = 0.02\), the resulting resistance is \( R_\text{r}\) = 0.1972~N \cite{rollingCoefficient}. Analogous to \(z\), the lower limit of \(R_{\text{total}}\) with soil properties of heavy clay is plotted in \autoref{fig:RClay}, while the upper limit is shown in \autoref{fig:RSnow} for snow.
 
-In addition to the resistance that needs to be exceeded in order to move, a maximum limit can also be determined. The ground thrust \(H\) indicates the amount of traction that can be achieved before the wheels slip.  Therefore, following applies:
+In addition to the resistance that needs to be exceeded in order to move, a maximum limit can also be determined. The ground thrust \(H\) indicates the amount of traction that can be achieved before the wheels slip \cite{Parameters}.  Therefore, following applies:
 \begin{equation}
 	H \:  = \: A \cdot c + W_\text{w} \cdot \tan \Phi , 
 	\label{eq:}
@@ -201,14 +216,13 @@ In addition to the resistance that needs to be exceeded in order to move, a maxi
      \label{fig:SoilThrust_MotionResistance}
 \end{figure}
 
-In addition to the determined parameters, it should also be verified that the mean maximum pressure \(MMP\) does not increase excessively due to the selected geometric parameters \cite{MMP}. For this conservative calculation, a rigid wheel is assumed, whereby for the deflection \(\delta\) applies, that \( 0 \leq \delta \leq 0.1 d\). For terrestrial snow, 40~kPa should not be exceeded, but ideally the \(MMP\) should be less than 10~kPa \cite{Bekker}. The associated verification calculation can be found in \appref{app:MMP}. \\ 
-For the rover design, configuration 6 is chosen as it offers the lowest resistance to exceed whilst maintaining the lowest \(MMP\). As shown in \autoref{fig:MMP}, the \(MMP_\text{Config6}\) is less than 10~kPa for \(\delta \geq 0.01\)~mm . It should be noted, that the rover has additional grousers. These are enhancing the traction, whereby the maximum reachable soil thrust \(H\) can be increased. However, the grousers are not taken into account in this study, as this is a conservative estimation, and the grousers can be seen as a further design improvement. 
+In addition to the determined parameters, it should also be verified that the mean maximum pressure \(MMP\) does not increase excessively due to the selected geometric parameters \cite{MMP}. For this conservative calculation, a rigid wheel is assumed, whereby for the deflection \(\delta\) applies, that \( 0 \leq \delta \leq 0.1 d\) \cite{Parameters}. For terrestrial snow, 40~kPa should not be exceeded, but ideally the \(MMP\) should be less than 10~kPa \cite{Bekker}. The associated verification calculation can be found in \appref{app:MMP}. \\ 
+For the rover design, "Configuration 6" is chosen as it offers the lowest resistance to exceed whilst maintaining the lowest \(MMP\). The \(MMP_\text{Config6}\) is less than 40~kPa for \(\delta \geq 5\cdot 10^{-4}\), so the deflection of the wheels for the rover can be obtained to \(5\cdot 10^{-4} \leq \delta \leq 0.01\)~m. Additional information of the \(MMP_\text{Config6}\) can be found in \autoref{app:DigitalAppendix}. It should be noted, that the rover has additional grousers. These are enhancing the traction, whereby the maximum reachable soil thrust \(H\) can be increased. However, the grousers are not taken into account in this study, as this is a conservative estimation, and the grousers can be seen as a further design improvement. 
 
 \subsubsection*{Steering}
 \label{sec:Steering}
 
 Since the rover has an all-wheel actuation, it can be operated with on-point steering and, in order to avoid greater obstacles, with Ackerman steering. Considering that with Ackerman steering the radius of the outer wheels is at a greater distance in the circumventing circle than that of the inner wheels, the angles of the wheel positions, which are important for the control of the rover, are further examined in \appref{app:Ackerman}.
-
 
 
 \subsubsection*{Hardware Selection}
@@ -378,7 +392,7 @@ Due to power and time constraints, the rover will transmit only telemetry during
 To achieve the scientific output from \autoref{chap:sc-output} the transmission time per european day is calculated in \autoref{app:MissionDataOutput} (\autoref{tab:Tx-tptal}) and adds up to 38,23 minutes. 
 	
 \subsection{Communication System}
-Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 25 dB high gain antenna [Missing Reference] and a low gain antenna which is not further specified in literature.\\
+Requiring too many resources a direct link to earth has been deemed impractical. Instead communication for the INSPIRE mission is proposed to rely on a link between the rover and the Europa Lander. The lander then forwards data to earth via a satellite relay carrier which orbits the moon. The lander offers a 25 dB high gain antenna \cite{Lander_HGA} and a low gain antenna which is not further specified in literature.\\
 
 The downlink from the rover to the lander has been identified as the critical transmission path. However, link budget considerations in \autoref{app:LinkBudget} reveal that a transmission to the LGA of the Europa Lander produces a link margin of $10,59~\text{dB}$, resulting in a Bit Error Rate of less than $10^{-4}$. The link budget has been performed under the conservative considerations listed in \autoref{tab:lb-param}.\\
 
@@ -387,7 +401,7 @@ Using the Landers LGA greatly increases robustness due to the elimination of poi
 \subsubsection{Component Selection}
 
 Due to the considerably high link margin the focus is on low mass and low power components with flight heritage such as flown on CubeSat missions. Criteria with relatively small impact on the link budget such as component noise or even FEC have not been taken into account. The rover communication uses X-Band for increased compatibility with the lander and has a total system mass of less than $1~\text{kg}$. \\
-Since radiation hardness was not included in most data sheets a total dose of $<20~\text{krad}$ was assumed in accordance with values for LEO [Missing Reference]. \\
+Since radiation hardness was not included in most data sheets a total dose of $<20~\text{krad}$ was assumed in accordance with values for COTS components for LEO \cite{COTS_Rad}. \\
 
 The selected components are listed in \autoref{tab:ComCompComp}. 
 
@@ -409,9 +423,9 @@ Antenna     & Endurosat & patch antenna & mass          & 2,2 g    & frequency  
 Expected transmission times per mission day are less than 40 minutes (see \autoref{app:MissionDataOutput}, \autoref{tab:Tx-tptal}). Therefore the transmitter mass is identified as more critical than power. \\
 Receiver duty cycles on the other hand range close to 100 \% (REFERENCE POWER BUDGET). Thus power has been identified as the most crucial criteria. \\
 A passive X-Band antenna was selected due to compact dimensions and zero power consumption.  \\
-The entire trade off can be found in (APP Trade off).
+The entire trade off can be found in the digital appendix.
 
- \subsection{Command \& Data Handling}
+ \subsection{Command \& Data Handling} \label{C&DH}
  
  With respect to restricted power supply a redundant OBC hot-cold configuration stands to reason. Additionally, the standby mode is suggested during hibernation and charging modes relying solely on the PCDU (see chapter [Missing Reference]). 
 Emphasis for the Electronics selection is placed on flight proven radiation hardness to increase mission robustness in the high radiation environment of the Jupiter system. 
@@ -431,21 +445,21 @@ As a result of Europas low surface temperature, a small solar constant and the t
 
 \subsection{Concepts}
 The main heat source of the rover is the waste heat of the RTG (see \autoref{sec:EPS}), which will be led by thermal straps to the temperature sensitive components.
-Carbon-based straps \textit{LyNX}\textsuperscript{\tiny\textregistered} with a high thermal conductivity to density ratio will be used, \cite{ref_tcs_01}.
+Carbon-based straps \textit{LyNX}\textsuperscript{\tiny\textregistered} with a high thermal conductivity to density ratio will be used \cite{ref_tcs_01}.
 However, the thermal conductivity is highly dependent on the material temperature, see \autoref{fig:tcs_strap01}.
 The curve was approximated by  a cubic  interpolation, \autoref{fig:tcs_lynx} and \autoref{eq:tcs_lynx}.
 To consider heat loss as a result of surface contact and radiation, the thermal conductivity was reduced about 20\%.
 %
 \begin{figure}[h]
 	\centering
-	\subfloat[Temperature dependent thermal conductivity/density of \textit{LyNX}\textsuperscript{\tiny\textregistered} (yellow curve), copper, and aluminum, \cite{ref_tcs_01}.]{\includegraphics[height=0.3\textwidth]{Media/tcs_strap_01.JPG}\label{fig:tcs_strap11}}\qquad\qquad
-	\subfloat[Example of a thermal strap, \cite{ref_tcs_01}.]{\includegraphics[height=0.2\textwidth]{Media/tcs_strap_02.png}\label{fig:tcs_strap12}}
+	\subfloat[Temperature dependent thermal conductivity/density of \textit{LyNX}\textsuperscript{\tiny\textregistered} (yellow curve), copper, and aluminum \cite{ref_tcs_01}.]{\includegraphics[height=0.3\textwidth]{Media/tcs_strap_01.JPG}\label{fig:tcs_strap11}}\qquad\qquad
+	\subfloat[Example of a thermal strap \cite{ref_tcs_01}.]{\includegraphics[height=0.2\textwidth]{Media/tcs_strap_02.png}\label{fig:tcs_strap12}}
 	\caption{Carbon-based thermal strap \textit{LyNX}\textsuperscript{\tiny\textregistered}.}
 	\label{fig:tcs_strap01}
 \end{figure}
 %
 The camera, exposed on a mast, will be heated by a seperate, lightweight Radioisotope Heater Unit (RHU), which has  been used during several NASA missions \cite{ref_tcs_02}.
-For the insulation, the material \textit{Aerogel} will be applied, which has a very low heat conductivity, \cite{ref_tcs_03}.
+For the insulation, the material \textit{Aerogel} will be applied, which has a very low heat conductivity \cite{ref_tcs_03}.
 
 To avoid the risk of overheating, concerning the ebay, camera and drive engine, passive bi-metallic heat switches  will be  placed between the application and the connection interface (see \autoref{fig:tcs_switch01}).
 These switches change their heat conductivity beyond a certain temperature due to the expansion of the disk (see \autoref{fig:tcs_switch21}).
@@ -459,13 +473,13 @@ For special requirements, white paint will be used, \autoref{tab:tcs_surf}.
 	\centering
 	\subfloat[Closed switch, high heat conduction.]{\includegraphics[height=0.18\textwidth]{Media/tcs_switch_01.png}\label{fig:tcs_switch11}}\qquad\qquad
 	\subfloat[Open switch, reduced heat conduction.]{\includegraphics[height=0.18\textwidth]{Media/tcs_switch_02.png}\label{fig:tcs_switch12}}
-	\caption{Bi-metallic heat switch, \cite{ref_tcs_04}.}
+	\caption{Bi-metallic heat switch \cite{ref_tcs_04}.}
 	\label{fig:tcs_switch01}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\subfloat[Comparison between data and theory (experimental results), \cite{ref_tcs_04} ]{\includegraphics[height=0.22\textwidth]{Media/tcs_diag_orig.png}\label{fig:tcs_switch21}}\qquad
+	\subfloat[Comparison between data and theory (experimental results) \cite{ref_tcs_04} ]{\includegraphics[height=0.22\textwidth]{Media/tcs_diag_orig.png}\label{fig:tcs_switch21}}\qquad
 	\subfloat[Linearised characteristic of bi-metallic heat switch (red line).]{\includegraphics[height=0.22\textwidth]{Media/tcs_diag_lin}\label{fig:tcs_switch22}}
 	\caption{Change of the heat switch conductivity $R_t$ over the mean temperature $T_M$.}
 	\label{fig:tcs_switch02}
@@ -496,7 +510,7 @@ Following simplifications and assumptions for the analysis were made.
 \begin{itemize}
 	\item The convection was neglected due to the thin atmosphere.
 	\item The whole electrical power of the components will be dissipated into heat.
-	\item A variation of $\pm 20\%$ for the emissivity and absorptivity values was considered, if applicable (seet \autoref{tab:tcs_surface}).
+	\item A variation of $\pm 20\%$ for the emissivity and absorptivity values was considered, if applicable (seet \autoref{tab:tcs_surface}). The dissipation power of the LED ist 1.2 Watt.
 	\item The heat as a result of retardation radiation inside the shielding was neglected.
 	\item No discrete nodes for the radar, hazcams, APXS and deployment engines were considered. Their heat will be led into the chassis.
 	\item The mechanism engines weren't considered.
@@ -514,13 +528,11 @@ There were further load cases defined to consider the  battery charging, the com
 \subsection{Results}
 The resulting temperatures for each node over all loadcases  are listed in \autoref{tab:tcs_temp1}.
 All temperatures lay between their limits without using a heater.
-The margins for uncertainties, acceptance tests and qualification tests were considered with 5 K each, $\pm$15 K in total, \cite{ref_tcs_05}.
+The margins for uncertainties, acceptance tests and qualification tests were considered with 5 K each, $\pm$15 K in total \cite{ref_tcs_05}.
 The corresponding temperatures are listed in \autoref{tab:tcs_temp2}.
 Due to the margin, the electric ebay exceeds the temperature limits of the transmitter.
 The issue can be solved by optimising the heat paths and adding further insulation during a detailed ebay design process.
 Yet another result can be found in \autoref{tab:tcs_nodes1} to \autoref{tab:tcs_nodes5}, \autoref{tab:tcs_toggle} and  \autoref{tab:tcs_lynx}.
-
-\clearpage
 
 %-------------------------------------------------------------------------------
 \section{Radiation} \label{sec:Radiation}
