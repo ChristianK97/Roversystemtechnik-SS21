@@ -30,7 +30,7 @@
     \field{labeltitlesource}{title}
     \field{title}{{Galileo Mission to Jupiter}}
     \verb{url}
-    \verb \url{https://www.jpl.nasa.gov/missions/galileo}
+    \verb https://www.jpl.nasa.gov/missions/galileo
     \endverb
   \endentry
 
@@ -47,8 +47,7 @@
     \field{labeltitlesource}{title}
     \field{title}{{Europa Ocean Moon}}
     \verb{url}
-    \verb \url{https://solarsystem.nasa.gov/moons/jupiter-moons/europa/in-depth
-    \verb /}
+    \verb https://solarsystem.nasa.gov/moons/jupiter-moons/europa/in-depth/
     \endverb
   \endentry
 
@@ -65,8 +64,8 @@
     \field{labeltitlesource}{title}
     \field{title}{{Die Mission JUICE zum Jupitersystem}}
     \verb{url}
-    \verb \url{https://www.dlr.de/pf/desktopdefault.aspx/tabid-10617/18438_read
-    \verb -43016/}
+    \verb https://www.dlr.de/pf/desktopdefault.aspx/tabid-10617/18438_read-4301
+    \verb 6/
     \endverb
   \endentry
 
@@ -83,7 +82,7 @@
     \field{labeltitlesource}{title}
     \field{title}{{Europa Lander}}
     \verb{url}
-    \verb \url{https://europa.nasa.gov/}
+    \verb https://europa.nasa.gov/
     \endverb
   \endentry
 
@@ -100,7 +99,82 @@
     \field{labeltitlesource}{title}
     \field{title}{{Europa}}
     \verb{url}
-    \verb \url{https://www.jpl.nasa.gov/missions/europa-lander}
+    \verb https://www.jpl.nasa.gov/missions/europa-lander
+    \endverb
+  \endentry
+
+  \entry{ref_pay_1}{article}{}
+    \name{author}{7}{}{%
+      {{hash=GJ}{%
+         family={Gironés},
+         familyi={G\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Schmanke},
+         familyi={S\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Klingelhoefer},
+         familyi={K\bibinitperiod},
+         given={Goestar},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Maul},
+         familyi={M\bibinitperiod},
+         given={Jasmine},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Brueckner},
+         familyi={B\bibinitperiod},
+         given={Johannes},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DC}{%
+         family={Duston},
+         familyi={D\bibinitperiod},
+         given={Claude},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gellert},
+         familyi={G\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GJSDKGMJBJDCGR1}
+    \strng{fullhash}{GJSDKGMJBJDCGR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{612\bibrangedash }
+    \field{title}{The Alpha Particle X-Ray Spectrometer APXS on the Rosetta
+  lander Philae to explore the surface of comet 67P/Churyumov-Gerasimenko}
+    \field{month}{01}
+    \field{year}{2010}
+  \endentry
+
+  \entry{ref_pay_2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SN}{%
+         family={Science},
+         familyi={S\bibinitperiod},
+         given={NASA},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SN1}
+    \strng{fullhash}{SN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{APXS}
+    \verb{url}
+    \verb https://mars.nasa.gov/msl/spacecraft/instruments/apxs/
     \endverb
   \endentry
 
@@ -396,7 +470,7 @@
     \field{labeltitlesource}{title}
     \field{title}{{Graphene Thermal LyNX® Technology}}
     \verb{url}
-    \verb \url{https://thermal-space.com/thermal-lynx/}
+    \verb https://thermal-space.com/thermal-lynx/
     \endverb
   \endentry
 
@@ -413,8 +487,8 @@
     \field{labeltitlesource}{title}
     \field{title}{{Light-Weight Radioisotope Heater Unit}}
     \verb{url}
-    \verb \url{https://rps.nasa.gov/power-and-thermal-systems/thermal-systems/l
-    \verb ight-weight-radioisotope-heater-unit/}
+    \verb https://rps.nasa.gov/power-and-thermal-systems/thermal-systems/light-
+    \verb weight-radioisotope-heater-unit/
     \endverb
   \endentry
 
@@ -431,7 +505,7 @@
     \field{labeltitlesource}{title}
     \field{title}{{Aerogel}}
     \verb{url}
-    \verb \url{https://solarsystem.nasa.gov/stardust/aerogel_factsheet.pdf}
+    \verb https://solarsystem.nasa.gov/stardust/aerogel.pdf
     \endverb
   \endentry
 
@@ -461,8 +535,8 @@
     \field{number}{24}
     \field{pages}{4573\bibrangedash 4586}
     \field{pagination}{page}
-    \field{title}{{Theoretical and experimental studies of a bi-metallic heat
-  switch for space applications }}
+    \field{title}{Theoretical and experimental studies of a bi-metallic heat
+  switch for space applications}
     \field{volume}{46}
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{year}{2003}
@@ -488,18 +562,123 @@
     \field{labelnamesource}{author}
   \endentry
 
-  \entry{ref_tcs_10}{misc}{}
+  \entry{JupiterRadiationEnvironment}{online}{}
     \name{author}{1}{}{%
-      {{hash=A}{%
-         family={{Aluminium Giesserei Hannover GmbH}},
-         familyi={A\bibinitperiod},
+      {{hash=a}{%
+         family={astronomy.com},
+         familyi={a\bibinitperiod},
       }}%
     }
-    \strng{namehash}{A1}
-    \strng{fullhash}{A1}
+    \strng{namehash}{a1}
+    \strng{fullhash}{a1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{{Produktdatenblatt AA5083}}
+    \field{title}{What is the source of Jupiter’s radiation?}
+    \verb{url}
+    \verb https://astronomy.com/magazine/ask-astro/2020/02/what-is-the-source-o
+    \verb f-jupiters-radiation
+    \endverb
+    \field{urlday}{18}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Spenvis}{online}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={ESA},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{SPENVIS}
+    \verb{url}
+    \verb https://www.spenvis.oma.be
+    \endverb
+    \field{urlday}{18}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{8823057}{article}{}
+    \name{author}{7}{}{%
+      {{hash=WJZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Jian-Zhao},
+         giveni={J\bibinithyphendelim Z\bibinitperiod},
+      }}%
+      {{hash=MJN}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Ji-Nan},
+         giveni={J\bibinithyphendelim N\bibinitperiod},
+      }}%
+      {{hash=QJW}{%
+         family={Qiu},
+         familyi={Q\bibinitperiod},
+         given={Jia-Wen},
+         giveni={J\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Dai},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ZAW}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={An-Wen},
+         giveni={A\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=ZQX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Qing-Xiang},
+         giveni={Q\bibinithyphendelim X\bibinitperiod},
+      }}%
+      {{hash=ZAS}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Ao-Song},
+         giveni={A\bibinithyphendelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJZMJNQJWTDZAWZQXZAS1}
+    \strng{fullhash}{WJZMJNQJWTDZAWZQXZAS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/TNS.2019.2939184
+    \endverb
+    \field{number}{10}
+    \field{pages}{2179\bibrangedash 2187}
+    \field{title}{Optimization Design of Radiation Vault in Jupiter Orbiting
+  Mission}
+    \field{volume}{66}
+    \field{journaltitle}{IEEE Transactions on Nuclear Science}
+    \field{year}{2019}
+  \endentry
+
+  \entry{ref_tcs_10}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GAGH}{%
+         family={GmbH},
+         familyi={G\bibinitperiod},
+         given={Aluminium Giesserei\bibnamedelima Hannover},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GAGH1}
+    \strng{fullhash}{GAGH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Produktdatenblatt AA5083}
     \verb{url}
     \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/5083_Produkt
     \verb datenblatt_A4.pdf
@@ -508,16 +687,19 @@
 
   \entry{ref_tcs_11}{misc}{}
     \name{author}{1}{}{%
-      {{hash=A}{%
-         family={{Aluminium Giesserei Hannover GmbH}},
-         familyi={A\bibinitperiod},
+      {{hash=GAGH}{%
+         family={GmbH},
+         familyi={G\bibinitperiod},
+         given={Aluminium Giesserei\bibnamedelima Hannover},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
       }}%
     }
-    \strng{namehash}{A1}
-    \strng{fullhash}{A1}
+    \strng{namehash}{GAGH1}
+    \strng{fullhash}{GAGH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{{Produktdatenblatt AA6082}}
+    \field{title}{Produktdatenblatt AA6082}
     \verb{url}
     \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/6082_Produkt
     \verb datenblatt_A4.pdf
@@ -555,26 +737,28 @@
     \field{labeltitlesource}{title}
     \field{title}{{1.4418X4 - CrNiMo16-5-1}}
     \verb{url}
-    \verb \url{https://www.dew-stahl.com/fileadmin/files/dew-stahl.com/document
-    \verb s/Publikationen/Werkstoffdatenblaetter/Luft_Raumfahrt/1.4418_de.pdf}
+    \verb https://www.dew-stahl.com/fileadmin/files/dew-stahl.com/documents/Pub
+    \verb likationen/Werkstoffdatenblaetter/Luft_Raumfahrt/1.4418_de.pdf
     \endverb
   \endentry
 
   \entry{ref_tcs_09}{misc}{}
     \name{author}{1}{}{%
-      {{hash=D}{%
-         family={{Deutsche Edelstahlwerke}},
-         familyi={D\bibinitperiod},
+      {{hash=ED}{%
+         family={Edelstahlwerke},
+         familyi={E\bibinitperiod},
+         given={Deutsche},
+         giveni={D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{D1}
-    \strng{fullhash}{D1}
+    \strng{namehash}{ED1}
+    \strng{fullhash}{ED1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{{Firmodur 7225}}
+    \field{title}{Firmodur 7225}
     \verb{url}
-    \verb \url{https://www.dew-stahl.com/fileadmin/files/dew-stahl.com/document
-    \verb s/Publikationen/Werkstoffdatenblaetter/Baustahl/1.7225_1.7227_de.pdf}
+    \verb https://www.dew-stahl.com/fileadmin/files/dew-stahl.com/documents/Pub
+    \verb likationen/Werkstoffdatenblaetter/Baustahl/1.7225_1.7227_de.pdf
     \endverb
   \endentry
 
@@ -591,9 +775,9 @@
     \field{labeltitlesource}{title}
     \field{title}{{Titan 6Al4V “ELI”}}
     \verb{url}
-    \verb \url{https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppBAM
-    \verb XSchweiz/de/downloads/werkstoffdatenblaetter-titan/link-titan_grade_5
-    \verb _eli.pdf}
+    \verb https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppBAMXSchw
+    \verb eiz/de/downloads/werkstoffdatenblaetter-titan/link-titan_grade_5_eli.
+    \verb pdf
     \endverb
   \endentry
 
@@ -610,9 +794,8 @@
     \field{labeltitlesource}{title}
     \field{title}{{Titan Grade 5}}
     \verb{url}
-    \verb \url{https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppBAM
-    \verb XSchweiz/de/downloads/werkstoffdatenblaetter-titan/link-titan_grade_5
-    \verb .pdf}
+    \verb https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppBAMXSchw
+    \verb eiz/de/downloads/werkstoffdatenblaetter-titan/link-titan_grade_5.pdf
     \endverb
   \endentry
 \enddatalist
