@@ -133,6 +133,30 @@
   \endentry
 
   \entry{patch_ant_GPR}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BAKCCCML}{%
+         family={Brad A.\bibnamedelima Krainer},
+         familyi={B\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+         suffix={Miiig\bibnamedelima Lee},
+         suffixi={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={Chi-Chih\bibnamedelima Chen},
+         giveni={C\bibinithyphendelim C\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+      {{hash=VJD}{%
+         family={Volakis},
+         familyi={V\bibinitperiod},
+         given={John\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BAKMLCCCVJD1}
+    \strng{fullhash}{BAKMLCCCVJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{GPR Implications of Miniaturized Antenna Developments}
+    \field{year}{2004}
   \endentry
 
   \entry{Patch_Ant_design}{misc}{}
@@ -150,6 +174,69 @@
     \verb{url}
     \verb https://www.pasternack.com/t-calculator-microstrip-ant.aspx
     \endverb
+  \endentry
+
+  \entry{Honeybee1}{online}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{Honeybee Robotics}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{H1}
+    \strng{fullhash}{H1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Volatiles Extractor}
+    \verb{url}
+    \verb https://www.honeybeerobotics.com/products/volatiles-extractor/#156226
+    \verb 7018150-cf7c081e-3ad7405c-e09c
+    \endverb
+    \field{urlday}{12}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Honeybee2}{online}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{Honeybee Robotics}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{H1}
+    \strng{fullhash}{H1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Drills}
+    \verb{url}
+    \verb https://www.honeybeerobotics.com/products/drills/#1562267018150-cf7c0
+    \verb 81e-3ad71913-bc36
+    \endverb
+    \field{urlday}{12}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{PhilaeDrill}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{DLR}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D2}
+    \strng{fullhash}{D2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Philae Lander Fact Sheet}
+    \verb{url}
+    \verb https://www.dlr.de/dlr/Portaldata/1/Resources/documents/Philae_Lander
+    \verb _FactSheets.pdf
+    \endverb
+    \field{urlday}{14}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
   \endentry
 
   \entry{ref_pay_1}{article}{}
@@ -257,6 +344,24 @@
     \field{volume}{5}
     \field{journaltitle}{Heliyon}
     \field{year}{2019}
+  \endentry
+
+  \entry{ref_tcs_12}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Aluminium Giesserei Hannover GmbH}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Produktdatenblatt AA7075}}
+    \verb{url}
+    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/7075_Produkt
+    \verb datenblatt_A4.pdf
+    \endverb
   \endentry
 
   \entry{Europa_g}{online}{}
@@ -927,6 +1032,132 @@
     \field{year}{2019}
   \endentry
 
+  \entry{6497188}{inproceedings}{}
+    \name{author}{11}{}{%
+      {{hash=ZK}{%
+         family={Zacny},
+         familyi={Z\bibinitperiod},
+         given={Kris},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Paulsen},
+         familyi={P\bibinitperiod},
+         given={Gale},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Chu},
+         familyi={C\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hedlund},
+         familyi={H\bibinitperiod},
+         given={Magnus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Spring},
+         familyi={S\bibinitperiod},
+         given={Justin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=OL}{%
+         family={Osborne},
+         familyi={O\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Matthews},
+         familyi={M\bibinitperiod},
+         given={Jaret},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZD}{%
+         family={Zarzhitsky},
+         familyi={Z\bibinitperiod},
+         given={Dimitri},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=NIA}{%
+         family={Nesnas},
+         familyi={N\bibinitperiod},
+         given={Issa\bibnamedelima A.},
+         giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Szwarc},
+         familyi={S\bibinitperiod},
+         given={Timothy},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Indyk},
+         familyi={I\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZKPGCPHMSJOLMJZDNIASTIS1}
+    \strng{fullhash}{ZKPGCPHMSJOLMJZDNIASTIS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2013 IEEE Aerospace Conference}
+    \verb{doi}
+    \verb 10.1109/AERO.2013.6497188
+    \endverb
+    \field{pages}{1\bibrangedash 11}
+    \field{title}{Axel rover NanoDrill and PowderDrill: Acquisition of cores,
+  regolith and powder from steep walls}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Phytron}{online}{}
+    \name{author}{1}{}{%
+      {{hash=p}{%
+         family={phySPACE},
+         familyi={p\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{p1}
+    \strng{fullhash}{p1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Stepper Motor Series for SPACE applications, Standard and
+  Customised Solutions}
+    \verb{url}
+    \verb https://www.phytron.eu/fileadmin/user_upload/produkte/motoren_aktuato
+    \verb ren/pdf/ds-physpace-en.pdf
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Maxon}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Maxon},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{EC 32 flat}
+    \verb{url}
+    \verb https://www.maxongroup.de/medias/sys_master/root/8839930445854/DE-282
+    \verb .pdf
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
   \entry{FLP_Exercise}{misc}{}
     \name{author}{1}{}{%
       {{hash=PS}{%
@@ -1036,24 +1267,6 @@
     \field{title}{Produktdatenblatt AA6082}
     \verb{url}
     \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/6082_Produkt
-    \verb datenblatt_A4.pdf
-    \endverb
-  \endentry
-
-  \entry{ref_tcs_12}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=A}{%
-         family={{Aluminium Giesserei Hannover GmbH}},
-         familyi={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{A1}
-    \strng{fullhash}{A1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Produktdatenblatt AA7075}}
-    \verb{url}
-    \verb https://www.leichtmetall.eu/site/assets/files/datenblatt/7075_Produkt
     \verb datenblatt_A4.pdf
     \endverb
   \endentry
